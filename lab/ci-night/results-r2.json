@@ -1,0 +1,772 @@
+{
+ "review-action-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 539,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50461
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "full",
+   "used": 655,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50345
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": 22.1,
+   "ci_pct": null,
+   "cheaper": 1,
+   "base_cost": 0.0696,
+   "gw_cost": 0.0542,
+   "net": 0.0136
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 10.5,
+   "ci_pct": [
+    -5.4,
+    26.8
+   ],
+   "cheaper": 3,
+   "base_cost": 0.0598,
+   "gw_cost": 0.0549,
+   "net": 0.0029
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 12.2,
+   "ci_pct": [
+    -1.7,
+    26.5
+   ],
+   "cheaper": 4,
+   "base_cost": 0.0612,
+   "gw_cost": 0.0548,
+   "net": 0.0044
+  },
+  "errors": 0,
+  "quality": {
+   "key": null,
+   "base": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "gw": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "mix_base": {
+   "Bash": 7
+  },
+  "mix_gw": {
+   "Bash": 8
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 48.2,
+   "new tool results": 21.4,
+   "prefix reads": 8.0,
+   "thinking": 0.1,
+   "output": 23.1
+  },
+  "rids": {
+   "s1-direct-ts": 41272844670,
+   "s1-gateway": 41272847193,
+   "s2-direct-ts": 41273009807,
+   "s2-gateway": 41273012251,
+   "s3-gateway": 41273173257,
+   "s3-direct-ts": 41273175772,
+   "s4-direct-ts": 41273319129,
+   "s4-gateway": 41273321868,
+   "s5-gateway": 41273489649,
+   "s5-direct-ts": 41273492103,
+   "s6-direct-ts": 41273649271,
+   "s6-gateway": 41273651667,
+   "s7-gateway": 41273817966,
+   "s7-direct-ts": 41273819806
+  }
+ },
+ "mention-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 539,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50461
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "full",
+   "used": 693,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50307
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": 0.2,
+   "ci_pct": null,
+   "cheaper": 1,
+   "base_cost": 0.0639,
+   "gw_cost": 0.0637,
+   "net": -0.0071
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 23.7,
+   "ci_pct": [
+    11.4,
+    35.7
+   ],
+   "cheaper": 6,
+   "base_cost": 0.0902,
+   "gw_cost": 0.0736,
+   "net": 0.008
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 20.7,
+   "ci_pct": [
+    8.7,
+    32.8
+   ],
+   "cheaper": 7,
+   "base_cost": 0.0864,
+   "gw_cost": 0.0722,
+   "net": 0.0059
+  },
+  "errors": 0,
+  "quality": {
+   "key": "passed",
+   "base": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "gw": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  "mix_base": {
+   "Bash": 42,
+   "Grep": 11,
+   "Read": 10,
+   "Edit": 5
+  },
+  "mix_gw": {
+   "Bash": 55,
+   "Edit": 4,
+   "Read": 3
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 10.6,
+   "new tool results": 18.6,
+   "prefix reads": 35.5,
+   "thinking": 6.9,
+   "output": 28.7
+  },
+  "rids": {
+   "s1-direct-ts": 41272846725,
+   "s1-gateway": 41272849393,
+   "s2-gateway": 41273011888,
+   "s2-direct-ts": 41273014767,
+   "s3-gateway": 41273175293,
+   "s3-direct-ts": 41273177494,
+   "s4-gateway": 41273321179,
+   "s4-direct-ts": 41273324007,
+   "s5-direct-ts": 41273491335,
+   "s5-gateway": 41273493852,
+   "s6-gateway": 41273651392,
+   "s6-direct-ts": 41273654276,
+   "s7-gateway": 41273819704,
+   "s7-direct-ts": 41273821862
+  }
+ },
+ "triage-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 539,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50461
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "full",
+   "used": 657,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50343
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": 27.4,
+   "ci_pct": null,
+   "cheaper": 1,
+   "base_cost": 0.0342,
+   "gw_cost": 0.0248,
+   "net": 0.0058
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 33.9,
+   "ci_pct": [
+    25.1,
+    43.6
+   ],
+   "cheaper": 6,
+   "base_cost": 0.0442,
+   "gw_cost": 0.0281,
+   "net": 0.0111
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 33.0,
+   "ci_pct": [
+    25.4,
+    41.6
+   ],
+   "cheaper": 7,
+   "base_cost": 0.0428,
+   "gw_cost": 0.0276,
+   "net": 0.0103
+  },
+  "errors": 0,
+  "quality": {
+   "key": "passed",
+   "base": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "gw": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  "mix_base": {},
+  "mix_gw": {},
+  "gw_cost_split_pct": {},
+  "rids": {
+   "s1-direct-ts": 41272848908,
+   "s1-gateway": 41272851668,
+   "s2-direct-ts": 41273014272,
+   "s2-gateway": 41273016796,
+   "s3-direct-ts": 41273177239,
+   "s3-gateway": 41273179659,
+   "s4-gateway": 41273323912,
+   "s4-direct-ts": 41273327261,
+   "s5-gateway": 41273493111,
+   "s5-direct-ts": 41273495925,
+   "s6-gateway": 41273654047,
+   "s6-direct-ts": 41273657483,
+   "s7-direct-ts": 41273821897,
+   "s7-gateway": 41273824069
+  }
+ },
+ "pr-review-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 539,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50461
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "full",
+   "used": 656,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50344
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": 24.6,
+   "ci_pct": null,
+   "cheaper": 1,
+   "base_cost": 0.07,
+   "gw_cost": 0.0528,
+   "net": 0.0154
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 7.0,
+   "ci_pct": [
+    -26.0,
+    29.0
+   ],
+   "cheaper": 4,
+   "base_cost": 0.0558,
+   "gw_cost": 0.0563,
+   "net": -0.0025
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 9.7,
+   "ci_pct": [
+    -17.1,
+    28.9
+   ],
+   "cheaper": 5,
+   "base_cost": 0.0578,
+   "gw_cost": 0.0558,
+   "net": 0.0001
+  },
+  "errors": 0,
+  "quality": {
+   "key": null,
+   "base": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "gw": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "mix_base": {
+   "Bash": 7
+  },
+  "mix_gw": {
+   "Bash": 8
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 46.4,
+   "new tool results": 20.5,
+   "prefix reads": 9.0,
+   "thinking": 0.5,
+   "output": 24.5
+  },
+  "rids": {
+   "s1-direct-ts": 41272851444,
+   "s1-gateway": 41272854057,
+   "s2-gateway": 41273016697,
+   "s2-direct-ts": 41273019172,
+   "s3-direct-ts": 41273179063,
+   "s3-gateway": 41273181312,
+   "s4-direct-ts": 41273326792,
+   "s4-gateway": 41273329681,
+   "s5-direct-ts": 41273495372,
+   "s5-gateway": 41273498568,
+   "s6-gateway": 41273656977,
+   "s6-direct-ts": 41273660458,
+   "s7-direct-ts": 41273823597,
+   "s7-gateway": 41273825686
+  }
+ },
+ "labels-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 655,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50345
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "warned",
+   "used": 820,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50180
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": -57.7,
+   "ci_pct": null,
+   "cheaper": 0,
+   "base_cost": 0.0224,
+   "gw_cost": 0.0353,
+   "net": -0.0147
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 29.6,
+   "ci_pct": [
+    21.1,
+    38.8
+   ],
+   "cheaper": 6,
+   "base_cost": 0.0262,
+   "gw_cost": 0.0183,
+   "net": 0.006
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 21.0,
+   "ci_pct": [
+    -3.2,
+    35.5
+   ],
+   "cheaper": 6,
+   "base_cost": 0.0256,
+   "gw_cost": 0.0208,
+   "net": 0.0031
+  },
+  "errors": 0,
+  "quality": {
+   "key": "f1",
+   "base": [
+    0.8,
+    0.8,
+    0.6666666666666666,
+    0.8571428571428571,
+    0.4000000000000001,
+    0.4,
+    0.5714285714285715
+   ],
+   "gw": [
+    0.8,
+    0.6666666666666666,
+    0.4,
+    0.8571428571428571,
+    0.4000000000000001,
+    0.4,
+    0.75
+   ]
+  },
+  "mix_base": {
+   "Bash": 9
+  },
+  "mix_gw": {
+   "Bash": 7
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 35.3,
+   "new tool results": 36.5,
+   "prefix reads": 16.7,
+   "thinking": 1.2,
+   "output": 11.3
+  },
+  "rids": {
+   "s1-direct-ts": 41273878757,
+   "s1-gateway": 41273880905,
+   "s2-gateway": 41274031210,
+   "s2-direct-ts": 41274033739,
+   "s3-direct-ts": 41274185701,
+   "s3-gateway": 41274188039,
+   "s4-gateway": 41274346638,
+   "s4-direct-ts": 41274349178,
+   "s5-direct-ts": 41274499909,
+   "s5-gateway": 41274502078,
+   "s6-direct-ts": 41274650649,
+   "s6-gateway": 41274653016,
+   "s7-gateway": 41274800791,
+   "s7-direct-ts": 41274802990
+  }
+ },
+ "dedupe-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 656,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50344
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "warned",
+   "used": 836,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50164
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": 74.0,
+   "ci_pct": null,
+   "cheaper": 1,
+   "base_cost": 0.1864,
+   "gw_cost": 0.0486,
+   "net": 0.1325
+  },
+  "warm": {
+   "n": 6,
+   "saving_pct": 52.5,
+   "ci_pct": [
+    24.4,
+    71.4
+   ],
+   "cheaper": 6,
+   "base_cost": 0.2146,
+   "gw_cost": 0.1238,
+   "net": 0.0761
+  },
+  "all": {
+   "n": 7,
+   "saving_pct": 56.4,
+   "ci_pct": [
+    32.9,
+    72.4
+   ],
+   "cheaper": 7,
+   "base_cost": 0.2105,
+   "gw_cost": 0.113,
+   "net": 0.0841
+  },
+  "errors": 0,
+  "quality": {
+   "key": "top3",
+   "base": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "gw": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  "mix_base": {
+   "Bash": 125,
+   "Agent": 46,
+   "ToolSearch": 1,
+   "TaskCreate": 1,
+   "ListAgents": 1,
+   "ScheduleWakeup": 1
+  },
+  "mix_gw": {
+   "Bash": 51,
+   "Agent": 25
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 5.5,
+   "new tool results": 54.7,
+   "prefix reads": 31.9,
+   "thinking": 1.3,
+   "output": 6.9
+  },
+  "rids": {
+   "s1-direct-ts": 41273886165,
+   "s1-gateway": 41273888385,
+   "s2-direct-ts": 41274039178,
+   "s2-gateway": 41274041908,
+   "s3-direct-ts": 41274193561,
+   "s3-gateway": 41274195673,
+   "s4-direct-ts": 41274355429,
+   "s4-gateway": 41274358301,
+   "s5-gateway": 41274507802,
+   "s5-direct-ts": 41274510000,
+   "s6-gateway": 41274658700,
+   "s6-direct-ts": 41274660777,
+   "s7-direct-ts": 41274808392,
+   "s7-gateway": 41274810440
+  }
+ },
+ "release-sonnet": {
+  "model": "claude-sonnet-5-5",
+  "guard_before": {
+   "mode": "full",
+   "state": "full",
+   "used": 657,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50343
+  },
+  "guard_after": {
+   "mode": "full",
+   "state": "warned",
+   "used": 809,
+   "limit": 1000,
+   "granted": 50000,
+   "pack_left": 0,
+   "used_paused": 0,
+   "reset_at": 1796083200000,
+   "left": 50191
+  },
+  "valid": true,
+  "cold": {
+   "n": 1,
+   "saving_pct": -13.6,
+   "ci_pct": null,
+   "cheaper": 0,
+   "base_cost": 0.0626,
+   "gw_cost": 0.0711,
+   "net": -0.0157
+  },
+  "warm": {
+   "n": 5,
+   "saving_pct": 25.7,
+   "ci_pct": [
+    7.2,
+    42.7
+   ],
+   "cheaper": 4,
+   "base_cost": 0.1333,
+   "gw_cost": 0.0987,
+   "net": 0.0287
+  },
+  "all": {
+   "n": 6,
+   "saving_pct": 20.3,
+   "ci_pct": [
+    0.4,
+    37.4
+   ],
+   "cheaper": 4,
+   "base_cost": 0.1215,
+   "gw_cost": 0.0941,
+   "net": 0.0213
+  },
+  "errors": 0,
+  "quality": {
+   "key": null,
+   "base": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "gw": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "mix_base": {
+   "Bash": 60,
+   "Write": 6,
+   "Edit": 2
+  },
+  "mix_gw": {
+   "Bash": 38,
+   "Write": 6
+  },
+  "gw_cost_split_pct": {
+   "prefix writes": 24.4,
+   "new tool results": 22.2,
+   "prefix reads": 24.4,
+   "thinking": 1.8,
+   "output": 27.7
+  },
+  "rids": {
+   "s1-direct-ts": 41273903809,
+   "s1-gateway": 41273906184,
+   "s2-gateway": 41274057959,
+   "s2-direct-ts": 41274060416,
+   "s3-direct-ts": 41274212160,
+   "s3-gateway": 41274214653,
+   "s4-direct-ts": 41274373942,
+   "s4-gateway": 41274376090,
+   "s5-gateway": 41274525807,
+   "s5-direct-ts": 41274527888,
+   "s6-direct-ts": 41274677631,
+   "s6-gateway": 41274679730
+  }
+ }
+}
