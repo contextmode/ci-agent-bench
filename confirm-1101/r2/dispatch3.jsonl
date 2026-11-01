@@ -1,0 +1,32 @@
+{"t": "2026-11-01T16:26:34Z", "agent": "opencode", "task": "echo-3158", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:28:14Z", "agent": "opencode", "task": "lo-757", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:29:05Z", "agent": "opencode", "task": "echo-3158", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:29:54Z", "agent": "opencode", "task": "zap-1587", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:30:44Z", "agent": "opencode", "task": "lo-757", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:31:34Z", "agent": "opencode", "task": "echo-3131", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:32:24Z", "agent": "opencode", "task": "zap-1587", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:33:14Z", "agent": "opencode", "task": "lo-778", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:34:04Z", "agent": "opencode", "task": "echo-3131", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:34:54Z", "agent": "pi", "task": "echo-3158", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:35:44Z", "agent": "opencode", "task": "lo-778", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:36:34Z", "agent": "pi", "task": "lo-757", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:37:25Z", "agent": "pi", "task": "echo-3158", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:38:15Z", "agent": "pi", "task": "zap-1587", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:39:04Z", "agent": "pi", "task": "lo-757", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:39:54Z", "agent": "pi", "task": "echo-3131", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:40:44Z", "agent": "pi", "task": "zap-1587", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:41:35Z", "agent": "pi", "task": "lo-778", "arm": "gateway", "model": "claude-sonnet-5-5", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:42:24Z", "agent": "pi", "task": "echo-3131", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:43:15Z", "agent": "codex", "task": "echo-3158", "arm": "gateway", "model": "gpt-5-mini", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:44:16Z", "agent": "pi", "task": "lo-778", "arm": "direct-ts", "model": "claude-sonnet-5-5", "org": "bmksglu", "rc": 1, "err": "unable to determine default branch for mksglu/cm-ci-lab: Post \"https://api.github.com/graphql\": unexpected EOF\n"}
+{"t": "2026-11-01T16:44:54Z", "agent": "codex", "task": "lo-757", "arm": "gateway", "model": "gpt-5-mini", "org": "mert2", "rc": 0, "err": ""}
+{"redispatch":"pi lo-778 direct-ts after GitHub API EOF"}
+{"t": "2026-11-01T16:45:45Z", "agent": "codex", "task": "echo-3158", "arm": "direct-ts", "model": "gpt-5-mini", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:46:35Z", "agent": "codex", "task": "zap-1587", "arm": "gateway", "model": "gpt-5-mini", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:47:24Z", "agent": "codex", "task": "lo-757", "arm": "direct-ts", "model": "gpt-5-mini", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:48:14Z", "agent": "codex", "task": "echo-3131", "arm": "gateway", "model": "gpt-5-mini", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:49:05Z", "agent": "codex", "task": "zap-1587", "arm": "direct-ts", "model": "gpt-5-mini", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:49:54Z", "agent": "codex", "task": "lo-778", "arm": "gateway", "model": "gpt-5-mini", "org": "mert2", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:50:45Z", "agent": "codex", "task": "echo-3131", "arm": "direct-ts", "model": "gpt-5-mini", "org": "bmksglu", "rc": 0, "err": ""}
+{"t": "2026-11-01T16:52:24Z", "agent": "codex", "task": "lo-778", "arm": "direct-ts", "model": "gpt-5-mini", "org": "bmksglu", "rc": 0, "err": ""}
+{"done":true}

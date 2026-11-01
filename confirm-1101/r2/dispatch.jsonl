@@ -1,0 +1,136 @@
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 836, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50164}"}
+{"t": "2026-11-01T13:11:13Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-ci", "task": "echo-3158", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:12:23Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-ci", "task": "lo-757", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:13:33Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-ci", "task": "zap-1587", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:14:43Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-ci", "task": "echo-3131", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:14:53Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-ci", "task": "lo-757", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:15:53Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-ci", "task": "lo-778", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:16:04Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-ci", "task": "zap-1587", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:17:04Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-ci", "task": "zap-1589", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:17:13Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-ci", "task": "echo-3131", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:18:13Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-ci", "task": "echo-3189", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:18:24Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-ci", "task": "lo-778", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:19:24Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-ci", "task": "lo-993", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:19:33Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-ci", "task": "zap-1589", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:20:33Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-ci", "task": "scrapy-7783", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:20:43Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-ci", "task": "echo-3189", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:21:43Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-ci", "task": "zap-1567", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:21:55Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-ci", "task": "lo-993", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:23:05Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-ci", "task": "scrapy-7783", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:24:14Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-ci", "task": "zap-1567", "model": "claude-sonnet-5-5", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 890, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50110}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 890, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50110}"}
+{"t": "2026-11-01T13:49:18Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-mention", "task": "fiber-3988", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:50:28Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-mention", "task": "echo-2977", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:51:38Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-mention", "task": "lo-799", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:51:48Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-mention", "task": "fiber-3988", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:52:48Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-mention", "task": "echo-3060", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:52:57Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-mention", "task": "echo-2977", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:53:58Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "fix-mention", "task": "lo-796", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:54:08Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-mention", "task": "lo-799", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:55:08Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-mention", "task": "mocha-6331", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:55:19Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-mention", "task": "echo-3060", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:56:17Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-mention", "task": "echo-3006", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:56:27Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "fix-mention", "task": "lo-796", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:57:27Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-mention", "task": "mocha-5997", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:57:38Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-mention", "task": "mocha-6331", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:58:38Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "fix-mention", "task": "mocha-6361", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:58:48Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-mention", "task": "echo-3006", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T13:59:58Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-mention", "task": "mocha-5997", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:01:08Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "fix-mention", "task": "mocha-6361", "model": "claude-sonnet-5-5", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 975, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50025}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 975, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50025}"}
+{"t": "2026-11-01T14:26:11Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "labels", "task": "vscode-340116", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:27:23Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "labels", "task": "vscode-340427", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:28:31Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "labels", "task": "godot-124534", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:28:41Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "labels", "task": "vscode-340116", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:29:43Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "labels", "task": "rust-163852", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:29:51Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "labels", "task": "vscode-340427", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:30:52Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "labels", "task": "rust-164694", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:31:01Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "labels", "task": "godot-124534", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:32:01Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "labels", "task": "rust-164736", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:32:14Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "labels", "task": "rust-163852", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:33:11Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "labels", "task": "godot-124050", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:33:21Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "labels", "task": "rust-164694", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:34:21Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "labels", "task": "flutter-194705", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:34:31Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "labels", "task": "rust-164736", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:35:31Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "labels", "task": "godot-124254", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:35:41Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "labels", "task": "godot-124050", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:36:43Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "labels", "task": "typescript-64677", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:36:52Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "labels", "task": "flutter-194705", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:38:01Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "labels", "task": "godot-124254", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T14:39:11Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "labels", "task": "typescript-64677", "model": "claude-sonnet-5-5", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 998, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50002}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 998, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 50002}"}
+{"t": "2026-11-01T15:04:15Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "release", "task": "valkey-9.0.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:05:25Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "release", "task": "ruff-0.16.2", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:06:35Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "release", "task": "biome-2.6.4", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:06:45Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "release", "task": "valkey-9.0.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:07:45Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "release", "task": "redis-8.4.6", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:07:55Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "release", "task": "ruff-0.16.2", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:08:55Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "mert2", "area": "release", "task": "fastapi-0.160.0", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:09:05Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "release", "task": "biome-2.6.4", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:10:05Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "release", "task": "mastodon-4.6.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:10:15Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "release", "task": "redis-8.4.6", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:11:15Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "release", "task": "node-26.7.0", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:11:25Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "bmksglu", "area": "release", "task": "fastapi-0.160.0", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:12:25Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "release", "task": "svelte-5.56.10", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:12:35Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "release", "task": "mastodon-4.6.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:13:35Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "release", "task": "powershell-7.6.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:13:45Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "release", "task": "node-26.7.0", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:14:46Z", "wf": "confirm-claude.yml", "arm": "gateway", "org": "bmksglu", "area": "release", "task": "godot-3.6.3-stable", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:14:56Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "release", "task": "svelte-5.56.10", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:16:05Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "release", "task": "powershell-7.6.7", "model": "claude-sonnet-5-5", "rc": 0}
+{"t": "2026-11-01T15:17:15Z", "wf": "confirm-claude.yml", "arm": "direct-ts", "org": "mert2", "area": "release", "task": "godot-3.6.3-stable", "model": "claude-sonnet-5-5", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1090, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49910}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1090, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49910}"}
+{"t": "2026-11-01T15:42:19Z", "wf": "confirm-review.yml", "arm": "gateway", "org": "bmksglu", "repo": "apache/kafka", "pr": 23804, "model": "claude-sonnet-5-5", "rc": 1}
+{"t": "2026-11-01T15:43:29Z", "wf": "confirm-review.yml", "arm": "gateway", "org": "bmksglu", "repo": "elastic/elasticsearch", "pr": 163282, "model": "claude-sonnet-5-5", "rc": 1}
+{"t": "2026-11-01T15:44:38Z", "wf": "confirm-review.yml", "arm": "gateway", "org": "bmksglu", "repo": "zed-industries/zed", "pr": 65129, "model": "claude-sonnet-5-5", "rc": 1}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1090, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49910}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1094, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49906}"}
+{"t": "2026-11-01T15:47:16Z", "wf": "confirm-review.yml", "repo": "apache/kafka", "pr": 23804, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:49:36Z", "wf": "confirm-review.yml", "repo": "zed-industries/zed", "pr": 65129, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:49:45Z", "wf": "confirm-review.yml", "repo": "apache/kafka", "pr": 23804, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:50:47Z", "wf": "confirm-review.yml", "repo": "apache/kafka", "pr": 23911, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:50:57Z", "wf": "confirm-review.yml", "repo": "elastic/elasticsearch", "pr": 163282, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:51:56Z", "wf": "confirm-review.yml", "repo": "microsoft/vscode", "pr": 342878, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:52:05Z", "wf": "confirm-review.yml", "repo": "zed-industries/zed", "pr": 65129, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:53:06Z", "wf": "confirm-review.yml", "repo": "elastic/elasticsearch", "pr": 163196, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:53:16Z", "wf": "confirm-review.yml", "repo": "apache/kafka", "pr": 23911, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:54:16Z", "wf": "confirm-review.yml", "repo": "kubernetes/kubernetes", "pr": 140611, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:54:25Z", "wf": "confirm-review.yml", "repo": "microsoft/vscode", "pr": 342878, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:55:26Z", "wf": "confirm-review.yml", "repo": "microsoft/vscode", "pr": 343624, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:55:35Z", "wf": "confirm-review.yml", "repo": "elastic/elasticsearch", "pr": 163196, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:56:35Z", "wf": "confirm-review.yml", "repo": "zed-industries/zed", "pr": 65841, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:56:46Z", "wf": "confirm-review.yml", "repo": "kubernetes/kubernetes", "pr": 140611, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:57:47Z", "wf": "confirm-review.yml", "repo": "flutter/flutter", "pr": 190431, "model": "claude-sonnet-5-5", "arm": "gateway", "rc": 0}
+{"t": "2026-11-01T15:57:56Z", "wf": "confirm-review.yml", "repo": "microsoft/vscode", "pr": 343624, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T15:59:06Z", "wf": "confirm-review.yml", "repo": "zed-industries/zed", "pr": 65841, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"t": "2026-11-01T16:00:15Z", "wf": "confirm-review.yml", "repo": "flutter/flutter", "pr": 190431, "model": "claude-sonnet-5-5", "arm": "direct-ts", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1136, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49864}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1136, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49864}"}
+{"t": "2026-11-01T16:25:20Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "echo-3158", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:26:30Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "lo-757", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:27:40Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "zap-1587", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:27:50Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "echo-3158", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T16:28:50Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "echo-3131", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:29:00Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "lo-757", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T16:30:01Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "lo-778", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:30:10Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "zap-1587", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T16:31:20Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "echo-3131", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T16:32:31Z", "wf": "confirm-claude.yml", "area": "fix-ci", "task": "lo-778", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1299, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49701}"}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1299, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49701}"}
+{"t": "2026-11-01T16:57:36Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "fiber-3988", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:58:45Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "echo-2977", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T16:59:55Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "lo-799", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T17:00:06Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "fiber-3988", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T17:01:05Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "echo-3060", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T17:01:15Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "echo-2977", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T17:02:15Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "lo-796", "model": "claude-opus-5-5", "arm": "gateway", "org": "mert2", "rc": 0}
+{"t": "2026-11-01T17:02:25Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "lo-799", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T17:03:35Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "echo-3060", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"t": "2026-11-01T17:04:45Z", "wf": "confirm-claude.yml", "area": "fix-mention", "task": "lo-796", "model": "claude-opus-5-5", "arm": "direct-ts", "org": "bmksglu", "rc": 0}
+{"guard": "quota 200 {\"mode\": \"full\", \"state\": \"warned\", \"used\": 1348, \"limit\": 1000, \"granted\": 50000, \"pack_left\": 0, \"used_paused\": 0, \"reset_at\": 1796083200000, \"left\": 49652}"}
+{"done":true}
