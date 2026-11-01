@@ -9,7 +9,8 @@ import json, os, shutil, subprocess, sys
 area, tid = sys.argv[1], sys.argv[2]
 control = len(sys.argv) > 3 and sys.argv[3] == "control"
 tmp = os.environ["RUNNER_TEMP"]
-t = next(x for x in json.load(open(f"confirm-1101/tasks/{area}.json"))["tasks"] if x["id"] == tid)
+from taskdb import find  # noqa: E402
+t = find(area, tid)
 
 
 def sh(*a, cwd=None, out=False):

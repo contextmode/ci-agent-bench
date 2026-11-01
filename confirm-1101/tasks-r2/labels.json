@@ -1,0 +1,561 @@
+{
+ "area": "labels",
+ "seed": "confirm-1101-r2",
+ "n": 16,
+ "used_r1_excluded": [
+  "flutter-194705",
+  "godot-124050",
+  "godot-124254",
+  "godot-124534",
+  "rust-163852",
+  "rust-164694",
+  "rust-164736",
+  "typescript-64677",
+  "vscode-340116",
+  "vscode-340427"
+ ],
+ "selected": [
+  "go-82053",
+  "flutter-195150",
+  "typescript-64630",
+  "pytorch-201802",
+  "home-assistant-184104",
+  "tauri-16214",
+  "home-assistant-187849",
+  "ruff-29395",
+  "go-81990",
+  "neovim-42339",
+  "flutter-194151",
+  "ruff-29343",
+  "ruff-29670",
+  "neovim-42255",
+  "tauri-16319",
+  "zed-66153"
+ ],
+ "tasks": [
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "number": 82053,
+   "created": "2026-10-07T07:32:43Z",
+   "title": "cmd/link/internal/ppc64: genpltstub panics instead of reporting a link error when the caller symbol has no data",
+   "body_len": 1919,
+   "truth": [
+    "FixPending",
+    "arch-ppc64x"
+   ],
+   "id": "go-82053",
+   "labeler": "dmitshur",
+   "url": "https://github.com/golang/go/issues/82053",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 1,
+   "selected": true
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 195150,
+   "created": "2026-10-23T10:20:13Z",
+   "title": "[web] Platform views render offscreen when host document has dir=\"rtl\"",
+   "body_len": 3694,
+   "truth": [
+    "P2",
+    "a: platform-views",
+    "has reproducible steps",
+    "platform-web"
+   ],
+   "id": "flutter-195150",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/195150",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 2,
+   "selected": true
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "number": 64630,
+   "created": "2026-10-05T07:52:25Z",
+   "title": "[api] Static and callback module resolutions drop resolvedUsingTsExtension, raising TS2876",
+   "body_len": 4414,
+   "truth": [
+    "Bug"
+   ],
+   "id": "typescript-64630",
+   "labeler": "RyanCavanaugh",
+   "url": "https://github.com/microsoft/TypeScript/issues/64630",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 3,
+   "selected": true
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 201802,
+   "created": "2026-10-23T02:55:01Z",
+   "title": "CUDA illegal memory access in aten::binary_cross_entropy.out with shape-mismatched target/weight",
+   "body_len": 1338,
+   "truth": [
+    "module: cuda",
+    "module: error checking",
+    "module: loss",
+    "module: sanitizers"
+   ],
+   "id": "pytorch-201802",
+   "labeler": "malfet",
+   "url": "https://github.com/pytorch/pytorch/issues/201802",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 4,
+   "selected": true
+  },
+  {
+   "repo": "home-assistant/core",
+   "stars": 91887,
+   "number": 184104,
+   "created": "2026-10-02T23:10:06Z",
+   "title": "Enphase Envoy: \u201cReserve battery level\u201d incorrectly marked as device_class battery",
+   "body_len": 1607,
+   "truth": [
+    "integration: enphase_envoy"
+   ],
+   "id": "home-assistant-184104",
+   "labeler": "mib1185",
+   "url": "https://github.com/home-assistant/core/issues/184104",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 5,
+   "selected": true
+  },
+  {
+   "repo": "tauri-apps/tauri",
+   "stars": 112396,
+   "number": 16214,
+   "created": "2026-10-06T00:46:18Z",
+   "title": "[bug] `Listener::once` panics when a queued emit is replayed before its queued unlisten",
+   "body_len": 1838,
+   "truth": [
+    "type: bug"
+   ],
+   "id": "tauri-16214",
+   "labeler": "FabianLars",
+   "url": "https://github.com/tauri-apps/tauri/issues/16214",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 6,
+   "selected": true
+  },
+  {
+   "repo": "home-assistant/core",
+   "stars": 91887,
+   "number": 187849,
+   "created": "2026-10-21T13:11:13Z",
+   "title": "Hive Unknown Error",
+   "body_len": 737,
+   "truth": [
+    "integration: hive"
+   ],
+   "id": "home-assistant-187849",
+   "labeler": "mib1185",
+   "url": "https://github.com/home-assistant/core/issues/187849",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 7,
+   "selected": true
+  },
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29395,
+   "created": "2026-10-14T20:17:55Z",
+   "title": "`PLR5501` and `PLW0120` safe fixes delete a trailing comment on the `else:` line",
+   "body_len": 1929,
+   "truth": [
+    "bug"
+   ],
+   "id": "ruff-29395",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29395",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 8,
+   "selected": true
+  },
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "number": 81990,
+   "created": "2026-10-04T07:02:08Z",
+   "title": "cmd/compile: linker panic \"R_USEIFACE ... references type:.eqfunc... which is not a type or itab\" with reflect.TypeFor[T]().Comparable()",
+   "body_len": 2005,
+   "truth": [
+    "FixPending",
+    "compiler/runtime"
+   ],
+   "id": "go-81990",
+   "labeler": "dmitshur",
+   "url": "https://github.com/golang/go/issues/81990",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 9,
+   "selected": true
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42339,
+   "created": "2026-10-14T00:21:19Z",
+   "title": "ftplugin(ps1, bash, zsh): term_start is used",
+   "body_len": 1063,
+   "truth": [
+    "has:vim-patch"
+   ],
+   "id": "neovim-42339",
+   "labeler": "zeertzjq",
+   "url": "https://github.com/neovim/neovim/issues/42339",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 10,
+   "selected": true
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 194151,
+   "created": "2026-10-11T01:00:36Z",
+   "title": "[fml] fml::Status keeps a std::string_view, so a status built from a runtime string dangles",
+   "body_len": 2985,
+   "truth": [
+    "P2",
+    "engine"
+   ],
+   "id": "flutter-194151",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/194151",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 11,
+   "selected": true
+  },
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29343,
+   "created": "2026-10-14T00:07:09Z",
+   "title": "PLE0643 (potential-index-error) counts a starred element of a list or tuple literal as one item",
+   "body_len": 993,
+   "truth": [
+    "bug"
+   ],
+   "id": "ruff-29343",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29343",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 12,
+   "selected": true
+  },
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29670,
+   "created": "2026-10-23T07:54:40Z",
+   "title": "manylinux_2_39_x86_64 isn't supported",
+   "body_len": 745,
+   "truth": [
+    "question"
+   ],
+   "id": "ruff-29670",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29670",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 13,
+   "selected": true
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42255,
+   "created": "2026-10-06T09:55:29Z",
+   "title": "ui2: ruler/tabline [+] modified indicator does not clear on :write when laststatus=0",
+   "body_len": 2906,
+   "truth": [
+    "display",
+    "ui"
+   ],
+   "id": "neovim-42255",
+   "labeler": "justinmk",
+   "url": "https://github.com/neovim/neovim/issues/42255",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 14,
+   "selected": true
+  },
+  {
+   "repo": "tauri-apps/tauri",
+   "stars": 112396,
+   "number": 16319,
+   "created": "2026-10-17T09:35:32Z",
+   "title": "[bug] tauri-build watches `./capabilities` even when it doesn't exist, so apps without it rebuild on every `cargo build`",
+   "body_len": 4963,
+   "truth": [
+    "type: bug"
+   ],
+   "id": "tauri-16319",
+   "labeler": "FabianLars",
+   "url": "https://github.com/tauri-apps/tauri/issues/16319",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 15,
+   "selected": true
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 66153,
+   "created": "2026-10-26T10:37:48Z",
+   "title": "Rust: required-features defined for [[example]] or [[bench]] does not work",
+   "body_len": 1834,
+   "truth": [
+    "area:languages/rust"
+   ],
+   "id": "zed-66153",
+   "labeler": "dinocosta",
+   "url": "https://github.com/zed-industries/zed/issues/66153",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 16,
+   "selected": true
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42300,
+   "created": "2026-10-11T08:09:53Z",
+   "title": "use `$XDG_*/nvim` instead of `$XDG_*/nvim-data` on Windows",
+   "body_len": 236,
+   "truth": [
+    "environment",
+    "platform:windows"
+   ],
+   "id": "neovim-42300",
+   "labeler": "glepnir",
+   "url": "https://github.com/neovim/neovim/issues/42300",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 17,
+   "selected": false
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 65434,
+   "created": "2026-10-10T06:23:38Z",
+   "title": "Can not log in to newly registered GitHub account",
+   "body_len": 1590,
+   "truth": [
+    "area:zed account"
+   ],
+   "id": "zed-65434",
+   "labeler": "smitbarmase",
+   "url": "https://github.com/zed-industries/zed/issues/65434",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 18,
+   "selected": false
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 65323,
+   "created": "2026-10-08T09:38:24Z",
+   "title": "`zed <path>:<line>` from a WSL shell opens an empty buffer with a backslash in the path",
+   "body_len": 2541,
+   "truth": [
+    "area:cli",
+    "meta:awesome",
+    "meta:regression",
+    "platform:windows/wsl"
+   ],
+   "id": "zed-65323",
+   "labeler": "smitbarmase",
+   "url": "https://github.com/zed-industries/zed/issues/65323",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 19,
+   "selected": false
+  },
+  {
+   "repo": "electron/electron",
+   "stars": 123688,
+   "number": 54841,
+   "created": "2026-10-12T01:07:46Z",
+   "title": "Overlay icons set using setOverlayIcon do not survive Windows Explorer/shell restart",
+   "body_len": 1599,
+   "truth": [
+    "44-x-y",
+    "blocked/need-repro",
+    "bug :beetle:",
+    "platform/windows"
+   ],
+   "id": "electron-54841",
+   "labeler": "jkleinsc",
+   "url": "https://github.com/electron/electron/issues/54841",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 20,
+   "selected": false
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 202507,
+   "created": "2026-10-29T05:51:12Z",
+   "title": "[ROCm] FlyDSL HTI GEMM can produce incorrect results under concurrent memory traffic",
+   "body_len": 3194,
+   "truth": [
+    "actionable",
+    "module: correctness (silent)",
+    "module: inductor",
+    "module: rocm",
+    "oncall: pt2"
+   ],
+   "id": "pytorch-202507",
+   "labeler": "XiaobingSuper",
+   "url": "https://github.com/pytorch/pytorch/issues/202507",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 21,
+   "selected": false
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 201803,
+   "created": "2026-10-23T02:57:37Z",
+   "title": "CUDA illegal memory access in aten::reflection_pad2d_backward with 0-size grad_output and overflowed padding (~2^55)",
+   "body_len": 1278,
+   "truth": [
+    "module: cuda",
+    "module: edge cases",
+    "module: error checking",
+    "module: padding",
+    "topic: fuzzer"
+   ],
+   "id": "pytorch-201803",
+   "labeler": "malfet",
+   "url": "https://github.com/pytorch/pytorch/issues/201803",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 22,
+   "selected": false
+  },
+  {
+   "repo": "electron/electron",
+   "stars": 123688,
+   "number": 55111,
+   "created": "2026-10-19T14:38:20Z",
+   "title": "file:// worker requests bypass protocol.handle and webRequest.onBeforeRequest",
+   "body_len": 2280,
+   "truth": [
+    "44-x-y",
+    "45-x-y",
+    "46-x-y",
+    "bug :beetle:",
+    "has-repro-gist",
+    "platform/all"
+   ],
+   "id": "electron-55111",
+   "labeler": "deepak1556",
+   "url": "https://github.com/electron/electron/issues/55111",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 23,
+   "selected": false
+  },
+  {
+   "repo": "astral-sh/uv",
+   "stars": 91414,
+   "number": 22488,
+   "created": "2026-10-12T09:21:22Z",
+   "title": "Naming of uv not found as a cmdlet, function, scriptfile, executable program",
+   "body_len": 761,
+   "truth": [
+    "question"
+   ],
+   "id": "uv-22488",
+   "labeler": "charliermarsh",
+   "url": "https://github.com/astral-sh/uv/issues/22488",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 24,
+   "selected": false
+  },
+  {
+   "repo": "astral-sh/uv",
+   "stars": 91414,
+   "number": 22513,
+   "created": "2026-10-13T13:27:55Z",
+   "title": "Fix broken .netrc documentation link",
+   "body_len": 425,
+   "truth": [
+    "documentation"
+   ],
+   "id": "uv-22513",
+   "labeler": "charliermarsh",
+   "url": "https://github.com/astral-sh/uv/issues/22513",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 25,
+   "selected": false
+  },
+  {
+   "repo": "oven-sh/bun",
+   "stars": 96494,
+   "number": 46530,
+   "created": "2026-10-22T18:06:43Z",
+   "title": "bun check 1.4.4: nested XState state value on generic snapshot resolves to undefined (TS2322, tsc and 1.4.3 accept)",
+   "body_len": 2378,
+   "truth": [
+    "typescript"
+   ],
+   "id": "bun-46530",
+   "labeler": "alii",
+   "url": "https://github.com/oven-sh/bun/issues/46530",
+   "origin": "pool",
+   "valid": true,
+   "validated": true,
+   "cand_seq": 26,
+   "selected": false
+  }
+ ]
+}

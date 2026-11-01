@@ -6,7 +6,8 @@ import json, os, subprocess, sys
 
 kind, tid = sys.argv[1], sys.argv[2]
 area = {"labels": "labels", "release": "release", "mention-prompt": "fix-mention"}[kind]
-t = next(x for x in json.load(open(f"confirm-1101/tasks/{area}.json"))["tasks"] if x["id"] == tid)
+from taskdb import find  # noqa: E402
+t = find(area, tid)
 tmp = os.environ.get("RUNNER_TEMP", "/tmp")
 env = os.environ.get("GITHUB_ENV")
 if kind == "labels":

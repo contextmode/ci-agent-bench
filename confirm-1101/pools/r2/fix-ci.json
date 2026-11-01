@@ -1,0 +1,1055 @@
+{
+ "pool": "fix-ci",
+ "seed": "confirm-1101",
+ "rules": "Build pools/fix-ci.json and pools/fix-mention.json (pre-registered; no model is called; no regex).\n\nRun: python3 build_fix.py            (re-run reads pools/cache/, same output)\nSource: GitHub API through `gh` only (GraphQL search). Rules, fixed before any PR was read:\n  F1  Repos: the REPOS table below. A repo is used only if it has >= 20000 stars and is not archived.\n  F2  Merged PRs, merged 2026-01-01..2026-10-31, title contains \"fix\" (search `fix in:title`), author is human\n      (common.is_human), merge commit exists and has exactly 1 parent (squash or rebase merge, so merge^ is the base).\n  F3  Files: at most 12 changed files; every file is a code file of the repo language, a test file, or a docs file\n      (.md .rst .txt). At least 1 test file and 1-3 source code files. Source change (additions+deletions) is 3 to 150 lines.\n  F4  Exclusions: the merge commit (full or first 8 chars) or `owner/repo#N` or `/pull/N` of the repo appears in any text\n      file under lab/, reproduce/, docs/ or confirm-1101/ (except this pools folder's output) = used before.\n  F5  Pool \"mention\": the PR closes at least one issue (closingIssuesReferences) whose body is not empty. Pool \"ci\": all other\n      PRs that pass F2-F4. (The two pools never share a PR.)\n  F6  Order: per repo, draw order sha256(\"confirm-1101|<repo>|<number>\") lowest first, at most 4 kept per repo;\n      common.round_robin-style interleave over repos in draw order of the repo name.\nTest command per task = the repo's template with the changed test files (or their Go package dirs).\nWhether a task is valid (baseline fails, control passes) is decided later by the free validation runs, not here.\n  F7  Setup revision S1 (2026-11-01, after the first free validation, before any new paid run): round 1 showed setup\n      errors, not task faults (poetry: no 'responses'; pydantic: 'thread_unsafe' marker from pytest-run-parallel,\n      no pytz/jsonschema; scrapy: no pytest-twisted/pyftpdlib; commander.js and immer: jest is not their runner).\n      Only the install and test templates changed. `python3 build_fix.py --retemplate` writes them into the existing\n      pools; the candidates and their draw order are not touched (a new search would now exclude every drawn PR by F4,\n      because tasks/ names them).",
+ "repos": [
+  {
+   "repo": "gofiber/fiber",
+   "language": "go",
+   "stars": 40238,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:37Z",
+   "counts": {
+    "found": 85,
+    "human_1parent": 2,
+    "files_ok": 1,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "gorilla/websocket",
+   "language": "go",
+   "stars": 24882,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:27Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "httpie/cli",
+   "language": "python",
+   "stars": 38687,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:27Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "immerjs/immer",
+   "language": "node",
+   "stars": 29000,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:29Z",
+   "counts": {
+    "found": 28,
+    "human_1parent": 25,
+    "files_ok": 17,
+    "unused": 11
+   }
+  },
+  {
+   "repo": "labstack/echo",
+   "language": "go",
+   "stars": 32788,
+   "stars_fetched_at": "2026-11-01T12:29:28Z",
+   "data_fetched_at": "2026-11-01T12:29:34Z",
+   "counts": {
+    "found": 46,
+    "human_1parent": 42,
+    "files_ok": 24,
+    "unused": 16
+   }
+  },
+  {
+   "repo": "mochajs/mocha",
+   "language": "node",
+   "stars": 22914,
+   "stars_fetched_at": "2026-11-01T12:29:28Z",
+   "data_fetched_at": "2026-11-01T12:29:38Z",
+   "counts": {
+    "found": 88,
+    "human_1parent": 73,
+    "files_ok": 18,
+    "unused": 12
+   }
+  },
+  {
+   "repo": "pydantic/pydantic",
+   "language": "python",
+   "stars": 29260,
+   "stars_fetched_at": "2026-11-01T12:29:31Z",
+   "data_fetched_at": "2026-11-01T12:29:46Z",
+   "counts": {
+    "found": 133,
+    "human_1parent": 132,
+    "files_ok": 24,
+    "unused": 17
+   }
+  },
+  {
+   "repo": "python-poetry/poetry",
+   "language": "python",
+   "stars": 34325,
+   "stars_fetched_at": "2026-11-01T12:29:36Z",
+   "data_fetched_at": "2026-11-01T12:29:46Z",
+   "counts": {
+    "found": 76,
+    "human_1parent": 76,
+    "files_ok": 40,
+    "unused": 32
+   }
+  },
+  {
+   "repo": "samber/lo",
+   "language": "go",
+   "stars": 21450,
+   "stars_fetched_at": "2026-11-01T12:29:38Z",
+   "data_fetched_at": "2026-11-01T12:29:41Z",
+   "counts": {
+    "found": 21,
+    "human_1parent": 21,
+    "files_ok": 7,
+    "unused": 1
+   }
+  },
+  {
+   "repo": "scrapy/scrapy",
+   "language": "python",
+   "stars": 65151,
+   "stars_fetched_at": "2026-11-01T12:29:40Z",
+   "data_fetched_at": "2026-11-01T12:29:50Z",
+   "counts": {
+    "found": 88,
+    "human_1parent": 88,
+    "files_ok": 34,
+    "unused": 26
+   }
+  },
+  {
+   "repo": "sirupsen/logrus",
+   "language": "go",
+   "stars": 25764,
+   "stars_fetched_at": "2026-11-01T12:29:42Z",
+   "data_fetched_at": "2026-11-01T12:29:43Z",
+   "counts": {
+    "found": 13,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "spf13/viper",
+   "language": "go",
+   "stars": 30494,
+   "stars_fetched_at": "2026-11-01T12:29:46Z",
+   "data_fetched_at": "2026-11-01T12:29:48Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "tj/commander.js",
+   "language": "node",
+   "stars": 28445,
+   "stars_fetched_at": "2026-11-01T12:29:48Z",
+   "data_fetched_at": "2026-11-01T12:29:50Z",
+   "counts": {
+    "found": 9,
+    "human_1parent": 9,
+    "files_ok": 3,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "uber-go/zap",
+   "language": "go",
+   "stars": 24683,
+   "stars_fetched_at": "2026-11-01T12:29:49Z",
+   "data_fetched_at": "2026-11-01T12:29:51Z",
+   "counts": {
+    "found": 4,
+    "human_1parent": 4,
+    "files_ok": 4,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "urfave/cli",
+   "language": "go",
+   "stars": 24307,
+   "stars_fetched_at": "2026-11-01T12:29:50Z",
+   "data_fetched_at": "2026-11-01T12:30:00Z",
+   "counts": {
+    "found": 96,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  }
+ ],
+ "count": 41,
+ "candidates": [
+  {
+   "id": "poetry-11027",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 11027,
+   "title": "fix: refuse to write files outside the target directory during sdist extraction",
+   "merged_at": "2026-08-29T16:14:40Z",
+   "url": "https://github.com/python-poetry/poetry/pull/11027",
+   "sha": "812a81670bdb2e67f4e4ce3665f333cea2546556",
+   "lang": "python",
+   "src": [
+    "src/poetry/utils/helpers.py"
+   ],
+   "tests": [
+    "tests/utils/test_helpers.py"
+   ],
+   "src_lines": 128,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/utils/test_helpers.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3135",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3135,
+   "title": "fix(middleware): reject empty tokens in CSRF validation",
+   "merged_at": "2026-10-22T22:44:02Z",
+   "url": "https://github.com/labstack/echo/pull/3135",
+   "sha": "f9d7e77210f87dd4212cc257dac7090fbf70b721",
+   "lang": "go",
+   "src": [
+    "middleware/csrf.go"
+   ],
+   "tests": [
+    "middleware/csrf_test.go"
+   ],
+   "src_lines": 3,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware"
+  },
+  {
+   "id": "lo-802",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 802,
+   "title": "style: fix linter",
+   "merged_at": "2026-02-16T14:42:42Z",
+   "url": "https://github.com/samber/lo/pull/802",
+   "sha": "34e2ec595d3a913ad57eb26cdd0edad0585a902c",
+   "lang": "go",
+   "src": [
+    "it/intersect.go"
+   ],
+   "tests": [
+    "benchmark/seq_benchmark_test.go",
+    "it/lo_test.go"
+   ],
+   "src_lines": 4,
+   "install": "go mod download",
+   "test": "go test -count=1 ./benchmark ./it"
+  },
+  {
+   "id": "scrapy-8296",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8296,
+   "title": "Fix the fast stop hanging with a download in flight on asyncio.",
+   "merged_at": "2026-10-09T12:39:11Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8296",
+   "sha": "03b2b7b25a8d5b94794036ebc3607f3c69987f39",
+   "lang": "python",
+   "src": [
+    "scrapy/core/downloader/__init__.py"
+   ],
+   "tests": [
+    "tests/test_core_downloader.py"
+   ],
+   "src_lines": 3,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_core_downloader.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1205",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1205,
+   "title": "fix: improve higher order type inference for WritableDraft",
+   "merged_at": "2026-05-06T13:39:56Z",
+   "url": "https://github.com/immerjs/immer/pull/1205",
+   "sha": "7390d6c3ae8b54df165c003b14b088a085950f76",
+   "lang": "node",
+   "src": [
+    "src/types/types-external.ts"
+   ],
+   "tests": [
+    "__tests__/produce.ts"
+   ],
+   "src_lines": 17,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/produce.ts"
+  },
+  {
+   "id": "poetry-10885",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10885,
+   "title": "fix `poetry update <dep>` where <dep> is a transitive dependency",
+   "merged_at": "2026-05-08T15:15:32Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10885",
+   "sha": "409c83cb91d77eedee8dfa85ca9623748baa8c7e",
+   "lang": "python",
+   "src": [
+    "src/poetry/console/commands/update.py"
+   ],
+   "tests": [
+    "tests/console/commands/test_update.py"
+   ],
+   "src_lines": 10,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/console/commands/test_update.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3157",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3157,
+   "title": "fix(router): grow PathValues for contexts created before a route with more params",
+   "merged_at": "2026-10-06T02:52:10Z",
+   "url": "https://github.com/labstack/echo/pull/3157",
+   "sha": "4f7bea5d2ad253d2d0fddb1382ae25be040a3d8b",
+   "lang": "go",
+   "src": [
+    "router.go"
+   ],
+   "tests": [
+    "echo_test.go",
+    "router_test.go"
+   ],
+   "src_lines": 13,
+   "install": "go mod download",
+   "test": "go test -count=1 ."
+  },
+  {
+   "id": "scrapy-7441",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7441,
+   "title": "Small download handler fixes and improvements",
+   "merged_at": "2026-04-21T13:27:17Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7441",
+   "sha": "27092b2cb703f2910b0a255a1b8250623999e12c",
+   "lang": "python",
+   "src": [
+    "scrapy/core/downloader/handlers/_httpx.py",
+    "scrapy/core/http2/protocol.py",
+    "scrapy/core/http2/stream.py"
+   ],
+   "tests": [
+    "tests/mockserver/dns.py",
+    "tests/mockserver/http_base.py",
+    "tests/mockserver/http_resources.py",
+    "tests/test_downloader_handler_httpx.py",
+    "tests/test_downloader_handler_twisted_http10.py",
+    "tests/test_downloader_handler_twisted_http2.py",
+    "tests/test_downloader_handlers_http_base.py",
+    "tests/test_proxy_connect.py"
+   ],
+   "src_lines": 27,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/mockserver/dns.py tests/mockserver/http_base.py tests/mockserver/http_resources.py tests/test_downloader_handler_httpx.py tests/test_downloader_handler_twisted_http10.py tests/test_downloader_handler_twisted_http2.py tests/test_downloader_handlers_http_base.py tests/test_proxy_connect.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1316",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1316,
+   "title": "fix: skip nested patches for children of shifted or reordered arrays",
+   "merged_at": "2026-10-20T15:13:42Z",
+   "url": "https://github.com/immerjs/immer/pull/1316",
+   "sha": "fee2c4fa1585d5131fc28a991853c692647632f7",
+   "lang": "node",
+   "src": [
+    "src/plugins/patches.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 12,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/base.js"
+  },
+  {
+   "id": "poetry-10801",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10801,
+   "title": "fix: retry upload after package registration instead of raising",
+   "merged_at": "2026-04-03T04:41:26Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10801",
+   "sha": "5cff2a1c736c42fddc6612f968d28fd7efd06984",
+   "lang": "python",
+   "src": [
+    "src/poetry/publishing/uploader.py"
+   ],
+   "tests": [
+    "tests/publishing/test_uploader.py"
+   ],
+   "src_lines": 13,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/publishing/test_uploader.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3011",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3011,
+   "title": "fix(static): reject encoded path separators that bypass route-level middleware (v4 backport)",
+   "merged_at": "2026-06-14T16:15:53Z",
+   "url": "https://github.com/labstack/echo/pull/3011",
+   "sha": "c3fa2a27ff92b2b8db360de614f999ef1da24725",
+   "lang": "go",
+   "src": [
+    "echo_fs.go",
+    "internal/pathutil/pathutil.go",
+    "middleware/static.go"
+   ],
+   "tests": [
+    "echo_fs_encoded_separator_test.go",
+    "echo_fs_test.go",
+    "internal/pathutil/pathutil_test.go",
+    "middleware/static_encoded_separator_test.go",
+    "middleware/static_test.go"
+   ],
+   "src_lines": 56,
+   "install": "go mod download",
+   "test": "go test -count=1 . ./internal/pathutil ./middleware"
+  },
+  {
+   "id": "scrapy-7367",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7367,
+   "title": "fixing oversight from #7036",
+   "merged_at": "2026-03-27T10:38:45Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7367",
+   "sha": "5561aaec1d68384cbcea2e19a564e0ba499eb855",
+   "lang": "python",
+   "src": [
+    "scrapy/http/request/__init__.py"
+   ],
+   "tests": [
+    "tests/test_http_request.py"
+   ],
+   "src_lines": 8,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_http_request.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1325",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1325,
+   "title": "fix: avoid endless iteration in current Set snapshots",
+   "merged_at": "2026-10-20T14:36:22Z",
+   "url": "https://github.com/immerjs/immer/pull/1325",
+   "sha": "d53457f0818478722da6239180c2f9b128bc5d13",
+   "lang": "node",
+   "src": [
+    "src/core/current.ts"
+   ],
+   "tests": [
+    "__tests__/current.js"
+   ],
+   "src_lines": 8,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/current.js"
+  },
+  {
+   "id": "poetry-10805",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10805,
+   "title": "fix: reset Indicator.CONTEXT on exception with try/finally",
+   "merged_at": "2026-03-31T16:15:07Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10805",
+   "sha": "b8383e3cda4e7336eb9048b1e7388b5b914a4653",
+   "lang": "python",
+   "src": [
+    "src/poetry/puzzle/provider.py"
+   ],
+   "tests": [
+    "tests/puzzle/test_provider.py"
+   ],
+   "src_lines": 7,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/puzzle/test_provider.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3094",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3094,
+   "title": "fix(rfc9457): do not mutate a shared ProblemError",
+   "merged_at": "2026-09-11T05:12:32Z",
+   "url": "https://github.com/labstack/echo/pull/3094",
+   "sha": "df5edd9146e40342726d71cbb71300b7fea096d0",
+   "lang": "go",
+   "src": [
+    "rfc9457.go"
+   ],
+   "tests": [
+    "rfc9457_test.go"
+   ],
+   "src_lines": 20,
+   "install": "go mod download",
+   "test": "go test -count=1 ."
+  },
+  {
+   "id": "scrapy-7663",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7663,
+   "title": "Fix to LocalCache with limit=0 still stores items rather than disabling the cache",
+   "merged_at": "2026-06-29T16:37:06Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7663",
+   "sha": "6591cb756c16bdb0ce85425071fea84a7cddaf53",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/datatypes.py",
+    "scrapy/utils/signal.py"
+   ],
+   "tests": [
+    "tests/test_resolver.py",
+    "tests/test_utils_datatypes.py"
+   ],
+   "src_lines": 12,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_resolver.py tests/test_utils_datatypes.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1314",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1314,
+   "title": "fix: draft relocated base objects at previously assigned indices in array-methods plugin",
+   "merged_at": "2026-10-21T06:13:06Z",
+   "url": "https://github.com/immerjs/immer/pull/1314",
+   "sha": "4d37e43690e1150f7e2830127fc14bec279a7e66",
+   "lang": "node",
+   "src": [
+    "src/core/proxy.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 7,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/base.js"
+  },
+  {
+   "id": "poetry-11025",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 11025,
+   "title": "refactor: fix confusing method name",
+   "merged_at": "2026-08-29T13:50:12Z",
+   "url": "https://github.com/python-poetry/poetry/pull/11025",
+   "sha": "000b7860cf42245f083037f2f2df25e970683827",
+   "lang": "python",
+   "src": [
+    "src/poetry/repositories/http_repository.py"
+   ],
+   "tests": [
+    "tests/repositories/fixtures/pypi.org/generate.py",
+    "tests/repositories/test_legacy_repository.py"
+   ],
+   "src_lines": 8,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/repositories/fixtures/pypi.org/generate.py tests/repositories/test_legacy_repository.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3149",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3149,
+   "title": "fix(middleware): reject CSRF TokenLookup that produces no extractors (v4)",
+   "merged_at": "2026-10-22T22:44:07Z",
+   "url": "https://github.com/labstack/echo/pull/3149",
+   "sha": "ea608ae415708c90a206252ebaa2be41d7263e3e",
+   "lang": "go",
+   "src": [
+    "middleware/csrf.go"
+   ],
+   "tests": [
+    "middleware/csrf_test.go"
+   ],
+   "src_lines": 4,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware"
+  },
+  {
+   "id": "scrapy-7506",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7506,
+   "title": "fix open_in_browser() logic issue plus add new tests",
+   "merged_at": "2026-06-04T14:24:50Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7506",
+   "sha": "df2f3d708e1ca313380a9e28e26f752b49c2693b",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/response.py"
+   ],
+   "tests": [
+    "tests/test_utils_response.py"
+   ],
+   "src_lines": 3,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_utils_response.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1292",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1292,
+   "title": "fix: forward thisArg in the array-methods plugin",
+   "merged_at": "2026-10-02T18:04:28Z",
+   "url": "https://github.com/immerjs/immer/pull/1292",
+   "sha": "1d88550909519365967bf550c110943d922231bf",
+   "lang": "node",
+   "src": [
+    "src/plugins/arrayMethods.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 6,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/base.js"
+  },
+  {
+   "id": "poetry-10804",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10804,
+   "title": "fix: wrap string config setting values in list before iterating",
+   "merged_at": "2026-03-31T16:07:15Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10804",
+   "sha": "35eb5025dc7374db74ef26ce32a0e70f54d2e3b6",
+   "lang": "python",
+   "src": [
+    "src/poetry/installation/executor.py"
+   ],
+   "tests": [
+    "tests/installation/test_executor.py"
+   ],
+   "src_lines": 5,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/installation/test_executor.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3056",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3056,
+   "title": "fix(middleware): match gzip Content-Encoding case-insensitively",
+   "merged_at": "2026-07-23T05:02:10Z",
+   "url": "https://github.com/labstack/echo/pull/3056",
+   "sha": "79b496800f75fe4a83835719842847a9d5b25c3e",
+   "lang": "go",
+   "src": [
+    "middleware/decompress.go"
+   ],
+   "tests": [
+    "middleware/decompress_test.go"
+   ],
+   "src_lines": 10,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware"
+  },
+  {
+   "id": "scrapy-8113",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8113,
+   "title": "Fix LocalCache evicting a different key when updating an existing key",
+   "merged_at": "2026-09-10T09:19:56Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8113",
+   "sha": "a4109754c56b2ccf31d97cb21070e9fb63e3191e",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/datatypes.py"
+   ],
+   "tests": [
+    "tests/test_utils_datatypes.py"
+   ],
+   "src_lines": 5,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_utils_datatypes.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1228",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1228,
+   "title": "fix: improve DraftMap.{entries,values}() compatibility",
+   "merged_at": "2026-07-03T16:33:33Z",
+   "url": "https://github.com/immerjs/immer/pull/1228",
+   "sha": "858d0365aa292a1f2028ccac3dfa8fccfbfa75c4",
+   "lang": "node",
+   "src": [
+    "src/plugins/mapset.ts"
+   ],
+   "tests": [
+    "__tests__/map-set.js"
+   ],
+   "src_lines": 34,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/map-set.js"
+  },
+  {
+   "id": "poetry-10792",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10792,
+   "title": "installer: fix path traversal",
+   "merged_at": "2026-03-29T08:24:18Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10792",
+   "sha": "ed59537ac3709cfbdbf95d957de801c13872991a",
+   "lang": "python",
+   "src": [
+    "src/poetry/installation/wheel_installer.py"
+   ],
+   "tests": [
+    "tests/installation/test_wheel_installer.py"
+   ],
+   "src_lines": 9,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/installation/test_wheel_installer.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3067",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3067,
+   "title": "fix(middleware): reject CSRF TokenLookup that produces no extractors",
+   "merged_at": "2026-08-20T06:30:07Z",
+   "url": "https://github.com/labstack/echo/pull/3067",
+   "sha": "4ec116dc9b5bff1da7513c0dc86095d0e8ce9654",
+   "lang": "go",
+   "src": [
+    "middleware/csrf.go"
+   ],
+   "tests": [
+    "middleware/csrf_test.go"
+   ],
+   "src_lines": 4,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware"
+  },
+  {
+   "id": "scrapy-7675",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7675,
+   "title": "Fix request_to_curl() corrupting dict cookies with bytes keys/values",
+   "merged_at": "2026-06-26T19:53:33Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7675",
+   "sha": "185d6b9a20b7d0e77f4c60435d17e5072bd4d704",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/request.py"
+   ],
+   "tests": [
+    "tests/test_utils_request.py"
+   ],
+   "src_lines": 7,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_utils_request.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1216",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1216,
+   "title": "fix: remove invalid curried producer type",
+   "merged_at": "2026-05-04T16:23:49Z",
+   "url": "https://github.com/immerjs/immer/pull/1216",
+   "sha": "b40b04f789a59f7948c7e5de29ce4dc5ddca3e38",
+   "lang": "node",
+   "src": [
+    "src/types/types-external.ts"
+   ],
+   "tests": [
+    "__tests__/produce.ts"
+   ],
+   "src_lines": 6,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/produce.ts"
+  },
+  {
+   "id": "poetry-10837",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10837,
+   "title": "fix: refuse to write files outside the target directory during sdist extraction",
+   "merged_at": "2026-04-12T14:50:20Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10837",
+   "sha": "47e97340cae50d3698aac858732788861ba8dd1f",
+   "lang": "python",
+   "src": [
+    "src/poetry/utils/helpers.py"
+   ],
+   "tests": [
+    "tests/conftest.py",
+    "tests/installation/test_wheel_installer.py",
+    "tests/utils/test_helpers.py"
+   ],
+   "src_lines": 37,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/conftest.py tests/installation/test_wheel_installer.py tests/utils/test_helpers.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-2875",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 2875,
+   "title": "fix: validate Connection header in IsWebSocket() [per RFC 6455]",
+   "merged_at": "2026-01-27T10:00:04Z",
+   "url": "https://github.com/labstack/echo/pull/2875",
+   "sha": "489646e68ee14d3bdf247bbd32afba82fb7aa31a",
+   "lang": "go",
+   "src": [
+    "context.go"
+   ],
+   "tests": [
+    "context_test.go"
+   ],
+   "src_lines": 3,
+   "install": "go mod download",
+   "test": "go test -count=1 ."
+  },
+  {
+   "id": "scrapy-8222",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8222,
+   "title": "Build selectors from bytes only with parsel 1.12.0+, fixing UTF-16",
+   "merged_at": "2026-09-25T08:15:39Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8222",
+   "sha": "9d1085dd46f54269039228946767a1d70c40ba8e",
+   "lang": "python",
+   "src": [
+    "scrapy/selector/unified.py",
+    "scrapy/utils/_deps_compat.py"
+   ],
+   "tests": [
+    "tests/test_selector.py"
+   ],
+   "src_lines": 8,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_selector.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1255",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1255,
+   "title": "fix: draft relocated base refs after reverse/sort in array-methods plugin",
+   "merged_at": "2026-07-16T18:40:01Z",
+   "url": "https://github.com/immerjs/immer/pull/1255",
+   "sha": "a73672ab76b5d9fd94f278a23c6c1931a03147e5",
+   "lang": "node",
+   "src": [
+    "src/core/proxy.ts",
+    "src/plugins/arrayMethods.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 26,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/base.js"
+  },
+  {
+   "id": "poetry-11171",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 11171,
+   "title": "fix(publish): keep the dist dir a single argument when building",
+   "merged_at": "2026-10-30T16:57:44Z",
+   "url": "https://github.com/python-poetry/poetry/pull/11171",
+   "sha": "906ba21dff6f08c0df7d381a5e7879e12f6102e0",
+   "lang": "python",
+   "src": [
+    "src/poetry/console/commands/publish.py"
+   ],
+   "tests": [
+    "tests/console/commands/test_publish.py"
+   ],
+   "src_lines": 6,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/console/commands/test_publish.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3200",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3200,
+   "title": "fix: preserve v5 proxy identity after hop header stripping",
+   "merged_at": "2026-10-30T04:41:18Z",
+   "url": "https://github.com/labstack/echo/pull/3200",
+   "sha": "b118d3d3a8d32891e0415037279e02a2a8ab72b1",
+   "lang": "go",
+   "src": [
+    "middleware/proxy.go"
+   ],
+   "tests": [
+    "middleware/proxy_identity_test.go"
+   ],
+   "src_lines": 27,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware"
+  },
+  {
+   "id": "scrapy-8266",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8266,
+   "title": "Fix request_httprepr() with all headers set to None.",
+   "merged_at": "2026-10-03T12:26:49Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8266",
+   "sha": "b05336f199d60287a3ac13769cad0d8a7455aa43",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/request.py"
+   ],
+   "tests": [
+    "tests/test_utils_request.py"
+   ],
+   "src_lines": 4,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_utils_request.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1251",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1251,
+   "title": "fix: throw proper immer error when applyPatches path traverses null",
+   "merged_at": "2026-07-16T18:42:34Z",
+   "url": "https://github.com/immerjs/immer/pull/1251",
+   "sha": "e38ad71f256844bf2dc28c1120c33c930c881bb6",
+   "lang": "node",
+   "src": [
+    "src/plugins/patches.ts"
+   ],
+   "tests": [
+    "__tests__/patch.js"
+   ],
+   "src_lines": 3,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/patch.js"
+  },
+  {
+   "id": "poetry-10810",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10810,
+   "title": "fix: use removesuffix instead of rstrip for suffix stripping",
+   "merged_at": "2026-03-31T10:13:34Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10810",
+   "sha": "378c693f0e63da2c4669b2158c31ecadfa619587",
+   "lang": "python",
+   "src": [
+    "src/poetry/inspection/info.py",
+    "src/poetry/installation/chef.py"
+   ],
+   "tests": [
+    "tests/inspection/test_info.py"
+   ],
+   "src_lines": 4,
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
+   "test": "python -m pytest tests/inspection/test_info.py -p no:cacheprovider -q -n 0"
+  },
+  {
+   "id": "echo-3009",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3009,
+   "title": "fix(static): reject encoded path separator to prevent route-level auth bypass",
+   "merged_at": "2026-06-14T14:04:59Z",
+   "url": "https://github.com/labstack/echo/pull/3009",
+   "sha": "8d1ae9d3360a71672418856d58753af25f2c3986",
+   "lang": "go",
+   "src": [
+    "echo.go",
+    "internal/pathutil/pathutil.go",
+    "middleware/static.go"
+   ],
+   "tests": [
+    "echo_test.go",
+    "internal/pathutil/pathutil_test.go",
+    "middleware/static_test.go",
+    "static_encoded_separator_test.go"
+   ],
+   "src_lines": 59,
+   "install": "go mod download",
+   "test": "go test -count=1 . ./internal/pathutil ./middleware"
+  },
+  {
+   "id": "scrapy-7603",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7603,
+   "title": "Fix request_to_curl handling of verbose cookies dictionaries",
+   "merged_at": "2026-06-15T06:46:30Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7603",
+   "sha": "cfef12392a52591bf6bbb1d3c5dc57175913a63b",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/request.py"
+   ],
+   "tests": [
+    "tests/test_utils_request.py"
+   ],
+   "src_lines": 10,
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
+   "test": "python -m pytest tests/test_utils_request.py -p no:cacheprovider -q"
+  },
+  {
+   "id": "immer-1341",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1341,
+   "title": "fix: snapshot array length before optimized filter callbacks",
+   "merged_at": "2026-10-21T14:06:04Z",
+   "url": "https://github.com/immerjs/immer/pull/1341",
+   "sha": "b671cdac2af23e486edd38c040065a228eb0e651",
+   "lang": "node",
+   "src": [
+    "src/plugins/arrayMethods.ts"
+   ],
+   "tests": [
+    "__tests__/array-methods-filter-length.js"
+   ],
+   "src_lines": 3,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx vitest run __tests__/array-methods-filter-length.js"
+  }
+ ]
+}

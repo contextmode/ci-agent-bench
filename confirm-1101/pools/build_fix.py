@@ -34,7 +34,8 @@ from datetime import datetime, timezone
 
 START = datetime(2026, 1, 1, tzinfo=timezone.utc)
 END = datetime(2026, 10, 31, 23, 59, 59, tzinfo=timezone.utc)
-PER_REPO = 4
+PER_REPO = int(os.environ.get("PER_REPO", "4"))  # round 2: PER_REPO=10 POOL_OUT=pools/r2 (F8)
+POOL_OUT = os.environ.get("POOL_OUT", "")
 NODE_INSTALL = "npm install --no-audit --no-fund --loglevel=error"
 PY_TEST = "python -m pytest {files} -p no:cacheprovider -q"
 REPOS = {
@@ -206,7 +207,7 @@ def main():
     repos = sorted((i for i, _ in results), key=lambda r: r["repo"].lower())
     for kind in pools:
         cands = interleave(pools[kind])
-        write_pool(os.path.join(POOLS, f"fix-{kind}.json"), f"fix-{kind}", __doc__, repos, cands)
+        write_pool(os.path.join(POOLS, POOL_OUT, f"fix-{kind}.json"), f"fix-{kind}", __doc__, repos, cands)
         print(kind, len(cands), "candidates;", {r: len(v) for r, v in pools[kind].items()})
     for i in repos:
         print(i["repo"], i["stars"], i.get("counts"), i.get("skipped", ""))
