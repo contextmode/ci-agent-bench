@@ -20,6 +20,14 @@ def decode(raw):
         except Exception: continue
         if e.get("type") == "cm_dry_run": txt += e.get("text", "")
         elif e.get("type") == "content_block_delta": txt += (e.get("delta") or {}).get("text", "")
+        elif e.get("type") == "response.output_text.delta": txt += e.get("delta", "")   # Codex /v1/responses stream
+    if not txt:
+        try:
+            j = json.loads(raw)
+            for c in (j.get("content") or []): txt += c.get("text", "")
+            for o in (j.get("output") or []):
+                for c in (o.get("content") or []): txt += c.get("text", "")
+        except Exception: pass
     if not txt.startswith("cm-dry-run:"): return None
     return json.loads(base64.b64decode(txt[len("cm-dry-run:"):]))
 
