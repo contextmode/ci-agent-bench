@@ -115,6 +115,7 @@ jobs:
             release)
               [ -f "$RUNNER_TEMP/repo/release-notes.md" ] && cp "$RUNNER_TEMP/repo/release-notes.md" out/release-notes.md || true ;;
           esac
+          cd "$GITHUB_WORKSPACE"
           [ -f "$RUNNER_TEMP/out.json" ] && cp "$RUNNER_TEMP/out.json" out/claude-output.json
           if [ -f out/claude-output.json ]; then python3 confirm-1101/bin/norm.py claude out/claude-output.json out/norm.json area="$AREA" task="$TASK" arm="${{ inputs.arm }}" model="${{ inputs.model }}" org="${{ inputs.org }}" run_id="$GITHUB_RUN_ID" $extra
           else echo '{"no_output":true}' > out/norm.json; fi
