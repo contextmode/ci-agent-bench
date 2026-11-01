@@ -1,0 +1,317 @@
+{
+ "area": "labels",
+ "seed": "confirm-1101",
+ "pool": "labels.json",
+ "n": 10,
+ "reserve": 4,
+ "tasks": [
+  {
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "number": 340116,
+   "created": "2026-10-06T18:30:45Z",
+   "title": "Integrated browser does not open the target tab when connecting Google Tag Assistant",
+   "body_len": 4419,
+   "truth": [
+    "info-needed"
+   ],
+   "id": "vscode-340116",
+   "labeler": "kycutler",
+   "url": "https://github.com/microsoft/vscode/issues/340116",
+   "seq": 1,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "number": 340427,
+   "created": "2026-10-08T04:14:32Z",
+   "title": "ModernUI Tab is surpressing all the Text",
+   "body_len": 897,
+   "truth": [
+    "bug",
+    "modernization",
+    "workbench-tabs"
+   ],
+   "id": "vscode-340427",
+   "labeler": "benibenj",
+   "url": "https://github.com/microsoft/vscode/issues/340427",
+   "seq": 2,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124534,
+   "created": "2026-10-16T11:19:33Z",
+   "title": "crash when update setting from project manager part2",
+   "body_len": 1085,
+   "truth": [
+    "bug",
+    "confirmed",
+    "crash",
+    "regression",
+    "topic:editor"
+   ],
+   "id": "godot-124534",
+   "labeler": "AThousandShips",
+   "url": "https://github.com/godotengine/godot/issues/124534",
+   "seq": 3,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 163852,
+   "created": "2026-10-06T03:08:21Z",
+   "title": "tidy: gcc_submodule check panics when git is unavailable, contradicting its own comment",
+   "body_len": 1085,
+   "truth": [
+    "C-bug",
+    "T-bootstrap"
+   ],
+   "id": "rust-163852",
+   "labeler": "maxdexh",
+   "url": "https://github.com/rust-lang/rust/issues/163852",
+   "seq": 4,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 164694,
+   "created": "2026-10-21T14:42:55Z",
+   "title": "std doesn't compile for riscv32gc-unknown-linux-gnu",
+   "body_len": 2707,
+   "truth": [
+    "-Zbuild-std",
+    "C-bug",
+    "O-riscv"
+   ],
+   "id": "rust-164694",
+   "labeler": "maxdexh",
+   "url": "https://github.com/rust-lang/rust/issues/164694",
+   "seq": 5,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 164736,
+   "created": "2026-10-22T09:27:18Z",
+   "title": "Miscompilation with `cmp::max`",
+   "body_len": 1287,
+   "truth": [
+    "A-LLVM",
+    "C-bug",
+    "I-miscompile",
+    "T-compiler"
+   ],
+   "id": "rust-164736",
+   "labeler": "jieyouxu",
+   "url": "https://github.com/rust-lang/rust/issues/164736",
+   "seq": 6,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124050,
+   "created": "2026-10-01T02:09:57Z",
+   "title": "Manage Export Templates window opens at minimum size when display scale set to less than 100%",
+   "body_len": 1219,
+   "truth": [
+    "bug",
+    "topic:editor"
+   ],
+   "id": "godot-124050",
+   "labeler": "YeldhamDev",
+   "url": "https://github.com/godotengine/godot/issues/124050",
+   "seq": 7,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 194705,
+   "created": "2026-10-19T03:59:38Z",
+   "title": "[vector_graphics] A failed asynchronous load is reported as unhandled even when errorBuilder handles it",
+   "body_len": 2753,
+   "truth": [
+    "a: tests",
+    "has reproducible steps",
+    "p: vector_graphics",
+    "package"
+   ],
+   "id": "flutter-194705",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/194705",
+   "seq": 8,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124254,
+   "created": "2026-10-07T10:45:05Z",
+   "title": "Exporting a C# resource and assigning it from GDScript gives an error",
+   "body_len": 2160,
+   "truth": [
+    "bug",
+    "confirmed",
+    "regression",
+    "topic:dotnet",
+    "topic:editor",
+    "topic:gdscript"
+   ],
+   "id": "godot-124254",
+   "labeler": "AThousandShips",
+   "url": "https://github.com/godotengine/godot/issues/124254",
+   "seq": 9,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "number": 64677,
+   "created": "2026-10-07T20:29:37Z",
+   "title": "Object.assign does not understand union types",
+   "body_len": 1210,
+   "truth": [
+    "Question"
+   ],
+   "id": "typescript-64677",
+   "labeler": "RyanCavanaugh",
+   "url": "https://github.com/microsoft/TypeScript/issues/64677",
+   "seq": 10,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "number": 82053,
+   "created": "2026-10-07T07:32:43Z",
+   "title": "cmd/link/internal/ppc64: genpltstub panics instead of reporting a link error when the caller symbol has no data",
+   "body_len": 1919,
+   "truth": [
+    "FixPending",
+    "arch-ppc64x"
+   ],
+   "id": "go-82053",
+   "labeler": "dmitshur",
+   "url": "https://github.com/golang/go/issues/82053",
+   "seq": 11,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 195150,
+   "created": "2026-10-23T10:20:13Z",
+   "title": "[web] Platform views render offscreen when host document has dir=\"rtl\"",
+   "body_len": 3694,
+   "truth": [
+    "P2",
+    "a: platform-views",
+    "has reproducible steps",
+    "platform-web"
+   ],
+   "id": "flutter-195150",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/195150",
+   "seq": 12,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "number": 64630,
+   "created": "2026-10-05T07:52:25Z",
+   "title": "[api] Static and callback module resolutions drop resolvedUsingTsExtension, raising TS2876",
+   "body_len": 4414,
+   "truth": [
+    "Bug"
+   ],
+   "id": "typescript-64630",
+   "labeler": "RyanCavanaugh",
+   "url": "https://github.com/microsoft/TypeScript/issues/64630",
+   "seq": 13,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 201802,
+   "created": "2026-10-23T02:55:01Z",
+   "title": "CUDA illegal memory access in aten::binary_cross_entropy.out with shape-mismatched target/weight",
+   "body_len": 1338,
+   "truth": [
+    "module: cuda",
+    "module: error checking",
+    "module: loss",
+    "module: sanitizers"
+   ],
+   "id": "pytorch-201802",
+   "labeler": "malfet",
+   "url": "https://github.com/pytorch/pytorch/issues/201802",
+   "seq": 14,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ]
+}

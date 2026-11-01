@@ -1,0 +1,922 @@
+{
+ "pool": "fix-mention",
+ "seed": "confirm-1101",
+ "rules": "Build pools/fix-ci.json and pools/fix-mention.json (pre-registered; no model is called; no regex).\n\nRun: python3 build_fix.py            (re-run reads pools/cache/, same output)\nSource: GitHub API through `gh` only (GraphQL search). Rules, fixed before any PR was read:\n  F1  Repos: the REPOS table below. A repo is used only if it has >= 20000 stars and is not archived.\n  F2  Merged PRs, merged 2026-01-01..2026-10-31, title contains \"fix\" (search `fix in:title`), author is human\n      (common.is_human), merge commit exists and has exactly 1 parent (squash or rebase merge, so merge^ is the base).\n  F3  Files: at most 12 changed files; every file is a code file of the repo language, a test file, or a docs file\n      (.md .rst .txt). At least 1 test file and 1-3 source code files. Source change (additions+deletions) is 3 to 150 lines.\n  F4  Exclusions: the merge commit (full or first 8 chars) or `owner/repo#N` or `/pull/N` of the repo appears in any text\n      file under lab/, reproduce/, docs/ or confirm-1101/ (except this pools folder's output) = used before.\n  F5  Pool \"mention\": the PR closes at least one issue (closingIssuesReferences) whose body is not empty. Pool \"ci\": all other\n      PRs that pass F2-F4. (The two pools never share a PR.)\n  F6  Order: per repo, draw order sha256(\"confirm-1101|<repo>|<number>\") lowest first, at most 4 kept per repo;\n      common.round_robin-style interleave over repos in draw order of the repo name.\nTest command per task = the repo's template with the changed test files (or their Go package dirs).\nWhether a task is valid (baseline fails, control passes) is decided later by the free validation runs, not here.",
+ "repos": [
+  {
+   "repo": "gofiber/fiber",
+   "language": "go",
+   "stars": 40238,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:37Z",
+   "counts": {
+    "found": 85,
+    "human_1parent": 2,
+    "files_ok": 1,
+    "unused": 1
+   }
+  },
+  {
+   "repo": "gorilla/websocket",
+   "language": "go",
+   "stars": 24882,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:27Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "httpie/cli",
+   "language": "python",
+   "stars": 38687,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:27Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "immerjs/immer",
+   "language": "node",
+   "stars": 29000,
+   "stars_fetched_at": "2026-11-01T12:29:25Z",
+   "data_fetched_at": "2026-11-01T12:29:29Z",
+   "counts": {
+    "found": 28,
+    "human_1parent": 25,
+    "files_ok": 17,
+    "unused": 17
+   }
+  },
+  {
+   "repo": "labstack/echo",
+   "language": "go",
+   "stars": 32788,
+   "stars_fetched_at": "2026-11-01T12:29:28Z",
+   "data_fetched_at": "2026-11-01T12:29:34Z",
+   "counts": {
+    "found": 46,
+    "human_1parent": 42,
+    "files_ok": 24,
+    "unused": 24
+   }
+  },
+  {
+   "repo": "mochajs/mocha",
+   "language": "node",
+   "stars": 22914,
+   "stars_fetched_at": "2026-11-01T12:29:28Z",
+   "data_fetched_at": "2026-11-01T12:29:38Z",
+   "counts": {
+    "found": 88,
+    "human_1parent": 73,
+    "files_ok": 18,
+    "unused": 18
+   }
+  },
+  {
+   "repo": "pydantic/pydantic",
+   "language": "python",
+   "stars": 29260,
+   "stars_fetched_at": "2026-11-01T12:29:31Z",
+   "data_fetched_at": "2026-11-01T12:29:46Z",
+   "counts": {
+    "found": 133,
+    "human_1parent": 132,
+    "files_ok": 24,
+    "unused": 24
+   }
+  },
+  {
+   "repo": "python-poetry/poetry",
+   "language": "python",
+   "stars": 34325,
+   "stars_fetched_at": "2026-11-01T12:29:36Z",
+   "data_fetched_at": "2026-11-01T12:29:46Z",
+   "counts": {
+    "found": 76,
+    "human_1parent": 76,
+    "files_ok": 40,
+    "unused": 40
+   }
+  },
+  {
+   "repo": "samber/lo",
+   "language": "go",
+   "stars": 21450,
+   "stars_fetched_at": "2026-11-01T12:29:38Z",
+   "data_fetched_at": "2026-11-01T12:29:41Z",
+   "counts": {
+    "found": 21,
+    "human_1parent": 21,
+    "files_ok": 7,
+    "unused": 7
+   }
+  },
+  {
+   "repo": "scrapy/scrapy",
+   "language": "python",
+   "stars": 65151,
+   "stars_fetched_at": "2026-11-01T12:29:40Z",
+   "data_fetched_at": "2026-11-01T12:29:50Z",
+   "counts": {
+    "found": 88,
+    "human_1parent": 88,
+    "files_ok": 34,
+    "unused": 34
+   }
+  },
+  {
+   "repo": "sirupsen/logrus",
+   "language": "go",
+   "stars": 25764,
+   "stars_fetched_at": "2026-11-01T12:29:42Z",
+   "data_fetched_at": "2026-11-01T12:29:43Z",
+   "counts": {
+    "found": 13,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "spf13/viper",
+   "language": "go",
+   "stars": 30494,
+   "stars_fetched_at": "2026-11-01T12:29:46Z",
+   "data_fetched_at": "2026-11-01T12:29:48Z",
+   "counts": {
+    "found": 0,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  },
+  {
+   "repo": "tj/commander.js",
+   "language": "node",
+   "stars": 28445,
+   "stars_fetched_at": "2026-11-01T12:29:48Z",
+   "data_fetched_at": "2026-11-01T12:29:50Z",
+   "counts": {
+    "found": 9,
+    "human_1parent": 9,
+    "files_ok": 3,
+    "unused": 3
+   }
+  },
+  {
+   "repo": "uber-go/zap",
+   "language": "go",
+   "stars": 24683,
+   "stars_fetched_at": "2026-11-01T12:29:49Z",
+   "data_fetched_at": "2026-11-01T12:29:51Z",
+   "counts": {
+    "found": 4,
+    "human_1parent": 4,
+    "files_ok": 4,
+    "unused": 4
+   }
+  },
+  {
+   "repo": "urfave/cli",
+   "language": "go",
+   "stars": 24307,
+   "stars_fetched_at": "2026-11-01T12:29:50Z",
+   "data_fetched_at": "2026-11-01T12:30:00Z",
+   "counts": {
+    "found": 96,
+    "human_1parent": 0,
+    "files_ok": 0,
+    "unused": 0
+   }
+  }
+ ],
+ "count": 25,
+ "candidates": [
+  {
+   "id": "poetry-10941",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10941,
+   "title": "fix(env): fail on incompatible Python without venv creation",
+   "merged_at": "2026-07-26T14:20:41Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10941",
+   "sha": "a07d84a7ece108acc40fb9125b76d257130ac1e2",
+   "lang": "python",
+   "src": [
+    "src/poetry/utils/env/env_manager.py",
+    "src/poetry/utils/env/python/exceptions.py"
+   ],
+   "tests": [
+    "tests/utils/env/test_env_manager.py"
+   ],
+   "src_lines": 25,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/utils/env/test_env_manager.py -p no:cacheprovider -q -n 0",
+   "issue": {
+    "number": 10226,
+    "title": "Incompatible Python version just used (instead of error) when `virtualenvs.create=false`",
+    "body": "### Description\n\nWhen using `POETRY_VIRTUALENVS_CREATE=\"false\"` combined with `POETRY_VIRTUALENVS_USE_POETRY_PYTHON=\"true\"`, if a project's declared `requires-python` doesn't match the Python used by Poetry, then `poetry sync` won't fail with a \"version not compatible error\" (as expected), but instead will proceed to sync using the wrong Python version.\n\nThis leads to confusing UX for end users of Heroku, if the version specified via their `.python-version` file (which is what controls the Python version installed for their app) doesn't match the Python versions in their `pyproject.toml`.\n\nI believe this is because the conditional here needs additional handling for the value of `create_venv` (which is the value of `virtualenvs.create`):\nhttps://github.com/python-poetry/poetry/blob/79c207b41dfb5f9af78fde50d4e5660f7deaf324/src/poetry/utils/env/env_manager.py#L424-L428\n\n## Steps to reproduce\n\n1. Create a `Dockerfile` with the below contents.\n2. `docker build . --progress plain --no-cache`\n\n(Note: I've created this `Dockerfile` as the easiest way to provide a minimal testcase; on Heroku we actually don't use Docker like this and install things in a slightly different way)\n\n```Dockerfile\nFROM heroku/heroku:24-build\nARG TARGETARCH\nUSER root\n\nWORKDIR /testcase\n\nRUN mkdir -p /testcase/.heroku/python \\\n  && curl -sSf \"https://heroku-buildpack-python.s3.us-east-1.amazonaws.com/python-3.13.1-ubuntu-24.04-${TARGETARCH}.tar.zst\" \\\n  | tar -x --zstd -C /testcase/.heroku/python\nENV PATH=\"/testcase/.heroku/python/bin:${PATH}\"\nENV LD_LIBRARY_PATH=\"/testcase/.heroku/python/lib\"\n\nRUN which -a python3\nRUN /usr/bin/python3 --version\nRUN python3 --version\n\nENV POETRY_HOME=\"/testcase/.heroku/poetry\"\nENV PATH=\"${POETRY_HOME}/bin:${PATH}\"\nRUN curl -sSL https://install.python-poetry.org | python3 - --version 2.1.1\n\nCOPY <<EOF pyproject.toml\n[project]\nname = \"testcase-poetry\"\nversion = \"0.1.0\"\nrequires-python = \"3.12.*\"\ndependencies = [\n    \"typing-extensions\"\n]\n[tool.poetry]\npackage-mode = false\nEOF\n\nCOPY <<EOF poetry.lock\n[[package]]\nname = \"typing-extensions\"\nversion = \"4.12.2\"\ndescription = \"Backported and Experimental Type Hints for Python 3.8+\"\noptional = false\npython-versions = \">=3.8\"\ngroups = [\"main\"]\nfiles = [\n    {file = \"typing_extensions-4.12.2-py3-none-any.whl\", hash = \"sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d\"},\n    {file = \"typing_extensions-4.12.2.tar.gz\", hash = \"sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8\"},\n]\n[metadata]\nlock-version = \"2.1\"\npython-versions = \"3.12.*\"\ncontent-hash = \"30427e182c131408fcdf15a6838a771f7e7c1e67fa6e0c33ccc82194052de8df\"\nEOF\n\nENV POETRY_VIRTUALENVS_CREATE=\"false\"\nENV POETRY_VIRTUALENVS_USE_POETRY_PYTHON=\"true\"\n\nRUN poetry install --verbose\nRUN python3.13 -c 'import typing_extensions; print(typing_extensions)'\n```\n\n## Expected\n\nFor `poetry sync` to exit non-zero, with an error message that makes it clear that the Python version is incompatible (since the Poetry Python, which is also the first python on PATH, is 3.13, but yet the `requires-python` lists Python 3.12)  - so end users know they need to fix their project's `requires-python` or else change the Python in the environment.\n\nie: The `NoCompatiblePythonVersionFoundError` error [here](https://github.com/python-poetry/poetry/blob/79c207b41dfb5f9af78fde50d4e5660f7deaf324/src/poetry/utils/env/env_manager.py#L424-L428)\n\n## Actual\n\n`poetry sync` outputs:\n\n```\nThe currently activated Python version 3.13.1 is not supported by the project (3.12.*).\nTrying to find and use a compatible version.\nUsing python3.12 (3.12.3)\n```\n\n...where Python 3.12 is actually the distro Python, not the Poetry Python - meaning Poetry has ignored what was configured via `POETRY_VIRTUALENVS_USE_POETRY_PYTHON=\"true\"`, and tried to find its own Python instead (which is something we don't want it to do).\n\nIn addition, even though Poetry said it was using Python 3.12, it actually goes on to use Poetry Python after all, and so installs the project into a Python 3.13 environment, even though the project isn't compatible with 3.13. As confirmed by the `print(typing_extensions)` step returning:\n\n```\n<module 'typing_extensions' from '/testcase/.heroku/python/lib/python3.13/site-packages/typing_extensions.py'>\n```\n\nThis means the end-user build would appear to succeed, only for the app to potentially crash at run-time when the image is rolled out.\n\n### Workarounds\n\nI couldn't find any.\n\n### Poetry Installation Method\n\ninstall.python-poetry.org\n\n### Operating System\n\nDebian\n\n### Poetry Version\n\n2.1.1\n\n### Poetry Configuration\n\n```bash session\nPOETRY_VIRTUALENVS_CREATE=\"false\"\nPOETRY_VIRTUALENVS_USE_POETRY_PYTHON=\"true\"\n```\n\n### Python Sysconfig\n\n<details>\n  <summary>sysconfig.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\nPlatform: \"linux-aarch64\"\nPython version: \"3.13\"\nCurrent installation scheme: \"posix_prefix\"\n\nPaths: \n      data = \"/testcase/.heroku/python\"\n      include = \"/testcase/.heroku/python/include/python3.13\"\n      platinclude = \"/testcase/.heroku/python/include/python3.13\"\n      platlib = \"/testcase/.heroku/python/lib/python3.13/site-packages\"\n      platstdlib = \"/testcase/.heroku/python/lib/python3.13\"\n      purelib = \"/testcase/.heroku/python/lib/python3.13/site-packages\"\n      scripts = \"/testcase/.heroku/python/bin\"\n      stdlib = \"/testcase/.heroku/python/lib/python3.13\"\n\nVariables: \n      ABIFLAGS = \"\"\n      ABI_THREAD = \"\"\n      AC_APPLE_UNIVERSAL_BUILD = \"0\"\n      AIX_BUILDDATE = \"0\"\n      AIX_GENUINE_CPLUSPLUS = \"0\"\n      ALIGNOF_LONG = \"8\"\n      ALIGNOF_MAX_ALIGN_T = \"16\"\n      ALIGNOF_SIZE_T = \"8\"\n      ALT_SOABI = \"0\"\n      ANDROID_API_LEVEL = \"0\"\n      APP_STORE_COMPLIANCE_PATCH = \"\"\n      AR = \"ar\"\n      ARFLAGS = \"rcs\"\n      BASECFLAGS = \"-fno-strict-overflow -Wsign-compare\"\n      BASECPPFLAGS = \"\"\n      BASEMODLIBS = \"\"\n      BINDIR = \"/tmp/python/bin\"\n      BINLIBDEST = \"/tmp/python/lib/python3.13\"\n      BLDLIBRARY = \"-L. -lpython3.13\"\n      BLDSHARED = \"gcc -shared -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all\"\n      BOOTSTRAP_HEADERS = \"\\\"\n      BUILDEXE = \"\"\n      BUILDPYTHON = \"python\"\n      BUILD_GNU_TYPE = \"aarch64-unknown-linux-gnu\"\n      BUILD_SCRIPTS_DIR = \"build/scripts-3.13\"\n      BYTESTR_DEPS = \"\\\"\n      CC = \"gcc\"\n      CCSHARED = \"-fPIC\"\n      CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard\"\n      CFLAGSFORSHARED = \"-fPIC\"\n      CFLAGS_ALIASING = \"\"\n      CODECS_COMMON_HEADERS = \"./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      COMPILEALL_OPTS = \"-j0\"\n      CONFIGFILES = \"configure configure.ac acconfig.h pyconfig.h.in Makefile.pre.in\"\n      CONFIGURE_CFLAGS = \"\"\n      CONFIGURE_CFLAGS_NODIST = \"-fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden\"\n      CONFIGURE_CPPFLAGS = \"\"\n      CONFIGURE_LDFLAGS = \"\"\n      CONFIGURE_LDFLAGS_NODIST = \"-fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g\"\n      CONFIGURE_LDFLAGS_NOLTO = \"-fno-lto\"\n      CONFIG_ARGS = \"'--build=aarch64-linux-gnu' '--enable-loadable-sqlite-extensions' '--enable-optimizations' '--enable-option-checking=fatal' '--prefix=/tmp/python' '--with-ensurepip=no' '--with-system-expat' '--enable-shared' '--with-lto' '--without-static-libpython' '--disable-test-modules' 'build_alias=aarch64-linux-gnu'\"\n      CONFINCLUDEDIR = \"/tmp/python/include\"\n      CONFINCLUDEPY = \"/tmp/python/include/python3.13\"\n      COREPYTHONPATH = \"\"\n      COVERAGE_INFO = \"/tmp/src/coverage.info\"\n      COVERAGE_LCOV_OPTIONS = \"--rc lcov_branch_coverage=1\"\n      COVERAGE_REPORT = \"/tmp/src/lcov-report\"\n      COVERAGE_REPORT_OPTIONS = \"--rc lcov_branch_coverage=1 --branch-coverage --title \"CPython 3.13 LCOV report [commit $(shell )]\"\"\n      CPPFLAGS = \"-I. -I./Include\"\n      CXX = \"g++\"\n      DESTDIRS = \"/tmp/python /tmp/python/lib /tmp/python/lib/python3.13 /tmp/python/lib/python3.13/lib-dynload\"\n      DESTLIB = \"/tmp/python/lib/python3.13\"\n      DESTPATH = \"\"\n      DESTSHARED = \"/tmp/python/lib/python3.13/lib-dynload\"\n      DFLAGS = \"\"\n      DIRMODE = \"755\"\n      DIST = \"README.rst ChangeLog configure configure.ac acconfig.h pyconfig.h.in Makefile.pre.in Include Lib Misc Ext-dummy\"\n      DISTDIRS = \"Include Lib Misc Ext-dummy\"\n      DISTFILES = \"README.rst ChangeLog configure configure.ac acconfig.h pyconfig.h.in Makefile.pre.in\"\n      DLINCLDIR = \".\"\n      DLLLIBRARY = \"\"\n      DOUBLE_IS_ARM_MIXED_ENDIAN_IEEE754 = \"0\"\n      DOUBLE_IS_BIG_ENDIAN_IEEE754 = \"0\"\n      DOUBLE_IS_LITTLE_ENDIAN_IEEE754 = \"1\"\n      DSYMUTIL = \"\"\n      DSYMUTIL_PATH = \"\"\n      DTRACE = \"\"\n      DTRACE_DEPS = \"\\\"\n      DTRACE_HEADERS = \"\"\n      DTRACE_OBJS = \"\"\n      DYNLOADFILE = \"dynload_shlib.o\"\n      ENABLE_IPV6 = \"1\"\n      ENSUREPIP = \"no\"\n      EXE = \"\"\n      EXEMODE = \"755\"\n      EXENAME = \"/tmp/python/bin/python3.13\"\n      EXPORTSFROM = \"\"\n      EXPORTSYMS = \"\"\n      EXTRATESTOPTS = \"\"\n      EXT_SUFFIX = \".cpython-313-aarch64-linux-gnu.so\"\n      FILEMODE = \"644\"\n      FREEZE_MODULE = \"./_bootstrap_python ./Programs/_freeze_module.py\"\n      FREEZE_MODULE_BOOTSTRAP = \"./Programs/_freeze_module\"\n      FREEZE_MODULE_BOOTSTRAP_DEPS = \"Programs/_freeze_module\"\n      FREEZE_MODULE_DEPS = \"_bootstrap_python ./Programs/_freeze_module.py\"\n      FROZEN_FILES_IN = \"\\\"\n      FROZEN_FILES_OUT = \"\\\"\n      GETPGRP_HAVE_ARG = \"0\"\n      GITBRANCH = \"\"\n      GITTAG = \"\"\n      GITVERSION = \"\"\n      GNULD = \"yes\"\n      HAVE_ACCEPT = \"1\"\n      HAVE_ACCEPT4 = \"1\"\n      HAVE_ACOSH = \"1\"\n      HAVE_ADDRINFO = \"1\"\n      HAVE_ALARM = \"1\"\n      HAVE_ALIGNED_REQUIRED = \"0\"\n      HAVE_ALLOCA_H = \"1\"\n      HAVE_ALTZONE = \"0\"\n      HAVE_ASINH = \"1\"\n      HAVE_ASM_TYPES_H = \"1\"\n      HAVE_ATANH = \"1\"\n      HAVE_BIND = \"1\"\n      HAVE_BIND_TEXTDOMAIN_CODESET = \"1\"\n      HAVE_BLUETOOTH_BLUETOOTH_H = \"0\"\n      HAVE_BLUETOOTH_H = \"0\"\n      HAVE_BROKEN_MBSTOWCS = \"0\"\n      HAVE_BROKEN_NICE = \"0\"\n      HAVE_BROKEN_PIPE_BUF = \"0\"\n      HAVE_BROKEN_POLL = \"0\"\n      HAVE_BROKEN_POSIX_SEMAPHORES = \"0\"\n      HAVE_BROKEN_PTHREAD_SIGMASK = \"0\"\n      HAVE_BROKEN_SEM_GETVALUE = \"0\"\n      HAVE_BROKEN_UNSETENV = \"0\"\n      HAVE_BUILTIN_ATOMIC = \"1\"\n      HAVE_BZLIB_H = \"1\"\n      HAVE_CHFLAGS = \"0\"\n      HAVE_CHMOD = \"1\"\n      HAVE_CHOWN = \"1\"\n      HAVE_CHROOT = \"1\"\n      HAVE_CLOCK = \"1\"\n      HAVE_CLOCK_GETRES = \"1\"\n      HAVE_CLOCK_GETTIME = \"1\"\n      HAVE_CLOCK_NANOSLEEP = \"1\"\n      HAVE_CLOCK_SETTIME = \"1\"\n      HAVE_CLOCK_T = \"1\"\n      HAVE_CLOSEFROM = \"1\"\n      HAVE_CLOSE_RANGE = \"1\"\n      HAVE_COMPUTED_GOTOS = \"1\"\n      HAVE_CONFSTR = \"1\"\n      HAVE_CONIO_H = \"0\"\n      HAVE_CONNECT = \"1\"\n      HAVE_COPY_FILE_RANGE = \"1\"\n      HAVE_CTERMID = \"1\"\n      HAVE_CTERMID_R = \"0\"\n      HAVE_CURSES_FILTER = \"1\"\n      HAVE_CURSES_H = \"1\"\n      HAVE_CURSES_HAS_KEY = \"1\"\n      HAVE_CURSES_IMMEDOK = \"1\"\n      HAVE_CURSES_IS_PAD = \"1\"\n      HAVE_CURSES_IS_TERM_RESIZED = \"1\"\n      HAVE_CURSES_RESIZETERM = \"1\"\n      HAVE_CURSES_RESIZE_TERM = \"1\"\n      HAVE_CURSES_SYNCOK = \"1\"\n      HAVE_CURSES_TYPEAHEAD = \"1\"\n      HAVE_CURSES_USE_ENV = \"1\"\n      HAVE_CURSES_WCHGAT = \"1\"\n      HAVE_DB_H = \"1\"\n      HAVE_DECL_RTLD_DEEPBIND = \"1\"\n      HAVE_DECL_RTLD_GLOBAL = \"1\"\n      HAVE_DECL_RTLD_LAZY = \"1\"\n      HAVE_DECL_RTLD_LOCAL = \"1\"\n      HAVE_DECL_RTLD_MEMBER = \"0\"\n      HAVE_DECL_RTLD_NODELETE = \"1\"\n      HAVE_DECL_RTLD_NOLOAD = \"1\"\n      HAVE_DECL_RTLD_NOW = \"1\"\n      HAVE_DECL_TZNAME = \"0\"\n      HAVE_DEVICE_MACROS = \"1\"\n      HAVE_DEV_PTC = \"0\"\n      HAVE_DEV_PTMX = \"1\"\n      HAVE_DIRECT_H = \"0\"\n      HAVE_DIRENT_D_TYPE = \"1\"\n      HAVE_DIRENT_H = \"1\"\n      HAVE_DIRFD = \"1\"\n      HAVE_DLFCN_H = \"1\"\n      HAVE_DLOPEN = \"1\"\n      HAVE_DUP = \"1\"\n      HAVE_DUP2 = \"1\"\n      HAVE_DUP3 = \"1\"\n      HAVE_DYLD_SHARED_CACHE_CONTAINS_PATH = \"0\"\n      HAVE_DYNAMIC_LOADING = \"1\"\n      HAVE_EDITLINE_READLINE_H = \"0\"\n      HAVE_ENDIAN_H = \"1\"\n      HAVE_EPOLL = \"1\"\n      HAVE_EPOLL_CREATE1 = \"1\"\n      HAVE_ERF = \"1\"\n      HAVE_ERFC = \"1\"\n      HAVE_ERRNO_H = \"1\"\n      HAVE_EVENTFD = \"1\"\n      HAVE_EXECV = \"1\"\n      HAVE_EXPLICIT_BZERO = \"1\"\n      HAVE_EXPLICIT_MEMSET = \"0\"\n      HAVE_EXPM1 = \"1\"\n      HAVE_FACCESSAT = \"1\"\n      HAVE_FCHDIR = \"1\"\n      HAVE_FCHMOD = \"1\"\n      HAVE_FCHMODAT = \"1\"\n      HAVE_FCHOWN = \"1\"\n      HAVE_FCHOWNAT = \"1\"\n      HAVE_FCNTL_H = \"1\"\n      HAVE_FDATASYNC = \"1\"\n      HAVE_FDOPENDIR = \"1\"\n      HAVE_FDWALK = \"0\"\n      HAVE_FEXECVE = \"1\"\n      HAVE_FFI_CLOSURE_ALLOC = \"1\"\n      HAVE_FFI_PREP_CIF_VAR = \"1\"\n      HAVE_FFI_PREP_CLOSURE_LOC = \"1\"\n      HAVE_FLOCK = \"1\"\n      HAVE_FORK = \"1\"\n      HAVE_FORK1 = \"0\"\n      HAVE_FORKPTY = \"1\"\n      HAVE_FPATHCONF = \"1\"\n      HAVE_FSEEK64 = \"0\"\n      HAVE_FSEEKO = \"1\"\n      HAVE_FSTATAT = \"1\"\n      HAVE_FSTATVFS = \"1\"\n      HAVE_FSYNC = \"1\"\n      HAVE_FTELL64 = \"0\"\n      HAVE_FTELLO = \"1\"\n      HAVE_FTIME = \"1\"\n      HAVE_FTRUNCATE = \"1\"\n      HAVE_FUTIMENS = \"1\"\n      HAVE_FUTIMES = \"1\"\n      HAVE_FUTIMESAT = \"1\"\n      HAVE_GAI_STRERROR = \"1\"\n      HAVE_GCC_ASM_FOR_MC68881 = \"0\"\n      HAVE_GCC_ASM_FOR_X64 = \"0\"\n      HAVE_GCC_ASM_FOR_X87 = \"0\"\n      HAVE_GCC_UINT128_T = \"1\"\n      HAVE_GDBM_DASH_NDBM_H = \"0\"\n      HAVE_GDBM_H = \"1\"\n      HAVE_GDBM_NDBM_H = \"0\"\n      HAVE_GETADDRINFO = \"1\"\n      HAVE_GETC_UNLOCKED = \"1\"\n      HAVE_GETEGID = \"1\"\n      HAVE_GETENTROPY = \"1\"\n      HAVE_GETEUID = \"1\"\n      HAVE_GETGID = \"1\"\n      HAVE_GETGRENT = \"1\"\n      HAVE_GETGRGID = \"1\"\n      HAVE_GETGRGID_R = \"1\"\n      HAVE_GETGRNAM_R = \"1\"\n      HAVE_GETGROUPLIST = \"1\"\n      HAVE_GETGROUPS = \"1\"\n      HAVE_GETHOSTBYADDR = \"1\"\n      HAVE_GETHOSTBYNAME = \"1\"\n      HAVE_GETHOSTBYNAME_R = \"1\"\n      HAVE_GETHOSTBYNAME_R_3_ARG = \"0\"\n      HAVE_GETHOSTBYNAME_R_5_ARG = \"0\"\n      HAVE_GETHOSTBYNAME_R_6_ARG = \"1\"\n      HAVE_GETHOSTNAME = \"1\"\n      HAVE_GETITIMER = \"1\"\n      HAVE_GETLOADAVG = \"1\"\n      HAVE_GETLOGIN = \"1\"\n      HAVE_GETNAMEINFO = \"1\"\n      HAVE_GETPAGESIZE = \"1\"\n      HAVE_GETPEERNAME = \"1\"\n      HAVE_GETPGID = \"1\"\n      HAVE_GETPGRP = \"1\"\n      HAVE_GETPID = \"1\"\n      HAVE_GETPPID = \"1\"\n      HAVE_GETPRIORITY = \"1\"\n      HAVE_GETPROTOBYNAME = \"1\"\n      HAVE_GETPWENT = \"1\"\n      HAVE_GETPWNAM_R = \"1\"\n      HAVE_GETPWUID = \"1\"\n      HAVE_GETPWUID_R = \"1\"\n      HAVE_GETRANDOM = \"1\"\n      HAVE_GETRANDOM_SYSCALL = \"1\"\n      HAVE_GETRESGID = \"1\"\n      HAVE_GETRESUID = \"1\"\n      HAVE_GETRUSAGE = \"1\"\n      HAVE_GETSERVBYNAME = \"1\"\n      HAVE_GETSERVBYPORT = \"1\"\n      HAVE_GETSID = \"1\"\n      HAVE_GETSOCKNAME = \"1\"\n      HAVE_GETSPENT = \"1\"\n      HAVE_GETSPNAM = \"1\"\n      HAVE_GETUID = \"1\"\n      HAVE_GETWD = \"1\"\n      HAVE_GLIBC_MEMMOVE_BUG = \"0\"\n      HAVE_GRANTPT = \"1\"\n      HAVE_GRP_H = \"1\"\n      HAVE_HSTRERROR = \"1\"\n      HAVE_HTOLE64 = \"1\"\n      HAVE_IF_NAMEINDEX = \"1\"\n      HAVE_INET_ATON = \"1\"\n      HAVE_INET_NTOA = \"1\"\n      HAVE_INET_PTON = \"1\"\n      HAVE_INITGROUPS = \"1\"\n      HAVE_INTTYPES_H = \"1\"\n      HAVE_IO_H = \"0\"\n      HAVE_IPA_PURE_CONST_BUG = \"0\"\n      HAVE_KILL = \"1\"\n      HAVE_KILLPG = \"1\"\n      HAVE_KQUEUE = \"0\"\n      HAVE_LANGINFO_H = \"1\"\n      HAVE_LARGEFILE_SUPPORT = \"0\"\n      HAVE_LCHFLAGS = \"0\"\n      HAVE_LCHMOD = \"0\"\n      HAVE_LCHOWN = \"1\"\n      HAVE_LIBB2 = \"0\"\n      HAVE_LIBDB = \"1\"\n      HAVE_LIBDL = \"1\"\n      HAVE_LIBDLD = \"0\"\n      HAVE_LIBIEEE = \"0\"\n      HAVE_LIBINTL_H = \"1\"\n      HAVE_LIBRESOLV = \"0\"\n      HAVE_LIBSENDFILE = \"0\"\n      HAVE_LIBSQLITE3 = \"1\"\n      HAVE_LIBUTIL_H = \"0\"\n      HAVE_LINK = \"1\"\n      HAVE_LINKAT = \"1\"\n      HAVE_LINUX_AUXVEC_H = \"1\"\n      HAVE_LINUX_CAN_BCM_H = \"1\"\n      HAVE_LINUX_CAN_H = \"1\"\n      HAVE_LINUX_CAN_J1939_H = \"1\"\n      HAVE_LINUX_CAN_RAW_FD_FRAMES = \"1\"\n      HAVE_LINUX_CAN_RAW_H = \"1\"\n      HAVE_LINUX_CAN_RAW_JOIN_FILTERS = \"1\"\n      HAVE_LINUX_FS_H = \"1\"\n      HAVE_LINUX_LIMITS_H = \"1\"\n      HAVE_LINUX_MEMFD_H = \"1\"\n      HAVE_LINUX_NETLINK_H = \"1\"\n      HAVE_LINUX_QRTR_H = \"1\"\n      HAVE_LINUX_RANDOM_H = \"1\"\n      HAVE_LINUX_SOUNDCARD_H = \"1\"\n      HAVE_LINUX_TIPC_H = \"1\"\n      HAVE_LINUX_VM_SOCKETS_H = \"1\"\n      HAVE_LINUX_WAIT_H = \"1\"\n      HAVE_LISTEN = \"1\"\n      HAVE_LOCKF = \"1\"\n      HAVE_LOG1P = \"1\"\n      HAVE_LOG2 = \"1\"\n      HAVE_LOGIN_TTY = \"1\"\n      HAVE_LONG_DOUBLE = \"1\"\n      HAVE_LSTAT = \"1\"\n      HAVE_LUTIMES = \"1\"\n      HAVE_LZMA_H = \"0\"\n      HAVE_MADVISE = \"1\"\n      HAVE_MAKEDEV = \"1\"\n      HAVE_MBRTOWC = \"1\"\n      HAVE_MEMFD_CREATE = \"1\"\n      HAVE_MEMRCHR = \"1\"\n      HAVE_MINIX_CONFIG_H = \"0\"\n      HAVE_MKDIRAT = \"1\"\n      HAVE_MKFIFO = \"1\"\n      HAVE_MKFIFOAT = \"1\"\n      HAVE_MKNOD = \"1\"\n      HAVE_MKNODAT = \"1\"\n      HAVE_MKTIME = \"1\"\n      HAVE_MMAP = \"1\"\n      HAVE_MREMAP = \"1\"\n      HAVE_NANOSLEEP = \"1\"\n      HAVE_NCURSES = \"0\"\n      HAVE_NCURSESW = \"1\"\n      HAVE_NCURSESW_CURSES_H = \"1\"\n      HAVE_NCURSESW_NCURSES_H = \"1\"\n      HAVE_NCURSESW_PANEL_H = \"1\"\n      HAVE_NCURSES_CURSES_H = \"0\"\n      HAVE_NCURSES_H = \"1\"\n      HAVE_NCURSES_NCURSES_H = \"0\"\n      HAVE_NCURSES_PANEL_H = \"0\"\n      HAVE_NDBM_H = \"0\"\n      HAVE_NDIR_H = \"0\"\n      HAVE_NETCAN_CAN_H = \"0\"\n      HAVE_NETDB_H = \"1\"\n      HAVE_NETINET_IN_H = \"1\"\n      HAVE_NETLINK_NETLINK_H = \"0\"\n      HAVE_NETPACKET_PACKET_H = \"1\"\n      HAVE_NET_ETHERNET_H = \"1\"\n      HAVE_NET_IF_H = \"1\"\n      HAVE_NICE = \"1\"\n      HAVE_NON_UNICODE_WCHAR_T_REPRESENTATION = \"0\"\n      HAVE_OPENAT = \"1\"\n      HAVE_OPENDIR = \"1\"\n      HAVE_OPENPTY = \"1\"\n      HAVE_PANEL = \"0\"\n      HAVE_PANELW = \"1\"\n      HAVE_PANEL_H = \"1\"\n      HAVE_PATHCONF = \"1\"\n      HAVE_PAUSE = \"1\"\n      HAVE_PIPE = \"1\"\n      HAVE_PIPE2 = \"1\"\n      HAVE_PLOCK = \"0\"\n      HAVE_POLL = \"1\"\n      HAVE_POLL_H = \"1\"\n      HAVE_POSIX_FADVISE = \"1\"\n      HAVE_POSIX_FALLOCATE = \"1\"\n      HAVE_POSIX_OPENPT = \"1\"\n      HAVE_POSIX_SPAWN = \"1\"\n      HAVE_POSIX_SPAWNP = \"1\"\n      HAVE_POSIX_SPAWN_FILE_ACTIONS_ADDCLOSEFROM_NP = \"1\"\n      HAVE_PREAD = \"1\"\n      HAVE_PREADV = \"1\"\n      HAVE_PREADV2 = \"1\"\n      HAVE_PRLIMIT = \"1\"\n      HAVE_PROCESS_H = \"0\"\n      HAVE_PROCESS_VM_READV = \"1\"\n      HAVE_PROTOTYPES = \"1\"\n      HAVE_PTHREAD_CONDATTR_SETCLOCK = \"1\"\n      HAVE_PTHREAD_COND_TIMEDWAIT_RELATIVE_NP = \"0\"\n      HAVE_PTHREAD_DESTRUCTOR = \"0\"\n      HAVE_PTHREAD_GETCPUCLOCKID = \"1\"\n      HAVE_PTHREAD_H = \"1\"\n      HAVE_PTHREAD_INIT = \"0\"\n      HAVE_PTHREAD_KILL = \"1\"\n      HAVE_PTHREAD_SIGMASK = \"1\"\n      HAVE_PTHREAD_STUBS = \"0\"\n      HAVE_PTSNAME = \"1\"\n      HAVE_PTSNAME_R = \"1\"\n      HAVE_PTY_H = \"1\"\n      HAVE_PWRITE = \"1\"\n      HAVE_PWRITEV = \"1\"\n      HAVE_PWRITEV2 = \"1\"\n      HAVE_READLINE_READLINE_H = \"0\"\n      HAVE_READLINK = \"1\"\n      HAVE_READLINKAT = \"1\"\n      HAVE_READV = \"1\"\n      HAVE_REALPATH = \"1\"\n      HAVE_RECVFROM = \"1\"\n      HAVE_RENAMEAT = \"1\"\n      HAVE_RL_APPEND_HISTORY = \"1\"\n      HAVE_RL_CATCH_SIGNAL = \"1\"\n      HAVE_RL_COMPDISP_FUNC_T = \"1\"\n      HAVE_RL_COMPLETION_APPEND_CHARACTER = \"1\"\n      HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK = \"1\"\n      HAVE_RL_COMPLETION_MATCHES = \"1\"\n      HAVE_RL_COMPLETION_SUPPRESS_APPEND = \"1\"\n      HAVE_RL_PRE_INPUT_HOOK = \"1\"\n      HAVE_RL_RESIZE_TERMINAL = \"1\"\n      HAVE_RTPSPAWN = \"0\"\n      HAVE_SCHED_GET_PRIORITY_MAX = \"1\"\n      HAVE_SCHED_H = \"1\"\n      HAVE_SCHED_RR_GET_INTERVAL = \"1\"\n      HAVE_SCHED_SETAFFINITY = \"1\"\n      HAVE_SCHED_SETPARAM = \"1\"\n      HAVE_SCHED_SETSCHEDULER = \"1\"\n      HAVE_SEM_CLOCKWAIT = \"1\"\n      HAVE_SEM_GETVALUE = \"1\"\n      HAVE_SEM_OPEN = \"1\"\n      HAVE_SEM_TIMEDWAIT = \"1\"\n      HAVE_SEM_UNLINK = \"1\"\n      HAVE_SENDFILE = \"1\"\n      HAVE_SENDTO = \"1\"\n      HAVE_SETEGID = \"1\"\n      HAVE_SETEUID = \"1\"\n      HAVE_SETGID = \"1\"\n      HAVE_SETGROUPS = \"1\"\n      HAVE_SETHOSTNAME = \"1\"\n      HAVE_SETITIMER = \"1\"\n      HAVE_SETJMP_H = \"1\"\n      HAVE_SETLOCALE = \"1\"\n      HAVE_SETNS = \"1\"\n      HAVE_SETPGID = \"1\"\n      HAVE_SETPGRP = \"1\"\n      HAVE_SETPRIORITY = \"1\"\n      HAVE_SETREGID = \"1\"\n      HAVE_SETRESGID = \"1\"\n      HAVE_SETRESUID = \"1\"\n      HAVE_SETREUID = \"1\"\n      HAVE_SETSID = \"1\"\n      HAVE_SETSOCKOPT = \"1\"\n      HAVE_SETUID = \"1\"\n      HAVE_SETVBUF = \"1\"\n      HAVE_SHADOW_H = \"1\"\n      HAVE_SHM_OPEN = \"1\"\n      HAVE_SHM_UNLINK = \"1\"\n      HAVE_SHUTDOWN = \"1\"\n      HAVE_SIGACTION = \"1\"\n      HAVE_SIGALTSTACK = \"1\"\n      HAVE_SIGFILLSET = \"1\"\n      HAVE_SIGINFO_T_SI_BAND = \"1\"\n      HAVE_SIGINTERRUPT = \"1\"\n      HAVE_SIGNAL_H = \"1\"\n      HAVE_SIGPENDING = \"1\"\n      HAVE_SIGRELSE = \"1\"\n      HAVE_SIGTIMEDWAIT = \"1\"\n      HAVE_SIGWAIT = \"1\"\n      HAVE_SIGWAITINFO = \"1\"\n      HAVE_SNPRINTF = \"1\"\n      HAVE_SOCKADDR_ALG = \"1\"\n      HAVE_SOCKADDR_SA_LEN = \"0\"\n      HAVE_SOCKADDR_STORAGE = \"1\"\n      HAVE_SOCKET = \"1\"\n      HAVE_SOCKETPAIR = \"1\"\n      HAVE_SOCKLEN_T = \"1\"\n      HAVE_SPAWN_H = \"1\"\n      HAVE_SPLICE = \"1\"\n      HAVE_SSIZE_T = \"1\"\n      HAVE_STATVFS = \"1\"\n      HAVE_STAT_TV_NSEC = \"1\"\n      HAVE_STAT_TV_NSEC2 = \"0\"\n      HAVE_STDINT_H = \"1\"\n      HAVE_STDIO_H = \"1\"\n      HAVE_STDLIB_H = \"1\"\n      HAVE_STD_ATOMIC = \"1\"\n      HAVE_STRFTIME = \"1\"\n      HAVE_STRINGS_H = \"1\"\n      HAVE_STRING_H = \"1\"\n      HAVE_STRLCPY = \"1\"\n      HAVE_STROPTS_H = \"0\"\n      HAVE_STRSIGNAL = \"1\"\n      HAVE_STRUCT_PASSWD_PW_GECOS = \"1\"\n      HAVE_STRUCT_PASSWD_PW_PASSWD = \"1\"\n      HAVE_STRUCT_STAT_ST_BIRTHTIME = \"0\"\n      HAVE_STRUCT_STAT_ST_BLKSIZE = \"1\"\n      HAVE_STRUCT_STAT_ST_BLOCKS = \"1\"\n      HAVE_STRUCT_STAT_ST_FLAGS = \"0\"\n      HAVE_STRUCT_STAT_ST_GEN = \"0\"\n      HAVE_STRUCT_STAT_ST_RDEV = \"1\"\n      HAVE_STRUCT_TM_TM_ZONE = \"1\"\n      HAVE_SYMLINK = \"1\"\n      HAVE_SYMLINKAT = \"1\"\n      HAVE_SYNC = \"1\"\n      HAVE_SYSCONF = \"1\"\n      HAVE_SYSEXITS_H = \"1\"\n      HAVE_SYSLOG_H = \"1\"\n      HAVE_SYSTEM = \"1\"\n      HAVE_SYS_AUDIOIO_H = \"0\"\n      HAVE_SYS_AUXV_H = \"1\"\n      HAVE_SYS_BSDTTY_H = \"0\"\n      HAVE_SYS_DEVPOLL_H = \"0\"\n      HAVE_SYS_DIR_H = \"0\"\n      HAVE_SYS_ENDIAN_H = \"0\"\n      HAVE_SYS_EPOLL_H = \"1\"\n      HAVE_SYS_EVENTFD_H = \"1\"\n      HAVE_SYS_EVENT_H = \"0\"\n      HAVE_SYS_FILE_H = \"1\"\n      HAVE_SYS_IOCTL_H = \"1\"\n      HAVE_SYS_KERN_CONTROL_H = \"0\"\n      HAVE_SYS_LOADAVG_H = \"0\"\n      HAVE_SYS_LOCK_H = \"0\"\n      HAVE_SYS_MEMFD_H = \"0\"\n      HAVE_SYS_MKDEV_H = \"0\"\n      HAVE_SYS_MMAN_H = \"1\"\n      HAVE_SYS_MODEM_H = \"0\"\n      HAVE_SYS_NDIR_H = \"0\"\n      HAVE_SYS_PARAM_H = \"1\"\n      HAVE_SYS_POLL_H = \"1\"\n      HAVE_SYS_RANDOM_H = \"1\"\n      HAVE_SYS_RESOURCE_H = \"1\"\n      HAVE_SYS_SELECT_H = \"1\"\n      HAVE_SYS_SENDFILE_H = \"1\"\n      HAVE_SYS_SOCKET_H = \"1\"\n      HAVE_SYS_SOUNDCARD_H = \"1\"\n      HAVE_SYS_STATVFS_H = \"1\"\n      HAVE_SYS_STAT_H = \"1\"\n      HAVE_SYS_SYSCALL_H = \"1\"\n      HAVE_SYS_SYSMACROS_H = \"1\"\n      HAVE_SYS_SYS_DOMAIN_H = \"0\"\n      HAVE_SYS_TERMIO_H = \"0\"\n      HAVE_SYS_TIMERFD_H = \"1\"\n      HAVE_SYS_TIMES_H = \"1\"\n      HAVE_SYS_TIME_H = \"1\"\n      HAVE_SYS_TYPES_H = \"1\"\n      HAVE_SYS_UIO_H = \"1\"\n      HAVE_SYS_UN_H = \"1\"\n      HAVE_SYS_UTSNAME_H = \"1\"\n      HAVE_SYS_WAIT_H = \"1\"\n      HAVE_SYS_XATTR_H = \"1\"\n      HAVE_TCGETPGRP = \"1\"\n      HAVE_TCSETPGRP = \"1\"\n      HAVE_TEMPNAM = \"1\"\n      HAVE_TERMIOS_H = \"1\"\n      HAVE_TERM_H = \"1\"\n      HAVE_TIMEGM = \"1\"\n      HAVE_TIMERFD_CREATE = \"1\"\n      HAVE_TIMES = \"1\"\n      HAVE_TMPFILE = \"1\"\n      HAVE_TMPNAM = \"1\"\n      HAVE_TMPNAM_R = \"1\"\n      HAVE_TM_ZONE = \"1\"\n      HAVE_TRUNCATE = \"1\"\n      HAVE_TTYNAME = \"1\"\n      HAVE_TZNAME = \"0\"\n      HAVE_UMASK = \"1\"\n      HAVE_UNAME = \"1\"\n      HAVE_UNISTD_H = \"1\"\n      HAVE_UNLINKAT = \"1\"\n      HAVE_UNLOCKPT = \"1\"\n      HAVE_UNSHARE = \"1\"\n      HAVE_USABLE_WCHAR_T = \"1\"\n      HAVE_UTIL_H = \"0\"\n      HAVE_UTIMENSAT = \"1\"\n      HAVE_UTIMES = \"1\"\n      HAVE_UTIME_H = \"1\"\n      HAVE_UTMP_H = \"1\"\n      HAVE_UUID_CREATE = \"0\"\n      HAVE_UUID_ENC_BE = \"0\"\n      HAVE_UUID_GENERATE_TIME_SAFE = \"1\"\n      HAVE_UUID_H = \"1\"\n      HAVE_UUID_UUID_H = \"0\"\n      HAVE_VFORK = \"1\"\n      HAVE_WAIT = \"1\"\n      HAVE_WAIT3 = \"1\"\n      HAVE_WAIT4 = \"1\"\n      HAVE_WAITID = \"1\"\n      HAVE_WAITPID = \"1\"\n      HAVE_WCHAR_H = \"1\"\n      HAVE_WCSCOLL = \"1\"\n      HAVE_WCSFTIME = \"1\"\n      HAVE_WCSXFRM = \"1\"\n      HAVE_WMEMCMP = \"1\"\n      HAVE_WORKING_TZSET = \"1\"\n      HAVE_WRITEV = \"1\"\n      HAVE_ZLIB_COPY = \"1\"\n      HAVE_ZLIB_H = \"0\"\n      HAVE__GETPTY = \"0\"\n      HAVE___UINT128_T = \"1\"\n      HOSTRUNNER = \"\"\n      HOST_GNU_TYPE = \"aarch64-unknown-linux-gnu\"\n      INCLDIRSTOMAKE = \"/tmp/python/include /tmp/python/include /tmp/python/include/python3.13 /tmp/python/include/python3.13\"\n      INCLUDEDIR = \"/tmp/python/include\"\n      INCLUDEPY = \"/tmp/python/include/python3.13\"\n      INSTALL = \"/usr/bin/install -c\"\n      INSTALL_DATA = \"/usr/bin/install -c -m 644\"\n      INSTALL_MIMALLOC = \"yes\"\n      INSTALL_PROGRAM = \"/usr/bin/install -c\"\n      INSTALL_SCRIPT = \"/usr/bin/install -c\"\n      INSTALL_SHARED = \"/usr/bin/install -c -m 755\"\n      INSTSONAME = \"libpython3.13.so.1.0\"\n      IO_H = \"Modules/_io/_iomodule.h\"\n      IO_OBJS = \"\\\"\n      IPHONEOS_DEPLOYMENT_TARGET = \"\"\n      JIT_DEPS = \"\\\"\n      LDCXXSHARED = \"g++ -shared -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all\"\n      LDFLAGS = \"-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all\"\n      LDLIBRARY = \"libpython3.13.so\"\n      LDLIBRARYDIR = \"\"\n      LDSHARED = \"gcc -shared -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all\"\n      LDVERSION = \"3.13\"\n      LIBC = \"\"\n      LIBDEST = \"/tmp/python/lib/python3.13\"\n      LIBDIR = \"/tmp/python/lib\"\n      LIBEXPAT_A = \"Modules/expat/libexpat.a\"\n      LIBEXPAT_CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC -fPIC\"\n      LIBEXPAT_HEADERS = \"\\\"\n      LIBEXPAT_OBJS = \"\\\"\n      LIBHACL_CFLAGS = \"-I./Modules/_hacl/include -D_BSD_SOURCE -D_DEFAULT_SOURCE -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC -fPIC\"\n      LIBHACL_HEADERS = \"\\\"\n      LIBHACL_SHA2_A = \"Modules/_hacl/libHacl_Hash_SHA2.a\"\n      LIBHACL_SHA2_HEADERS = \"\\\"\n      LIBHACL_SHA2_OBJS = \"\\\"\n      LIBM = \"-lm\"\n      LIBMPDEC_A = \"Modules/_decimal/libmpdec/libmpdec.a\"\n      LIBMPDEC_CFLAGS = \"-I./Modules/_decimal/libmpdec -DCONFIG_64=1 -DANSI=1 -DHAVE_UINT128_T=1 -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC -fPIC\"\n      LIBMPDEC_HEADERS = \"\\\"\n      LIBMPDEC_OBJS = \"\\\"\n      LIBOBJDIR = \"Python/\"\n      LIBOBJS = \"\"\n      LIBPC = \"/tmp/python/lib/pkgconfig\"\n      LIBPL = \"/tmp/python/lib/python3.13/config-3.13-aarch64-linux-gnu\"\n      LIBPYTHON = \"\"\n      LIBRARY = \"libpython3.13.a\"\n      LIBRARY_DEPS = \"libpython3.13.so libpython3.so\"\n      LIBRARY_OBJS = \"\\\"\n      LIBRARY_OBJS_OMIT_FROZEN = \"\\\"\n      LIBS = \"-ldl\"\n      LIBSUBDIRS = \"asyncio \\\"\n      LINKCC = \"gcc\"\n      LINKFORSHARED = \"-Xlinker -export-dynamic\"\n      LINK_PYTHON_DEPS = \"libpython3.13.so libpython3.so\"\n      LINK_PYTHON_OBJS = \"-L. -lpython3.13\"\n      LIPO_32BIT_FLAGS = \"\"\n      LIPO_INTEL64_FLAGS = \"\"\n      LLVM_PROF_ERR = \"no\"\n      LLVM_PROF_FILE = \"\"\n      LLVM_PROF_MERGER = \"true\"\n      LN = \"ln\"\n      LOCALMODLIBS = \"\"\n      MACHDEP = \"linux\"\n      MACHDEP_OBJS = \"\"\n      MACHDESTLIB = \"/tmp/python/lib/python3.13\"\n      MACOSX_DEPLOYMENT_TARGET = \"\"\n      MAJOR_IN_MKDEV = \"0\"\n      MAJOR_IN_SYSMACROS = \"1\"\n      MAKESETUP = \"./Modules/makesetup\"\n      MANDIR = \"/tmp/python/share/man\"\n      MIMALLOC_HEADERS = \"\\\"\n      MKDIR_P = \"/usr/bin/mkdir -p\"\n      MODBUILT_NAMES = \"array  _asyncio  _bisect  _contextvars  _csv  _heapq  _json  _lsprof  _opcode  _pickle  _queue  _random  _struct  _interpreters  _interpchannels  _interpqueues  _zoneinfo  math  cmath  _statistics  _datetime  _decimal  binascii  _bz2  _lzma  zlib  _dbm  _gdbm  readline  _md5  _sha1  _sha2  _sha3  _blake2  pyexpat  _elementtree  _codecs_cn  _codecs_hk  _codecs_iso2022  _codecs_jp  _codecs_kr  _codecs_tw  _multibytecodec  unicodedata  fcntl  grp  mmap  _posixsubprocess  resource  select  _socket  syslog  termios  _posixshmem  _multiprocessing  _ctypes  _curses  _curses_panel  _sqlite3  _ssl  _hashlib  _uuid  atexit  faulthandler  posix  _signal  _tracemalloc  _suggestions  _codecs  _collections  errno  _io  itertools  _sre  _sysconfig  _thread  time  _typing  _weakref  _abc  _functools  _locale  _operator  _stat  _symtable  pwd\"\n      MODDISABLED_NAMES = \"\"\n      MODLIBS = \"\"\n      MODOBJS = \"Modules/atexitmodule.o  Modules/faulthandler.o  Modules/posixmodule.o  Modules/signalmodule.o  Modules/_tracemalloc.o  Modules/_suggestions.o  Modules/_codecsmodule.o  Modules/_collectionsmodule.o  Modules/errnomodule.o  Modules/_io/_iomodule.o Modules/_io/iobase.o Modules/_io/fileio.o Modules/_io/bytesio.o Modules/_io/bufferedio.o Modules/_io/textio.o Modules/_io/stringio.o  Modules/itertoolsmodule.o  Modules/_sre/sre.o  Modules/_sysconfig.o  Modules/_threadmodule.o  Modules/timemodule.o  Modules/_typingmodule.o  Modules/_weakref.o  Modules/_abc.o  Modules/_functoolsmodule.o  Modules/_localemodule.o  Modules/_operator.o  Modules/_stat.o  Modules/symtablemodule.o  Modules/pwdmodule.o\"\n      MODSHARED_NAMES = \"array _asyncio _bisect _contextvars _csv _heapq _json _lsprof _opcode _pickle _queue _random _struct _interpreters _interpchannels _interpqueues _zoneinfo math cmath _statistics _datetime _decimal binascii _bz2 _lzma zlib _dbm _gdbm readline _md5 _sha1 _sha2 _sha3 _blake2 pyexpat _elementtree _codecs_cn _codecs_hk _codecs_iso2022 _codecs_jp _codecs_kr _codecs_tw _multibytecodec unicodedata fcntl grp mmap _posixsubprocess resource select _socket syslog termios _posixshmem _multiprocessing _ctypes _curses _curses_panel _sqlite3 _ssl _hashlib _uuid\"\n      MODULE_ARRAY_STATE = \"yes\"\n      MODULE_ATEXIT_LDFLAGS = \"\"\n      MODULE_BINASCII_CFLAGS = \"-DUSE_ZLIB_CRC32\"\n      MODULE_BINASCII_LDFLAGS = \"-lz\"\n      MODULE_BINASCII_STATE = \"yes\"\n      MODULE_CMATH_DEPS = \"./Modules/_math.h\"\n      MODULE_CMATH_LDFLAGS = \"-lm\"\n      MODULE_CMATH_STATE = \"yes\"\n      MODULE_DEPS_SHARED = \"Modules/config.c\"\n      MODULE_DEPS_STATIC = \"Modules/config.c\"\n      MODULE_ERRNO_LDFLAGS = \"\"\n      MODULE_FAULTHANDLER_LDFLAGS = \"\"\n      MODULE_FCNTL_LDFLAGS = \"\"\n      MODULE_FCNTL_STATE = \"yes\"\n      MODULE_GRP_STATE = \"yes\"\n      MODULE_ITERTOOLS_LDFLAGS = \"\"\n      MODULE_MATH_DEPS = \"./Modules/_math.h\"\n      MODULE_MATH_LDFLAGS = \"-lm\"\n      MODULE_MATH_STATE = \"yes\"\n      MODULE_MMAP_STATE = \"yes\"\n      MODULE_OBJS = \"\\\"\n      MODULE_POSIX_LDFLAGS = \"\"\n      MODULE_PWD_LDFLAGS = \"\"\n      MODULE_PWD_STATE = \"yes\"\n      MODULE_PYEXPAT_CFLAGS = \"\"\n      MODULE_PYEXPAT_DEPS = \"\"\n      MODULE_PYEXPAT_LDFLAGS = \"-lexpat\"\n      MODULE_PYEXPAT_STATE = \"yes\"\n      MODULE_READLINE_CFLAGS = \"-D_DEFAULT_SOURCE\"\n      MODULE_READLINE_LDFLAGS = \"-lreadline\"\n      MODULE_READLINE_STATE = \"yes\"\n      MODULE_RESOURCE_STATE = \"yes\"\n      MODULE_SELECT_STATE = \"yes\"\n      MODULE_SYSLOG_STATE = \"yes\"\n      MODULE_TERMIOS_STATE = \"yes\"\n      MODULE_TIME_LDFLAGS = \"\"\n      MODULE_TIME_STATE = \"yes\"\n      MODULE_UNICODEDATA_DEPS = \"./Modules/unicodedata_db.h ./Modules/unicodename_db.h\"\n      MODULE_UNICODEDATA_STATE = \"yes\"\n      MODULE_XXLIMITED_35_STATE = \"disabled\"\n      MODULE_XXLIMITED_STATE = \"disabled\"\n      MODULE_XXSUBTYPE_STATE = \"disabled\"\n      MODULE_ZLIB_CFLAGS = \"\"\n      MODULE_ZLIB_LDFLAGS = \"-lz\"\n      MODULE_ZLIB_STATE = \"yes\"\n      MODULE__ABC_LDFLAGS = \"\"\n      MODULE__ASYNCIO_STATE = \"yes\"\n      MODULE__BISECT_STATE = \"yes\"\n      MODULE__BLAKE2_CFLAGS = \"\"\n      MODULE__BLAKE2_DEPS = \"./Modules/_blake2/impl/blake2-config.h ./Modules/_blake2/impl/blake2-impl.h ./Modules/_blake2/impl/blake2.h ./Modules/_blake2/impl/blake2b-load-sse2.h ./Modules/_blake2/impl/blake2b-load-sse41.h ./Modules/_blake2/impl/blake2b-ref.c ./Modules/_blake2/impl/blake2b-round.h ./Modules/_blake2/impl/blake2b.c ./Modules/_blake2/impl/blake2s-load-sse2.h ./Modules/_blake2/impl/blake2s-load-sse41.h ./Modules/_blake2/impl/blake2s-load-xop.h ./Modules/_blake2/impl/blake2s-ref.c ./Modules/_blake2/impl/blake2s-round.h ./Modules/_blake2/impl/blake2s.c ./Modules/_blake2/blake2module.h ./Modules/hashlib.h\"\n      MODULE__BLAKE2_LDFLAGS = \"\"\n      MODULE__BLAKE2_STATE = \"yes\"\n      MODULE__BZ2_CFLAGS = \"\"\n      MODULE__BZ2_LDFLAGS = \"-lbz2\"\n      MODULE__BZ2_STATE = \"yes\"\n      MODULE__CODECS_CN_DEPS = \"./Modules/cjkcodecs/mappings_cn.h ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_CN_STATE = \"yes\"\n      MODULE__CODECS_HK_DEPS = \"./Modules/cjkcodecs/mappings_hk.h  ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_HK_STATE = \"yes\"\n      MODULE__CODECS_ISO2022_DEPS = \"./Modules/cjkcodecs/mappings_jisx0213_pair.h ./Modules/cjkcodecs/alg_jisx0201.h ./Modules/cjkcodecs/emu_jisx0213_2000.h ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_ISO2022_STATE = \"yes\"\n      MODULE__CODECS_JP_DEPS = \"./Modules/cjkcodecs/mappings_jisx0213_pair.h ./Modules/cjkcodecs/alg_jisx0201.h ./Modules/cjkcodecs/emu_jisx0213_2000.h ./Modules/cjkcodecs/mappings_jp.h ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_JP_STATE = \"yes\"\n      MODULE__CODECS_KR_DEPS = \"./Modules/cjkcodecs/mappings_kr.h ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_KR_STATE = \"yes\"\n      MODULE__CODECS_LDFLAGS = \"\"\n      MODULE__CODECS_TW_DEPS = \"./Modules/cjkcodecs/mappings_tw.h ./Modules/cjkcodecs/multibytecodec.h ./Modules/cjkcodecs/cjkcodecs.h\"\n      MODULE__CODECS_TW_STATE = \"yes\"\n      MODULE__COLLECTIONS_LDFLAGS = \"\"\n      MODULE__CONTEXTVARS_STATE = \"yes\"\n      MODULE__CSV_STATE = \"yes\"\n      MODULE__CTYPES_CFLAGS = \"-fno-strict-overflow\"\n      MODULE__CTYPES_DEPS = \"./Modules/_ctypes/ctypes.h\"\n      MODULE__CTYPES_LDFLAGS = \"-lffi  -ldl\"\n      MODULE__CTYPES_MALLOC_CLOSURE = \"\"\n      MODULE__CTYPES_STATE = \"yes\"\n      MODULE__CTYPES_TEST_STATE = \"disabled\"\n      MODULE__CURSES_CFLAGS = \"-D_DEFAULT_SOURCE\"\n      MODULE__CURSES_DEPS = \"./Include/py_curses.h\"\n      MODULE__CURSES_LDFLAGS = \"-lncursesw -ltinfo\"\n      MODULE__CURSES_PANEL_CFLAGS = \"-D_DEFAULT_SOURCE  -D_DEFAULT_SOURCE\"\n      MODULE__CURSES_PANEL_DEPS = \"./Include/py_curses.h\"\n      MODULE__CURSES_PANEL_LDFLAGS = \"-lpanelw  -lncursesw -ltinfo\"\n      MODULE__CURSES_PANEL_STATE = \"yes\"\n      MODULE__CURSES_STATE = \"yes\"\n      MODULE__DATETIME_DEPS = \"./Include/datetime.h\"\n      MODULE__DATETIME_LDFLAGS = \"-lm\"\n      MODULE__DATETIME_STATE = \"yes\"\n      MODULE__DBM_CFLAGS = \"-DUSE_BERKDB\"\n      MODULE__DBM_LDFLAGS = \"-ldb\"\n      MODULE__DBM_STATE = \"yes\"\n      MODULE__DECIMAL_CFLAGS = \"-I./Modules/_decimal/libmpdec -DCONFIG_64=1 -DANSI=1 -DHAVE_UINT128_T=1\"\n      MODULE__DECIMAL_DEPS = \"./Modules/_decimal/docstrings.h \\ Modules/_decimal/libmpdec/libmpdec.a\"\n      MODULE__DECIMAL_LDFLAGS = \"-lm Modules/_decimal/libmpdec/libmpdec.a\"\n      MODULE__DECIMAL_STATE = \"yes\"\n      MODULE__ELEMENTTREE_CFLAGS = \"\"\n      MODULE__ELEMENTTREE_DEPS = \"./Modules/pyexpat.c\"\n      MODULE__ELEMENTTREE_STATE = \"yes\"\n      MODULE__FUNCTOOLS_LDFLAGS = \"\"\n      MODULE__GDBM_CFLAGS = \"\"\n      MODULE__GDBM_LDFLAGS = \"-lgdbm\"\n      MODULE__GDBM_STATE = \"yes\"\n      MODULE__HASHLIB_CFLAGS = \"\"\n      MODULE__HASHLIB_DEPS = \"./Modules/hashlib.h\"\n      MODULE__HASHLIB_LDFLAGS = \"-lcrypto\"\n      MODULE__HASHLIB_STATE = \"yes\"\n      MODULE__HEAPQ_STATE = \"yes\"\n      MODULE__INTERPCHANNELS_STATE = \"yes\"\n      MODULE__INTERPQUEUES_STATE = \"yes\"\n      MODULE__INTERPRETERS_STATE = \"yes\"\n      MODULE__IO_CFLAGS = \"-I./Modules/_io\"\n      MODULE__IO_DEPS = \"./Modules/_io/_iomodule.h\"\n      MODULE__IO_LDFLAGS = \"\"\n      MODULE__IO_STATE = \"yes\"\n      MODULE__JSON_STATE = \"yes\"\n      MODULE__LOCALE_LDFLAGS = \"\"\n      MODULE__LSPROF_STATE = \"yes\"\n      MODULE__LZMA_CFLAGS = \"\"\n      MODULE__LZMA_LDFLAGS = \"-llzma\"\n      MODULE__LZMA_STATE = \"yes\"\n      MODULE__MD5_CFLAGS = \"-I./Modules/_hacl/include -I./Modules/_hacl/internal -D_BSD_SOURCE -D_DEFAULT_SOURCE\"\n      MODULE__MD5_DEPS = \"./Modules/hashlib.h \\ Modules/_hacl/Hacl_Hash_MD5.h Modules/_hacl/Hacl_Hash_MD5.c\"\n      MODULE__MD5_STATE = \"yes\"\n      MODULE__MULTIBYTECODEC_DEPS = \"./Modules/cjkcodecs/multibytecodec.h\"\n      MODULE__MULTIBYTECODEC_STATE = \"yes\"\n      MODULE__MULTIPROCESSING_CFLAGS = \"-I./Modules/_multiprocessing\"\n      MODULE__MULTIPROCESSING_STATE = \"yes\"\n      MODULE__OPCODE_STATE = \"yes\"\n      MODULE__OPERATOR_LDFLAGS = \"\"\n      MODULE__PICKLE_STATE = \"yes\"\n      MODULE__POSIXSHMEM_CFLAGS = \"-I./Modules/_multiprocessing\"\n      MODULE__POSIXSHMEM_LDFLAGS = \"\"\n      MODULE__POSIXSHMEM_STATE = \"yes\"\n      MODULE__POSIXSUBPROCESS_STATE = \"yes\"\n      MODULE__QUEUE_STATE = \"yes\"\n      MODULE__RANDOM_STATE = \"yes\"\n      MODULE__SCPROXY_STATE = \"n/a\"\n      MODULE__SHA1_CFLAGS = \"-I./Modules/_hacl/include -I./Modules/_hacl/internal -D_BSD_SOURCE -D_DEFAULT_SOURCE\"\n      MODULE__SHA1_DEPS = \"./Modules/hashlib.h \\ Modules/_hacl/Hacl_Hash_SHA1.h Modules/_hacl/Hacl_Hash_SHA1.c\"\n      MODULE__SHA1_STATE = \"yes\"\n      MODULE__SHA2_CFLAGS = \"-I./Modules/_hacl/include -I./Modules/_hacl/internal -D_BSD_SOURCE -D_DEFAULT_SOURCE\"\n      MODULE__SHA2_DEPS = \"./Modules/hashlib.h \\ Modules/_hacl/libHacl_Hash_SHA2.a\"\n      MODULE__SHA2_STATE = \"yes\"\n      MODULE__SHA3_DEPS = \"./Modules/hashlib.h \\ Modules/_hacl/Hacl_Hash_SHA3.h Modules/_hacl/Hacl_Hash_SHA3.c\"\n      MODULE__SHA3_STATE = \"yes\"\n      MODULE__SIGNAL_LDFLAGS = \"\"\n      MODULE__SOCKET_DEPS = \"./Modules/socketmodule.h ./Modules/addrinfo.h ./Modules/getaddrinfo.c ./Modules/getnameinfo.c\"\n      MODULE__SOCKET_STATE = \"yes\"\n      MODULE__SQLITE3_CFLAGS = \"-I./Modules/_sqlite\"\n      MODULE__SQLITE3_DEPS = \"./Modules/_sqlite/connection.h ./Modules/_sqlite/cursor.h ./Modules/_sqlite/microprotocols.h ./Modules/_sqlite/module.h ./Modules/_sqlite/prepare_protocol.h ./Modules/_sqlite/row.h ./Modules/_sqlite/util.h\"\n      MODULE__SQLITE3_LDFLAGS = \"-lsqlite3\"\n      MODULE__SQLITE3_STATE = \"yes\"\n      MODULE__SRE_LDFLAGS = \"\"\n      MODULE__SSL_CFLAGS = \"\"\n      MODULE__SSL_DEPS = \"./Modules/_ssl.h ./Modules/_ssl/cert.c ./Modules/_ssl/debughelpers.c ./Modules/_ssl/misc.c ./Modules/_ssl_data_111.h ./Modules/_ssl_data_300.h ./Modules/socketmodule.h\"\n      MODULE__SSL_LDFLAGS = \"-lssl -lcrypto\"\n      MODULE__SSL_STATE = \"yes\"\n      MODULE__STATISTICS_LDFLAGS = \"-lm\"\n      MODULE__STATISTICS_STATE = \"yes\"\n      MODULE__STAT_LDFLAGS = \"\"\n      MODULE__STRUCT_STATE = \"yes\"\n      MODULE__SUGGESTIONS_LDFLAGS = \"\"\n      MODULE__SYMTABLE_LDFLAGS = \"\"\n      MODULE__SYSCONFIG_LDFLAGS = \"\"\n      MODULE__TESTBUFFER_STATE = \"disabled\"\n      MODULE__TESTCAPI_DEPS = \"./Modules/_testcapi/parts.h ./Modules/_testcapi/util.h\"\n      MODULE__TESTCAPI_STATE = \"disabled\"\n      MODULE__TESTCLINIC_LIMITED_STATE = \"disabled\"\n      MODULE__TESTCLINIC_STATE = \"disabled\"\n      MODULE__TESTEXTERNALINSPECTION_STATE = \"disabled\"\n      MODULE__TESTIMPORTMULTIPLE_STATE = \"disabled\"\n      MODULE__TESTINTERNALCAPI_DEPS = \"./Modules/_testinternalcapi/parts.h\"\n      MODULE__TESTINTERNALCAPI_STATE = \"disabled\"\n      MODULE__TESTLIMITEDCAPI_DEPS = \"./Modules/_testlimitedcapi/testcapi_long.h ./Modules/_testlimitedcapi/parts.h ./Modules/_testlimitedcapi/util.h\"\n      MODULE__TESTLIMITEDCAPI_STATE = \"disabled\"\n      MODULE__TESTMULTIPHASE_STATE = \"disabled\"\n      MODULE__TESTSINGLEPHASE_STATE = \"disabled\"\n      MODULE__THREAD_LDFLAGS = \"\"\n      MODULE__TKINTER_STATE = \"missing\"\n      MODULE__TRACEMALLOC_LDFLAGS = \"\"\n      MODULE__TYPING_LDFLAGS = \"\"\n      MODULE__TYPING_STATE = \"yes\"\n      MODULE__UUID_CFLAGS = \"-I/usr/include/uuid\"\n      MODULE__UUID_LDFLAGS = \"-luuid\"\n      MODULE__UUID_STATE = \"yes\"\n      MODULE__WEAKREF_LDFLAGS = \"\"\n      MODULE__XXTESTFUZZ_STATE = \"disabled\"\n      MODULE__ZONEINFO_STATE = \"yes\"\n      MULTIARCH = \"aarch64-linux-gnu\"\n      MULTIARCH_CPPFLAGS = \"-DMULTIARCH=\\\"aarch64-linux-gnu\\\"\"\n      MVWDELCH_IS_EXPRESSION = \"1\"\n      NO_AS_NEEDED = \"-Wl,--no-as-needed\"\n      OBJECT_OBJS = \"\\\"\n      OPT = \"-DNDEBUG -g -O3 -Wall\"\n      PACKAGE_BUGREPORT = \"0\"\n      PACKAGE_NAME = \"0\"\n      PACKAGE_STRING = \"0\"\n      PACKAGE_TARNAME = \"0\"\n      PACKAGE_URL = \"0\"\n      PACKAGE_VERSION = \"0\"\n      PARSER_HEADERS = \"\\\"\n      PARSER_OBJS = \"\\ \\ \\ Parser/myreadline.o\"\n      PEGEN_HEADERS = \"\\\"\n      PEGEN_OBJS = \"\\\"\n      PGO_PROF_GEN_FLAG = \"-fprofile-generate\"\n      PGO_PROF_USE_FLAG = \"-fprofile-use -fprofile-correction\"\n      PLATLIBDIR = \"lib\"\n      POBJS = \"\\\"\n      POSIX_SEMAPHORES_NOT_ENABLED = \"0\"\n      PROFILE_TASK = \"-m test --pgo --timeout=\"\n      PTHREAD_KEY_T_IS_COMPATIBLE_WITH_INT = \"1\"\n      PTHREAD_SYSTEM_SCHED_SUPPORTED = \"1\"\n      PURIFY = \"\"\n      PY3LIBRARY = \"libpython3.so\"\n      PYLONG_BITS_IN_DIGIT = \"0\"\n      PYTHON = \"python\"\n      PYTHONFRAMEWORK = \"\"\n      PYTHONFRAMEWORKDIR = \"no-framework\"\n      PYTHONFRAMEWORKINSTALLDIR = \"\"\n      PYTHONFRAMEWORKINSTALLNAMEPREFIX = \"\"\n      PYTHONFRAMEWORKPREFIX = \"\"\n      PYTHONPATH = \"\"\n      PYTHON_FOR_BUILD = \"./python -E\"\n      PYTHON_FOR_BUILD_DEPS = \"python\"\n      PYTHON_FOR_FREEZE = \"./_bootstrap_python\"\n      PYTHON_FOR_REGEN = \"\"\n      PYTHON_HEADERS = \"\\\"\n      PYTHON_OBJS = \"\\\"\n      PY_BUILTIN_HASHLIB_HASHES = \"\"md5,sha1,sha2,sha3,blake2\"\"\n      PY_BUILTIN_MODULE_CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC -DPy_BUILD_CORE_BUILTIN\"\n      PY_CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard\"\n      PY_CFLAGS_NODIST = \"-fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc\"\n      PY_COERCE_C_LOCALE = \"1\"\n      PY_CORE_CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC -DPy_BUILD_CORE\"\n      PY_CORE_LDFLAGS = \"-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g\"\n      PY_CPPFLAGS = \"-I. -I./Include\"\n      PY_ENABLE_SHARED = \"1\"\n      PY_HAVE_PERF_TRAMPOLINE = \"1\"\n      PY_LDFLAGS = \"-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all\"\n      PY_LDFLAGS_NODIST = \"-fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g\"\n      PY_LDFLAGS_NOLTO = \"-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,--strip-all -fno-lto\"\n      PY_SQLITE_ENABLE_LOAD_EXTENSION = \"1\"\n      PY_SQLITE_HAVE_SERIALIZE = \"1\"\n      PY_SSL_DEFAULT_CIPHERS = \"1\"\n      PY_SSL_DEFAULT_CIPHER_STRING = \"0\"\n      PY_STDMODULE_CFLAGS = \"-fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall   -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/src=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -mbranch-protection=standard -fno-semantic-interposition -flto -fuse-linker-plugin -ffat-lto-objects -flto-partition=none -g -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -fprofile-use -fprofile-correction -I./Include/internal -I./Include/internal/mimalloc -I. -I./Include -fPIC\"\n      PY_SUPPORT_TIER = \"2\"\n      Py_DEBUG = \"0\"\n      Py_ENABLE_SHARED = \"1\"\n      Py_GIL_DISABLED = \"0\"\n      Py_HASH_ALGORITHM = \"0\"\n      Py_RL_STARTUP_HOOK_TAKES_ARGS = \"1\"\n      Py_STATS = \"0\"\n      Py_SUNOS_VERSION = \"0\"\n      Py_TRACE_REFS = \"0\"\n      QUICKTESTOPTS = \"-x test_subprocess test_io \\\"\n      READELF = \"@READELF@\"\n      RESSRCDIR = \"\"\n      RETSIGTYPE = \"void\"\n      RUNSHARED = \"LD_LIBRARY_PATH=/tmp/src\"\n      SCRIPTDIR = \"/tmp/python/lib\"\n      SCRIPT_IDLE = \"build/scripts-3.13/idle3.13\"\n      SCRIPT_PYDOC = \"build/scripts-3.13/pydoc3.13\"\n      SETPGRP_HAVE_ARG = \"0\"\n      SHAREDMODS = \"Modules/array.cpython-313-aarch64-linux-gnu.so Modules/_asyncio.cpython-313-aarch64-linux-gnu.so Modules/_bisect.cpython-313-aarch64-linux-gnu.so Modules/_contextvars.cpython-313-aarch64-linux-gnu.so Modules/_csv.cpython-313-aarch64-linux-gnu.so Modules/_heapq.cpython-313-aarch64-linux-gnu.so Modules/_json.cpython-313-aarch64-linux-gnu.so Modules/_lsprof.cpython-313-aarch64-linux-gnu.so Modules/_opcode.cpython-313-aarch64-linux-gnu.so Modules/_pickle.cpython-313-aarch64-linux-gnu.so Modules/_queue.cpython-313-aarch64-linux-gnu.so Modules/_random.cpython-313-aarch64-linux-gnu.so Modules/_struct.cpython-313-aarch64-linux-gnu.so Modules/_interpreters.cpython-313-aarch64-linux-gnu.so Modules/_interpchannels.cpython-313-aarch64-linux-gnu.so Modules/_interpqueues.cpython-313-aarch64-linux-gnu.so Modules/_zoneinfo.cpython-313-aarch64-linux-gnu.so Modules/math.cpython-313-aarch64-linux-gnu.so Modules/cmath.cpython-313-aarch64-linux-gnu.so Modules/_statistics.cpython-313-aarch64-linux-gnu.so Modules/_datetime.cpython-313-aarch64-linux-gnu.so Modules/_decimal.cpython-313-aarch64-linux-gnu.so Modules/binascii.cpython-313-aarch64-linux-gnu.so Modules/_bz2.cpython-313-aarch64-linux-gnu.so Modules/_lzma.cpython-313-aarch64-linux-gnu.so Modules/zlib.cpython-313-aarch64-linux-gnu.so Modules/_dbm.cpython-313-aarch64-linux-gnu.so Modules/_gdbm.cpython-313-aarch64-linux-gnu.so Modules/readline.cpython-313-aarch64-linux-gnu.so Modules/_md5.cpython-313-aarch64-linux-gnu.so Modules/_sha1.cpython-313-aarch64-linux-gnu.so Modules/_sha2.cpython-313-aarch64-linux-gnu.so Modules/_sha3.cpython-313-aarch64-linux-gnu.so Modules/_blake2.cpython-313-aarch64-linux-gnu.so Modules/pyexpat.cpython-313-aarch64-linux-gnu.so Modules/_elementtree.cpython-313-aarch64-linux-gnu.so Modules/_codecs_cn.cpython-313-aarch64-linux-gnu.so Modules/_codecs_hk.cpython-313-aarch64-linux-gnu.so Modules/_codecs_iso2022.cpython-313-aarch64-linux-gnu.so Modules/_codecs_jp.cpython-313-aarch64-linux-gnu.so Modules/_codecs_kr.cpython-313-aarch64-linux-gnu.so Modules/_codecs_tw.cpython-313-aarch64-linux-gnu.so Modules/_multibytecodec.cpython-313-aarch64-linux-gnu.so Modules/unicodedata.cpython-313-aarch64-linux-gnu.so Modules/fcntl.cpython-313-aarch64-linux-gnu.so Modules/grp.cpython-313-aarch64-linux-gnu.so Modules/mmap.cpython-313-aarch64-linux-gnu.so Modules/_posixsubprocess.cpython-313-aarch64-linux-gnu.so Modules/resource.cpython-313-aarch64-linux-gnu.so Modules/select.cpython-313-aarch64-linux-gnu.so Modules/_socket.cpython-313-aarch64-linux-gnu.so Modules/syslog.cpython-313-aarch64-linux-gnu.so Modules/termios.cpython-313-aarch64-linux-gnu.so Modules/_posixshmem.cpython-313-aarch64-linux-gnu.so Modules/_multiprocessing.cpython-313-aarch64-linux-gnu.so Modules/_ctypes.cpython-313-aarch64-linux-gnu.so Modules/_curses.cpython-313-aarch64-linux-gnu.so Modules/_curses_panel.cpython-313-aarch64-linux-gnu.so Modules/_sqlite3.cpython-313-aarch64-linux-gnu.so Modules/_ssl.cpython-313-aarch64-linux-gnu.so Modules/_hashlib.cpython-313-aarch64-linux-gnu.so Modules/_uuid.cpython-313-aarch64-linux-gnu.so\"\n      SHELL = \"/bin/sh -e\"\n      SHLIBS = \"-ldl\"\n      SHLIB_SUFFIX = \".so\"\n      SIGNED_RIGHT_SHIFT_ZERO_FILLS = \"0\"\n      SITEPATH = \"\"\n      SIZEOF_DOUBLE = \"8\"\n      SIZEOF_FLOAT = \"4\"\n      SIZEOF_FPOS_T = \"16\"\n      SIZEOF_INT = \"4\"\n      SIZEOF_LONG = \"8\"\n      SIZEOF_LONG_DOUBLE = \"16\"\n      SIZEOF_LONG_LONG = \"8\"\n      SIZEOF_OFF_T = \"8\"\n      SIZEOF_PID_T = \"4\"\n      SIZEOF_PTHREAD_KEY_T = \"4\"\n      SIZEOF_PTHREAD_T = \"8\"\n      SIZEOF_SHORT = \"2\"\n      SIZEOF_SIZE_T = \"8\"\n      SIZEOF_TIME_T = \"8\"\n      SIZEOF_UINTPTR_T = \"8\"\n      SIZEOF_VOID_P = \"8\"\n      SIZEOF_WCHAR_T = \"4\"\n      SIZEOF__BOOL = \"1\"\n      SOABI = \"cpython-313-aarch64-linux-gnu\"\n      SRCDIRS = \"Modules   Modules/_blake2   Modules/_ctypes   Modules/_decimal   Modules/_decimal/libmpdec   Modules/_hacl   Modules/_io   Modules/_multiprocessing   Modules/_sqlite   Modules/_sre   Modules/_testcapi   Modules/_testinternalcapi   Modules/_testlimitedcapi   Modules/_xxtestfuzz   Modules/cjkcodecs   Modules/expat   Objects   Objects/mimalloc   Objects/mimalloc/prim   Parser   Parser/tokenizer   Parser/lexer   Programs   Python   Python/frozen_modules\"\n      SRC_GDB_HOOKS = \"./Tools/gdb/libpython.py\"\n      STATIC_LIBPYTHON = \"0\"\n      STDC_HEADERS = \"1\"\n      STRICT_SYSV_CURSES = \"/* Don't use ncurses extensions */\"\n      STRIPFLAG = \"-s\"\n      SUBDIRS = \"\"\n      SUBDIRSTOO = \"Include Lib Misc\"\n      SYSLIBS = \"-lm\"\n      SYS_SELECT_WITH_SYS_TIME = \"1\"\n      TESTOPTS = \"\"\n      TESTPATH = \"\"\n      TESTPYTHON = \"LD_LIBRARY_PATH=/tmp/src ./python -E\"\n      TESTPYTHONOPTS = \"\"\n      TESTRUNNER = \"LD_LIBRARY_PATH=/tmp/src ./python -E -m test\"\n      TESTSUBDIRS = \"idlelib/idle_test \\\"\n      TESTTIMEOUT = \"\"\n      TEST_MODULES = \"no\"\n      THREAD_STACK_SIZE = \"0\"\n      TIMEMODULE_LIB = \"0\"\n      TM_IN_SYS_TIME = \"0\"\n      TOKENIZER_HEADERS = \"\\\"\n      TOKENIZER_OBJS = \"\\\"\n      TZPATH = \"/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo\"\n      UNICODE_DEPS = \"\\\"\n      UNIVERSALSDK = \"\"\n      UPDATE_FILE = \"./Tools/build/update_file.py\"\n      USE_COMPUTED_GOTOS = \"0\"\n      VERSION = \"3.13\"\n      WASM_ASSETS_DIR = \"./tmp/python\"\n      WASM_STDLIB = \"./tmp/python/lib/python3.13/os.py\"\n      WHEEL_PKG_DIR = \"\"\n      WINDOW_HAS_FLAGS = \"0\"\n      WITH_DECIMAL_CONTEXTVAR = \"1\"\n      WITH_DOC_STRINGS = \"1\"\n      WITH_DTRACE = \"0\"\n      WITH_DYLD = \"0\"\n      WITH_EDITLINE = \"0\"\n      WITH_FREELISTS = \"1\"\n      WITH_LIBINTL = \"0\"\n      WITH_MIMALLOC = \"1\"\n      WITH_NEXT_FRAMEWORK = \"0\"\n      WITH_PYMALLOC = \"1\"\n      WITH_VALGRIND = \"0\"\n      X87_DOUBLE_ROUNDING = \"0\"\n      XCFOLDER = \"\"\n      XCRESULT = \"/aarch64-linux-gnu.xcresult\"\n      XMLLIBSUBDIRS = \"xml xml/dom xml/etree xml/parsers xml/sax\"\n      abi_thread = \"\"\n      abiflags = \"\"\n      abs_builddir = \"/tmp/src\"\n      abs_srcdir = \"/tmp/src\"\n      base = \"/testcase/.heroku/python\"\n      datarootdir = \"/tmp/python/share\"\n      exec_prefix = \"/tmp/python\"\n      implementation = \"Python\"\n      implementation_lower = \"python\"\n      installed_base = \"/testcase/.heroku/python\"\n      installed_platbase = \"/testcase/.heroku/python\"\n      platbase = \"/testcase/.heroku/python\"\n      platlibdir = \"lib\"\n      prefix = \"/tmp/python\"\n      projectbase = \"/testcase/.heroku/python/bin\"\n      py_version = \"3.13.1\"\n      py_version_nodot = \"313\"\n      py_version_nodot_plat = \"\"\n      py_version_short = \"3.13\"\n      srcdir = \"/testcase/.heroku/python/lib/python3.13/config-3.13-aarch64-linux-gnu\"\n      userbase = \"/root/.local\"\n  ```\n</details>\n\n\n### Example pyproject.toml\n\n```TOML\n[project]\nname = \"testcase-poetry\"\nversion = \"0.1.0\"\nrequires-python = \"3.12.*\"\ndependencies = [\n    \"typing-extensions\"\n]\n\n[tool.poetry]\npackage-mode = false\n```\n\n### Poetry Runtime Logs\n\n<details>\n  <summary>poetry-runtime.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\nRUN poetry install -vvv\nThe currently activated Python version 3.13.1 is not supported by the project (3.12.*).\nTrying to find and use a compatible version. \n[findpython:findpython] Provider AsdfProvider is not available\n[findpython:findpython] Provider PyenvProvider is not available\n[findpython:findpython] Provider WinregProvider is not available\n[findpython:findpython] Provider MacOSProvider is not available\n[findpython:findpython] Running script: ['/testcase/.heroku/python/bin/python3.13', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/usr/bin/python3.12', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/bin/python3.12', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/testcase/.heroku/python/bin/python3', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/testcase/.heroku/python/bin/python', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/usr/bin/python3', '-EsSc', 'import platform; print(platform.python_version())']\n[findpython:findpython] Running script: ['/bin/python3', '-EsSc', 'import platform; print(platform.python_version())']\nUsing python3.12 (3.12.3)\nSkipping virtualenv creation, as specified in config file.\nChecking keyring availability: Checking if keyring is available\n[keyring:keyring.backend] Loading KWallet\n[keyring:keyring.backend] Loading SecretService\n[keyring:keyring.backend] Loading Windows\n[keyring:keyring.backend] Loading chainer\n[keyring:keyring.backend] Loading libsecret\n[keyring:keyring.backend] Loading macOS\nBackend 'fail Keyring' is not suitable\nNo valid keyring backend was found\nUnavailable\nInstalling dependencies from lock file\n\nFinding the necessary packages for the current system\n\nPackage operations: 1 install, 0 updates, 0 removals\n\n  - Installing typing-extensions (4.12.2)\nCreating new session for pypi.org\n[urllib3:urllib3.connectionpool] Starting new HTTPS connection (1): pypi.org:443\n[urllib3:urllib3.connectionpool] https://pypi.org:443 \"GET /pypi/typing-extensions/4.12.2/json HTTP/1.1\" 200 1979\n[filelock:filelock] Attempting to acquire lock 281472933620640 on /root/.cache/pypoetry/cache/repositories/PyPI/_http/0/6/f/5/e/06f5e6ff249dca41a6c62a58477ec555f09d75c84fb8ea39a2015bd2.lock\n[filelock:filelock] Lock 281472933620640 acquired on /root/.cache/pypoetry/cache/repositories/PyPI/_http/0/6/f/5/e/06f5e6ff249dca41a6c62a58477ec555f09d75c84fb8ea39a2015bd2.lock\n[filelock:filelock] Attempting to release lock 281472933620640 on /root/.cache/pypoetry/cache/repositories/PyPI/_http/0/6/f/5/e/06f5e6ff249dca41a6c62a58477ec555f09d75c84fb8ea39a2015bd2.lock\n[filelock:filelock] Lock 281472933620640 released on /root/.cache/pypoetry/cache/repositories/PyPI/_http/0/6/f/5/e/06f5e6ff249dca41a6c62a58477ec555f09d75c84fb8ea39a2015bd2.lock\nCreating new session for files.pythonhosted.org\n[urllib3:urllib3.connectionpool] Starting new HTTPS connection (1): files.pythonhosted.org:443\n[urllib3:urllib3.connectionpool] https://files.pythonhosted.org:443 \"GET /packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl HTTP/1.1\" 200 37438\n[filelock:filelock] Attempting to acquire lock 281472946600720 on /root/.cache/pypoetry/cache/repositories/_default_cache/_http/2/0/1/c/f/201cfecff7dfec815e95834c6faa15cb5c9fe16a1ee6050aabeb620b.lock\n[filelock:filelock] Lock 281472946600720 acquired on /root/.cache/pypoetry/cache/repositories/_default_cache/_http/2/0/1/c/f/201cfecff7dfec815e95834c6faa15cb5c9fe16a1ee6050aabeb620b.lock\n[filelock:filelock] Attempting to release lock 281472946600720 on /root/.cache/pypoetry/cache/repositories/_default_cache/_http/2/0/1/c/f/201cfecff7dfec815e95834c6faa15cb5c9fe16a1ee6050aabeb620b.lock\n[filelock:filelock] Lock 281472946600720 released on /root/.cache/pypoetry/cache/repositories/_default_cache/_http/2/0/1/c/f/201cfecff7dfec815e95834c6faa15cb5c9fe16a1ee6050aabeb620b.lock\n  ```\n</details>\n",
+    "author": "edmorley",
+    "created": "2025-02-25T20:57:24Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "fiber-3988",
+   "repo": "gofiber/fiber",
+   "stars": 40238,
+   "pr": 3988,
+   "title": "fix: improve cookie decryption handling by deleting invalid cookies after iteration",
+   "merged_at": "2026-01-05T13:59:30Z",
+   "url": "https://github.com/gofiber/fiber/pull/3988",
+   "sha": "785745475bd33d5885b6c179fee80fdcb100cf1a",
+   "lang": "go",
+   "src": [
+    "middleware/encryptcookie/encryptcookie.go"
+   ],
+   "tests": [
+    "middleware/encryptcookie/encryptcookie_test.go",
+    "middleware/idempotency/locker_test.go",
+    "middleware/session/session_test.go"
+   ],
+   "src_lines": 11,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware/encryptcookie ./middleware/idempotency ./middleware/session",
+   "issue": {
+    "number": 3954,
+    "title": "🐛 [Bug]: EncryptCookie middleware panics the app with index out of range error",
+    "body": "### Bug Description\n\nMy tech stack uses NuxtJS v4 and Shadcn UI for it. It has a cookie named `sidebar:state` and it breaks my fiber v3 application, when i remove this cookie it resolves. I think library conflict with cookie names that has `:` character in it. For now i changed the cookie name but it's a temporary fix.\n\n```\npanic: runtime error: index out of range [1] with length 1\n\ngoroutine 74 [running]:\nruntime/debug.Stack()\n        /opt/homebrew/Cellar/go/1.25.3/libexec/src/runtime/debug/stack.go:26 +0x64\ngithub.com/gofiber/fiber/v3/middleware/recover.defaultStackTraceHandler({0x140004b13f8?, 0x1044e9b08?}, {0x104fd0720, 0x1400042e2d0})\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/recover/recover.go:12 +0x24\nproject/internal/server.RunServer.New.func1.1()\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/recover/recover.go:31 +0x78\npanic({0x104fd0720?, 0x1400042e2d0?})\n        /opt/homebrew/Cellar/go/1.25.3/libexec/src/runtime/panic.go:783 +0x120\ngithub.com/gofiber/fiber/v3/middleware/encryptcookie.New.func1.(*RequestHeader).Cookies.1(...)\n        /Users/divergent/go/pkg/mod/github.com/valyala/fasthttp@v1.68.0/header.go:1163\ngithub.com/gofiber/fiber/v3/middleware/encryptcookie.New.func1({0x1050579a8, 0x14000179508})\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/encryptcookie/encryptcookie.go:23 +0x83c\ngithub.com/gofiber/fiber/v3.(*DefaultCtx).Next(0x14000408ba0?)\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/ctx.go:235 +0x74\ngithub.com/gofiber/fiber/v3/middleware/logger.New.func3({0x1050579a8, 0x14000179508})\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/logger/logger.go:109 +0x260\ngithub.com/gofiber/fiber/v3.(*DefaultCtx).Next(0x140004b19c8?)\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/ctx.go:235 +0x74\ngithub.com/gofiber/fiber/v3/middleware/compress.New.func3({0x1050579a8, 0x14000179508})\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/compress/compress.go:99 +0x50\ngithub.com/gofiber/fiber/v3.(*DefaultCtx).Next(0x9?)\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/ctx.go:235 +0x74\nproject/internal/server.RunServer.New.func1({0x1050579a8?, 0x14000179508?})\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/middleware/recover/recover.go:43 +0xbc\ngithub.com/gofiber/fiber/v3.(*App).next(0x140002e6008, 0x14000179508)\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/router.go:156 +0x1a0\ngithub.com/gofiber/fiber/v3.(*App).requestHandler(0x140002e6008, 0x1048c19a0?)\n        /Users/divergent/go/pkg/mod/github.com/gofiber/fiber/v3@v3.0.0-rc.3/router.go:332 +0x118\ngithub.com/valyala/fasthttp.(*Server).serveConn(0x140002b8008, {0x1050488d0, 0x14000482918})\n        /Users/divergent/go/pkg/mod/github.com/valyala/fasthttp@v1.68.0/server.go:2465 +0xe00\ngithub.com/valyala/fasthttp.(*workerPool).workerFunc(0x1400013a480, 0x140001b9c00)\n        /Users/divergent/go/pkg/mod/github.com/valyala/fasthttp@v1.68.0/workerpool.go:225 +0x6c\ngithub.com/valyala/fasthttp.(*workerPool).getCh.func1()\n        /Users/divergent/go/pkg/mod/github.com/valyala/fasthttp@v1.68.0/workerpool.go:197 +0x30\ncreated by github.com/valyala/fasthttp.(*workerPool).getCh in goroutine 1\n        /Users/divergent/go/pkg/mod/github.com/valyala/fasthttp@v1.68.0/workerpool.go:196 +0x1b8\n```\n\n### How to Reproduce\n\nSteps to reproduce the behavior:\n1. Enable encryptcookie middleware and add a cookie named `sidebar:state`\n2. Reload the application\n3. Send a request using this cookie\n4. See the app is crashing with log i provide\n\n\n### Expected Behavior\n\nApp should run without any error.\n\n### Fiber Version\n\nv3.0.0-rc3\n\n### Code Snippet (optional)\n\n```go\napp.Use(encryptcookie.New(encryptcookie.Config{\n\t\tKey: config.MustString(\"app.key\"),\n\t}))\n```\n\n### Checklist:\n\n- [x] I agree to follow Fiber's [Code of Conduct](https://github.com/gofiber/fiber/blob/main/.github/CODE_OF_CONDUCT.md).\n- [x] I have checked for existing issues that describe my problem prior to opening this one.\n- [x] I understand that improperly formatted bug reports may be closed without explanation.",
+    "author": "dogukanoksuz",
+    "created": "2025-12-19T15:28:41Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "echo-2977",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 2977,
+   "title": "Fix proxy panic when balancer has no targets",
+   "merged_at": "2026-05-21T05:55:55Z",
+   "url": "https://github.com/labstack/echo/pull/2977",
+   "sha": "98d99d5c8c1376e82247775b14da21d618fbb7dc",
+   "lang": "go",
+   "src": [
+    "middleware/proxy.go"
+   ],
+   "tests": [
+    "middleware/proxy_test.go"
+   ],
+   "src_lines": 3,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "issue": {
+    "number": 2976,
+    "title": "Proxy middleware can panic when the balancer has no targets",
+    "body": "### Issue Description\n\n`ProxyWithConfig` can panic when the balancer has no targets.\n\nThe built-in balancers return `nil` when their target list is empty. The proxy middleware then passes that nil target to `proxyHTTP` / `proxyRaw`, which can panic.\n\nOne way to hit this is to remove the last target with `RemoveTarget`.\n\nI expected the middleware to return a proxy error, such as `502 Bad Gateway`, instead of panicking.\n\n### Working code to debug\n\n```go\ntargetURL, _ := url.Parse(\"http://127.0.0.1:8080\")\n\nbalancer := middleware.NewRoundRobinBalancer([]*middleware.ProxyTarget{\n\t{Name: \"target\", URL: targetURL},\n})\n\ne := echo.New()\ne.Use(middleware.Proxy(balancer))\n\n// Later, from code that updates proxy targets at runtime:\nbalancer.RemoveTarget(\"target\")\n\n// The next proxied request can panic because the balancer returns nil.\n\n### Version/commit\nv4.15.x and v5.1.x",
+    "author": "shblue21",
+    "created": "2026-05-21T05:09:50Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "pydantic-13452",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 13452,
+   "title": "Fix `Interval` zero bounds silently dropped in pipeline API",
+   "merged_at": "2026-07-16T20:33:23Z",
+   "url": "https://github.com/pydantic/pydantic/pull/13452",
+   "sha": "3ce9b13630b42813ab9ddf5c58fce110541e83a8",
+   "lang": "python",
+   "src": [
+    "pydantic/experimental/pipeline.py"
+   ],
+   "tests": [
+    "tests/test_pipeline.py"
+   ],
+   "src_lines": 8,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_pipeline.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 13450,
+    "title": "Experimental pipeline: `Interval` bounds of zero are silently dropped",
+    "body": "### Initial Checks\n\n- [x] I confirm that I'm using Pydantic V2\n\n### Description\n\nIn `pydantic/experimental/pipeline.py`, `_apply_constraint()` handles `annotated_types.Interval` by delegating to the individual comparison constraints, but it tests each bound for **truthiness** rather than `is not None`:\n\n```python\nelif isinstance(constraint, annotated_types.Interval):\n    if constraint.ge:\n        s = _apply_constraint(s, annotated_types.Ge(constraint.ge))\n    if constraint.gt:\n        s = _apply_constraint(s, annotated_types.Gt(constraint.gt))\n    if constraint.le:\n        s = _apply_constraint(s, annotated_types.Le(constraint.le))\n    if constraint.lt:\n        s = _apply_constraint(s, annotated_types.Lt(constraint.lt))\n```\n\nSince `0` is falsy, **a bound of exactly zero is skipped and the constraint is silently dropped** - there is no error, validation simply accepts out-of-range values. `Interval(ge=0, le=10)` happily accepts `-5`.\n\nAll four bounds are affected. Observed on 2.12.5:\n\n| constraint | input | expected | actual |\n| --- | --- | --- | --- |\n| `Interval(ge=0, le=10)` | `-5` | ValidationError | **accepted** |\n| `Interval(ge=0, le=10)` | `20` | ValidationError | ValidationError (`le=10` works) |\n| `Interval(gt=0)` | `-5` | ValidationError | **accepted** |\n| `Interval(gt=0)` | `0` | ValidationError | **accepted** |\n| `Interval(le=0)` | `5` | ValidationError | **accepted** |\n| `Interval(lt=0)` | `5` | ValidationError | **accepted** |\n| `Interval(ge=1, le=10)` | `-5` | ValidationError | ValidationError (control: non-zero bound is fine) |\n\nThe non-zero control confirms the trigger is specifically the zero bound, not `Interval` in general. Zero is a very common lower bound, so this silently weakens validation in ordinary usage.\n\nThe fix looks like changing the four checks to `if constraint.ge is not None:` (and likewise for `gt`/`le`/`lt`).\n\nThis is related to, but distinct from, #13446 - that one is about `Gt` being dropped on a numeric type mismatch, whereas this is the `Interval` branch dropping zero bounds regardless of type.\n\nHappy to open a PR if that would help.\n\n### Example Code\n\n```python\nfrom typing import Annotated\n\nimport annotated_types\nfrom pydantic import TypeAdapter\nfrom pydantic.experimental.pipeline import validate_as\n\nta = TypeAdapter(Annotated[int, validate_as(int).constrain(annotated_types.Interval(ge=0, le=10))])\n\nprint(ta.validate_python(-5))  # -> -5   (expected: ValidationError, ge=0 is violated)\nta.validate_python(20)         # -> ValidationError (le=10 is enforced correctly)\n\n# A non-zero lower bound behaves correctly:\nta2 = TypeAdapter(Annotated[int, validate_as(int).constrain(annotated_types.Interval(ge=1, le=10))])\nta2.validate_python(-5)        # -> ValidationError (correct)\n```\n\n### Python, Pydantic & OS Version\n\n```text\n             pydantic version: 2.12.5\n        pydantic-core version: 2.41.5\n          pydantic-core build: profile=release pgo=false\n               python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]\n                     platform: Windows-11-10.0.26200-SP0\n             related packages: fastapi-0.136.3 mypy-2.2.0 pydantic-settings-2.14.0 typing_extensions-4.15.0\n                       commit: unknown\n```\n",
+    "author": "eeshsaxena",
+    "created": "2026-07-16T08:47:51Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "lo-799",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 799,
+   "title": "fix: reset n counter per iteration in it.Replace",
+   "merged_at": "2026-02-21T18:24:13Z",
+   "url": "https://github.com/samber/lo/pull/799",
+   "sha": "48d6af139477b77296c5253d514252e44e7def18",
+   "lang": "go",
+   "src": [
+    "it/seq.go"
+   ],
+   "tests": [
+    "it/seq_test.go"
+   ],
+   "src_lines": 17,
+   "install": "go mod download",
+   "test": "go test -count=1 ./it",
+   "issue": {
+    "number": 798,
+    "title": "Question: n counter in it.Replace is shared across iterations",
+    "body": "`it.Replace` captures `n`, so `n--` persists across iterations ⇒ second time you iterate the sequence, replacements don't happen :(\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"slices\"\n\n\t\"github.com/samber/lo/it\"\n)\n\nfunc main() {\n\tseq := it.Replace(slices.Values([]int{1, 2, 1, 2, 1}), 1, 9, 2)\n\n\tfmt.Println(slices.Collect(seq)) // expected: [9 2 9 2 1] actual: [9 2 9 2 1]\n\tfmt.Println(slices.Collect(seq)) // expected: [9 2 9 2 1] actual: [1 2 1 2 1]\n}\n```\n\nOther `it` functions like `Uniq` create fresh state per iteration, so this looks unintentional. Real impact is small because most users collect the sequence once, is this considered a bug?",
+    "author": "LikimiaD",
+    "created": "2026-02-14T15:09:48Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "scrapy-8048",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8048,
+   "title": "Fix missing certificate and IP address on HTTP/1.1 responses without a body",
+   "merged_at": "2026-09-07T16:28:23Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8048",
+   "sha": "544f4d2d52377c7a5d6e12b51e219a310ec1b43d",
+   "lang": "python",
+   "src": [
+    "scrapy/core/downloader/handlers/http11.py"
+   ],
+   "tests": [
+    "tests/test_crawl.py",
+    "tests/utils/bases/download_handlers_http.py"
+   ],
+   "src_lines": 25,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_crawl.py tests/utils/bases/download_handlers_http.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 4466,
+    "title": "HTTP11DownloadHandler: Cannot get certificate information when http body is empty",
+    "body": "### Description\r\n\r\nCan not get certificate information when http body is empty.\r\n\r\n### Steps to Reproduce\r\nHere is the Code:\r\n```\r\n# -*- coding: utf-8 -*-\r\nimport scrapy\r\nclass TestSpider(scrapy.Spider):\r\n    name = 'test'\r\n    # 49.235.192.63:443\r\n    start_urls = ['https://49.235.192.63/', ]\r\n    handle_httpstatus_list = [i for i in range(199, 600)]  # handle all response\r\n\r\n    def parse(self, response):\r\n        if response.certificate:\r\n            cert = response.certificate.inspect()\r\n        else:\r\n            cert = \"\"\r\n        print(\"Cert is --->\", cert)\r\n```\r\n\r\n**Expected behavior:** [What you expect to happen]\r\ncert is not empty\r\n**Actual behavior:** [What actually happens]\r\ncert is empty\r\n**Reproduces how often:** [What percentage of the time does it reproduce?]\r\nevery time\r\n### Versions\r\n\r\n> Scrapy       : 2.0.1\r\nlxml         : 4.5.0.0\r\nlibxml2      : 2.9.10\r\ncssselect    : 1.1.0\r\nparsel       : 1.5.2\r\nw3lib        : 1.21.0\r\nTwisted      : 20.3.0\r\nPython       : 3.7.5 (default, Nov 20 2019, 09:21:52) - [GCC 9.2.1 20191008]\r\npyOpenSSL    : 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019)\r\ncryptography : 2.8\r\nPlatform     : Linux-5.3.0-45-generic-x86_64-with-Ubuntu-19.10-eoan\r\n\r\n\r\n### Additional context\r\nthis connectionMade won't be called when the response has nobody.\r\nI do not know how to resolve and need your help.\r\nhttps://github.com/scrapy/scrapy/blob/dfbe1d95071acfbba159cea051530749b1684460/scrapy/core/downloader/handlers/http11.py#L467\r\nThanks so much!\r\n#4054 ",
+    "author": "imfht",
+    "created": "2020-03-31T15:14:34Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "mocha-6292",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 6292,
+   "title": "fix: fail nested tests on beforeEach failure",
+   "merged_at": "2026-09-13T23:48:12Z",
+   "url": "https://github.com/mochajs/mocha/pull/6292",
+   "sha": "a75b43b0d69fb0529945bc71aaca9a1a5dc24188",
+   "lang": "node",
+   "src": [
+    "lib/runner.js"
+   ],
+   "tests": [
+    "test/integration/fixtures/hooks/before-each-hook-error-with-fail-affected-nested.fixture.js",
+    "test/integration/hook-err.spec.cjs",
+    "test/unit/runner.spec.cjs"
+   ],
+   "src_lines": 22,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/integration/fixtures/hooks/before-each-hook-error-with-fail-affected-nested.fixture.js test/integration/hook-err.spec.cjs test/unit/runner.spec.cjs",
+   "issue": {
+    "number": 6132,
+    "title": "🐛 Bug: `--fail-hook-affected-tests` drops nested-suite tests when a `beforeEach` hook fails",
+    "body": "### Bug Report Checklist\n\n- [x] This is NOT a security, `npm audit`, or GitHub Advisory issue.\n- [x] I have read and agree to Mocha's Code of Conduct and Contributing Guidelines.\n- [x] I have searched for related issues and issues with the `faq` label, but none matched.\n- [x] I have 'smoke tested' the code to be tested by running it outside the real test suite.\n- [x] I want to provide a PR to resolve this.\n\n### Expected behavior\n\n`--fail-hook-affected-tests` (added in v12) is documented to report tests as failed when they are affected by a hook failure, instead of silently skipping them. A failing `beforeEach` affects every test the hook would have run before, including tests in nested `describe` blocks, so all of them should be reported as failed. This is what `before`/`beforeAll` already does.\n\n### Actual behavior\n\nWith `--fail-hook-affected-tests` on, a failing `beforeEach` only fails the remaining tests of the immediate suite. Tests inside nested sub-suites vanish from the run entirely (not failed, not pending), so the failure and total counts are under-reported in every reporter (spec, json, tap, xunit).\n\n### Minimal, Complete, and Verifiable Example\n\n```js\n// repro.mjs\ndescribe('outer', function () {\n  beforeEach(function () { throw new Error('boom'); });\n  it('direct test', function () {});\n  describe('nested', function () {\n    it('nested test 1', function () {});\n    it('nested test 2', function () {});\n  });\n});\n```\n\nRun: `mocha --fail-hook-affected-tests repro.mjs`\n\n`beforeEach` result: **2 failing** (the hook and `direct test`); the two nested tests are dropped.\n\nSwap `beforeEach` for `before`: **4 failing** (the hook, `direct test`, `nested test 1`, `nested test 2`) are all reported. That is the behavior the `beforeEach` path should match.\n\n### Versions\n\n- mocha 12.0.0-rc.1 (also reproduces on current `main`)\n- Node.js 24\n- Platform-independent (reproduced on macOS)\n\n### Additional Information\n\n`before`/`beforeAll` already recurses into sub-suites via its `failAffectedTests` path; the `beforeEach` branch fails only the immediate suite's not-yet-run tests and never recurses. The two branches should be consistent.\n",
+    "author": "spokodev",
+    "created": "2026-07-03T15:00:21Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "immer-1236",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1236,
+   "title": "fix: update current and original typings to assert draft value is unwrapped",
+   "merged_at": "2026-05-08T15:08:34Z",
+   "url": "https://github.com/immerjs/immer/pull/1236",
+   "sha": "bf2d15439259887f98f2737cf7ebde4234d5adea",
+   "lang": "node",
+   "src": [
+    "src/core/current.ts",
+    "src/core/immerClass.ts",
+    "src/utils/common.ts"
+   ],
+   "tests": [
+    "__tests__/type-external.ts"
+   ],
+   "src_lines": 13,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/type-external.ts",
+   "issue": {
+    "number": 896,
+    "title": "Typings of `current()` don't reflect that returned object is not a draft",
+    "body": "## 🐛 Bug Report\r\n\r\nThe typings of `current()` state that the input and return types are the same. This doesn't reflect that the function unwraps drafts.\r\n\r\n## Link to repro\r\n\r\n```javascript\r\nconst draft = immer.createDraft({ a: true });\r\nimmer.current(draft);\r\n```\r\n\r\n## To Reproduce\r\n\r\nObserve typings of the returned object. Runtime object is not a draft, but typings indicate that it is.\r\n\r\n## Observed behavior\r\n\r\nReturn type is the same as the input type.\r\n\r\n`export declare function current<T>(value: T): T;`\r\n\r\n## Expected behavior\r\n\r\nReturn type is the type of thing whose draft was input.\r\n\r\n`export declare function current<T>(value: Draft<T>): T;`\r\n\r\n## Environment\r\n\r\nWe only accept bug reports against the latest Immer version.\r\n\r\n- **Immer version:** 9.0.12\r\n- [x] I filed this report against the _latest_ version of Immer\r\n- [x] Occurs with `setUseProxies(true)`\r\n- [x] Occurs with `setUseProxies(false)` (ES5 only)\r\n",
+    "author": "robatwilliams",
+    "created": "2022-01-17T12:47:07Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "poetry-11131",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 11131,
+   "title": "fix: match index hashes against per-file lock entries",
+   "merged_at": "2026-10-31T14:02:58Z",
+   "url": "https://github.com/python-poetry/poetry/pull/11131",
+   "sha": "b1e370bf70a73545fd77066a4ee7fa83f760d161",
+   "lang": "python",
+   "src": [
+    "src/poetry/installation/chooser.py"
+   ],
+   "tests": [
+    "tests/installation/test_chooser.py"
+   ],
+   "src_lines": 11,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/installation/test_chooser.py -p no:cacheprovider -q -n 0",
+   "issue": {
+    "number": 11130,
+    "title": "poetry install skips valid files when a package's lock entry mixes sha256 and sha512 (JSON index)",
+    "body": "### Description\n\n## Summary\n\nWhen a package index's JSON simple API (PEP 691) lists several hashes for a file, and the package's lock entry contains hashes of more than one algorithm, `poetry install` rejects files even though one of their listed hashes exactly matches the hash locked for that file.\n\nThe rejected files are skipped with only a debug log line. If the sdist still matches, Poetry silently builds from source instead of using the wheel. Once no installable file is left, the install fails with;\n\n- 2.4.x: `Unable to find installation candidates for markupsafe (3.0.0)` /\n  `59 wheel(s) were skipped as your project's environment does not support the identified abi tags`\n\n- 2.5.x: `Downloaded distributions for markupsafe (3.0.0) did not match any known checksums in your lock file.`\n\nI believe that this bug has been present from `2.3.0` and above, when Poetry was changed to prefer JSON over HTML indexes for legacy and private repositories. The error differs between versions, but the underlying cause is the same.\n\nIf any of the distributions for the desired version of a package present a `sha512` hash, this will then be selected from the JSON index hash array to match against the lockfile, and the `sha256` hash will be discarded. As a result of this, packages that are presenting a valid `sha256` hash from the JSON index are then ignored, despite the hash presented matching the hash in the lockfile.\n\n## Context\n\nWe are consuming packages from a local PyPI mirror using a product called ProGet (built by Inedo) - ProGet is configured in our environment to use lazy caching, where we are mirroring pypi.org public packages, but only caching a specific distribution locally after the first install. \n\nThis bug has to light due to the way ProGet handles algorithms for cached vs uncached packages, where the JSON index will present a `sha256` hash only for uncached packages (which will make its way into the poetry lockfile if this is the first timing consuming a new distribution), and an array of hashes (sha256, sha512, md1, md5) for distributions that have been cached. \n\nA similar bug was present (and fixed) in `uv`, \nhttps://github.com/astral-sh/uv/issues/17143\n\nWhilst we agree that presenting a different set of hashes for cached vs uncached packages via the JSON index is peculiar behaviour on the ProGet side, it does still conform with PEP 691, as there is nothing in the spec against this. \n\nThis is mostly an interoperability issue between the two products, but I believe the core bug here is that Poetry makes an assumption that the PEP spec does not guarantee - that the type of hashing algorithms presented in the JSON index will not change between lock and install of packages.\n\n### Workarounds\n\nRe-running a `poetry lock` will modify the failed package in the lockfile from a `sha256` hash to a `sha512` hash, which will resolve the issue until pumping. \n\n### Poetry Installation Method\n\ninstall.python-poetry.org\n\n### Operating System\n\nDebian 12\n\n### Poetry Version\n\n2.5.1\n\n### Poetry Configuration\n\n```bash session\ncache-dir = \"/root/.cache/pypoetry\"\ndata-dir = \"/root/.local/share/pypoetry\"\ninstaller.builtin-uninstall = false\ninstaller.max-workers = null\ninstaller.no-binary = null\ninstaller.only-binary = null\ninstaller.parallel = true\ninstaller.re-resolve = false\nkeyring.enabled = true\npython.installation-dir = \"{data-dir}/python\"  # /root/.local/share/pypoetry/python\nrepositories.public-pypi.url = \"https://{__MASKED_INTERNAL_DOMAIN__}/pypi/public-pypi/simple\"\nrequests.max-retries = 0\nsolver.lazy-wheel = true\nsolver.min-release-age = 0\nsolver.min-release-age-exclude = null\nsolver.min-release-age-exclude-source = null\nsystem-git-client = false\nvirtualenvs.create = true\nvirtualenvs.in-project = null\nvirtualenvs.options.always-copy = false\nvirtualenvs.options.no-pip = false\nvirtualenvs.options.system-site-packages = false\nvirtualenvs.path = \"{cache-dir}/virtualenvs\"  # /root/.cache/pypoetry/virtualenvs\nvirtualenvs.prompt = \"{project_name}-py{python_version}\"\nvirtualenvs.use-poetry-python = false\n```\n\n### Python Sysconfig\n\n_No response_\n\n### Example pyproject.toml\n\n```TOML\n\n```\n\n### Poetry Runtime Logs\n\n<details>\n  <summary>poetry-runtime.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\nAdding repository public-pypi (https://{__MASKED_INTERNAL_DOMAIN__}/pypi/public-pypi/simple) and setting it as primary\nDeactivating the PyPI repository\n[findpython:findpython] Running script: ['/usr/local/bin/python', '-Ic', 'import sys; print(sys.executable)']\nFound: /usr/local/bin/python\n[findpython:findpython] Running script: ['/usr/local/bin/python', '-Ic', 'import platform; print(platform.python_version())']\nFound: /usr/local/bin/python\nCreating virtualenv hash-repro-DJpFP61h-py3.12 in /root/.cache/pypoetry/virtualenvs\n[virtualenv:virtualenv.app_data] created app data folder /root/.cache/virtualenv\n[python_discovery:python_discovery._discovery] find interpreter for spec PythonSpec(path=/usr/local/bin/python3.12)\n[python_discovery:python_discovery._compat] filesystem is case-sensitive\n[python_discovery:python_discovery._discovery] proposed PythonInfo(spec=CPython3.12.13.final.0-64-x86_64, exe=/usr/local/bin/python3.12, platform=linux, version='3.12.13 (main, Aug  5 2026, 01:10:24) [GCC 14.2.0]', encoding_fs_io=utf-8-utf-8)\n[python_discovery:python_discovery._discovery] accepted PythonInfo(spec=CPython3.12.13.final.0-64-x86_64, exe=/usr/local/bin/python3.12, platform=linux, version='3.12.13 (main, Aug  5 2026, 01:10:24) [GCC 14.2.0]', encoding_fs_io=utf-8-utf-8)\n[virtualenv:virtualenv.info] symlink on filesystem does work\n[virtualenv:virtualenv.info] filesystem is case-sensitive\n[virtualenv:virtualenv.seed.embed.base_embed] DEPRECATION: the --wheel and --no-wheel options do nothing; virtualenv no longer bundles wheel. They will be removed in a release after 2026-12. Stop passing them.\n[virtualenv:virtualenv.run.session] create virtual environment via CPython3Posix(dest=/root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12, clear=False, no_vcs_ignore=False, venv_redirect=None, global=False)\n[virtualenv:virtualenv.util.path._sync] create folder /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin\n[virtualenv:virtualenv.util.path._sync] create folder /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/include\n[virtualenv:virtualenv.util.path._sync] create folder /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/lib/python3.12/site-packages\n[virtualenv:virtualenv.create.pyenv_cfg] write /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/pyvenv.cfg\n[virtualenv:virtualenv.create.pyenv_cfg] \thome = /usr/local/bin\n[virtualenv:virtualenv.create.pyenv_cfg] \timplementation = CPython\n[virtualenv:virtualenv.create.pyenv_cfg] \tpython-version = 3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tversion_info = 3.12.13.final.0\n[virtualenv:virtualenv.create.pyenv_cfg] \tversion = 3.12.13\n[virtualenv:virtualenv.create.pyenv_cfg] \texecutable = /usr/local/bin/python3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tcommand = /usr/local/bin/python3.12 -m virtualenv /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tvirtualenv = 21.14.5\n[virtualenv:virtualenv.create.pyenv_cfg] \tprompt = \"hash-repro-py3.12\"\n[virtualenv:virtualenv.create.pyenv_cfg] \tinclude-system-site-packages = false\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-prefix = /usr/local\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-exec-prefix = /usr/local\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-executable = /usr/local/bin/python3.12\n[virtualenv:virtualenv.util.path._sync] symlink /usr/local/bin/python3.12 to /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/python\n[virtualenv:virtualenv.run.session] ============================== target debug ==============================\n[virtualenv:virtualenv.create.creator] debug via /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/python /usr/local/lib/python3.12/site-packages/virtualenv/create/debug.py\n[virtualenv:virtualenv.run.session] {\n[virtualenv:virtualenv.run.session]   \"sys\": {\n[virtualenv:virtualenv.run.session]     \"executable\": \"/root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/python\",\n[virtualenv:virtualenv.run.session]     \"_base_executable\": \"/usr/local/bin/python3.12\",\n[virtualenv:virtualenv.run.session]     \"prefix\": \"/root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12\",\n[virtualenv:virtualenv.run.session]     \"base_prefix\": \"/usr/local\",\n[virtualenv:virtualenv.run.session]     \"exec_prefix\": \"/root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12\",\n[virtualenv:virtualenv.run.session]     \"base_exec_prefix\": \"/usr/local\",\n[virtualenv:virtualenv.run.session]     \"path\": [\n[virtualenv:virtualenv.run.session]       \"/usr/local/lib/python312.zip\",\n[virtualenv:virtualenv.run.session]       \"/usr/local/lib/python3.12\",\n[virtualenv:virtualenv.run.session]       \"/usr/local/lib/python3.12/lib-dynload\",\n[virtualenv:virtualenv.run.session]       \"/root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/lib/python3.12/site-packages\"\n[virtualenv:virtualenv.run.session]     ],\n[virtualenv:virtualenv.run.session]     \"meta_path\": [\n[virtualenv:virtualenv.run.session]       \"<class '_frozen_importlib.BuiltinImporter'>\",\n[virtualenv:virtualenv.run.session]       \"<class '_frozen_importlib.FrozenImporter'>\",\n[virtualenv:virtualenv.run.session]       \"<class '_frozen_importlib_external.PathFinder'>\"\n[virtualenv:virtualenv.run.session]     ],\n[virtualenv:virtualenv.run.session]     \"fs_encoding\": \"utf-8\",\n[virtualenv:virtualenv.run.session]     \"io_encoding\": \"utf-8\"\n[virtualenv:virtualenv.run.session]   },\n[virtualenv:virtualenv.run.session]   \"version\": \"3.12.13 (main, Aug  5 2026, 01:10:24) [GCC 14.2.0]\",\n[virtualenv:virtualenv.run.session]   \"makefile_filename\": \"/usr/local/lib/python3.12/config-3.12-x86_64-linux-gnu/Makefile\",\n[virtualenv:virtualenv.run.session]   \"os\": \"<module 'os' (frozen)>\",\n[virtualenv:virtualenv.run.session]   \"site\": \"<module 'site' (frozen)>\",\n[virtualenv:virtualenv.run.session]   \"datetime\": \"<module 'datetime' from '/usr/local/lib/python3.12/datetime.py'>\",\n[virtualenv:virtualenv.run.session]   \"math\": \"<module 'math' from '/usr/local/lib/python3.12/lib-dynload/math.cpython-312-x86_64-linux-gnu.so'>\",\n[virtualenv:virtualenv.run.session]   \"json\": \"<module 'json' from '/usr/local/lib/python3.12/json/__init__.py'>\"\n[virtualenv:virtualenv.run.session] }\n[virtualenv:virtualenv.run.session] add seed packages via FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/root/.cache/virtualenv)\n[virtualenv:virtualenv.seed.embed.via_app_data.via_app_data] install pip from wheel /usr/local/lib/python3.12/site-packages/virtualenv/seed/wheels/embed/pip-26.2.1-py3-none-any.whl via CopyPipInstall\n[filelock:filelock] Attempting to acquire lock 130534366470144 on /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any.lock\n[filelock:filelock] Lock 130534366470144 acquired on /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any.lock\n[virtualenv:virtualenv.seed.embed.via_app_data.pip_install.base] build install image for pip-26.2.1-py3-none-any.whl to /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any\n[distlib:distlib.util] changing mode of /tmp/tmpfitu_9vg/pip3 to 755\n[distlib:distlib.util] changing mode of /tmp/tmpfitu_9vg/pip to 755\n[distlib:distlib.util] changing mode of /tmp/tmpfitu_9vg/pip3.12 to 755\n[distlib:distlib.util] changing mode of /tmp/tmpfitu_9vg/pip-3.12 to 755\n[filelock:filelock] Attempting to release lock 130534366470144 on /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any.lock\n[filelock:filelock] Lock 130534366470144 released on /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any.lock\n[virtualenv:virtualenv.util.path._sync] copy directory /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any/pip-26.2.1.dist-info to /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/lib/python3.12/site-packages/pip-26.2.1.dist-info\n[virtualenv:virtualenv.util.path._sync] copy /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any/pip-26.2.1.virtualenv to /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/lib/python3.12/site-packages/pip-26.2.1.virtualenv\n[virtualenv:virtualenv.util.path._sync] copy directory /root/.cache/virtualenv/wheel/3.12/image/1/CopyPipInstall/pip-26.2.1-py3-none-any/pip to /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/lib/python3.12/site-packages/pip\n[distlib:distlib.util] changing mode of /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/pip3 to 755\n[distlib:distlib.util] changing mode of /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/pip to 755\n[distlib:distlib.util] changing mode of /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/pip3.12 to 755\n[distlib:distlib.util] changing mode of /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/bin/pip-3.12 to 755\n[virtualenv:virtualenv.seed.embed.via_app_data.pip_install.base] generated console scripts pip3.12 pip pip-3.12 pip3\n[virtualenv:virtualenv.run.session] add activators for Bash, CShell, Fish, Nushell, PowerShell, Python, Xonsh\n[virtualenv:virtualenv.create.pyenv_cfg] write /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12/pyvenv.cfg\n[virtualenv:virtualenv.create.pyenv_cfg] \thome = /usr/local/bin\n[virtualenv:virtualenv.create.pyenv_cfg] \timplementation = CPython\n[virtualenv:virtualenv.create.pyenv_cfg] \tpython-version = 3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tversion_info = 3.12.13.final.0\n[virtualenv:virtualenv.create.pyenv_cfg] \tversion = 3.12.13\n[virtualenv:virtualenv.create.pyenv_cfg] \texecutable = /usr/local/bin/python3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tcommand = /usr/local/bin/python3.12 -m virtualenv /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12\n[virtualenv:virtualenv.create.pyenv_cfg] \tvirtualenv = 21.14.5\n[virtualenv:virtualenv.create.pyenv_cfg] \tprompt = \"hash-repro-py3.12\"\n[virtualenv:virtualenv.create.pyenv_cfg] \tinclude-system-site-packages = false\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-prefix = /usr/local\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-exec-prefix = /usr/local\n[virtualenv:virtualenv.create.pyenv_cfg] \tbase-executable = /usr/local/bin/python3.12\nUsing virtualenv: /root/.cache/pypoetry/virtualenvs/hash-repro-DJpFP61h-py3.12\nChecking keyring availability: Checking if keyring is available\n[keyring:keyring.backend] Loading KWallet\n[keyring:keyring.backend] Loading SecretService\n[keyring:keyring.backend] Loading Windows\n[keyring:keyring.backend] Loading chainer\n[keyring:keyring.backend] Loading libsecret\n[keyring:keyring.backend] Loading macOS\nBackend 'fail Keyring' is not suitable\nNo valid keyring backend was found\nUnavailable\nInstalling dependencies from lock file\n\nFinding the necessary packages for the current system\n\nPackage operations: 1 install, 0 updates, 0 removals\n\n  - Installing markupsafe (3.0.1)\nCreating new session for {__MASKED_INTERNAL_DOMAIN__}\n[urllib3:urllib3.connectionpool] Starting new HTTPS connection (1): {__MASKED_INTERNAL_DOMAIN__}:443\n[urllib3:urllib3.connectionpool] https://{__MASKED_INTERNAL_DOMAIN__}:443 \"GET /pypi/public-pypi/simple/markupsafe/ HTTP/1.1\" 200 106704\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-win_amd64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-macosx_10_9_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp310-cp310-win_amd64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-macosx_10_9_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp311-cp311-win_amd64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-macosx_10_13_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp312-cp312-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-macosx_10_13_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313-win_amd64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-macosx_10_13_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp313-cp313t-win_amd64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-macosx_10_9_universal2.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-macosx_11_0_arm64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-musllinux_1_2_aarch64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-musllinux_1_2_i686.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-musllinux_1_2_x86_64.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-win32.whl as this is not supported by the current environment\nSkipping wheel MarkupSafe-3.0.1-cp39-cp39-win_amd64.whl as this is not supported by the current environment\nSkipping MarkupSafe-3.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as sha512:8d03d73f080eebe22a8c70174561eed2d9a8be8b99ce041bd6a6a2ae430beb21c09789af541d0248417c9607da2dfe9f63ac4b91dce9ba1350390dcd2579c43a checksum does not match expected value\nSkipping markupsafe-3.0.1.tar.gz as sha512:1d5342766fae024a243e12a2ad384724ec2a9ea5dfd4af1651725ef5201bcec5ca2e520720a05d05d3ca91fcdbf78e00afec6a70a73146ab29e29c6989559651 checksum does not match expected value\n\n    | Downloaded distributions for markupsafe (3.0.1) did not match any known checksums in your lock file.\n    | \n    | Causes:\n    |   - invalid or corrupt cache either during locking or installation\n    |   - network interruptions or errors causing corrupted downloads\n    | \n    | Solutions:\n    |   1. Try running your command again using the --no-cache global option enabled.\n    |   2. Try regenerating your lock file using (poetry lock --no-cache --regenerate).\n    | \n    | If any of those solutions worked, you will have to clear your caches using (poetry cache clear --all CACHE_NAME).\n    | \n    | Poetry retrieved the following links:\n    |   - MarkupSafe-3.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl(sha512:8d03d73f080eebe22a8c70174561eed2d9a8be8b99ce041bd6a6a2ae430beb21c09789af541d0248417c9607da2dfe9f63ac4b91dce9ba1350390dcd2579c43a)\n    |   - markupsafe-3.0.1.tar.gz(sha512:1d5342766fae024a243e12a2ad384724ec2a9ea5dfd4af1651725ef5201bcec5ca2e520720a05d05d3ca91fcdbf78e00afec6a70a73146ab29e29c6989559651)\n    | \n    | The lockfile contained only the following hashes:\n    |   - sha256:62fada2c942702ef8952754abfc1a9f7658a4d5460fabe95ac7ec2cbe0d02abc\n    |   - sha256:db15ce28e1e127a0013dfb8ac243a8e392db8c61eae113337536edb28bdc1f97\n    |   - sha256:9ba25a71ebf05b9bb0e2ae99f8bc08a07ee8e98c612175087112656ca0f5c8bf\n    |   - sha256:ee3941769bd2522fe39222206f6dd97ae83c442a94c90f2b7a25d847d40f4729\n    |   - sha256:45d42d132cff577c92bfba536aefcfea7e26efb975bd455db4e6602f5c9f45e7\n    |   - sha256:c97ff7fedf56d86bae92fa0a646ce1a0ec7509a7578e1ed238731ba13aabcd1c\n    |   - sha512:6ef06334a52abd37ac53a6d2d01f4b35aa4513b47a77a5063af62e0460b23a71375f1aaa57d1b3b648733c3d3d8381a4b4ec055b5250b1a1fca35beab2749034\n    |   - sha256:852dc840f6d7c985603e60b5deaae1d89c56cb038b577f6b5b8c808c97580f1d\n    |   - sha256:e9393357f19954248b00bed7c56f29a25c930593a77630c719653d51e7669c2a\n    |   - sha256:b6a387d61fe41cdf7ea95b38e9af11cfb1a63499af2759444b99185c4ab33f5b\n    |   - sha256:7044312a928a66a4c2a22644147bc61a199c1709712069a344a3fb5cfcf16915\n    |   - sha256:312387403cd40699ab91d50735ea7a507b788091c416dd007eac54434aee51da\n    |   - sha256:db842712984e91707437461930e6011e60b39136c7331e971952bb30465bc1a1\n    |   - sha256:730d86af59e0e43ce277bb83970530dd223bf7f2a838e086b50affa6ec5f9295\n    |   - sha256:e24bfe89c6ac4c31792793ad9f861b8f6dc4546ac6dc8f1c9083c7c4f2b335cd\n    |   - sha256:4ffaaac913c3f7345579db4f33b0020db693f302ca5137f106060316761beea9\n    |   - sha256:b954093679d5750495725ea6f88409946d69cfb25ea7b4c846eef5044194f583\n    |   - sha256:40f1e10d51c92859765522cbd79c5c8989f40f0419614bcdc5015e7b6bf97fc5\n    |   - sha256:40621d60d0e58aa573b68ac5e2d6b20d44392878e0bfc159012a5787c4e35bc8\n    |   - sha256:0f84af7e813784feb4d5e4ff7db633aba6c8ca64a833f61d8e4eade234ef0c38\n    |   - sha256:e81c52638315ff4ac1b533d427f50bc0afc746deb949210bc85f05d4f15fd772\n    |   - sha256:f94190df587738280d544971500b9cafc9b950d32efcb1fba9ac10d84e6aa4e6\n    |   - sha256:a4792d3b3a6dfafefdf8e937f14906a51bd27025a36f4b188728a73382231d91\n    |   - sha256:d06b24c686a34c86c8c1fba923181eae6b10565e4d80bdd7bc1c8e2f11247aa4\n    |   - sha256:d98e66a24497637dd31ccab090b34392dddb1f2f811c4b4cd80c230205c074a3\n    |   - sha256:4935dd7883f1d50e2ffecca0aa33dc1946a94c8f3fdafb8df5c330e48f71b132\n    |   - sha256:3e683ee4f5d0fa2dde4db77ed8dd8a876686e3fc417655c2ece9a90576905344\n    |   - sha256:244dbe463d5fb6d7ce161301a03a6fe744dac9072328ba9fc82289238582697b\n    |   - sha256:beeebf760a9c1f4c07ef6a53465e8cfa776ea6a2021eda0d0417ec41043fe984\n    |   - sha256:17b2aea42a7280db02ac644db1d634ad47dcc96faf38ab304fe26ba2680d359a\n    |   - sha256:cbf445eb5628981a80f54087f9acdbf84f9b7d862756110d172993b9a5ae81aa\n    |   - sha256:2a4b34a8d14649315c4bc26bbfa352663eb51d146e35eef231dd739d54a5430a\n    |   - sha256:4c2d64fdba74ad16138300815cfdc6ab2f4647e23ced81f59e940d7d4a1469d9\n    |   - sha256:33d1c36b90e570ba7785dacd1faaf091203d9942bc036118fab8110a401eb1a8\n    |   - sha256:fe32482b37b4b00c7a52a07211b479653b7fe4f22b2e481b9a9b099d8a430f2f\n    |   - sha256:fb532dd9900381d2e8f48172ddc5a59db4c445a11b9fab40b3b786da40d3b56b\n    |   - sha256:2ae99f31f47d849758a687102afdd05bd3d3ff7dbab0a8f1587981b58a76152a\n    |   - sha256:800100d45176652ded796134277ecb13640c1a537cad3b8b53da45aa96330453\n    |   - sha256:3341c043c37d78cc5ae6e3e305e988532b072329639007fd408a476642a89fd6\n    |   - sha256:fa7d686ed9883f3d664d39d5a8e74d3c5f63e603c2e3ff0abcba23eac6542635\n    |   - sha256:80fcbf3add8790caddfab6764bde258b5d09aefbe9169c183f88a7410f0f6dea\n    |   - sha256:a7420ceda262dbb4b8d839a4ec63d61c261e4e77677ed7c66c99f4e7cb5030dd\n    |   - sha256:67c519635a4f64e495c50e3107d9b4075aec33634272b5db1cde839e07367589\n    |   - sha256:8ae369e84466aa70f3154ee23c1451fda10a8ee1b63923ce76667e3077f2b0c4\n    |   - sha256:3ffb4a8e7d46ed96ae48805746755fadd0909fea2306f93d5d8233ba23dda12a\n    |   - sha256:c91b394f7601438ff79a4b93d16be92f216adb57d813a78be4446fe0f6bc2d8c\n    |   - sha256:0778de17cff1acaeccc3ff30cd99a3fd5c50fc58ad3d6c0e0c4c58092b859396\n    |   - sha256:ad91738f14eb8da0ff82f2acd0098b6257621410dcbd4df20aaa5b4233d75a50\n    |   - sha256:bbde71a705f8e9e4c3e9e33db69341d040c827c7afa6789b14c6e16776074f5a\n    |   - sha256:82b5dba6eb1bcc29cc305a18a3c5365d2af06ee71b123216416f7e20d2a84e5b\n    |   - sha256:973a371a55ce9ed333a3a0f8e0bcfae9e0d637711534bcb11e130af2ab9334e7\n    |   - sha256:93e8248d650e7e9d49e8251f883eed60ecbc0e8ffd6349e18550925e31bd029b\n    |   - sha256:8ad4ad1429cd4f315f32ef263c1342166695fad76c100c5d979c45d5570ed58b\n    |   - sha256:4c8817557d0de9349109acb38b9dd570b03cc5014e8aabf1cbddc6e81005becd\n    |   - sha256:242d6860f1fd9191aef5fae22b51c5c19767f93fb9ead4d21924e0bcb17619d8\n    |   - sha256:5a4cb365cb49b750bdb60b846b0c0bc49ed62e59a76635095a179d440540c346\n    |   - sha256:48488d999ed50ba8d38c581d67e496f955821dc183883550a6fbc7f1aefdc170\n    |   - sha256:6a54c43d3ec4cf2a39f4387ad044221c66a376e58c0d0e971d47c475ba79c6b5\n    |   - sha256:f31ae06f1328595d762c9a2bf29dafd8621c7d3adc130cbb46278079758779ca\n    |   - sha256:cb53e2a99df28eee3b5f4fea166020d3ef9116fdc5764bc5117486e6d1211b25\n    |   - sha256:26627785a54a947f6d7336ce5963569b5d75614619e75193bdb4e06e21d447ad\n\nexit code: 1\n\n  ```\n</details>\n",
+    "author": "j-ferry",
+    "created": "2026-10-08T10:19:04Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "echo-3060",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3060,
+   "title": "fix(middleware): classify CORS preflight per Fetch standard",
+   "merged_at": "2026-08-04T05:11:58Z",
+   "url": "https://github.com/labstack/echo/pull/3060",
+   "sha": "05489dc1730161df26b72d1ae2a3ba6fb8178fc7",
+   "lang": "go",
+   "src": [
+    "middleware/cors.go"
+   ],
+   "tests": [
+    "middleware/cors_test.go"
+   ],
+   "src_lines": 36,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "issue": {
+    "number": 2534,
+    "title": "CORS: the middleware misclassifies all OPTIONS requests as preflight requests",
+    "body": "### Issue Description\r\n\r\nEcho's CORS middleware misclassifies all `OPTIONS` requests as preflight requests, thereby unduly preventing requests from hitting user-registered `OPTIONS` endpoints.\r\n\r\nI've previously discussed the general problem on [my personal blog](https://jub0bs.com/posts/2023-02-08-fearless-cors/#4-categorise-requests-correctly) and how Echo suffers from it in issue #2510.\r\n\r\n### Checklist\r\n\r\n- [x] Dependencies installed\r\n- [x] No typos\r\n- [x] Searched existing issues and docs\r\n\r\n### Expected behaviour\r\n\r\n(For this section and the next, please refer to the server code below.)\r\n\r\nConsider the `OPTIONS` requests resulting from the following two `curl` commands:\r\n\r\n```shell\r\ncurl -v -XOPTIONS \\\r\n  localhost:8080/hello\r\n```\r\n```shell\r\ncurl -v -XOPTIONS \\\r\n  -H \"Origin: https://example.com\" \\\r\n  localhost:8080/hello\r\n```\r\n\r\nAccording to [the Fetch standard](https://fetch.spec.whatwg.org/#cors-preflight-request), neither request is a preflight request, because\r\n- the first one lacks both an `Origin` header and an `Access-Control-Request-Method` header, and\r\n- the second one lacks an `Access-Control-Request-Method` header.\r\n\r\nTherefore, those requests should get through the CORS middleware, exercise the handler registered on `/hello`, and get a response of this kind:\r\n\r\n```http\r\nHTTP/1.1 204 No Content\r\nAllow: GET, OPTIONS\r\nDate: Mon, 23 Oct 2023 12:30:33 GMT\r\n```\r\n\r\nIn contrast, an `OPTIONS` requests resulting from the following `curl` command is a bona fide preflight request; as such, it should be (and is) intercepted and handled by the CORS middleware:\r\n\r\n```shell\r\ncurl -v -XOPTIONS \\\r\n  -H \"Origin: https://example.com\" \\\r\n  -H \"Access-Control-Request-Method: PUT\" \\\r\n  localhost:8080/hello\r\n```\r\n\r\n```http\r\nHTTP/1.1 204 No Content\r\nAccess-Control-Allow-Methods: PUT\r\nAccess-Control-Allow-Origin: *\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers\r\n-snip-\r\n```\r\n\r\n### Actual behaviour\r\n\r\nThe first two aforementioned `OPTIONS` requests get intercepted and handled by the CORS middleware rather than by the handler registered on `OPTIONS /hello`.\r\n\r\n### Steps to reproduce\r\n\r\n1. Run the program to start the server.\r\n2. Exercise it via `curl`(see commands above).\r\n\r\n### Working code to debug\r\n\r\n```go\r\npackage main\r\n\r\nimport (\r\n\t\"errors\"\r\n\t\"net/http\"\r\n\r\n\t\"github.com/labstack/echo/v4\"\r\n\t\"github.com/labstack/echo/v4/middleware\"\r\n)\r\n\r\nfunc main() {\r\n\te := echo.New()\r\n\te.Use(middleware.CORSWithConfig(middleware.CORSConfig{\r\n\t\tAllowOrigins: []string{\"*\"},\r\n\t\tAllowMethods: []string{http.MethodPut},\r\n\t}))\r\n\te.GET(\"/hello\", func(c echo.Context) error {\r\n\t\treturn c.String(http.StatusOK, \"Hello, World!\")\r\n\t})\r\n\te.OPTIONS(\"/hello\", func(c echo.Context) error {\r\n\t\tc.Response().Header().Set(\"Allow\", \"GET, OPTIONS\")\r\n\t\tc.Response().WriteHeader(http.StatusNoContent)\r\n\t\treturn nil\r\n\t})\r\n\tif err := e.Start(\":8080\"); err != nil && !errors.Is(err, http.ErrServerClosed) {\r\n\t\te.Logger.Fatal(err)\r\n\t}\r\n}\r\n```\r\n\r\n### Version/commit\r\n\r\nEcho v4.11.2. See my `go.mod` below:\r\n\r\n```\r\nmodule whatever\r\n\r\ngo 1.21.3\r\n\r\nrequire github.com/labstack/echo/v4 v4.11.2\r\n\r\nrequire (\r\n\tgithub.com/golang-jwt/jwt v3.2.2+incompatible // indirect\r\n\tgithub.com/labstack/gommon v0.4.0 // indirect\r\n\tgithub.com/mattn/go-colorable v0.1.13 // indirect\r\n\tgithub.com/mattn/go-isatty v0.0.19 // indirect\r\n\tgithub.com/valyala/bytebufferpool v1.0.0 // indirect\r\n\tgithub.com/valyala/fasttemplate v1.2.2 // indirect\r\n\tgolang.org/x/crypto v0.14.0 // indirect\r\n\tgolang.org/x/net v0.17.0 // indirect\r\n\tgolang.org/x/sys v0.13.0 // indirect\r\n\tgolang.org/x/text v0.13.0 // indirect\r\n\tgolang.org/x/time v0.3.0 // indirect\r\n)\r\n```\r\n",
+    "author": "jub0bs",
+    "created": "2023-10-23T12:51:30Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "pydantic-14054",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 14054,
+   "title": "Fix forward annotations evaluation and type variables substitution when rebuilding parametrized generic models",
+   "merged_at": "2026-10-22T11:13:58Z",
+   "url": "https://github.com/pydantic/pydantic/pull/14054",
+   "sha": "281aee54558e2ae7964d32b6c351951feaaa0650",
+   "lang": "python",
+   "src": [
+    "pydantic/_internal/_fields.py",
+    "pydantic/_internal/_generate_schema.py"
+   ],
+   "tests": [
+    "tests/test_forward_ref.py"
+   ],
+   "src_lines": 35,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_forward_ref.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 11223,
+    "title": "Type variables wrongly replaced when two models share the same type variable instance",
+    "body": "### Initial Checks\n\n- [X] I confirm that I'm using Pydantic V2\n\n### Description\n\nFrom https://github.com/pydantic/pydantic/issues/9887#issuecomment-2382877486:\r\n\r\n```python\r\nfrom typing import Generic, TypeVar\r\n\r\nfrom pydantic import BaseModel\r\n\r\nT = TypeVar('T')\r\n\r\nclass Model1(BaseModel, Generic[T]):\r\n    m2: 'Model2'\r\n\r\nclass Model2(BaseModel, Generic[T]):\r\n    t: T\r\n\r\nModel1[int].model_validate({'m2': {'t': 'not_an_int'}})\r\n# raises a ValidationError, shouldn't\r\n```\n\n### Example Code\n\n_No response_\n\n### Python, Pydantic & OS Version\n\n```Text\n2.10\n```\n",
+    "author": "Viicos",
+    "created": "2025-01-06T19:16:05Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "lo-796",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 796,
+   "title": "fix: make Ellipsis operate on runes instead of bytes to prevent Unicode truncation",
+   "merged_at": "2026-02-21T18:29:10Z",
+   "url": "https://github.com/samber/lo/pull/796",
+   "sha": "0b4623da1e71d19237c519b79f1852ec7b707961",
+   "lang": "go",
+   "src": [
+    "string.go"
+   ],
+   "tests": [
+    "string_test.go"
+   ],
+   "src_lines": 20,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "issue": {
+    "number": 520,
+    "title": "Ellipsis: avoid Unicode character truncation",
+    "body": "While you are working on Ellipsis, please look at the code behavior.\n\nI doubt the code does what is expected with a Unicode character like 🧜‍♂️ by truncating to Len 1",
+    "author": "ccoVeille",
+    "created": "2024-08-19T08:18:24Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "scrapy-8386",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8386,
+   "title": "Fix a regression on multiple waiters for robot_parser().",
+   "merged_at": "2026-10-21T19:01:14Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8386",
+   "sha": "4091b936b6a1b6aeb4b7297b47015b1d1907b5ea",
+   "lang": "python",
+   "src": [
+    "scrapy/downloadermiddlewares/robotstxt.py"
+   ],
+   "tests": [
+    "tests/test_downloadermiddleware_robotstxt.py"
+   ],
+   "src_lines": 11,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_downloadermiddleware_robotstxt.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 8297,
+    "title": "robots.txt enforcement fails OPEN for 2nd+ concurrent same-host request (RobotsTxtMiddleware + Twisted Deferred.asFuture())",
+    "body": "## What happened\n\nWith `ROBOTSTXT_OBEY=True`, a path disallowed by robots.txt was fetched (HTTP 200) instead of being blocked — but only when it was the **2nd or later concurrent request to the same host**. Reproduced 4/4 runs, deterministically.\n\n**Versions:** Scrapy 2.19, Python 3.12 (Twisted as bundled with the Scrapy 2.19 install — exact version available on request).\n\n## Reproduction\n\n1. Serve a local test site (`python -m http.server`) with robots.txt containing:\n```\nUser-agent: *\nDisallow: /private/\n```\n2. Run a spider with `ROBOTSTXT_OBEY=True`, `DOWNLOAD_DELAY=1.0`, `CONCURRENT_REQUESTS_PER_DOMAIN=1`, AutoThrottle enabled, honest User-Agent, requesting three URLs on that host: a live page, a 404, and `/private/x.html`.\n3. Observe: `/private/x.html` returns 200 and reaches the parse callback instead of being filtered by the robots middleware.\n\n## Root cause (instrumented)\n\nConcurrent same-host requests share a single Twisted `Deferred` for the robots.txt fetch/parse inside `RobotsTxtMiddleware`. The middleware converts that Deferred per-waiter via `Deferred.asFuture()` — and Twisted's `asFuture()` delivers the real result to the **first** future and **`None`** to the second. The second waiter therefore gets `parser=None`, and `process_request_2` treats `None` as \"no parser available → allow the request.\"\n\nSo robots.txt enforcement **silently fails open** for every concurrent same-host request after the first, on the very first robots.txt fetch for a host.\n\n## Expected behavior\n\nAll waiters on the shared robots.txt Deferred should receive the parsed result (or all should fail closed — block the request — if the parse result is unavailable).\n\n## Suggested fix directions\n\n- Share the *parsed* result (not the raw Deferred) across waiters; or\n- Fail closed: treat `parser=None` as \"deny\" rather than \"allow\" in `process_request_2`.\n\n## Workaround\n\nSerialize same-host requests so two requests never race the first robots.txt fetch of a host (e.g. `CONCURRENT_REQUESTS_PER_DOMAIN=1` plus a per-host delay), or pre-fetch robots.txt before crawling.\n\n## Why this matters\n\nFail-open robots.txt enforcement is a compliance footgun: users who set `ROBOTSTXT_OBEY=True` believe disallowed paths are never fetched. Under concurrency, that guarantee silently breaks.\n\n---\n*Found while building a polite liveness-checker that deliberately serializes per-host requests; the serialization accidentally immunized us, which is how the race was isolated. Happy to provide the minimal spider + test server scripts.*",
+    "author": "josephdatapro",
+    "created": "2026-10-09T15:17:24Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "mocha-6331",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 6331,
+   "title": "fix: give CLI reporter-option precedence over config file",
+   "merged_at": "2026-09-17T13:35:36Z",
+   "url": "https://github.com/mochajs/mocha/pull/6331",
+   "sha": "571110f0e87a3871b7ae6cea3eb4f19101a39f2c",
+   "lang": "node",
+   "src": [
+    "lib/cli/parse-args.js"
+   ],
+   "tests": [
+    "test/integration/options/reporter-option.spec.cjs",
+    "test/node-unit/cli/options.spec.js",
+    "test/node-unit/cli/parse-args.spec.js"
+   ],
+   "src_lines": 4,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/integration/options/reporter-option.spec.cjs test/node-unit/cli/options.spec.js test/node-unit/cli/parse-args.spec.js",
+   "issue": {
+    "number": 5532,
+    "title": "Bug: command line reporter-options parameter doesn't override .mocharc.yml",
+    "body": "### Bug Report Checklist\n\n- [x] I have read and agree to Mocha's [Code of Conduct](https://github.com/mochajs/mocha/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/mochajs/mocha/blob/main/.github/CONTRIBUTING.md)\n- [x] I have searched for [related issues](https://github.com/mochajs/mocha/issues?q=is%3Aissue) and [issues with the `faq` label](https://github.com/mochajs/mocha/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Afaq%20), but none matched my issue.\n- [x] I have 'smoke tested' the code to be tested by running it outside the real test suite to get a better sense of whether the problem is in the code under test, my usage of Mocha, or Mocha itself.\n- [ ] I want to provide a PR to resolve this\n\n### Expected\n\nMocha should use the `reporter-options` specified on the command-line instead of the one defined in  `.mocharc.yml`.\n\n### Actual\n\nMocha use the `reporter-options` defined in `.mocharc.yml` instead of the one specified on the command-line.\n\n### Minimal, Reproducible Example\n\n1. Define a `.mocharc.yml` file with  `reporter-options`:\n\n```yaml\nrecursive: true\nreporter: xunit\nreporter-options:\n  - 'output=./test-reports/xunit.xml'\n```\n\n2. Call mocha using a different value for `reporter-options`:\n\n```bash\nnode node_modules/mocha/bin/mocha --reporter-options output=./test-reports/xxxunit.xml\n```\n\n3. Verify that mocha has created `./test-reports/xunit.xml` and not `./test-reports/xxxunit.xml`\n\n\n### Versions\n\nDebian Bookworm / Mocha version 6.2.3 / Node version v24.11.0 -> work as expected\nDebian Bookworm / Mocha version 7.2.0 / Node version v24.11.0 -> work as expected\nDebian Bookworm / Mocha version 7.2.0 / Node version v24.11.0 -> work as expected\nDebian Bookworm / Mocha version 8.2.1 / Node version v24.11.0 -> work as expected\nDebian Bookworm / Mocha version 8.3.0 / Node version v24.11.0 -> **do not work as expected**\nDebian Bookworm / Mocha version 11.7.5 / Node version v24.11.0 -> **do not work as expected**\n\n\n### Additional Info\n\nI have the same problem on other node versions (Debian Buster/Node 16 v16.20.2), so I guess it's mocha related.\n\nThe behavior has change between _mocha@8.2.1_ and  _mocha@8.3.0_. \nAs I still have the same problem with  _mocha@11.7.5_, it is in all versions since v8.3.0.\n\nFor me it looks very similar to issue: https://github.com/mochajs/mocha/issues/3951",
+    "author": "stalb",
+    "created": "2025-11-12T18:41:17Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "immer-1249",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1249,
+   "title": "fix: correct curried produceWithPatches return type",
+   "merged_at": "2026-07-16T18:45:01Z",
+   "url": "https://github.com/immerjs/immer/pull/1249",
+   "sha": "a3be9df762c1dbe9959a011ddbab0ce838cbc468",
+   "lang": "node",
+   "src": [
+    "src/types/types-external.ts"
+   ],
+   "tests": [
+    "__tests__/produce.ts"
+   ],
+   "src_lines": 16,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/produce.ts",
+   "issue": {
+    "number": 1045,
+    "title": "`produceWithPatches` wrong return type",
+    "body": "## 🐛 Bug Report\r\n\r\nThe curried form of `produceWithPatches` returns the wrong type, while `produce` does.\r\n\r\n## Link to repro\r\n\r\n[https://codesandbox.io/s/producewithpatches-wrong-return-type-mr5hdp?file=/src/index.ts](https://codesandbox.io/s/producewithpatches-wrong-return-type-mr5hdp?file=/src/index.ts)\r\n\r\n## Observed behavior\r\n\r\nThe state returned by `produceWithPatches((draft: Draft<N>, m: number) => { ... })` is of type `WritableDraft<N>` but should be of type `N`.\r\n\r\nThe type of `produceWithPatches<N, [number]>((draft, m) => { ... })` is `never` while the type of `produce<N, [number]>((draft, m) => { ... })` is as expected.\r\n\r\n## Expected behavior\r\n\r\nThe types of the values returned by `produceWithPatches` should be the same as `produce`.\r\n\r\n## Environment\r\n\r\n- **Immer version: 10.0.1**\r\n- [X] I filed this report against the _latest_ version of Immer\r\n- [X] Occurs with `setUseProxies(true)`\r\n- [X] Occurs with `setUseProxies(false)` (ES5 only)",
+    "author": "omnitout",
+    "created": "2023-04-30T23:47:49Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "poetry-10982",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10982,
+   "title": "Fix explicit-priority sources not checked by poetry show --outdated",
+   "merged_at": "2026-08-01T07:56:04Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10982",
+   "sha": "62018d105562e1365bf79607edcc29ed794e4635",
+   "lang": "python",
+   "src": [
+    "src/poetry/console/commands/show.py"
+   ],
+   "tests": [
+    "tests/console/commands/test_show.py"
+   ],
+   "src_lines": 10,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/console/commands/test_show.py -p no:cacheprovider -q -n 0",
+   "issue": {
+    "number": 10425,
+    "title": "poetry show --outdated does not show outdated packages from \"explicit\" repositories",
+    "body": "### Description\n\nMaybe I'm missing something, but try as I might, I can't seem to get `poetry` (version 2.1.3) to show output for outdated packages that come from a private repository that is set as `priority = \"explicit\"`.\n\nExample line in `[tool.poetry.dependencies]`:\n```\nmy-private-package = {version = \"^0.14.0\", source = \"MyRepo\"}\n```\n\nin a `pyproject.toml` that also includes:\n```\n[[tool.poetry.source]]\nname = \"MyRepo\"\nurl = \"https://repo.shared.mycompany.com/repository/pypi-mycompany/simple\"\npriority = \"explicit\"\n```\n\nIf `MyRepo` has another version of the package (say, `0.15.0`) then I would expect `poetry show -o` to list the package as outdated.  But... nope; it's simply not included in the output of `poetry show -o`, even though PyPi packages are correctly shown if they are outdated.\n\n### Workarounds\n\n`poetry show --outdated` works correctly if I specify the private repo as `supplemental` - but not if I keep it as `explicit`.  The latter is preferable since it should avoid poetry checking my private repo for packages that I don't want to source from there.\n\n### Poetry Installation Method\n\npipx\n\n### Operating System\n\nMacOS Sequoia 15.5\n\n### Poetry Version\n\nPoetry (version 2.1.3)\n\n### Poetry Configuration\n\n```bash session\ncache-dir = \"/Users/jclerman/Library/Caches/pypoetry\"\ndata-dir = \"/Users/jclerman/Library/Application Support/pypoetry\"\ninstaller.max-workers = null\ninstaller.no-binary = null\ninstaller.only-binary = null\ninstaller.parallel = true\ninstaller.re-resolve = true\nkeyring.enabled = true\npython.installation-dir = \"{data-dir}/python\"  # /Users/jclerman/Library/Application Support/pypoetry/python\nrepositories.sirona.url = \"https://repo.shared.sirona.com/repository/pypi-sirona/simple\"\nrequests.max-retries = 0\nsolver.lazy-wheel = true\nsystem-git-client = false\nvirtualenvs.create = true\nvirtualenvs.in-project = null\nvirtualenvs.options.always-copy = false\nvirtualenvs.options.no-pip = false\nvirtualenvs.options.system-site-packages = false\nvirtualenvs.path = \"{cache-dir}/virtualenvs\"  # /Users/jclerman/Library/Caches/pypoetry/virtualenvs\nvirtualenvs.prompt = \"{project_name}-py{python_version}\"\nvirtualenvs.use-poetry-python = false\n```\n\n### Python Sysconfig\n\n<details>\n  <summary>sysconfig.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\n  Paste the output of 'python -m sysconfig', over this line.\n  ```\n</details>\n\n\n### Example pyproject.toml\n\n```TOML\nkey lines are included in the bug description - let me know if that isn't enough to reproduce the issue.\n```\n\n### Poetry Runtime Logs\n\n[poetry.log](https://github.com/user-attachments/files/20698168/poetry.log)\n\n",
+    "author": "jclerman",
+    "created": "2025-06-11T21:12:51Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "echo-3006",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3006,
+   "title": "fix(middleware/static): don't double-unescape request path (#2599)",
+   "merged_at": "2026-06-13T20:22:39Z",
+   "url": "https://github.com/labstack/echo/pull/3006",
+   "sha": "a9ede66a5a7196411131beb1ee801e75bbaf7ac6",
+   "lang": "go",
+   "src": [
+    "middleware/static.go"
+   ],
+   "tests": [
+    "middleware/static_percent_test.go"
+   ],
+   "src_lines": 5,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "issue": {
+    "number": 2599,
+    "title": "static middleware: path ist unescaped twice for file names, leading to not downloadable content",
+    "body": "### Issue Description\r\n\r\nGiven a file on disk with a percent sign in its name, it is not possible to download it using echo's static middleware.\r\n\r\nGiven some file names:\r\n- `100%.txt`\r\n- `foo%20bar.txt` (this is really the name on disk)\r\n\r\nIt is not possible to download these files using the static middleware.\r\n\r\n### Checklist\r\n\r\n- [X] Dependencies installed\r\n- [X] No typos\r\n- [X] Searched existing issues and docs\r\n\r\n### Expected behaviour\r\n\r\nThe standard way to download them would be using the folowing paths:\r\n\r\n- `100%.txt` -> `GET /100%25.txt`\r\n- `foo%20bar.txt` -> `GET /foo%2520bar.txt`\r\n\r\n\r\n### Actual behaviour\r\n\r\n- `100%.txt` -> `GET /100%25.txt`\r\n  - echo error message: **`invalid URL escape \"%.p`** (because of the double unescape and `.p` is no valid hex)\r\n- `foo%20bar.txt` -> `GET /foo%2520bar.txt`\r\n  - echo error message: **`path does not exist`** (because file `foo bar.txt` does not exist, only `foo%20bar.txt`)\r\n\r\nBackground is that url.Path in http.Request is already escaped (as the documentation for url.Path suggests), but echo is unescaping it again.\r\n\r\nI tried to generate a fix. For the non-embedded case this is solved by simply removing the explicit url.PathUnescape call in static.go (see https://github.com/georgmu/echo/commit/852dedeca2a22a0b6967e71f69cbb0823959a198 which also contains some test cases). I haven't created a merge request yet, as the embedding using groups or path patterns is a bit more complicated (I haven't fully understand the case for the disablePathUnescaping toggle).\r\n\r\n### Steps to reproduce / Working code to debug\r\n\r\nSee test cases in https://github.com/georgmu/echo/commit/852dedeca2a22a0b6967e71f69cbb0823959a198\r\n\r\n### Version/commit\r\n\r\nmaster ( commit fa70db8 )",
+    "author": "georgmu",
+    "created": "2024-02-29T11:54:30Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "pydantic-13391",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 13391,
+   "title": "Fix type variable substitution in `__pydantic_extra__`",
+   "merged_at": "2026-07-03T07:27:09Z",
+   "url": "https://github.com/pydantic/pydantic/pull/13391",
+   "sha": "85b70e919ec2738efd1d6ee1095dd24477454fbc",
+   "lang": "python",
+   "src": [
+    "pydantic/_internal/_fields.py",
+    "pydantic/_internal/_model_construction.py"
+   ],
+   "tests": [
+    "tests/test_forward_ref.py",
+    "tests/test_main.py"
+   ],
+   "src_lines": 23,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_forward_ref.py tests/test_main.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 13369,
+    "title": "Missing JSON schema generation for annotated `__pydantic_extra__` field",
+    "body": "### Initial Checks\n\n- [x] I have searched Google & GitHub for similar requests and couldn't find anything\n- [x] I have read and followed [the docs](https://pydantic.dev/docs/validation/latest/get-started/) and still think this feature is missing\n\n### Description\n\nWhen using an annotated `__pydantic_extra__: Dict[str, T]` field, the generated JSON schema contains `\"additionalProperties\": {},` instead of `\"additionalProperties\": {\"$ref\": \"#/$defs/<T>\"},` and the `#/$defs/<T>` definition is never generated.\n\nI'd like to request schema generation for this field when `extra=\"allowed\"` and `__pydantic_extra__` is annotated.\n\nThis is a minimal example:\n\n```python example.py\nfrom json import JSONEncoder\nfrom typing import Dict\n\nfrom pydantic import BaseModel, ConfigDict, Field\n\n\nclass DictAlike[T](BaseModel):\n\tmodel_config = ConfigDict(extra=\"allow\")\n\t__pydantic_extra__: Dict[str, T] = Field(init=False)  # pyright: ignore[reportIncompatibleVariableOverride]\n\n\nclass Wrapper[T1, T2](BaseModel):\n\tbroken: DictAlike[T1]\n\tworking: Dict[str, T2]\n\n\nclass Model1(BaseModel):\n\tattr: int\n\n\nclass Model2(BaseModel):\n\tattr: str\n\n\nschema = JSONEncoder(indent=\"\\t\").encode(Wrapper[Model1, Model2].model_json_schema())\noutfile = \"example.json\"\nwith open(outfile, \"w\", encoding=\"utf-8\") as f:\n\tf.write(schema)\n```\n\nAnd the generated JSON:\n\n```JSON example.json\n{\n\t\"$defs\": {\n\t\t\"DictAlike_Model1_\": {\n\t\t\t\"additionalProperties\": {},\n\t\t\t\"properties\": {},\n\t\t\t\"title\": \"DictAlike[Model1]\",\n\t\t\t\"type\": \"object\"\n\t\t},\n\t\t\"Model2\": {\n\t\t\t\"properties\": {\n\t\t\t\t\"attr\": {\n\t\t\t\t\t\"title\": \"Attr\",\n\t\t\t\t\t\"type\": \"string\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"required\": [\n\t\t\t\t\"attr\"\n\t\t\t],\n\t\t\t\"title\": \"Model2\",\n\t\t\t\"type\": \"object\"\n\t\t}\n\t},\n\t\"properties\": {\n\t\t\"broken\": {\n\t\t\t\"$ref\": \"#/$defs/DictAlike_Model1_\"\n\t\t},\n\t\t\"working\": {\n\t\t\t\"additionalProperties\": {\n\t\t\t\t\"$ref\": \"#/$defs/Model2\"\n\t\t\t},\n\t\t\t\"title\": \"Working\",\n\t\t\t\"type\": \"object\"\n\t\t}\n\t},\n\t\"required\": [\n\t\t\"broken\",\n\t\t\"working\"\n\t],\n\t\"title\": \"Wrapper[Model1, Model2]\",\n\t\"type\": \"object\"\n}\n```\n\nThis demonstrates that when using a `Dict[str, Model]` instead of `DictAlike[Model]`, the schema is correctly generated. `additionalProperties` uses the `\"$ref\": \"#/$defs/Model2\"` mapping and the definition for `Model2` is generated. `Model1` is missing from the definitions. This demo needs to use `T1` and `T2` instead of just `T` so we can distinguish between a definition generated for `__pydantic_extra__` and the `Dict`.\n\nBest,\n\nEdit: Changed the example to better highlight the issue.\n\n### Affected Components\n\n- [ ] [Compatibility between releases](https://pydantic.dev/docs/validation/latest/get-started/changelog/)\n- [ ] [Data validation/parsing](https://pydantic.dev/docs/validation/latest/concepts/models/#basic-model-usage)\n- [ ] [Data serialization](https://pydantic.dev/docs/validation/latest/concepts/serialization/) - `.model_dump()` and `.model_dump_json()`\n- [x] [JSON Schema](https://pydantic.dev/docs/validation/latest/concepts/json_schema/)\n- [ ] [Dataclasses](https://pydantic.dev/docs/validation/latest/concepts/dataclasses/)\n- [ ] [Model Config](https://pydantic.dev/docs/validation/latest/concepts/config/)\n- [ ] [Field Types](https://pydantic.dev/docs/validation/latest/api/pydantic/types/) - adding or changing a particular data type\n- [ ] [Function validation decorator](https://pydantic.dev/docs/validation/latest/concepts/validation_decorator/)\n- [ ] [Generic Models](https://pydantic.dev/docs/validation/latest/concepts/models/#generic-models)\n- [ ] [Other Model behaviour](https://pydantic.dev/docs/validation/latest/concepts/models/) - `model_construct()`, pickling, private attributes, ORM mode\n- [ ] [Plugins](https://pydantic.dev/docs/validation/latest/integrations/dev-tools/mypy/) and integration with other tools - mypy, FastAPI, python-devtools, Hypothesis, VS Code, PyCharm, etc.",
+    "author": "Gabgobie",
+    "created": "2026-06-29T19:13:54Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "scrapy-8196",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8196,
+   "title": "Fix file store modification timestamps",
+   "merged_at": "2026-09-27T09:13:22Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8196",
+   "sha": "e8c708f8d4e9c93b8c33f9a743c97275d18c1743",
+   "lang": "python",
+   "src": [
+    "scrapy/pipelines/files.py"
+   ],
+   "tests": [
+    "tests/test_pipeline_files.py"
+   ],
+   "src_lines": 13,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_pipeline_files.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 8186,
+    "title": "Fix timezone handling in `FilesPipeline` stores",
+    "body": "Found in https://github.com/scrapy/scrapy/pull/8182#discussion_r4053447020\n\nVarious `FilesPipeline` stores produce the `last_modifed` value as the UNIX timestamp and some or all of them may do it incorrectly, depending on what are the values returned by S3 and GCS and what is in FTP `MDTM`. Their tests may also hide these problems and may need to be improved.",
+    "author": "wRAR",
+    "created": "2026-09-20T18:54:55Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "mocha-5997",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 5997,
+   "title": "fix: split err.stack so embedded stacks in err message render once",
+   "merged_at": "2026-09-04T21:27:45Z",
+   "url": "https://github.com/mochajs/mocha/pull/5997",
+   "sha": "90f48e40b95eb622ad7123915e730c284652a1e8",
+   "lang": "node",
+   "src": [
+    "lib/reporters/base.js"
+   ],
+   "tests": [
+    "test/reporters/base.spec.cjs"
+   ],
+   "src_lines": 63,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/reporters/base.spec.cjs",
+   "issue": {
+    "number": 3992,
+    "title": "🐛 Bug: Reports the Error twice when its message contains something similar to a stack",
+    "body": "<!--\r\nHave you read Mocha's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/mochajs/mocha/blob/master/.github/CODE_OF_CONDUCT.md\r\nFor more, check out the Mocha Gitter chat room: https://gitter.im/mochajs/mocha\r\n\r\nDetail the steps necessary to reproduce the problem. To get the fastest support, create an MCVE and upload it to GitHub.\r\ncreate an [MCVE](https://stackoverflow.com/help/mcve) and upload it to GitHub.\r\n-->\r\n\r\n### Prerequisites\r\n\r\n<!--\r\nPlace an `x` between the square brackets on the lines below for every satisfied prerequisite.\r\n-->\r\n\r\n- [x] Checked that your issue hasn't already been filed by cross-referencing [issues with the `faq` label](https://github.com/mochajs/mocha/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Afaq%20)\r\n- [x] Checked next-gen ES issues and syntax problems by using the same environment and/or transpiler configuration without Mocha to ensure it isn't just a feature that actually isn't supported in the environment in question or a bug in your code.\r\n- [x] 'Smoke tested' the code to be tested by running it outside the real test suite to get a better sense of whether the problem is in the code under test, your usage of Mocha, or Mocha itself\r\n- [x] Ensured that there is no discrepancy between the locally and globally installed versions of Mocha. You can find them with: `node node_modules/.bin/mocha --version`(Local) and `mocha --version`(Global). We recommend that you _not_ install Mocha globally.\r\n\r\n### Description\r\n\r\nMocha reports twice the `Error` instance when it contains something that looks similar to a stacktrace.\r\n\r\nAs a consequence `throw new Error(\"Oups.\");` and `throw new Error(\"Oups. at plouf (C:\\\\dev\\\\try-mocha\\\\test.js:9:15)\");` will not be treated the same way in the report of Mocha.\r\n\r\n### Steps to Reproduce\r\n\r\nHere is a small spec file to reproduce:\r\n\r\n```js\r\nfunction oups() {\r\n  throw new Error(`Oups.`);\r\n}\r\nfunction oupsStack() {\r\n  throw new Error(`Oups. at plouf (C:\\\\dev\\\\try-mocha\\\\test.js:9:15)`);\r\n}\r\ndescribe(\"describe\", () => {\r\n  it(\"it oups\", () => {\r\n    oups();\r\n  });\r\n  it(\"it oupsStack\", () => {\r\n    oupsStack();\r\n  });\r\n});\r\n```\r\n\r\nError related to https://github.com/dubzzz/fast-check/issues/399\r\n\r\n**Expected behavior:** [What you expect to happen]\r\n\r\nThe reports of `oups` and `oupsStack` should be similar (even if oupsStack contains something similar to a stack trace).\r\nI would have expected the following error report from mocha:\r\n\r\n```\r\n  1) describe\r\n       it oups:\r\n     Error: Oups.\r\n      at oups (test\\test2.js:2:9)\r\n      at Context.<anonymous> (test\\test2.js:11:5)\r\n      at processImmediate (internal/timers.js:439:21)\r\n\r\n  2) describe\r\n       it oupsStack:\r\n     Error: Oups. at plouf (C:\\dev\\try-mocha\\test.js:9:15)\r\n      at oupsStack (test\\test2.js:6:9)\r\n      at Context.<anonymous> (test\\test2.js:14:5)\r\n      at processImmediate (internal/timers.js:439:21)\r\n```\r\n\r\n**Actual behavior:** [What actually happens]\r\n\r\nHere is the actual report I got from Mocha:\r\n\r\n```\r\n  1) describe\r\n       it oups:\r\n     Error: Oups.\r\n      at oups (test\\test2.js:2:9)\r\n      at Context.<anonymous> (test\\test2.js:11:5)\r\n      at processImmediate (internal/timers.js:439:21)\r\n\r\n  2) describe\r\n       it oupsStack:\r\n     Oups. at plouf (C:\\dev\\try-mocha\\test.js:9:15)\r\n  Error: Oups. at plouf (test.js:9:15)\r\n      at oupsStack (test\\test2.js:6:9)\r\n      at Context.<anonymous> (test\\test2.js:14:5)\r\n      at processImmediate (internal/timers.js:439:21)\r\n```\r\n\r\nWe can see that `Oups. at plouf` is visible twice in the log while `Oups.` is only visible once.\r\n\r\n**Reproduces how often:** [What percentage of the time does it reproduce?]\r\n\r\n### Versions\r\n\r\n<!-- If applicable, please specify: -->\r\n\r\n- The output of `mocha --version` and `node node_modules/.bin/mocha --version`:\r\n  - `mocha --version`: none\r\n  - `node_modules/.bin/mocha --version`: 6.2.0\r\n- The output of `node --version`: 12.6.0\r\n- Your operating system\r\n  - name and version: Windows 10\r\n  - architecture (32 or 64-bit): 64bits\r\n- Your shell (e.g., bash, zsh, PowerShell, cmd): git bash\r\n- Any code transpiler (e.g., TypeScript, CoffeeScript, Babel) being used (and its version): pure js without any transpilers\r\n",
+    "author": "dubzzz",
+    "created": "2019-08-16T13:26:32Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "poetry-10720",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10720,
+   "title": "Fix non-deterministic dependency constraint ordering in lock file",
+   "merged_at": "2026-02-15T10:14:58Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10720",
+   "sha": "df570ee779aed24a699027ad0465ad8aed265c54",
+   "lang": "python",
+   "src": [
+    "src/poetry/packages/locker.py"
+   ],
+   "tests": [
+    "tests/installation/fixtures/with-conflicting-dependency-extras-transitive.test",
+    "tests/packages/test_locker.py"
+   ],
+   "src_lines": 5,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/packages/test_locker.py -p no:cacheprovider -q -n 0",
+   "issue": {
+    "number": 10702,
+    "title": "Non-deterministic markers order",
+    "body": "### Description\n\nConsecutive runs of `poetry install` after `poetry update` change markers or versions restriction order in a non-consequential way.\nThis also seems to reproduce when running `install` across different Linux distributions and machines, as well as with the update-install sequence on the same machine.\n\nEx:\n\n```\n[[package]]\nname = \"google-api-core\"\nversion = \"2.29.0\"\n...\n[package.dependencies]\nproto-plus = [\n    + {version = \">=1.22.3,<2.0.0\"},\n    {version = \">=1.25.0,<2.0.0\", markers = \"python_version >= \\\"3.13\\\"\"},\n    - {version = \">=1.22.3,<2.0.0\"},\n]\n```\n\n```\ndescription = \"Fast implementation of asyncio event loop on top of libuv\"\noptional = false\npython-versions = \">=3.8.1\"\ngroups = [\"main\"]\n- markers = \"sys_platform != \\\"win32\\\" and sys_platform != \\\"cygwin\\\" and platform_python_implementation != \\\"PyPy\\\"\"\n+ markers = \"platform_python_implementation != \\\"PyPy\\\" and sys_platform != \\\"win32\\\" and sys_platform != \\\"cygwin\\\"\"\n```\n\nThe first reordering occurred in Poetry 2.2.1. I did not see the second one before upgrading to 2.3.1.\n\nThis issue is especially disruptive with Coding Agents, especially cloud-deployed ones like GitHub Copilot, because it creates unnecessary noise in the pull requests.\n\nIt would be great if this issue could be mitigated by deterministic ordering of markers and version ranges by hash or lexicographically.\n\n### Workarounds\n\nAdding .lock files to .gitignore and committing them only when needed.\n\n### Poetry Installation Method\n\npip\n\n### Operating System\n\nUbuntu 25.10\n\n### Poetry Version\n\nPoetry (version 2.3.1)\n\n### Poetry Configuration\n\n```bash session\ncache-dir = \"/home/dmitry/.cache/pypoetry\"\ndata-dir = \"/home/dmitry/.local/share/pypoetry\"\ninstaller.max-workers = null\ninstaller.no-binary = null\ninstaller.only-binary = null\ninstaller.parallel = true\ninstaller.re-resolve = false\nkeyring.enabled = true\npython.installation-dir = \"{data-dir}/python\"\nrequests.max-retries = 0\nsolver.lazy-wheel = true\nsystem-git-client = false\nvirtualenvs.create = true\nvirtualenvs.in-project = null\nvirtualenvs.options.always-copy = false\nvirtualenvs.options.no-pip = false\nvirtualenvs.options.system-site-packages = false\nvirtualenvs.path = \"{cache-dir}/virtualenvs\"\nvirtualenvs.prompt = \"{project_name}-py{python_version}\"\nvirtualenvs.use-poetry-python = false\n```\n\n### Python Sysconfig\n\n<details>\n  <summary>sysconfig.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\n  Paste the output of 'python -m sysconfig', over this line.\n  ```\n</details>\n\n\n### Example pyproject.toml\n\n```TOML\n[tool.poetry]\nname = \"adk-chat-demo\"\nversion = \"0.1.0\"\nreadme = \"\"\n\n[tool.poetry.dependencies]\npython = \">=3.12,<3.14\"\ngoogle-adk = \"1.23.0\"\n\n[tool.poetry.group.dev.dependencies]\nruff = \"0.14.13\"\n\n[tool.pytest.ini_options]\npythonpath = [\n    \"src/\"\n]\n\n[build-system]\nrequires = [\"poetry-core\"]\nbuild-backend = \"poetry.core.masonry.api\"\n```\n\nAlso find two lock files attached:\nThe [poetry.lock.zip](https://github.com/user-attachments/files/24848443/poetry.lock.zip) was produced by poetry 2.2.1 during `poetry update`, and [poetry_install.lock.zip](https://github.com/user-attachments/files/24848421/poetry_install.lock.zip) includes modifications that an immediate follow-up `poetry install` does.\n\n### Poetry Runtime Logs\n\n<details>\n  <summary>poetry-runtime.log</summary>\n  <!-- Please leave one blank line below for enabling the code block rendering. -->\n\n  ```\n  Paste the output of 'poetry -vvv <command>', over this line.\n  ```\n</details>\n\n\n",
+    "author": "Spikhalskiy",
+    "created": "2026-01-21T23:34:05Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "echo-3043",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3043,
+   "title": "fix(static): preserve matched handler 404s",
+   "merged_at": "2026-07-16T19:01:26Z",
+   "url": "https://github.com/labstack/echo/pull/3043",
+   "sha": "2caa1a52ff35d921251bd4e72dcd8fcef094ea88",
+   "lang": "go",
+   "src": [
+    "middleware/static.go"
+   ],
+   "tests": [
+    "middleware/static_test.go"
+   ],
+   "src_lines": 6,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "issue": {
+    "number": 2775,
+    "title": "Not found error conflict with StaticWithConfig middleware",
+    "body": "Hello,\n\nI've encountered a situation which seems to be a bug to me.\n\nIn the following code, I set up the static middleware with HTML5 param to true so I can have my SPA embedded. In my API, I could have endpoints that would return legit 404 (id not found in database, whatever..) but when this happens, it conflicts with the static middleware (because of `HTML5: true`). It would catch the error and return the `index.html` with a 200 instead of a JSON with a 404 that could be handled by the SPA.\n\nIs this intended? Would you have suggestions? Thanks :)\n\n```\npackage main\n\nimport (\n\t\"embed\"\n\t\"errors\"\n\t\"log/slog\"\n\t\"net/http\"\n\n\t\"github.com/labstack/echo/v4\"\n\t\"github.com/labstack/echo/v4/middleware\"\n)\n\n//go:embed all:dist\nvar ui embed.FS\n\nfunc main() {\n\t// Echo instance\n\te := echo.New()\n\n\t// Middleware\n\te.Use(middleware.Logger())\n\te.Use(middleware.Recover())\n\n\t// Serve static files\n\te.Use(middleware.StaticWithConfig(middleware.StaticConfig{\n\t\tHTML5:      true,\n\t\tRoot:       \"dist\",\n\t\tFilesystem: http.FS(ui),\n\t}))\n\n\t// Routes\n\tapi := e.Group(\"/api\")\n\tapi.GET(\"/test/:id\", func(c echo.Context) error {\n\t\tid := c.Param(\"id\")\n\t\tif id == \"3\" {\n\t\t\treturn echo.NewHTTPError(http.StatusNotFound, \"not found\")\n\t\t}\n\t\treturn c.String(http.StatusOK, \"ID: \"+id)\n\t})\n\n\t// Start server\n\tif err := e.Start(\":8080\"); err != nil && !errors.Is(err, http.ErrServerClosed) {\n\t\tslog.Error(\"failed to start server\", \"error\", err)\n\t}\n}\n```",
+    "author": "marcantoinegodde",
+    "created": "2025-05-12T09:44:20Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "pydantic-12741",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 12741,
+   "title": "Fix incorrect dataclass constructor signature when overriding class `kw_only` with `Field()`",
+   "merged_at": "2026-01-27T09:12:10Z",
+   "url": "https://github.com/pydantic/pydantic/pull/12741",
+   "sha": "950a1c9eadd9b050a0a21febeb360ed469e0afbd",
+   "lang": "python",
+   "src": [
+    "pydantic/_internal/_dataclasses.py",
+    "pydantic/_internal/_signature.py"
+   ],
+   "tests": [
+    "tests/test_dataclasses.py"
+   ],
+   "src_lines": 6,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_dataclasses.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 12736,
+    "title": "Incorrect Pydantic dataclass constructor signature when using `kw_only=True` in decorator and `pydantic.Field(kw_only=False)`",
+    "body": "### Initial Checks\n\n- [x] I confirm that I'm using Pydantic V2\n\n### Example Code\n\n```Python\nimport dataclasses\nimport inspect\n\nimport pydantic\n\n\n@dataclasses.dataclass(kw_only=True)\nclass NormalDataclass:\n    a: int = dataclasses.field(kw_only=False)\n\n\n@pydantic.dataclasses.dataclass(kw_only=True)\nclass PydanticDataclassWithDataclassField:\n    a: int = dataclasses.field(kw_only=False)\n\n\n@pydantic.dataclasses.dataclass(kw_only=True)\nclass PydanticDataclassWithPydanticField:\n    a: int = pydantic.Field(kw_only=False) # This should show in the signature as not being keyword-only.\n\n\nfor cls in [\n    NormalDataclass,\n    PydanticDataclassWithDataclassField,\n    PydanticDataclassWithPydanticField,\n]:\n    instance = cls(1)  # Runs fine, type-checks fine.\n    assert instance.a == 1\n    print(f\"{cls.__name__}: {inspect.signature(cls)}\")\n```\n\n### Description\n\nThe example code above prints:\n\n```\nNormalDataclass: (a: int) -> None\nPydanticDataclassWithDataclassField: (a: int) -> None\nPydanticDataclassWithPydanticField: (*, a: int = <factory>) -> None\n```\n\nWhen I would have expected all the signatures to be the same:\n\n```\nNormalDataclass: (a: int) -> None\nPydanticDataclassWithDataclassField: (a: int) -> None\nPydanticDataclassWithPydanticField: (a: int) -> None\n```\n\nAll of these classes still accept passing a positional argument for `a` to the constructor, but the signature for `PydanticDataclassWithPydanticField` is wrong, incorrectly showing `a` as a keyword-only argument, as well as showing a default value when the argument is actually required.\n\nThis appears to be an issue here at `pydantic._internal._dataclasses`:\n\n```python\ndef as_dataclass_field(pydantic_field: FieldInfo) -> dataclasses.Field[Any]:\n    field_args: dict[str, Any] = {'default': pydantic_field}\n\n    # Needed because if `doc` is set, the dataclass slots will be a dict (field name -> doc) instead of a tuple:\n    if sys.version_info >= (3, 14) and pydantic_field.description is not None:\n        field_args['doc'] = pydantic_field.description\n\n    # Needed as the stdlib dataclass module processes kw_only in a specific way during class construction:\n    if sys.version_info >= (3, 10) and pydantic_field.kw_only:\n        field_args['kw_only'] = True\n\n    # Needed as the stdlib dataclass modules generates `__repr__()` during class construction:\n    if pydantic_field.repr is not True:\n        field_args['repr'] = pydantic_field.repr\n\n    return dataclasses.field(**field_args)\n```\n\nIf I modify the `kw_only` section to always assign the Pydantic field's `kw_only` to the dataclass field when set, the example code will correctly show `a` can be passed as a keyword argument:\n\n```python\n    # Needed as the stdlib dataclass module processes kw_only in a specific way during class construction:\n    if sys.version_info >= (3, 10) and pydantic_field.kw_only is not None:\n        field_args['kw_only'] = pydantic_field.kw_only\n```\n\nAnd the example output will then show:\n\n```\nPydanticDataclassWithPydanticField: (a: int = <factory>) -> None\n```\n\nThere's still the <factory> default, which I'm not sure how to handle.\n\n### Python, Pydantic & OS Version\n\n```Text\npydantic version: 2.12.5\n        pydantic-core version: 2.41.5\n          pydantic-core build: profile=release pgo=false\n               python version: 3.14.2 (main, Jan 13 2026, 19:27:04) [Clang 21.1.4 ]\n                     platform: macOS-26.2-arm64-arm-64bit-Mach-O\n             related packages: pydantic-extra-types-2.11.0 fastapi-0.128.0 pyright-1.1.380 email-validator-2.3.0 pydantic-settings-2.12.0 typing_extensions-4.15.0\n                       commit: unknown\n```",
+    "author": "OOI-RCA-APL-USER",
+    "created": "2026-01-22T23:35:45Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "scrapy-7683",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7683,
+   "title": "Fix genspider --editor",
+   "merged_at": "2026-06-30T10:05:43Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7683",
+   "sha": "6ad8a043cae3d4e0db906788cb60a4c8a3fd7d91",
+   "lang": "python",
+   "src": [
+    "scrapy/commands/edit.py",
+    "scrapy/commands/genspider.py"
+   ],
+   "tests": [
+    "tests/test_command_genspider.py",
+    "tests/test_commands.py"
+   ],
+   "src_lines": 35,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_command_genspider.py tests/test_commands.py -p no:cacheprovider -q",
+   "issue": {
+    "number": 7260,
+    "title": "`scrapy genspider --edit` doesn't work",
+    "body": "```\nscrapy startproject proj\ncd proj\n```\n\nThis works:\n\n```\nscrapy genspider example1 example1.com\nscrapy edit example1\n```\n\nThis doesn't:\n\n```\nscrapy genspider --edit example2 example2.com\n```\n\n```\nCreated spider 'example2' using template 'basic' in module:\n  proj.spiders.example2\nTraceback (most recent call last):\n  File \"[...]/.env/bin/scrapy\", line 8, in <module>\n    sys.exit(execute())\n             ~~~~~~~^^\n  File \"[...]/scrapy/cmdline.py\", line 167, in execute\n    settings = get_project_settings()\n  File \"[...]/scrapy/utils/project.py\", line 73, in get_project_settings\n    settings.setmodule(settings_module_path, priority=\"project\")\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"[...]/scrapy/settings/__init__.py\", line 535, in setmodule\n    module = import_module(module)\n  File \"/usr/lib/python3.13/importlib/__init__.py\", line 88, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1310, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1324, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'proj'\n```",
+    "author": "wRAR",
+    "created": "2026-02-15T08:40:31Z",
+    "state": "OPEN"
+   }
+  },
+  {
+   "id": "mocha-6361",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 6361,
+   "title": "fix: show built-in reporters in --list-reporters",
+   "merged_at": "2026-10-01T04:45:14Z",
+   "url": "https://github.com/mochajs/mocha/pull/6361",
+   "sha": "202bfe18f1541a1faee95043d8b1f0b919e1a31a",
+   "lang": "node",
+   "src": [
+    "lib/cli/one-and-dones.js"
+   ],
+   "tests": [
+    "test/integration/options/listReporters.spec.cjs"
+   ],
+   "src_lines": 4,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/integration/options/listReporters.spec.cjs",
+   "issue": {
+    "number": 6358,
+    "title": "🐛 Bug: --list-reporters prints an empty list",
+    "body": "### Bug Report Checklist\n\n- [x] This is NOT a [security, `npm audit`, or GitHub Advisory issue](https://mochajs.org/explainers/security-vulnerability-reports).\n- [x] I have read and agree to Mocha's [Code of Conduct](https://github.com/mochajs/mocha/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/mochajs/mocha/blob/main/.github/CONTRIBUTING.md)\n- [x] I have searched for [related issues](https://github.com/mochajs/mocha/issues?q=is%3Aissue) and [issues with the `faq` label](https://github.com/mochajs/mocha/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Afaq%20), but none matched my issue.\n- [x] I have 'smoke tested' the code to be tested by running it outside the real test suite to get a better sense of whether the problem is in the code under test, my usage of Mocha, or Mocha itself.\n- [x] I want to provide a PR to resolve this\n\n### Expected\n\n`mocha --list-reporters` lists the built-in reporters with their descriptions like it does on 11.x.\n\n### Actual\n\nIt prints two blank lines and exits 0.\n\n### Minimal, Complete and Verifiable Example\n\nlists 13 reporters:\n```sh\nnpx mocha@11.8.0 --list-reporters\n```\n\nprints nothing:\n```sh\nnpx mocha@12.0.2 --list-reporters\n```\n\n### Versions\n\nmocha 12.0.2 (also on main), node v24.17.0, Windows 11.\n\n### Additional Info\n\nReporters switched to ES2015 classes in #5180. Unlike `util.inherits`, `class extends` inherits statics so `Base.abstract = true` is inherited by every reporter and the listing skips them all.\n\nThe test uses the same flag to build its expected list and therfore producing an empty array and asserting nothing so it stayed green.",
+    "author": "mostafaNazari702",
+    "created": "2026-09-18T22:43:37Z",
+    "state": "OPEN"
+   }
+  }
+ ]
+}

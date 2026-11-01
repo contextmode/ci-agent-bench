@@ -1,0 +1,275 @@
+{
+ "area": "review",
+ "seed": "confirm-1101",
+ "pool": "review.json",
+ "n": 10,
+ "reserve": 4,
+ "tasks": [
+  {
+   "id": "kafka-23804",
+   "repo": "apache/kafka",
+   "stars": 34107,
+   "pr": 23804,
+   "title": "KAFKA-21181: Return NOT_COORDINATOR from a stale transaction coordinator cache (4.3)",
+   "additions": 210,
+   "deletions": 11,
+   "changed_files": 4,
+   "merged_at": "2026-10-13T20:35:40Z",
+   "head_sha": "da3d9824a138501d96d06b0682f7e36377571ee3",
+   "url": "https://github.com/apache/kafka/pull/23804",
+   "seq": 1,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "elasticsearch-163282",
+   "repo": "elastic/elasticsearch",
+   "stars": 78444,
+   "pr": 163282,
+   "title": "[9.5] chore(Build) Share GitInfo via build service for Isolated Projects (#162435)",
+   "additions": 298,
+   "deletions": 20,
+   "changed_files": 5,
+   "merged_at": "2026-10-24T16:14:09Z",
+   "head_sha": "e1d60a0e6237b8532c9c63386cdfa30ed776eb2c",
+   "url": "https://github.com/elastic/elasticsearch/pull/163282",
+   "seq": 2,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zed-65129",
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "pr": 65129,
+   "title": "keymap: Fix `shift-enter` in search bar for JetBrains keymap",
+   "additions": 97,
+   "deletions": 2,
+   "changed_files": 3,
+   "merged_at": "2026-10-05T21:06:14Z",
+   "head_sha": "4de327a6af09b2084e7b58684a7f8f590f89b60a",
+   "url": "https://github.com/zed-industries/zed/pull/65129",
+   "seq": 3,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "kafka-23911",
+   "repo": "apache/kafka",
+   "stars": 34107,
+   "pr": 23911,
+   "title": "MINOR: Track share fetch offset metadata per DelayedShareFetch instead of SharePartition",
+   "additions": 248,
+   "deletions": 186,
+   "changed_files": 5,
+   "merged_at": "2026-10-23T12:58:43Z",
+   "head_sha": "8a9211d7342670027485df70bd2e6c340677b6a1",
+   "url": "https://github.com/apache/kafka/pull/23911",
+   "seq": 4,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "vscode-342878",
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "pr": 342878,
+   "title": "Chat - remove pill when working set is enabled",
+   "additions": 128,
+   "deletions": 6,
+   "changed_files": 2,
+   "merged_at": "2026-10-20T15:21:48Z",
+   "head_sha": "8ef8e0ca6f1a7bb670bd60f4baf37a16e5d6367d",
+   "url": "https://github.com/microsoft/vscode/pull/342878",
+   "seq": 5,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "elasticsearch-163196",
+   "repo": "elastic/elasticsearch",
+   "stars": 78444,
+   "pr": 163196,
+   "title": "[9.6] ES|QL|DS: End source quietly on closed registry (#163128)",
+   "additions": 287,
+   "deletions": 14,
+   "changed_files": 5,
+   "merged_at": "2026-10-23T15:23:28Z",
+   "head_sha": "409310184cccb8fd2cb5c367a6207845567a9c33",
+   "url": "https://github.com/elastic/elasticsearch/pull/163196",
+   "seq": 6,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "kubernetes-140611",
+   "repo": "kubernetes/kubernetes",
+   "stars": 128810,
+   "pr": 140611,
+   "title": "[WAS] scheduler-perf baseline + draft SLOs for TAS placement limit",
+   "additions": 95,
+   "deletions": 1,
+   "changed_files": 2,
+   "merged_at": "2026-10-12T17:16:09Z",
+   "head_sha": "244229bce7fae1601b97cf9a473c4f9d01581868",
+   "url": "https://github.com/kubernetes/kubernetes/pull/140611",
+   "seq": 7,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "vscode-343624",
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "pr": 343624,
+   "title": "Agent Host: accept managed model \"fusion\" as Auto",
+   "additions": 59,
+   "deletions": 6,
+   "changed_files": 4,
+   "merged_at": "2026-10-22T23:11:34Z",
+   "head_sha": "c1a6569302270b63d34b1983156d54a58bc0cb07",
+   "url": "https://github.com/microsoft/vscode/pull/343624",
+   "seq": 8,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zed-65841",
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "pr": 65841,
+   "title": "agent_ui: Preserve input through ACP reconnect and replay",
+   "additions": 538,
+   "deletions": 13,
+   "changed_files": 7,
+   "merged_at": "2026-10-19T20:18:30Z",
+   "head_sha": "b1395595c703dc4e60401115cc27fb06de20942b",
+   "url": "https://github.com/zed-industries/zed/pull/65841",
+   "seq": 9,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "flutter-190431",
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "pr": 190431,
+   "title": "Rebuild a semantics fragment when its sibling conflict changes",
+   "additions": 68,
+   "deletions": 0,
+   "changed_files": 2,
+   "merged_at": "2026-10-03T05:31:45Z",
+   "head_sha": "c5508801444f3c9d8ad324282405b4e03f1b3e97",
+   "url": "https://github.com/flutter/flutter/pull/190431",
+   "seq": 10,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "flutter-194096",
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "pr": 194096,
+   "title": "[web] Drop stale composing range after text is replaced mid-composition",
+   "additions": 151,
+   "deletions": 5,
+   "changed_files": 3,
+   "merged_at": "2026-10-14T14:49:19Z",
+   "head_sha": "fec0e6ed0c6c2e49023dd57df390e26cb8784f13",
+   "url": "https://github.com/flutter/flutter/pull/194096",
+   "seq": 11,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "pandas-70233",
+   "repo": "pandas-dev/pandas",
+   "stars": 50279,
+   "pr": 70233,
+   "title": "BUG: setitem-with-expansion, map and groupby.agg raised for a value the dtype cannot hold",
+   "additions": 100,
+   "deletions": 4,
+   "changed_files": 7,
+   "merged_at": "2026-10-04T00:56:55Z",
+   "head_sha": "b205534899f90478b85b01e0f87f31335d8384b9",
+   "url": "https://github.com/pandas-dev/pandas/pull/70233",
+   "seq": 12,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "llama.cpp-29069",
+   "repo": "ggml-org/llama.cpp",
+   "stars": 133035,
+   "pr": 29069,
+   "title": "vulkan: support mulmat bf16 activations",
+   "additions": 78,
+   "deletions": 73,
+   "changed_files": 3,
+   "merged_at": "2026-10-14T05:36:33Z",
+   "head_sha": "ed5106cdd886c8eb738d73cf678e95e146078414",
+   "url": "https://github.com/ggml-org/llama.cpp/pull/29069",
+   "seq": 13,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "grafana-136242",
+   "repo": "grafana/grafana",
+   "stars": 77610,
+   "pr": 136242,
+   "title": "Unified storage: preserve cancellation status in reads",
+   "additions": 375,
+   "deletions": 64,
+   "changed_files": 7,
+   "merged_at": "2026-10-28T12:15:40Z",
+   "head_sha": "271d6cbacab999d033d1f9d763240c8a96234cf5",
+   "url": "https://github.com/grafana/grafana/pull/136242",
+   "seq": 14,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  }
+ ]
+}

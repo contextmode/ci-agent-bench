@@ -1,0 +1,49 @@
+name: confirm-validate
+run-name: validate ${{ inputs.area }} ${{ inputs.task }} ${{ inputs.mode }}
+
+# Free validity check of a confirm-1101 fix task (no model, no key). baseline: the suite must FAIL on the broken repo.
+# control: the suite must PASS with the upstream fix in place. fix-mention baseline copies the PR tests in, as at check time.
+on:
+  workflow_dispatch:
+    inputs:
+      area: { type: choice, options: [fix-ci, fix-mention], default: fix-ci }
+      task: { type: string, required: true }
+      mode: { type: choice, options: [baseline, control], default: baseline }
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare
+        run: python3 confirm-1101/bin/prep_fix.py "${{ inputs.area }}" "${{ inputs.task }}" "${{ inputs.mode == 'control' && 'control' || 'x' }}"
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/setup-go@v5
+        with: { go-version: "stable", cache: false }
+      - name: Install
+        run: cd "$RUNNER_TEMP/repo" && bash -c "$TASK_INSTALL" 2>&1 | tail -3
+      - name: Check
+        run: |
+          mkdir -p out; cd "$RUNNER_TEMP/repo"
+          if [ "${{ inputs.area }}" = fix-mention ]; then
+            cp -R "$RUNNER_TEMP/hidden/." .
+            [ "${{ inputs.mode }}" = control ] && cp -R "$RUNNER_TEMP/fix/." .
+          fi
+          set +e; bash -c "$TASK_TEST" > "$GITHUB_WORKSPACE/out/check.log" 2>&1; rc=$?; set -e
+          tail -8 "$GITHUB_WORKSPACE/out/check.log"
+          want=1; [ "${{ inputs.mode }}" = control ] && want=0
+          valid=false; { [ "$want" = 0 ] && [ $rc = 0 ]; } && valid=true; { [ "$want" = 1 ] && [ $rc != 0 ]; } && valid=true
+          printf '{"area":"%s","task":"%s","mode":"%s","rc":%s,"valid":%s,"log_bytes":%s}\n' "${{ inputs.area }}" "${{ inputs.task }}" "${{ inputs.mode }}" "$rc" "$valid" "$(wc -c < "$GITHUB_WORKSPACE/out/check.log")" > out/validate.json
+          cat out/validate.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validate-${{ inputs.area }}-${{ inputs.task }}-${{ inputs.mode }}
+          path: out/

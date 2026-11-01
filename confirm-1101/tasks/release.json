@@ -1,0 +1,261 @@
+{
+ "area": "release",
+ "seed": "confirm-1101",
+ "pool": "release.json",
+ "n": 10,
+ "reserve": 4,
+ "tasks": [
+  {
+   "id": "valkey-9.0.7",
+   "repo": "valkey-io/valkey",
+   "stars": 27574,
+   "tag": "9.0.7",
+   "prev": "9.0.6",
+   "name": "Valkey",
+   "published_at": "2026-10-27T00:04:13Z",
+   "commits": 37,
+   "notes_len": 3625,
+   "url": "https://github.com/valkey-io/valkey/releases/tag/9.0.7",
+   "seq": 1,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "ruff-0.16.2",
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "tag": "0.16.2",
+   "prev": "0.16.1",
+   "name": "Ruff",
+   "published_at": "2026-08-07T13:31:55Z",
+   "commits": 165,
+   "notes_len": 6750,
+   "url": "https://github.com/astral-sh/ruff/releases/tag/0.16.2",
+   "seq": 2,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "biome-2.6.4",
+   "repo": "biomejs/biome",
+   "stars": 26030,
+   "tag": "@biomejs/biome@2.6.4",
+   "prev": "@biomejs/biome@2.6.3",
+   "name": "Biome",
+   "published_at": "2026-10-28T23:56:29Z",
+   "commits": 61,
+   "notes_len": 36340,
+   "url": "https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.6.4",
+   "seq": 3,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "redis-8.4.6",
+   "repo": "redis/redis",
+   "stars": 77126,
+   "tag": "8.4.6",
+   "prev": "8.4.5",
+   "name": "Redis",
+   "published_at": "2026-08-17T16:38:05Z",
+   "commits": 10,
+   "notes_len": 1325,
+   "url": "https://github.com/redis/redis/releases/tag/8.4.6",
+   "seq": 4,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "fastapi-0.160.0",
+   "repo": "fastapi/fastapi",
+   "stars": 104525,
+   "tag": "0.160.0",
+   "prev": "0.159.1",
+   "name": "FastAPI",
+   "published_at": "2026-10-22T16:54:31Z",
+   "commits": 5,
+   "notes_len": 909,
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.160.0",
+   "seq": 5,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "mastodon-4.6.7",
+   "repo": "mastodon/mastodon",
+   "stars": 50461,
+   "tag": "v4.6.7",
+   "prev": "v4.6.6",
+   "name": "Mastodon",
+   "published_at": "2026-09-01T14:00:44Z",
+   "commits": 15,
+   "notes_len": 3130,
+   "url": "https://github.com/mastodon/mastodon/releases/tag/v4.6.7",
+   "seq": 6,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "node-26.7.0",
+   "repo": "nodejs/node",
+   "stars": 123178,
+   "tag": "v26.7.0",
+   "prev": "v26.6.0",
+   "name": "Node.js",
+   "published_at": "2026-08-05T16:25:04Z",
+   "commits": 153,
+   "notes_len": 29984,
+   "url": "https://github.com/nodejs/node/releases/tag/v26.7.0",
+   "seq": 7,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "svelte-5.56.10",
+   "repo": "sveltejs/svelte",
+   "stars": 88516,
+   "tag": "svelte@5.56.10",
+   "prev": "svelte@5.56.9",
+   "name": "Svelte",
+   "published_at": "2026-08-20T19:20:58Z",
+   "commits": 26,
+   "notes_len": 3017,
+   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.10",
+   "seq": 8,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "powershell-7.6.7",
+   "repo": "PowerShell/PowerShell",
+   "stars": 55982,
+   "tag": "v7.6.7",
+   "prev": "v7.6.6",
+   "name": "PowerShell",
+   "published_at": "2026-10-13T20:37:33Z",
+   "commits": 44,
+   "notes_len": 7058,
+   "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.7",
+   "seq": 9,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "godot-3.6.3-stable",
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "tag": "3.6.3-stable",
+   "prev": "3.6.2-stable",
+   "name": "Godot",
+   "published_at": "2026-08-22T14:05:19Z",
+   "commits": 28,
+   "notes_len": 650,
+   "url": "https://github.com/godotengine/godot/releases/tag/3.6.3-stable",
+   "seq": 10,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "deno-2.9.5",
+   "repo": "denoland/deno",
+   "stars": 108783,
+   "tag": "v2.9.5",
+   "prev": "v2.9.4",
+   "name": "Deno",
+   "published_at": "2026-08-06T15:05:43Z",
+   "commits": 82,
+   "notes_len": 4368,
+   "url": "https://github.com/denoland/deno/releases/tag/v2.9.5",
+   "seq": 11,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "syncthing-2.1.7",
+   "repo": "syncthing/syncthing",
+   "stars": 89965,
+   "tag": "v2.1.7",
+   "prev": "v2.1.6",
+   "name": "Syncthing",
+   "published_at": "2026-10-21T06:09:14Z",
+   "commits": 14,
+   "notes_len": 1495,
+   "url": "https://github.com/syncthing/syncthing/releases/tag/v2.1.7",
+   "seq": 12,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "ollama-0.40.9",
+   "repo": "ollama/ollama",
+   "stars": 185533,
+   "tag": "v0.40.9",
+   "prev": "v0.40.8",
+   "name": "Ollama",
+   "published_at": "2026-10-22T01:33:10Z",
+   "commits": 13,
+   "notes_len": 654,
+   "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+   "seq": 13,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "nest-12.1.0",
+   "repo": "nestjs/nest",
+   "stars": 76958,
+   "tag": "v12.1.0",
+   "prev": "v12.0.4",
+   "name": "NestJS",
+   "published_at": "2026-09-23T08:00:20Z",
+   "commits": 29,
+   "notes_len": 2856,
+   "url": "https://github.com/nestjs/nest/releases/tag/v12.1.0",
+   "seq": 14,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ]
+}

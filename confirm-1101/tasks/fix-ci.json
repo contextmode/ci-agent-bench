@@ -1,0 +1,382 @@
+{
+ "area": "fix-ci",
+ "seed": "confirm-1101",
+ "pool": "fix-ci.json",
+ "n": 10,
+ "reserve": 4,
+ "tasks": [
+  {
+   "id": "poetry-10809",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10809,
+   "title": "fix: assign str.replace result and fix refs/head typo in _clone_legacy",
+   "merged_at": "2026-03-31T16:26:36Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10809",
+   "sha": "3f7feee6985853ee3bda6c92465273738a94b628",
+   "lang": "python",
+   "src": [
+    "src/poetry/vcs/git/backend.py"
+   ],
+   "tests": [
+    "tests/vcs/git/test_backend.py"
+   ],
+   "src_lines": 4,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/vcs/git/test_backend.py -p no:cacheprovider -q -n 0",
+   "seq": 1,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zap-1591",
+   "repo": "uber-go/zap",
+   "stars": 24683,
+   "pr": 1591,
+   "title": "fix(zapslog): return the receiver from WithGroup(\"\")",
+   "merged_at": "2026-09-16T16:33:35Z",
+   "url": "https://github.com/uber-go/zap/pull/1591",
+   "sha": "5ae580e125a8d47b8159e37a6e2e33a8f46c2e18",
+   "lang": "go",
+   "src": [
+    "exp/zapslog/handler.go"
+   ],
+   "tests": [
+    "exp/zapslog/handler_test.go"
+   ],
+   "src_lines": 6,
+   "install": "go mod download",
+   "test": "go test -count=1 ./exp/zapslog",
+   "seq": 2,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "echo-3158",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3158,
+   "title": "fix(router): grow param values for contexts created before a route with more params (v4)",
+   "merged_at": "2026-10-06T02:52:15Z",
+   "url": "https://github.com/labstack/echo/pull/3158",
+   "sha": "be0800562a0b6760d570b19fc372c3aa3c378978",
+   "lang": "go",
+   "src": [
+    "router.go"
+   ],
+   "tests": [
+    "echo_test.go",
+    "router_test.go"
+   ],
+   "src_lines": 16,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 3,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "pydantic-13537",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 13537,
+   "title": "Fix `SecretStr` equality comparison raising `TypeError` on non-ASCII values",
+   "merged_at": "2026-07-29T14:06:52Z",
+   "url": "https://github.com/pydantic/pydantic/pull/13537",
+   "sha": "35b8d94c1435a3e78fc919cfdb439a1ef85a8d6f",
+   "lang": "python",
+   "src": [
+    "pydantic/types.py"
+   ],
+   "tests": [
+    "tests/test_types.py"
+   ],
+   "src_lines": 6,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_types.py -p no:cacheprovider -q",
+   "seq": 4,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "lo-757",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 757,
+   "title": "fix(iter/tuples): support break iteration over Zip[By] seq",
+   "merged_at": "2026-01-07T20:31:02Z",
+   "url": "https://github.com/samber/lo/pull/757",
+   "sha": "27e2842ca8863e9479b13ab8ceeb1ef7f20e7959",
+   "lang": "go",
+   "src": [
+    "it/tuples.go"
+   ],
+   "tests": [
+    "it/lo_test.go",
+    "it/seq_test.go",
+    "it/tuples_test.go"
+   ],
+   "src_lines": 24,
+   "install": "go mod download",
+   "test": "go test -count=1 ./it",
+   "seq": 5,
+   "reserve": false,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "commander.js-2609",
+   "repo": "tj/commander.js",
+   "stars": 28445,
+   "pr": 2609,
+   "title": "fix: only use electron argv parsing for electron main process",
+   "merged_at": "2026-09-26T20:41:05Z",
+   "url": "https://github.com/tj/commander.js/pull/2609",
+   "sha": "b5cbf2b4da411a7725d696d7473ebdea9de876e9",
+   "lang": "node",
+   "src": [
+    "lib/command.js"
+   ],
+   "tests": [
+    "tests/command.parse.test.js"
+   ],
+   "src_lines": 12,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest tests/command.parse.test.js",
+   "seq": 6,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "scrapy-8312",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8312,
+   "title": "Fix the fast stop hanging when it cancels a download before it starts.",
+   "merged_at": "2026-10-13T10:49:08Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8312",
+   "sha": "15a3cf427b2cad59187d3ee20f5566ecd4fcbd12",
+   "lang": "python",
+   "src": [
+    "scrapy/core/downloader/__init__.py"
+   ],
+   "tests": [
+    "tests/test_core_downloader.py"
+   ],
+   "src_lines": 32,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_core_downloader.py -p no:cacheprovider -q",
+   "seq": 7,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "mocha-5662",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 5662,
+   "title": "backported fix for #5622 in v11",
+   "merged_at": "2026-01-29T04:48:48Z",
+   "url": "https://github.com/mochajs/mocha/pull/5662",
+   "sha": "aafe6fd8c8f0a897c35cfb228aa8ecf43805b697",
+   "lang": "node",
+   "src": [
+    "lib/suite.js"
+   ],
+   "tests": [
+    "test/integration/fixtures/timeout-chained-call.fixture.js",
+    "test/integration/options/parallel.spec.js",
+    "test/integration/timeout.spec.js",
+    "test/unit/timeout.spec.js"
+   ],
+   "src_lines": 10,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/integration/fixtures/timeout-chained-call.fixture.js test/integration/options/parallel.spec.js test/integration/timeout.spec.js test/unit/timeout.spec.js",
+   "seq": 8,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "immer-1295",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1295,
+   "title": "fix: do not record a deletion when a base value is written back over its draft",
+   "merged_at": "2026-10-02T18:17:42Z",
+   "url": "https://github.com/immerjs/immer/pull/1295",
+   "sha": "02e87e7b96d0e12ba223203cc66e8fad4049c482",
+   "lang": "node",
+   "src": [
+    "src/core/proxy.ts"
+   ],
+   "tests": [
+    "__tests__/patch.js"
+   ],
+   "src_lines": 4,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/patch.js",
+   "seq": 9,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "poetry-10803",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10803,
+   "title": "fix: respect verify=False in authenticator requests",
+   "merged_at": "2026-04-02T15:38:11Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10803",
+   "sha": "1c61afe367d87abb6aaaa3e4a2048599839f8c52",
+   "lang": "python",
+   "src": [
+    "src/poetry/utils/authenticator.py"
+   ],
+   "tests": [
+    "tests/utils/test_authenticator.py"
+   ],
+   "src_lines": 4,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/utils/test_authenticator.py -p no:cacheprovider -q -n 0",
+   "seq": 10,
+   "reserve": false,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "zap-1587",
+   "repo": "uber-go/zap",
+   "stars": 24683,
+   "pr": 1587,
+   "title": "fix: accept parameters in AtomicLevel form content types",
+   "merged_at": "2026-09-16T19:02:53Z",
+   "url": "https://github.com/uber-go/zap/pull/1587",
+   "sha": "3532124e52751881368f661fc4ba7a57dcd2bd42",
+   "lang": "go",
+   "src": [
+    "http_handler.go"
+   ],
+   "tests": [
+    "http_handler_test.go"
+   ],
+   "src_lines": 4,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 11,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "echo-3131",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3131,
+   "title": "fix(middleware): prevent BodyLimit bypass in v4",
+   "merged_at": "2026-09-29T20:10:24Z",
+   "url": "https://github.com/labstack/echo/pull/3131",
+   "sha": "5440f99719cc8de4be2ae6abfc8f275302791730",
+   "lang": "go",
+   "src": [
+    "bind.go",
+    "middleware/body_limit.go"
+   ],
+   "tests": [
+    "middleware/body_limit_test.go"
+   ],
+   "src_lines": 68,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "seq": 12,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "pydantic-13891",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 13891,
+   "title": "Fix config propagation of stdlib dataclasses and `TypedDict`s in JSON Schema",
+   "merged_at": "2026-09-29T19:09:21Z",
+   "url": "https://github.com/pydantic/pydantic/pull/13891",
+   "sha": "b0cd9d347dc4159043620fde554cbd63d08e3ad5",
+   "lang": "python",
+   "src": [
+    "pydantic/json_schema.py"
+   ],
+   "tests": [
+    "tests/test_json_schema.py"
+   ],
+   "src_lines": 13,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_json_schema.py -p no:cacheprovider -q",
+   "seq": 13,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "lo-778",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 778,
+   "title": "fix: correct `DropByIndex` handling of negative indices out of bounds",
+   "merged_at": "2026-02-22T03:27:07Z",
+   "url": "https://github.com/samber/lo/pull/778",
+   "sha": "c70160efcd25cfe5d1c32d13a9c6b48108ead050",
+   "lang": "go",
+   "src": [
+    "mutable/slice.go",
+    "slice.go"
+   ],
+   "tests": [
+    "benchmark/slice_benchmark_test.go",
+    "slice_test.go"
+   ],
+   "src_lines": 46,
+   "install": "go mod download",
+   "test": "go test -count=1 . ./benchmark",
+   "seq": 14,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ]
+}
