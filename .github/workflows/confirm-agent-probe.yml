@@ -38,7 +38,7 @@ jobs:
           model_provider = "context-mode"
           [model_providers.context-mode]
           name = "context-mode"
-          base_url = "http://127.0.0.1:8099"
+          base_url = "http://127.0.0.1:8099/v1"
           wire_api = "responses"
           env_key = "OPENAI_API_KEY"
           env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-run" = "GITHUB_RUN_ID" }
