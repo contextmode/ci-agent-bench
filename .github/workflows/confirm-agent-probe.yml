@@ -1,0 +1,80 @@
+name: confirm-agent-probe
+run-name: agent-probe ${{ inputs.agent }}
+
+# Free probe (x-cm-dry-run: 1, no model call, nothing billed): does the agent send the gateway headers and reach the gateway?
+# Each agent is installed with its own native command and wired exactly as packages/cli/src/ci.mjs otherAgentPaths writes it.
+on:
+  workflow_dispatch:
+    inputs:
+      agent: { type: choice, options: [codex, opencode, pi], default: codex }
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CONTEXT_MODE_KEY: ${{ secrets.CONTEXT_MODE_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ANTHROPIC_API_KEY: sk-ant-lab-dry-not-a-key
+      GW: https://gateway.contextmode.ai
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - name: Start the dry recorder (forwards to the gateway with x-cm-dry-run: 1)
+        run: |
+          mkdir -p out/rec
+          nohup python3 confirm-1101/bin/dryfwd.py 8099 out/rec "$GW" > out/dryfwd.log 2>&1 &
+          sleep 2
+      - name: Codex
+        if: inputs.agent == 'codex'
+        run: |
+          npm i -g @openai/codex
+          mkdir -p ~/.codex
+          cat >> ~/.codex/config.toml <<TOML
+          model_provider = "context-mode"
+          [model_providers.context-mode]
+          name = "context-mode"
+          base_url = "http://127.0.0.1:8099"
+          wire_api = "responses"
+          env_key = "OPENAI_API_KEY"
+          env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-run" = "GITHUB_RUN_ID" }
+          TOML
+          mkdir w && cd w && git init -q
+          timeout 90 codex exec --skip-git-repo-check -m gpt-5-mini "say hi" > ../out/agent.log 2>&1 || true
+      - name: OpenCode
+        if: inputs.agent == 'opencode'
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          export PATH="$HOME/.opencode/bin:$PATH"
+          mkdir w && cd w && git init -q
+          cat > opencode.json <<JSON
+          { "provider": { "anthropic": { "options": { "baseURL": "http://127.0.0.1:8099/v1",
+            "headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off" } } } } }
+          JSON
+          timeout 90 opencode run -m anthropic/claude-sonnet-5-5 "say hi" > ../out/agent.log 2>&1 || true
+      - name: Pi
+        if: inputs.agent == 'pi'
+        run: |
+          npm install -g @earendil-works/pi-coding-agent
+          mkdir -p ~/.pi/agent
+          cat > ~/.pi/agent/models.json <<JSON
+          { "providers": { "anthropic": { "baseUrl": "http://127.0.0.1:8099",
+            "headers": { "x-cm-device-key": "\${CONTEXT_MODE_KEY}", "x-cm-client": "pi" } } } }
+          JSON
+          mkdir w && cd w && git init -q
+          timeout 90 pi -p --provider anthropic --model claude-sonnet-5-5 "say hi" > ../out/agent.log 2>&1 || true
+      - name: Report
+        run: |
+          ls out/rec | wc -l
+          python3 confirm-1101/bin/dryreport.py out/rec | tee out/report.txt
+      - name: Secret check before upload
+        run: |
+          if grep -rlF "$CONTEXT_MODE_KEY" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi
+          if grep -rlF "$OPENAI_API_KEY" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: probe-${{ inputs.agent }}, path: out/ }
