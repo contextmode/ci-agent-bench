@@ -1,0 +1,355 @@
+{
+ "fix-ci": [
+  {
+   "id": "echo-3158",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "lo-757",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zap-1587",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "echo-3131",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "lo-778",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zap-1589",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "echo-3189",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "lo-993",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "scrapy-7783",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "zap-1567",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ],
+ "fix-mention": [
+  {
+   "id": "fiber-3988",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "echo-2977",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "lo-799",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "echo-3060",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "lo-796",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "mocha-6331",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "echo-3006",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "mocha-5997",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "mocha-6361",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ],
+ "labels": [
+  {
+   "id": "vscode-340116",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "vscode-340427",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "godot-124534",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "rust-163852",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "rust-164694",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "rust-164736",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "godot-124050",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "flutter-194705",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "godot-124254",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "typescript-64677",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ],
+ "release": [
+  {
+   "id": "valkey-9.0.7",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "ruff-0.16.2",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "biome-2.6.4",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "redis-8.4.6",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "fastapi-0.160.0",
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "mastodon-4.6.7",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "node-26.7.0",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "svelte-5.56.10",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "powershell-7.6.7",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "godot-3.6.3-stable",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": "kafka-23804",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "elasticsearch-163282",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zed-65129",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "kafka-23911",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "vscode-342878",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "elasticsearch-163196",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "kubernetes-140611",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "vscode-343624",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "zed-65841",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  },
+  {
+   "id": "flutter-190431",
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "bmksglu"
+   }
+  }
+ ]
+}

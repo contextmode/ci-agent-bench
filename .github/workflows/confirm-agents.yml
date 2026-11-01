@@ -1,0 +1,95 @@
+name: confirm-agents
+run-name: ${{ inputs.agent }} ${{ inputs.task }} ${{ inputs.arm }}
+
+# Pre-registered confirmation run (confirm-1101/PLAN.md): CI fix with OpenCode, Pi or Codex. Each agent is installed with its
+# own native command. A recording pass-through proxy sits in front of BOTH arms and reads the provider usage from the stream.
+# Keys: ANTHROPIC_API_KEY_D / ANTHROPIC_API_KEY_C by org; OPENAI_API_KEY for Codex. Nothing else.
+on:
+  workflow_dispatch:
+    inputs:
+      agent: { type: choice, options: [opencode, pi, codex], default: opencode }
+      task: { type: string, required: true }
+      arm: { type: choice, options: [direct-ts, gateway], default: gateway }
+      model: { type: string, default: claude-sonnet-5-5 }
+      org: { type: choice, options: [mert2, bmksglu], default: mert2 }
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      AKEY: ${{ inputs.org == 'mert2' && secrets.ANTHROPIC_API_KEY_D || secrets.ANTHROPIC_API_KEY_C }}
+      OKEY: ${{ secrets.OPENAI_API_KEY }}
+      CONTEXT_MODE_KEY: ${{ secrets.CONTEXT_MODE_KEY }}
+      GW: https://gateway.contextmode.ai
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare
+        run: mkdir -p out && python3 confirm-1101/bin/prep_fix.py fix-ci "${{ inputs.task }}"
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/setup-go@v5
+        with: { go-version: "stable", cache: false }
+      - name: Install the project
+        run: cd "$RUNNER_TEMP/repo" && bash -c "$TASK_INSTALL" 2>&1 | tail -3
+      - name: Start the usage proxy
+        run: |
+          if [ "${{ inputs.agent }}" = codex ]; then UP="https://api.openai.com"; [ "${{ inputs.arm }}" = gateway ] && UP="$GW"
+          else UP="https://api.anthropic.com"; [ "${{ inputs.arm }}" = gateway ] && UP="$GW"; fi
+          nohup python3 confirm-1101/bin/usageproxy.py 8099 "$UP" "$GITHUB_WORKSPACE/out/usage.jsonl" > out/proxy.log 2>&1 &
+          sleep 2
+      - name: Install and run the agent
+        continue-on-error: true
+        run: |
+          P="CI failed. Run \`$TASK_TEST\`, find the root cause, fix it with the smallest change."
+          GWARM=false; [ "${{ inputs.arm }}" = gateway ] && GWARM=true
+          cd "$RUNNER_TEMP/repo"
+          case "${{ inputs.agent }}" in
+            opencode)
+              curl -fsSL https://opencode.ai/install | bash
+              export PATH="$HOME/.opencode/bin:$PATH"
+              export ANTHROPIC_API_KEY="$AKEY"
+              if $GWARM; then H='"headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off", "x-cm-ci-repo": "{env:GITHUB_REPOSITORY}", "x-cm-ci-run": "{env:GITHUB_RUN_ID}" },'; else H=''; fi
+              printf '{ "provider": { "anthropic": { "options": { %s "baseURL": "http://127.0.0.1:8099/v1" } } } }\n' "$H" > opencode.json
+              timeout 1500 opencode run -m "anthropic/${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
+            pi)
+              npm install -g @earendil-works/pi-coding-agent
+              export ANTHROPIC_API_KEY="$AKEY"
+              mkdir -p ~/.pi/agent
+              if $GWARM; then H='"headers": { "x-cm-device-key": "${CONTEXT_MODE_KEY}", "x-cm-client": "pi" },'; else H=''; fi
+              printf '{ "providers": { "anthropic": { %s "baseUrl": "http://127.0.0.1:8099" } } }\n' "$H" > ~/.pi/agent/models.json
+              timeout 1500 pi -p --provider anthropic --model "${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
+            codex)
+              npm i -g @openai/codex
+              export OPENAI_API_KEY="$OKEY"
+              mkdir -p ~/.codex
+              if $GWARM; then H='env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-run" = "GITHUB_RUN_ID" }'; else H=''; fi
+              printf 'model_provider = "cmlab"\n[model_providers.cmlab]\nname = "cmlab"\nbase_url = "http://127.0.0.1:8099/v1"\nwire_api = "responses"\nenv_key = "OPENAI_API_KEY"\n%s\n' "$H" > ~/.codex/config.toml
+              timeout 1500 codex exec --dangerously-bypass-approvals-and-sandbox -m "${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
+          esac
+      - name: Verify and normalise
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/repo"
+          git diff HEAD > "$GITHUB_WORKSPACE/out/fix.diff" || true
+          git checkout -q HEAD -- $TASK_TESTFILES
+          set +e; bash -c "$TASK_TEST" > "$GITHUB_WORKSPACE/out/after.log" 2>&1; rc=$?; set -e
+          cd "$GITHUB_WORKSPACE"
+          python3 confirm-1101/bin/norm.py proxy out/usage.jsonl out/norm.json area=fix-ci-${{ inputs.agent }} agent="${{ inputs.agent }}" task="${{ inputs.task }}" arm="${{ inputs.arm }}" model="${{ inputs.model }}" org="${{ inputs.org }}" run_id="$GITHUB_RUN_ID" passed="$([ $rc = 0 ] && echo true || echo false)"
+      - name: Secret check before upload
+        if: always()
+        run: |
+          for k in "$CONTEXT_MODE_KEY" "$AKEY" "$OKEY"; do
+            if [ -n "$k" ] && grep -rlF "$k" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ag-${{ inputs.agent }}-${{ inputs.task }}-${{ inputs.arm }}-${{ github.run_id }}
+          path: out/
+          if-no-files-found: ignore
