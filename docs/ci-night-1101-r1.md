@@ -1,6 +1,6 @@
 # CI night round 1, live gateway, cross-run traffic (2026-11-01)
 
-Nothing here is published. Lab tenant `t_ci_lab_1`. Baseline arm `direct-ts` (direct API + ENABLE_TOOL_SEARCH). Gateway arm uses the CI headers from `lab/path-env.sh`. Clients as in the 1031 docs: `claude -p` / official `claude-code-action@v1` per workflow.
+Lab tenant `t_ci_lab_1`. Baseline arm `direct-ts` (direct API + ENABLE_TOOL_SEARCH). Gateway arm uses the CI headers from `lab/path-env.sh`. Clients as in the 1031 docs: `claude -p` / official `claude-code-action@v1` per workflow.
 
 ## Result: no area reaches 60%, and none reaches 50%
 

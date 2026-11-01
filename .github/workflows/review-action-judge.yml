@@ -29,7 +29,7 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
       - name: Judge
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: |
           mkdir -p out
           claude -p "You are a strict, blind judge of two code reviews of the same pull request. Read lab/review-action/judge/${{ matrix.id }}.md: it holds the real PR diff, then REVIEW A and REVIEW B. For each review, check every finding against the diff (file, line, and the claim itself). Count findings that are false or not supported by the diff as false claims. Score each review 1-10 for usefulness to the PR author (correct, specific, actionable, no noise). Then pick the better review: A, B or tie (use tie when the scores differ by 1 or less and false claims are equal). Do not guess which tool wrote a review. Output only one JSON object: {\"score_a\":n,\"score_b\":n,\"false_a\":n,\"false_b\":n,\"findings_a\":n,\"findings_b\":n,\"winner\":\"A|B|tie\",\"why\":\"one sentence\"}" \
@@ -37,7 +37,7 @@ jobs:
       - name: Secret check
         if: always()
         env:
-          K: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          K: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: if [ -n "$K" ] && grep -rlF "$K" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi
       - uses: actions/upload-artifact@v4
         if: always()

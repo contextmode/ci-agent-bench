@@ -1,17 +1,13 @@
 # cm-ci-lab
 
-Private lab for one question: what happens when a CI agent (anthropics/claude-code-action, `claude -p`)
-sends its traffic through the context-mode gateway, compared with a direct run.
+Public lab for one question: how much does a headless CI agent (Claude Code `claude -p`,
+`anthropics/claude-code-action`) cost when it sends its model traffic through the Context Mode gateway,
+compared with a direct run of the same job?
 
-The code is python-slugify (MIT, Val Neekman, upstream commit 35aca63f, see LICENSE). One function is broken on
-purpose: `slugify/slugify.py` decodes hex entities (`&#x41;`) with base 10. Seven tests fail.
+**Reproduce it yourself in one click:** see [reproduce/README.md](reproduce/README.md).
 
-Workflows (all `workflow_dispatch` only, never on pull requests, so fork code never sees a secret):
+- Workflows: `.github/workflows/<area>.yml` (one per CI use-case), all `workflow_dispatch` only, so fork code never sees a secret.
+- Task specs: `reproduce/tasks/<area>.json` (repos, issue or PR numbers, pinned commits).
+- Results: `docs/ci-night-1101-r2.md`, raw table `lab/ci-night/results-r2.json`.
 
-- `tests.yml` — plain `pytest -vv`, the long CI log.
-- `lab-action.yml` — claude-code-action@v1. Input `arm`: `direct`, `gateway`, `gateway-dry`, `litellm`, `litellm-dry`.
-- `lab-cli.yml` — `claude -p` (native install). Same arms.
-
-`*-dry` arms send `x-cm-dry-run: 1`: the gateway answers with the body it WOULD forward and calls no model.
-They need no model key. Live arms need the secret `CLAUDE_CODE_OAUTH_TOKEN` (or `ANTHROPIC_API_KEY`).
-The gateway arms act as the disposable tenant `t_ci_lab_1` (admin key + `x-cm-tenant`), never an owner tenant.
+The base code is python-slugify (MIT, Val Neekman, upstream commit 35aca63f, see LICENSE), used by the early lab runs.

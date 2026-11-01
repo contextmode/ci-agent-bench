@@ -59,7 +59,7 @@ jobs:
             Use the repository's CLAUDE.md for guidance on style and conventions. Be constructive and helpful in your feedback.
 
             Use `gh pr diff` and `gh pr view` (with -R ${{ inputs.repo }}) to read the pull request. Print your review as your final answer. Do not post it: gh pr comment is not available.
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY_C }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY_C || secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ github.token }}
           claude_args: --model ${{ inputs.model }} --max-turns 30 --allowedTools "Bash(gh issue view:*),Bash(gh search:*),Bash(gh issue list:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*),Read,Glob,Grep"
       - name: Metrics

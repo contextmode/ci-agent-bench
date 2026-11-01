@@ -1,0 +1,64 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/labels.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "Issue triage/labels: label a real new issue from the repo's label set. Score = F1 against the labels the maintainers set.",
+ "tasks": [
+  {
+   "task": "godot-124950",
+   "upstream": "godotengine/godot",
+   "issue": 124950,
+   "inputs": {
+    "task": "godot-124950"
+   }
+  },
+  {
+   "task": "zed-66189",
+   "upstream": "zed-industries/zed",
+   "issue": 66189,
+   "inputs": {
+    "task": "zed-66189"
+   }
+  },
+  {
+   "task": "tauri-16340",
+   "upstream": "tauri-apps/tauri",
+   "issue": 16340,
+   "inputs": {
+    "task": "tauri-16340"
+   }
+  },
+  {
+   "task": "bun-47090",
+   "upstream": "oven-sh/bun",
+   "issue": 47090,
+   "inputs": {
+    "task": "bun-47090"
+   }
+  },
+  {
+   "task": "rust-165173",
+   "upstream": "rust-lang/rust",
+   "issue": 165173,
+   "inputs": {
+    "task": "rust-165173"
+   }
+  },
+  {
+   "task": "vscode-345117",
+   "upstream": "microsoft/vscode",
+   "issue": 345117,
+   "inputs": {
+    "task": "vscode-345117"
+   }
+  },
+  {
+   "task": "godot-124937",
+   "upstream": "godotengine/godot",
+   "issue": 124937,
+   "inputs": {
+    "task": "godot-124937"
+   }
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/dedupe.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "Issue dedupe: find the original of a real issue a maintainer closed as a duplicate. Score = original in the top 3.",
+ "tasks": [
+  {
+   "task": "bun-37251",
+   "upstream": "oven-sh/bun",
+   "issue": 37251,
+   "original": 16834,
+   "inputs": {
+    "task": "bun-37251"
+   }
+  },
+  {
+   "task": "claude-code-104074",
+   "upstream": "anthropics/claude-code",
+   "issue": 104074,
+   "original": 93201,
+   "inputs": {
+    "task": "claude-code-104074"
+   }
+  },
+  {
+   "task": "codex-52463",
+   "upstream": "openai/codex",
+   "issue": 52463,
+   "original": 48664,
+   "inputs": {
+    "task": "codex-52463"
+   }
+  },
+  {
+   "task": "gemini-cli-25559",
+   "upstream": "google-gemini/gemini-cli",
+   "issue": 25559,
+   "original": 21622,
+   "inputs": {
+    "task": "gemini-cli-25559"
+   }
+  },
+  {
+   "task": "uptime-kuma-6474",
+   "upstream": "louislam/uptime-kuma",
+   "issue": 6474,
+   "original": 1888,
+   "inputs": {
+    "task": "uptime-kuma-6474"
+   }
+  },
+  {
+   "task": "bun-37028",
+   "upstream": "oven-sh/bun",
+   "issue": 37028,
+   "original": 19059,
+   "inputs": {
+    "task": "bun-37028"
+   }
+  },
+  {
+   "task": "claude-code-103661",
+   "upstream": "anthropics/claude-code",
+   "issue": 103661,
+   "original": 89673,
+   "inputs": {
+    "task": "claude-code-103661"
+   }
+  }
+ ]
+}

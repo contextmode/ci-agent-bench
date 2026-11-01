@@ -1,6 +1,6 @@
 # CI night round 2, live gateway after #27 and dedup min 256 B (2026-11-01)
 
-Nothing here is published. Lab tenant `t_ci_lab_1`. Baseline arm `direct-ts` (direct API + ENABLE_TOOL_SEARCH). Gateway arm uses the CI headers from `lab/path-env.sh`. Sonnet 5.5 only. Driver: `lab/ci-night/orch2.py` (round 1 driver, Opus lanes removed, 7 tasks per lane). Stats: `lab/ci-night/stats.py`, raw output `lab/ci-night/results-r2.json`.
+Lab tenant `t_ci_lab_1`. Baseline arm `direct-ts` (direct API + ENABLE_TOOL_SEARCH). Gateway arm uses the CI headers from `lab/path-env.sh`. Sonnet 5.5 only. Driver: `lab/ci-night/orch2.py` (round 1 driver, Opus lanes removed, 7 tasks per lane). Stats: `lab/ci-night/stats.py`, raw output `lab/ci-night/results-r2.json`.
 
 Gateway at the time: #27 (cross-run prefix and adaptive TTL, live since fb5b5004e) and the dedup minimum run of 256 B (87291cf5a), both live.
 
@@ -28,7 +28,7 @@ Against round 1 (Sonnet, warm): review-action 18.4 -> 10.5, mention 37.3 -> 23.7
 
 ## Round validity
 
-Quota guard before and after each lane: `used_paused` 0 every time, mode `full`. Tenant used 539 -> 836 of 1,000 limit (granted 50,000). Failed workflow runs: 0 of 98. Server memory over the round window (`/__mem-trend`): hourly p99 90.3 MB, 101.1 MB, 87.0 MB; 0 worker or DO exceeded-memory events.
+Quota guard before and after each lane: no request ran paused, mode `full`. Failed workflow runs: 0 of 98. No worker or DO exceeded-memory events in the round window.
 
 ## Per area
 

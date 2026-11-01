@@ -1,0 +1,47 @@
+name: reproduce
+run-name: reproduce ${{ inputs.task_set }} ${{ inputs.area }} ${{ inputs.model }} x${{ inputs.tasks }}
+
+# One click: reruns the published headless-CI benchmark in YOUR copy of this repo, with YOUR keys.
+# For each area it dispatches paired runs of the area's workflow (arm direct-ts and arm gateway, back to back,
+# one task every `gap` seconds, the same schedule as the published round), waits for them, downloads the
+# artifacts and writes the result table to the job summary (reproduce/analyze.py).
+# Secrets: ANTHROPIC_API_KEY (your Anthropic key) and CONTEXT_MODE_KEY (`npx @context-mode/cli ci key create --gh`).
+on:
+  workflow_dispatch:
+    inputs:
+      task_set: { type: choice, options: [night-1101-r2, confirm-1101], default: night-1101-r2, description: "task specs: reproduce/tasks (night-1101-r2) or confirm-1101/tasks" }
+      area: { type: choice, options: [all, triage, mention, labels, release, review-action, pr-review, dedupe], default: triage }
+      model: { type: string, default: claude-sonnet-5-5 }
+      tasks: { type: string, default: "7", description: "tasks per area (the first N of the spec)" }
+      gap: { type: string, default: "150", description: "seconds between tasks" }
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the two secrets
+        env:
+          A: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+          C: ${{ secrets.CONTEXT_MODE_KEY != '' }}
+        run: |
+          [ "$A" = true ] || { echo "::error::Add the secret ANTHROPIC_API_KEY (Settings > Secrets and variables > Actions)"; exit 1; }
+          [ "$C" = true ] || { echo "::error::Add the secret CONTEXT_MODE_KEY: npx @context-mode/cli ci key create --repo $GITHUB_REPOSITORY --gh"; exit 1; }
+      - name: Dispatch the paired runs and wait
+        run: python3 reproduce/run.py --repo "$GITHUB_REPOSITORY" --set "${{ inputs.task_set }}" --areas "${{ inputs.area }}" --model "${{ inputs.model }}" --tasks "${{ inputs.tasks }}" --gap "${{ inputs.gap }}" --out "$RUNNER_TEMP/rp"
+      - name: Result table
+        run: python3 reproduce/analyze.py "$RUNNER_TEMP/rp/state.json" "$RUNNER_TEMP/rp/art" --json "$RUNNER_TEMP/rp/results.json" --md "$GITHUB_STEP_SUMMARY" --repo "$GITHUB_REPOSITORY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduce-results
+          path: |
+            ${{ runner.temp }}/rp/state.json
+            ${{ runner.temp }}/rp/results.json

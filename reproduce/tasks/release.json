@@ -1,0 +1,62 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/release.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "Release notes: write the notes for a real release from the commits and PRs between two tags. Not scored automatically.",
+ "tasks": [
+  {
+   "task": "gemini-66",
+   "upstream": "google-gemini/gemini-cli",
+   "tag": "v0.66.0",
+   "previous_tag": "v0.65.0",
+   "inputs": {
+    "task": "gemini-66"
+   }
+  },
+  {
+   "task": "uv-135",
+   "upstream": "astral-sh/uv",
+   "tag": "0.13.5",
+   "previous_tag": "0.13.4",
+   "inputs": {
+    "task": "uv-135"
+   }
+  },
+  {
+   "task": "mcp-21",
+   "upstream": "modelcontextprotocol/servers",
+   "tag": "v2.1.0",
+   "previous_tag": "v2.0.0",
+   "inputs": {
+    "task": "mcp-21"
+   }
+  },
+  {
+   "task": "rg-152",
+   "upstream": "BurntSushi/ripgrep",
+   "tag": "15.2.0",
+   "previous_tag": "15.1.0",
+   "inputs": {
+    "task": "rg-152"
+   }
+  },
+  {
+   "task": "zod-466",
+   "upstream": "colinhacks/zod",
+   "tag": "v4.6.6",
+   "previous_tag": "v4.6.5",
+   "inputs": {
+    "task": "zod-466"
+   }
+  },
+  {
+   "task": "ruff-173",
+   "upstream": "astral-sh/ruff",
+   "tag": "0.17.3",
+   "previous_tag": "0.17.2",
+   "inputs": {
+    "task": "ruff-173"
+   }
+  }
+ ]
+}

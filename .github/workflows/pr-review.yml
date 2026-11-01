@@ -40,7 +40,7 @@ jobs:
       - name: Review
         continue-on-error: true
         env:
-          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ github.token }}
         run: |
           [ -z "${ANTHROPIC_API_KEY:-}" ] && export ANTHROPIC_API_KEY="$LIVE_API_KEY"
@@ -80,7 +80,7 @@ jobs:
         if: always()
         env:
           CONTEXT_MODE_KEY: ${{ secrets.CONTEXT_MODE_KEY }}
-          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: |
           for k in "$CONTEXT_MODE_KEY" "$LIVE_API_KEY"; do
             if [ -n "$k" ] && grep -rlF "$k" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi

@@ -1,0 +1,64 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/mention.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "@claude fix: the parent of a real merged fix PR, the linked issue as the @claude request. Pass = the PR's own held-back tests pass.",
+ "tasks": [
+  {
+   "task": "gin",
+   "upstream": "gin-gonic/gin",
+   "fix_commit": "ea9fab99e01d55a5e4f8daacc0d11ccffaee0a15",
+   "inputs": {
+    "task": "gin"
+   }
+  },
+  {
+   "task": "flask",
+   "upstream": "pallets/flask",
+   "fix_commit": "05e9c6bd630ecf4ec0ec884b1fc7901663737bc7",
+   "inputs": {
+    "task": "flask"
+   }
+  },
+  {
+   "task": "cobra",
+   "upstream": "spf13/cobra",
+   "fix_commit": "746ef07158728502482cea9f880a6f4b21ef29a9",
+   "inputs": {
+    "task": "cobra"
+   }
+  },
+  {
+   "task": "ripgrep",
+   "upstream": "BurntSushi/ripgrep",
+   "fix_commit": "de2567a4c76fa671005538d6cd841abc44932b9a",
+   "inputs": {
+    "task": "ripgrep"
+   }
+  },
+  {
+   "task": "rich",
+   "upstream": "Textualize/rich",
+   "fix_commit": "59b1aca63bf9ec69ada93af960d8b2a7bd920477",
+   "inputs": {
+    "task": "rich"
+   }
+  },
+  {
+   "task": "chalk",
+   "upstream": "chalk/chalk",
+   "fix_commit": "e91293130c7d642c7b91152c3c942743a3b910a7",
+   "inputs": {
+    "task": "chalk"
+   }
+  },
+  {
+   "task": "fd",
+   "upstream": "sharkdp/fd",
+   "fix_commit": "3c784f63b8e7976650682d550926bb79e9e1f640",
+   "inputs": {
+    "task": "fd"
+   }
+  }
+ ]
+}

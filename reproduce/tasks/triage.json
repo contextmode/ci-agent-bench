@@ -1,0 +1,64 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/triage.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "CI-failure fix: a real merged bug-fix commit is reverted, the real test suite fails, claude -p must fix it. Pass = the suite passes with test files restored.",
+ "tasks": [
+  {
+   "task": "requests",
+   "upstream": "psf/requests",
+   "fix_commit": "47914226c2968802f2cdee3f6f0f6e06e4472f64",
+   "inputs": {
+    "task": "requests"
+   }
+  },
+  {
+   "task": "flask",
+   "upstream": "pallets/flask",
+   "fix_commit": "05e9c6bd630ecf4ec0ec884b1fc7901663737bc7",
+   "inputs": {
+    "task": "flask"
+   }
+  },
+  {
+   "task": "express",
+   "upstream": "expressjs/express",
+   "fix_commit": "9a34acf03cb818ff3f8bc40e44176e277a25cbb9",
+   "inputs": {
+    "task": "express"
+   }
+  },
+  {
+   "task": "koa",
+   "upstream": "koajs/koa",
+   "fix_commit": "b786e7b456782c2cff1d6549cd4c8dba3feeb262",
+   "inputs": {
+    "task": "koa"
+   }
+  },
+  {
+   "task": "cobra",
+   "upstream": "spf13/cobra",
+   "fix_commit": "746ef07158728502482cea9f880a6f4b21ef29a9",
+   "inputs": {
+    "task": "cobra"
+   }
+  },
+  {
+   "task": "ripgrep",
+   "upstream": "BurntSushi/ripgrep",
+   "fix_commit": "de2567a4c76fa671005538d6cd841abc44932b9a",
+   "inputs": {
+    "task": "ripgrep"
+   }
+  },
+  {
+   "task": "rich",
+   "upstream": "Textualize/rich",
+   "fix_commit": "59b1aca63bf9ec69ada93af960d8b2a7bd920477",
+   "inputs": {
+    "task": "rich"
+   }
+  }
+ ]
+}

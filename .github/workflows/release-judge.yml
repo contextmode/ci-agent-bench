@@ -29,7 +29,7 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
       - name: Judge
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: |
           mkdir -p out
           claude -p "You are a strict, blind judge of two candidate release notes for the same release. Read lab/release/judge/${{ matrix.id }}.md: it holds the maintainers' published notes, the commit subjects of the release, then CANDIDATE A and CANDIDATE B. For each candidate: (1) coverage: of the user-facing changes in the published notes, how many does it describe, as a fraction 0 to 1; (2) false claims: statements that the commit subjects and published notes do not support or that contradict them; (3) usefulness 1-10 for a user deciding whether to upgrade (accurate, specific, plain language, no noise). Then pick the better candidate: A, B or tie (tie when scores differ by 1 or less and false claims are equal). Do not guess which tool wrote a candidate. Output only one JSON object: {\"cov_a\":x,\"cov_b\":x,\"false_a\":n,\"false_b\":n,\"score_a\":n,\"score_b\":n,\"winner\":\"A|B|tie\",\"why\":\"one sentence\"}" \
@@ -37,7 +37,7 @@ jobs:
       - name: Secret check
         if: always()
         env:
-          K: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          K: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: if [ -n "$K" ] && grep -rlF "$K" out/ ; then echo "::error::key found"; rm -rf out; exit 1; fi
       - uses: actions/upload-artifact@v4
         if: always()

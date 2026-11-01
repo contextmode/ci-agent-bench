@@ -1,0 +1,71 @@
+{
+ "task_set": "night-1101-r2",
+ "workflow": ".github/workflows/pr-review.yml",
+ "model": "claude-sonnet-5-5",
+ "what": "PR review with a common community claude -p review template. Not scored automatically.",
+ "tasks": [
+  {
+   "repo": "facebook/react",
+   "pr": "38034",
+   "head_commit": "74860a3f5a7766ca9c1f8861640b9c780967b60f",
+   "inputs": {
+    "repo": "facebook/react",
+    "pr": "38034"
+   }
+  },
+  {
+   "repo": "microsoft/vscode",
+   "pr": "345293",
+   "head_commit": "e49d70956ad077acc147cec69a03de56da405fbc",
+   "inputs": {
+    "repo": "microsoft/vscode",
+    "pr": "345293"
+   }
+  },
+  {
+   "repo": "vercel/next.js",
+   "pr": "100956",
+   "head_commit": "4f938d1bceac125988992062cb6f96fc2e3521db",
+   "inputs": {
+    "repo": "vercel/next.js",
+    "pr": "100956"
+   }
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "pr": "41520",
+   "head_commit": "0b7a4eecbe6c0367a2fd58587d5b7c280c37fa51",
+   "inputs": {
+    "repo": "langchain-ai/langchain",
+    "pr": "41520"
+   }
+  },
+  {
+   "repo": "astral-sh/uv",
+   "pr": "23017",
+   "head_commit": "43e5d174c8c2eecd23b18875abd0bbb8eb205b71",
+   "inputs": {
+    "repo": "astral-sh/uv",
+    "pr": "23017"
+   }
+  },
+  {
+   "repo": "denoland/deno",
+   "pr": "37046",
+   "head_commit": "5967dcf3d0065753e2b1f67ef6d46bdfa8408334",
+   "inputs": {
+    "repo": "denoland/deno",
+    "pr": "37046"
+   }
+  },
+  {
+   "repo": "facebook/react",
+   "pr": "38025",
+   "head_commit": "266c7d55d7532b2213914fb4c4fa756382c27850",
+   "inputs": {
+    "repo": "facebook/react",
+    "pr": "38025"
+   }
+  }
+ ]
+}

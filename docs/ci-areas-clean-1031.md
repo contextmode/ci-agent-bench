@@ -1,6 +1,6 @@
 # CI areas, clean cross-area analysis (2026-10-31)
 
-Goal: where does the context-mode gateway save money when an AI agent runs headless in CI, and where does it not. Nothing here is published. Inputs: the seven clean lane runs of 2026-10-31 and the lab docs in this folder. New model spend for this analysis: $0 (two dry-runs only, which call no model).
+Goal: where does the context-mode gateway save money when an AI agent runs headless in CI, and where does it not. Inputs: the seven clean lane runs of 2026-10-31 and the lab docs in this folder. New model spend for this analysis: $0 (two dry-runs only, which call no model).
 
 History: the first area benches of this day were invalid, because the lab tenant `t_ci_lab_1` was paused at 2026-10-31 10:29:57 UTC and the gateway arm ran as plain pass-through. Every row below is from the clean re-run (tags `c1031-*`) except the one row marked pre-pause. Per round, `used_paused` stayed at 1518 before and after, and request 1 was 30 to 42 percent smaller on the gateway arm.
 
@@ -70,24 +70,9 @@ So the pointer names a tool that the model is not offered. Code path: `cmCiToolH
 
 Not tested: whether the model ever emits the hidden tool name by itself from the marker text (a live run would show it); I only proved the offer.
 
-## 4. Levers (ranked, for the areas that did not pass)
+## 4. Levers
 
-Constraints held for all: no compaction or summary of user context, never drop data silently, cached prefix byte-identical across turns, Rust/Wasm for body work, Worker CPU near zero and 128 MB. Percentages are estimates from section 2, stated with their basis; none is measured.
-
-1. Make a fold readable on CI (test-first, gateway-only). Expected cost effect: +0.4% to +0.7% (an offered docid-only tool adds roughly 80 tokens to the prefix, my estimate, not measured; 1,000 prefix tokens = 4.6% to 8.3% of input units). Expected quality effect: removes the silent loss on release and labels (quality rows that did not pass) and any area with a result over 24,576 B. Possible side gain: fewer re-asked requests (PR review Opus 6.7 vs 5.7, dedupe 11.2 vs 9.5); a hypothesis, not shown. Design:
-   - RED 1: on CI headers, the forwarded `tools` contains a tool the marker names (`context-mode-search`), with a docid-only schema (`docid`, `offset`, `limit`; no free-text `q`). It fails today.
-   - RED 2: the tools array is byte-identical on turn 1 and turn N (prefix-stability e2e already exists for this).
-   - RED 3: a free-text `q` call on CI is still refused (existing `_ciFreeSearch` branch), and archive rows stay filtered by memory-off rules.
-   - RED 4: every marker minted on a CI turn names an offered tool.
-   - GREEN: in `cmCiToolHidden`, stop hiding `context-mode-search` on CI; add the docid-only schema variant for CI; keep `_ciFreeSearch` as is. Touches memory-egress.ts and proxy-hot-path.ts only.
-   - Verify: dry-probe shows the tool; then 2 live `claude -p` runs (a big log) read the middle back via docid. Real harness, not source shape.
-2. Cache the 470 to 500 uncached tokens of request 1. Evidence: gateway request 1 has 472 to 499 uncached tokens, direct-ts has 2 to 4, in PR review, dedupe, labels (482 vs 4) and CI-fix Opus. Expected: labels -4.3% (Sonnet), -2.9% (Opus); dedupe about -7% (every subagent start pays it); PR review Sonnet -2.3%; CI-fix Opus -2.0%; PR review Opus -1.1%. Basis: 0.9 x uncached tokens / gateway units. The cause is not known (likely a block the gateway injects after the last cache breakpoint); find it with a dry-run diff of the body before and after the gateway, then move the breakpoint. Prefix stays byte-identical.
-3. Later-turn cache-write parity. Evidence: later writes are 35% to 46% of gateway input units and are higher on the gateway arm in four of six rows. If the gateway matched direct-ts: CI-fix Opus -6.2% (1,396 units), PR review Opus -2.1%, dedupe -1.5%, PR review Sonnet -0.7%. Two candidate causes, both untested: the gateway changes an earlier message between turns (prefix miss), or the Bash-only tool mix gives bigger results. Test: capture turn N and N+1 bodies with `lab/capture.py` and diff the common prefix; replay one run with the real Claude Code tool list.
-4. Client tool allow-list header in `ci init` (owner_decision). Expected per 1,000 prefix tokens removed: -4.6% to -8.3% per area (CI-fix Opus 8.3%, PR review Sonnet 7.3%, dedupe 5.7%). The size of the client tool block in request 1 is not measured; measure it first by summing bytes per block on a captured request 1. It changes which tools the model can use, so the owner decides.
-5. Lower the tail fold cap from 24,576 B (owner_decision). Evidence: writes over 3k tokens on later requests are 32% (PR review Sonnet), 30% (review action Sonnet), 25% (review action Opus), 22% (PR review Opus), 16% (dedupe), 10% (CI-fix Opus) of gateway input units. Ceiling if half of that were folded: about -16%, -15%, -13%, -11%, -8%, -5%. This is a ceiling, not an expectation: a smaller view makes the model ask for the middle (more requests). It changes what the model sees, and it is only safe after lever 1.
-6. Fee shape (owner_decision, pricing). Evidence: the per-request fee takes 54% to 55% of the gross saving in labels and dedupe. Charging per Claude turn instead of per request is +$0.0428 vs +$0.0215 net on dedupe (lane figure, 4.5 turns vs 28 requests). Half the fee on labels Sonnet raises net from $0.0016 to $0.0026 (+63%). It does not change the cost CI, so it does not move any area across the bar; it moves net.
-
-What does not move an area across the bar: more rounds on PR review Opus and dedupe will narrow the CI but cannot change the point estimate. Run them after levers 1 to 3 land.
+Moved to the internal tracker.
 
 ## 5. Caveats
 

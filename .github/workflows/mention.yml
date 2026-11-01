@@ -58,7 +58,7 @@ jobs:
         if: inputs.arm == 'direct-ts' || inputs.arm == 'gateway'
         continue-on-error: true
         env:
-          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B }}
+          LIVE_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_B || secrets.ANTHROPIC_API_KEY }}
         run: |
           [ -z "${ANTHROPIC_API_KEY:-}" ] && export ANTHROPIC_API_KEY="$LIVE_API_KEY"
           python3 lab/mention/prompt.py "${{ inputs.task }}" > "$RUNNER_TEMP/prompt.txt"
