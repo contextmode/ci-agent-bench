@@ -15,7 +15,14 @@ Source: GitHub API through `gh` only (GraphQL search). Rules, fixed before any P
       common.round_robin-style interleave over repos in draw order of the repo name.
 Test command per task = the repo's template with the changed test files (or their Go package dirs).
 Whether a task is valid (baseline fails, control passes) is decided later by the free validation runs, not here.
+  F7  Setup revision S1 (2026-11-01, after the first free validation, before any new paid run): round 1 showed setup
+      errors, not task faults (poetry: no 'responses'; pydantic: 'thread_unsafe' marker from pytest-run-parallel,
+      no pytz/jsonschema; scrapy: no pytest-twisted/pyftpdlib; commander.js and immer: jest is not their runner).
+      Only the install and test templates changed. `python3 build_fix.py --retemplate` writes them into the existing
+      pools; the candidates and their draw order are not touched (a new search would now exclude every drawn PR by F4,
+      because tasks/ names them).
 """
+import json
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -29,6 +36,7 @@ START = datetime(2026, 1, 1, tzinfo=timezone.utc)
 END = datetime(2026, 10, 31, 23, 59, 59, tzinfo=timezone.utc)
 PER_REPO = 4
 NODE_INSTALL = "npm install --no-audit --no-fund --loglevel=error"
+PY_TEST = "python -m pytest {files} -p no:cacheprovider -q"
 REPOS = {
     "labstack/echo":      dict(lang="go", install="go mod download", test="go test -count=1 {dirs}"),
     "gofiber/fiber":      dict(lang="go", install="go mod download", test="go test -count=1 {dirs}"),
@@ -38,17 +46,23 @@ REPOS = {
     "sirupsen/logrus":    dict(lang="go", install="go mod download", test="go test -count=1 {dirs}"),
     "samber/lo":          dict(lang="go", install="go mod download", test="go test -count=1 {dirs}"),
     "gorilla/websocket":  dict(lang="go", install="go mod download", test="go test -count=1 {dirs}"),
-    "tj/commander.js":    dict(lang="node", install=NODE_INSTALL, test="npx jest {files}"),
-    "immerjs/immer":      dict(lang="node", install=NODE_INSTALL, test="npx jest {files}"),
+    # Setup revision S1 (see F7): each runner below is the repo's own test runner (package.json "test" script).
+    "tj/commander.js":    dict(lang="node", install=NODE_INSTALL, test="node --test {files}"),
+    "immerjs/immer":      dict(lang="node", install=NODE_INSTALL, test="npx vitest run {files}"),
     "mochajs/mocha":      dict(lang="node", install=NODE_INSTALL, test="npx mocha {files}"),
-    "scrapy/scrapy":      dict(lang="python", install="pip install -q -e . pytest testfixtures pexpect sybil",
-                               test="python -m pytest {files} -p no:cacheprovider -q"),
+    # Python test deps = the repo's own test requirements (scrapy tox.ini [test-requirements], poetry
+    # [tool.poetry.group.test], pydantic [dependency-groups] dev; pip >= 25.1 reads dependency groups).
+    "scrapy/scrapy":      dict(lang="python", install="pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout "
+                                                     "pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments "
+                                                     "psutil httpx",
+                               test=PY_TEST),
     "httpie/cli":         dict(lang="python", install="pip install -q -e '.[test]' pytest",
-                               test="python -m pytest {files} -p no:cacheprovider -q"),
-    "python-poetry/poetry": dict(lang="python", install="pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
-                               test="python -m pytest {files} -p no:cacheprovider -q -n 0"),
-    "pydantic/pydantic":  dict(lang="python", install="pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
-                               test="python -m pytest {files} -p no:cacheprovider -q"),
+                               test=PY_TEST),
+    "python-poetry/poetry": dict(lang="python", install="pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff "
+                                                       "responses jaraco-classes",
+                               test=PY_TEST + " -n 0"),
+    "pydantic/pydantic":  dict(lang="python", install="python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
+                               test=PY_TEST),
 }
 EXT = {"go": (".go",), "python": (".py",), "node": (".js", ".ts", ".mjs", ".cjs", ".tsx", ".jsx")}
 DOC_EXT = (".md", ".rst", ".txt")
@@ -65,6 +79,29 @@ def is_test(path):
     name = segs[-1]
     return (any(s in TEST_SEGS for s in segs[:-1]) or name.startswith("test_") or name.endswith(TEST_SUFFIX)
             or name in ("conftest.py",) or name.startswith("test."))
+
+
+def commands(repo, tests):
+    """Install and test command of one task, from the repo template and the PR's changed test files."""
+    cfg = REPOS[repo]
+    tf = [t for t in tests if t.lower().endswith(EXT[cfg["lang"]])] or tests
+    dirs = sorted({("./" + os.path.dirname(t)) if os.path.dirname(t) else "." for t in tf})
+    return {"install": cfg["install"], "test": cfg["test"].replace("{files}", " ".join(tf)).replace("{dirs}", " ".join(dirs))}
+
+
+def retemplate():
+    """F7: write the current install/test templates into the existing pools. Candidates and order are unchanged."""
+    for kind in ("ci", "mention"):
+        path = os.path.join(POOLS, f"fix-{kind}.json")
+        d = json.load(open(path))
+        for c in d["candidates"]:
+            c.update(commands(c["repo"], c["tests"]))
+        d["rules"] = __doc__.strip()
+        d["setup_revision"] = "S1"
+        with open(path, "w") as f:
+            json.dump(d, f, indent=1, ensure_ascii=False)
+            f.write("\n")
+        print(path, len(d["candidates"]), "candidates retemplated")
 
 
 def used_text():
@@ -129,13 +166,11 @@ def build_repo(repo, text):
         if used(text, repo, pr["number"], mc["oid"]):
             continue
         cnt["unused"] += 1
-        tf = [t for t in tests if t.lower().endswith(EXT[cfg["lang"]])] or tests
-        dirs = sorted({("./" + os.path.dirname(t)) if os.path.dirname(t) else "." for t in tf})
         issues = [i for i in (pr["closingIssuesReferences"]["nodes"] or []) if i and (i.get("body") or "").strip()]
         cand = {"id": f"{short_repo(repo)}-{pr['number']}", "repo": repo, "stars": meta["stars"], "pr": pr["number"],
                 "title": pr["title"], "merged_at": pr["mergedAt"], "url": pr["url"], "sha": mc["oid"],
                 "lang": cfg["lang"], "src": srcs, "tests": tests, "src_lines": changed,
-                "install": cfg["install"], "test": cfg["test"].replace("{files}", " ".join(tf)).replace("{dirs}", " ".join(dirs))}
+                **commands(repo, tests)}
         if issues:
             i = issues[0]
             cand["issue"] = {"number": i["number"], "title": i["title"], "body": i["body"], "author": (i.get("author") or {}).get("login") or "ghost",
@@ -178,4 +213,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["--retemplate"]:
+        retemplate()
+    else:
+        main()

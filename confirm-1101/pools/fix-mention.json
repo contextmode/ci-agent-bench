@@ -1,7 +1,7 @@
 {
  "pool": "fix-mention",
  "seed": "confirm-1101",
- "rules": "Build pools/fix-ci.json and pools/fix-mention.json (pre-registered; no model is called; no regex).\n\nRun: python3 build_fix.py            (re-run reads pools/cache/, same output)\nSource: GitHub API through `gh` only (GraphQL search). Rules, fixed before any PR was read:\n  F1  Repos: the REPOS table below. A repo is used only if it has >= 20000 stars and is not archived.\n  F2  Merged PRs, merged 2026-01-01..2026-10-31, title contains \"fix\" (search `fix in:title`), author is human\n      (common.is_human), merge commit exists and has exactly 1 parent (squash or rebase merge, so merge^ is the base).\n  F3  Files: at most 12 changed files; every file is a code file of the repo language, a test file, or a docs file\n      (.md .rst .txt). At least 1 test file and 1-3 source code files. Source change (additions+deletions) is 3 to 150 lines.\n  F4  Exclusions: the merge commit (full or first 8 chars) or `owner/repo#N` or `/pull/N` of the repo appears in any text\n      file under lab/, reproduce/, docs/ or confirm-1101/ (except this pools folder's output) = used before.\n  F5  Pool \"mention\": the PR closes at least one issue (closingIssuesReferences) whose body is not empty. Pool \"ci\": all other\n      PRs that pass F2-F4. (The two pools never share a PR.)\n  F6  Order: per repo, draw order sha256(\"confirm-1101|<repo>|<number>\") lowest first, at most 4 kept per repo;\n      common.round_robin-style interleave over repos in draw order of the repo name.\nTest command per task = the repo's template with the changed test files (or their Go package dirs).\nWhether a task is valid (baseline fails, control passes) is decided later by the free validation runs, not here.",
+ "rules": "Build pools/fix-ci.json and pools/fix-mention.json (pre-registered; no model is called; no regex).\n\nRun: python3 build_fix.py            (re-run reads pools/cache/, same output)\nSource: GitHub API through `gh` only (GraphQL search). Rules, fixed before any PR was read:\n  F1  Repos: the REPOS table below. A repo is used only if it has >= 20000 stars and is not archived.\n  F2  Merged PRs, merged 2026-01-01..2026-10-31, title contains \"fix\" (search `fix in:title`), author is human\n      (common.is_human), merge commit exists and has exactly 1 parent (squash or rebase merge, so merge^ is the base).\n  F3  Files: at most 12 changed files; every file is a code file of the repo language, a test file, or a docs file\n      (.md .rst .txt). At least 1 test file and 1-3 source code files. Source change (additions+deletions) is 3 to 150 lines.\n  F4  Exclusions: the merge commit (full or first 8 chars) or `owner/repo#N` or `/pull/N` of the repo appears in any text\n      file under lab/, reproduce/, docs/ or confirm-1101/ (except this pools folder's output) = used before.\n  F5  Pool \"mention\": the PR closes at least one issue (closingIssuesReferences) whose body is not empty. Pool \"ci\": all other\n      PRs that pass F2-F4. (The two pools never share a PR.)\n  F6  Order: per repo, draw order sha256(\"confirm-1101|<repo>|<number>\") lowest first, at most 4 kept per repo;\n      common.round_robin-style interleave over repos in draw order of the repo name.\nTest command per task = the repo's template with the changed test files (or their Go package dirs).\nWhether a task is valid (baseline fails, control passes) is decided later by the free validation runs, not here.\n  F7  Setup revision S1 (2026-11-01, after the first free validation, before any new paid run): round 1 showed setup\n      errors, not task faults (poetry: no 'responses'; pydantic: 'thread_unsafe' marker from pytest-run-parallel,\n      no pytz/jsonschema; scrapy: no pytest-twisted/pyftpdlib; commander.js and immer: jest is not their runner).\n      Only the install and test templates changed. `python3 build_fix.py --retemplate` writes them into the existing\n      pools; the candidates and their draw order are not touched (a new search would now exclude every drawn PR by F4,\n      because tasks/ names them).",
  "repos": [
   {
    "repo": "gofiber/fiber",
@@ -219,7 +219,7 @@
     "tests/utils/env/test_env_manager.py"
    ],
    "src_lines": 25,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/utils/env/test_env_manager.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10226,
@@ -305,7 +305,7 @@
     "tests/test_pipeline.py"
    ],
    "src_lines": 8,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_pipeline.py -p no:cacheprovider -q",
    "issue": {
     "number": 13450,
@@ -362,7 +362,7 @@
     "tests/utils/bases/download_handlers_http.py"
    ],
    "src_lines": 25,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_crawl.py tests/utils/bases/download_handlers_http.py -p no:cacheprovider -q",
    "issue": {
     "number": 4466,
@@ -423,7 +423,7 @@
    ],
    "src_lines": 13,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/type-external.ts",
+   "test": "npx vitest run __tests__/type-external.ts",
    "issue": {
     "number": 896,
     "title": "Typings of `current()` don't reflect that returned object is not a draft",
@@ -450,7 +450,7 @@
     "tests/installation/test_chooser.py"
    ],
    "src_lines": 11,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/installation/test_chooser.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 11130,
@@ -507,7 +507,7 @@
     "tests/test_forward_ref.py"
    ],
    "src_lines": 35,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_forward_ref.py -p no:cacheprovider -q",
    "issue": {
     "number": 11223,
@@ -563,7 +563,7 @@
     "tests/test_downloadermiddleware_robotstxt.py"
    ],
    "src_lines": 11,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_downloadermiddleware_robotstxt.py -p no:cacheprovider -q",
    "issue": {
     "number": 8297,
@@ -622,7 +622,7 @@
    ],
    "src_lines": 16,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/produce.ts",
+   "test": "npx vitest run __tests__/produce.ts",
    "issue": {
     "number": 1045,
     "title": "`produceWithPatches` wrong return type",
@@ -649,7 +649,7 @@
     "tests/console/commands/test_show.py"
    ],
    "src_lines": 10,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/console/commands/test_show.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10425,
@@ -707,7 +707,7 @@
     "tests/test_main.py"
    ],
    "src_lines": 23,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_forward_ref.py tests/test_main.py -p no:cacheprovider -q",
    "issue": {
     "number": 13369,
@@ -735,7 +735,7 @@
     "tests/test_pipeline_files.py"
    ],
    "src_lines": 13,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_pipeline_files.py -p no:cacheprovider -q",
    "issue": {
     "number": 8186,
@@ -792,7 +792,7 @@
     "tests/packages/test_locker.py"
    ],
    "src_lines": 5,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/packages/test_locker.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10702,
@@ -849,7 +849,7 @@
     "tests/test_dataclasses.py"
    ],
    "src_lines": 6,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_dataclasses.py -p no:cacheprovider -q",
    "issue": {
     "number": 12736,
@@ -879,7 +879,7 @@
     "tests/test_commands.py"
    ],
    "src_lines": 35,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_command_genspider.py tests/test_commands.py -p no:cacheprovider -q",
    "issue": {
     "number": 7260,
@@ -918,5 +918,6 @@
     "state": "OPEN"
    }
   }
- ]
+ ],
+ "setup_revision": "S1"
 }

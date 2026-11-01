@@ -23,7 +23,7 @@
     "tests/utils/env/test_env_manager.py"
    ],
    "src_lines": 25,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/utils/env/test_env_manager.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10226,
@@ -127,7 +127,7 @@
     "tests/test_pipeline.py"
    ],
    "src_lines": 8,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_pipeline.py -p no:cacheprovider -q",
    "issue": {
     "number": 13450,
@@ -196,7 +196,7 @@
     "tests/utils/bases/download_handlers_http.py"
    ],
    "src_lines": 25,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_crawl.py tests/utils/bases/download_handlers_http.py -p no:cacheprovider -q",
    "issue": {
     "number": 4466,
@@ -269,7 +269,7 @@
    ],
    "src_lines": 13,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/type-external.ts",
+   "test": "npx vitest run __tests__/type-external.ts",
    "issue": {
     "number": 896,
     "title": "Typings of `current()` don't reflect that returned object is not a draft",
@@ -302,7 +302,7 @@
     "tests/installation/test_chooser.py"
    ],
    "src_lines": 11,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/installation/test_chooser.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 11130,
@@ -371,7 +371,7 @@
     "tests/test_forward_ref.py"
    ],
    "src_lines": 35,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_forward_ref.py -p no:cacheprovider -q",
    "issue": {
     "number": 11223,
@@ -439,7 +439,7 @@
     "tests/test_downloadermiddleware_robotstxt.py"
    ],
    "src_lines": 11,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_downloadermiddleware_robotstxt.py -p no:cacheprovider -q",
    "issue": {
     "number": 8297,
@@ -510,7 +510,7 @@
    ],
    "src_lines": 16,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/produce.ts",
+   "test": "npx vitest run __tests__/produce.ts",
    "issue": {
     "number": 1045,
     "title": "`produceWithPatches` wrong return type",
@@ -543,7 +543,7 @@
     "tests/console/commands/test_show.py"
    ],
    "src_lines": 10,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/console/commands/test_show.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10425,
@@ -613,7 +613,7 @@
     "tests/test_main.py"
    ],
    "src_lines": 23,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_forward_ref.py tests/test_main.py -p no:cacheprovider -q",
    "issue": {
     "number": 13369,
@@ -647,7 +647,7 @@
     "tests/test_pipeline_files.py"
    ],
    "src_lines": 13,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_pipeline_files.py -p no:cacheprovider -q",
    "issue": {
     "number": 8186,
@@ -716,7 +716,7 @@
     "tests/packages/test_locker.py"
    ],
    "src_lines": 5,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/packages/test_locker.py -p no:cacheprovider -q -n 0",
    "issue": {
     "number": 10702,
@@ -785,7 +785,7 @@
     "tests/test_dataclasses.py"
    ],
    "src_lines": 6,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_dataclasses.py -p no:cacheprovider -q",
    "issue": {
     "number": 12736,
@@ -821,7 +821,7 @@
     "tests/test_commands.py"
    ],
    "src_lines": 35,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_command_genspider.py tests/test_commands.py -p no:cacheprovider -q",
    "issue": {
     "number": 7260,

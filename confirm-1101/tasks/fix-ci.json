@@ -22,7 +22,7 @@
     "tests/vcs/git/test_backend.py"
    ],
    "src_lines": 4,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/vcs/git/test_backend.py -p no:cacheprovider -q -n 0",
    "seq": 1,
    "reserve": false,
@@ -101,7 +101,7 @@
     "tests/test_types.py"
    ],
    "src_lines": 6,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_types.py -p no:cacheprovider -q",
    "seq": 4,
    "reserve": false,
@@ -156,7 +156,7 @@
    ],
    "src_lines": 12,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest tests/command.parse.test.js",
+   "test": "node --test tests/command.parse.test.js",
    "seq": 6,
    "reserve": false,
    "orgs": {
@@ -181,7 +181,7 @@
     "tests/test_core_downloader.py"
    ],
    "src_lines": 32,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_core_downloader.py -p no:cacheprovider -q",
    "seq": 7,
    "reserve": false,
@@ -237,7 +237,7 @@
    ],
    "src_lines": 4,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/patch.js",
+   "test": "npx vitest run __tests__/patch.js",
    "seq": 9,
    "reserve": false,
    "orgs": {
@@ -262,7 +262,7 @@
     "tests/utils/test_authenticator.py"
    ],
    "src_lines": 4,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/utils/test_authenticator.py -p no:cacheprovider -q -n 0",
    "seq": 10,
    "reserve": false,
@@ -341,7 +341,7 @@
     "tests/test_json_schema.py"
    ],
    "src_lines": 13,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_json_schema.py -p no:cacheprovider -q",
    "seq": 13,
    "reserve": true,
@@ -396,7 +396,7 @@
    ],
    "src_lines": 21,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest tests/incrementNodeInspectorPort.test.cjs",
+   "test": "node --test tests/incrementNodeInspectorPort.test.cjs",
    "seq": 15,
    "reserve": true,
    "orgs": {
@@ -422,7 +422,7 @@
     "tests/test_extension_debug.py"
    ],
    "src_lines": 12,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_downloadermiddleware_redirect.py tests/test_extension_debug.py -p no:cacheprovider -q",
    "seq": 16,
    "reserve": true,
@@ -476,7 +476,7 @@
    ],
    "src_lines": 9,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/patch.js",
+   "test": "npx vitest run __tests__/patch.js",
    "seq": 18,
    "reserve": true,
    "orgs": {
@@ -501,7 +501,7 @@
     "tests/console/commands/test_show.py"
    ],
    "src_lines": 31,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/console/commands/test_show.py -p no:cacheprovider -q -n 0",
    "seq": 19,
    "reserve": true,
@@ -579,7 +579,7 @@
     "tests/test_json_schema.py"
    ],
    "src_lines": 4,
-   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "install": "python -m pip install -q -U 'pip>=25.1' && pip install -q -e . --group dev",
    "test": "python -m pytest tests/test_json_schema.py -p no:cacheprovider -q",
    "seq": 22,
    "reserve": true,
@@ -632,7 +632,7 @@
    ],
    "src_lines": 8,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest tests/incrementNodeInspectorPort.test.cjs",
+   "test": "node --test tests/incrementNodeInspectorPort.test.cjs",
    "seq": 24,
    "reserve": true,
    "orgs": {
@@ -657,7 +657,7 @@
     "tests/test_utils_datatypes.py"
    ],
    "src_lines": 16,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_utils_datatypes.py -p no:cacheprovider -q",
    "seq": 25,
    "reserve": true,
@@ -684,7 +684,7 @@
    ],
    "src_lines": 17,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/base.js",
+   "test": "npx vitest run __tests__/base.js",
    "seq": 26,
    "reserve": true,
    "orgs": {
@@ -709,7 +709,7 @@
     "tests/config/test_config.py"
    ],
    "src_lines": 6,
-   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/config/test_config.py -p no:cacheprovider -q -n 0",
    "seq": 27,
    "reserve": true,
@@ -815,7 +815,7 @@
     "tests/test_downloader_handlers_http_base.py"
    ],
    "src_lines": 26,
-   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "install": "pip install -q -e . pytest pytest-twisted pytest-xdist pytest-timeout pytest-rerunfailures testfixtures pexpect sybil pyftpdlib attrs pygments psutil httpx",
    "test": "python -m pytest tests/test_downloader_handler_twisted_http2.py tests/test_downloader_handlers_http_base.py -p no:cacheprovider -q",
    "seq": 31,
    "reserve": true,
@@ -842,7 +842,7 @@
    ],
    "src_lines": 5,
    "install": "npm install --no-audit --no-fund --loglevel=error",
-   "test": "npx jest __tests__/base.js",
+   "test": "npx vitest run __tests__/base.js",
    "seq": 32,
    "reserve": true,
    "orgs": {
