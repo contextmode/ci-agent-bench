@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - name: Start the dry recorder (forwards to the gateway with x-cm-dry-run: 1)
+      - name: Start the dry recorder (forwards to the gateway, dry run on)
         run: |
           mkdir -p out/rec
           nohup python3 confirm-1101/bin/dryfwd.py 8099 out/rec "$GW" > out/dryfwd.log 2>&1 &

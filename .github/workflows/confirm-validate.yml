@@ -40,8 +40,8 @@ jobs:
           tail -8 "$GITHUB_WORKSPACE/out/check.log"
           want=1; [ "${{ inputs.mode }}" = control ] && want=0
           valid=false; { [ "$want" = 0 ] && [ $rc = 0 ]; } && valid=true; { [ "$want" = 1 ] && [ $rc != 0 ]; } && valid=true
-          printf '{"area":"%s","task":"%s","mode":"%s","rc":%s,"valid":%s,"log_bytes":%s}\n' "${{ inputs.area }}" "${{ inputs.task }}" "${{ inputs.mode }}" "$rc" "$valid" "$(wc -c < "$GITHUB_WORKSPACE/out/check.log")" > out/validate.json
-          cat out/validate.json
+          printf '{"area":"%s","task":"%s","mode":"%s","rc":%s,"valid":%s,"log_bytes":%s}\n' "${{ inputs.area }}" "${{ inputs.task }}" "${{ inputs.mode }}" "$rc" "$valid" "$(wc -c < "$GITHUB_WORKSPACE/out/check.log")" > "$GITHUB_WORKSPACE/out/validate.json"
+          cat "$GITHUB_WORKSPACE/out/validate.json"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
