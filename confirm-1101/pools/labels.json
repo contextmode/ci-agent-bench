@@ -1,0 +1,837 @@
+{
+ "pool": "labels",
+ "seed": "confirm-1101",
+ "rules": "Build pools/labels.json: 36 candidate issues for the labels benchmark.\n\nRun: python3 build_labels.py            (re-run reads pools/cache/, same output)\n     python3 build_labels.py --refresh  (fetch everything again from GitHub)\n\nRules (pre-registered; nothing else is used to pick or drop a candidate):\n  R1  Repos: the REPOS list below, fixed before any issue was read. A repo is\n      used only if it has >= 20000 stars and is not archived.\n  R2  Closed issues, not PRs: search \"repo:R is:issue is:closed\n      created:2026-10-01T00:00:00Z..2026-10-31T23:59:59Z closed:<=2026-10-31T23:59:59Z\"\n      and the same dates are checked again on each issue.\n  R3  Body length (Python len of the body text) is 200 to 6000 characters.\n  R4  The issue author is a human (common.is_human). This is the same filter as\n      the earlier labels bench (\"issue author is a user\").\n  R5  Truth labels = the labels on the issue now, minus every label that\n      matches the DROP list of lab/labels/extract.py (copied exactly below).\n  R6  At least 1 truth label, and at least one truth label was added by a\n      timeline \"labeled\" event whose actor is a human (common.is_human) and is\n      not the issue author. \"labeler\" = the actor of the earliest such event.\n      (common.BOT_LOGINS got \"robobun\" after the first run, before the pool was\n      used: it is oven-sh's bot with GitHub type \"User\".)\n  R7  Exclusions: every issue named by an earlier task (common.Exclusions).\n  R8  Per repo, eligible issues are put in draw order (common.draw_key on the\n      issue number); the first 3 are kept. common.round_robin then takes 36\n      over all repos. Output is sorted by (repo, number).",
+ "repos": [
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "stars_fetched_at": "2026-11-01T11:06:11Z",
+   "data_fetched_at": "2026-11-01T11:11:53Z",
+   "counts": {
+    "found": 37,
+    "dates": 37,
+    "body": 33,
+    "author": 33,
+    "truth": 20,
+    "human_label": 18,
+    "excluded": 0
+   },
+   "eligible": 18,
+   "picked": 3
+  },
+  {
+   "repo": "astral-sh/uv",
+   "stars": 91414,
+   "stars_fetched_at": "2026-11-01T11:06:17Z",
+   "data_fetched_at": "2026-11-01T11:11:48Z",
+   "counts": {
+    "found": 42,
+    "dates": 42,
+    "body": 37,
+    "author": 37,
+    "truth": 21,
+    "human_label": 7,
+    "excluded": 0
+   },
+   "eligible": 7,
+   "picked": 2
+  },
+  {
+   "repo": "denoland/deno",
+   "stars": 108783,
+   "stars_fetched_at": "2026-11-01T11:06:12Z",
+   "data_fetched_at": "2026-11-01T11:11:39Z",
+   "counts": {
+    "found": 8,
+    "dates": 8,
+    "body": 7,
+    "author": 7,
+    "truth": 0,
+    "human_label": 0,
+    "excluded": 0
+   },
+   "eligible": 0,
+   "picked": 0
+  },
+  {
+   "repo": "electron/electron",
+   "stars": 123688,
+   "stars_fetched_at": "2026-11-01T11:12:02Z",
+   "data_fetched_at": "2026-11-01T11:12:03Z",
+   "counts": {
+    "found": 35,
+    "dates": 35,
+    "body": 28,
+    "author": 28,
+    "truth": 24,
+    "human_label": 4,
+    "excluded": 0
+   },
+   "eligible": 4,
+   "picked": 2
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "stars_fetched_at": "2026-11-01T11:06:15Z",
+   "data_fetched_at": "2026-11-01T11:11:51Z",
+   "counts": {
+    "found": 264,
+    "dates": 264,
+    "body": 222,
+    "author": 215,
+    "truth": 155,
+    "human_label": 62,
+    "excluded": 0
+   },
+   "eligible": 62,
+   "picked": 3
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "stars_fetched_at": "2026-11-01T11:06:15Z",
+   "data_fetched_at": "2026-11-01T11:11:33Z",
+   "counts": {
+    "found": 184,
+    "dates": 184,
+    "body": 164,
+    "author": 164,
+    "truth": 135,
+    "human_label": 128,
+    "excluded": 2
+   },
+   "eligible": 126,
+   "picked": 3
+  },
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "stars_fetched_at": "2026-11-01T11:11:26Z",
+   "data_fetched_at": "2026-11-01T11:11:36Z",
+   "counts": {
+    "found": 266,
+    "dates": 266,
+    "body": 233,
+    "author": 153,
+    "truth": 116,
+    "human_label": 41,
+    "excluded": 0
+   },
+   "eligible": 41,
+   "picked": 2
+  },
+  {
+   "repo": "home-assistant/core",
+   "stars": 91887,
+   "stars_fetched_at": "2026-11-01T11:06:12Z",
+   "data_fetched_at": "2026-11-01T11:12:03Z",
+   "counts": {
+    "found": 571,
+    "dates": 571,
+    "body": 521,
+    "author": 498,
+    "truth": 427,
+    "human_label": 107,
+    "excluded": 0
+   },
+   "eligible": 107,
+   "picked": 2
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "stars_fetched_at": "2026-11-01T11:11:59Z",
+   "data_fetched_at": "2026-11-01T11:12:02Z",
+   "counts": {
+    "found": 56,
+    "dates": 56,
+    "body": 53,
+    "author": 51,
+    "truth": 28,
+    "human_label": 28,
+    "excluded": 0
+   },
+   "eligible": 28,
+   "picked": 2
+  },
+  {
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "stars_fetched_at": "2026-11-01T11:06:10Z",
+   "data_fetched_at": "2026-11-01T11:12:27Z",
+   "counts": {
+    "found": 1404,
+    "dates": 1404,
+    "body": 1185,
+    "author": 1141,
+    "truth": 624,
+    "human_label": 209,
+    "excluded": 2
+   },
+   "eligible": 207,
+   "picked": 2
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "stars_fetched_at": "2026-11-01T11:06:16Z",
+   "data_fetched_at": "2026-11-01T11:11:57Z",
+   "counts": {
+    "found": 51,
+    "dates": 51,
+    "body": 49,
+    "author": 49,
+    "truth": 43,
+    "human_label": 29,
+    "excluded": 0
+   },
+   "eligible": 29,
+   "picked": 3
+  },
+  {
+   "repo": "oven-sh/bun",
+   "stars": 96494,
+   "stars_fetched_at": "2026-11-01T11:11:37Z",
+   "data_fetched_at": "2026-11-01T11:11:46Z",
+   "counts": {
+    "found": 217,
+    "dates": 217,
+    "body": 199,
+    "author": 163,
+    "truth": 89,
+    "human_label": 1,
+    "excluded": 0
+   },
+   "eligible": 1,
+   "picked": 1
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "stars_fetched_at": "2026-11-01T11:06:16Z",
+   "data_fetched_at": "2026-11-01T11:12:00Z",
+   "counts": {
+    "found": 280,
+    "dates": 280,
+    "body": 236,
+    "author": 214,
+    "truth": 208,
+    "human_label": 25,
+    "excluded": 0
+   },
+   "eligible": 25,
+   "picked": 3
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "stars_fetched_at": "2026-11-01T11:11:26Z",
+   "data_fetched_at": "2026-11-01T11:11:34Z",
+   "counts": {
+    "found": 165,
+    "dates": 165,
+    "body": 113,
+    "author": 109,
+    "truth": 105,
+    "human_label": 53,
+    "excluded": 2
+   },
+   "eligible": 51,
+   "picked": 3
+  },
+  {
+   "repo": "tauri-apps/tauri",
+   "stars": 112396,
+   "stars_fetched_at": "2026-11-01T11:06:17Z",
+   "data_fetched_at": "2026-11-01T11:11:35Z",
+   "counts": {
+    "found": 48,
+    "dates": 48,
+    "body": 46,
+    "author": 18,
+    "truth": 15,
+    "human_label": 11,
+    "excluded": 2
+   },
+   "eligible": 9,
+   "picked": 2
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "stars_fetched_at": "2026-11-01T11:06:12Z",
+   "data_fetched_at": "2026-11-01T11:11:41Z",
+   "counts": {
+    "found": 170,
+    "dates": 170,
+    "body": 153,
+    "author": 153,
+    "truth": 55,
+    "human_label": 54,
+    "excluded": 2
+   },
+   "eligible": 52,
+   "picked": 3
+  }
+ ],
+ "count": 36,
+ "candidates": [
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29343,
+   "created": "2026-10-14T00:07:09Z",
+   "title": "PLE0643 (potential-index-error) counts a starred element of a list or tuple literal as one item",
+   "body_len": 993,
+   "truth": [
+    "bug"
+   ],
+   "id": "ruff-29343",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29343"
+  },
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29395,
+   "created": "2026-10-14T20:17:55Z",
+   "title": "`PLR5501` and `PLW0120` safe fixes delete a trailing comment on the `else:` line",
+   "body_len": 1929,
+   "truth": [
+    "bug"
+   ],
+   "id": "ruff-29395",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29395"
+  },
+  {
+   "repo": "astral-sh/ruff",
+   "stars": 50376,
+   "number": 29670,
+   "created": "2026-10-23T07:54:40Z",
+   "title": "manylinux_2_39_x86_64 isn't supported",
+   "body_len": 745,
+   "truth": [
+    "question"
+   ],
+   "id": "ruff-29670",
+   "labeler": "ntBre",
+   "url": "https://github.com/astral-sh/ruff/issues/29670"
+  },
+  {
+   "repo": "astral-sh/uv",
+   "stars": 91414,
+   "number": 22488,
+   "created": "2026-10-12T09:21:22Z",
+   "title": "Naming of uv not found as a cmdlet, function, scriptfile, executable program",
+   "body_len": 761,
+   "truth": [
+    "question"
+   ],
+   "id": "uv-22488",
+   "labeler": "charliermarsh",
+   "url": "https://github.com/astral-sh/uv/issues/22488"
+  },
+  {
+   "repo": "astral-sh/uv",
+   "stars": 91414,
+   "number": 22513,
+   "created": "2026-10-13T13:27:55Z",
+   "title": "Fix broken .netrc documentation link",
+   "body_len": 425,
+   "truth": [
+    "documentation"
+   ],
+   "id": "uv-22513",
+   "labeler": "charliermarsh",
+   "url": "https://github.com/astral-sh/uv/issues/22513"
+  },
+  {
+   "repo": "electron/electron",
+   "stars": 123688,
+   "number": 54841,
+   "created": "2026-10-12T01:07:46Z",
+   "title": "Overlay icons set using setOverlayIcon do not survive Windows Explorer/shell restart",
+   "body_len": 1599,
+   "truth": [
+    "44-x-y",
+    "blocked/need-repro",
+    "bug :beetle:",
+    "platform/windows"
+   ],
+   "id": "electron-54841",
+   "labeler": "jkleinsc",
+   "url": "https://github.com/electron/electron/issues/54841"
+  },
+  {
+   "repo": "electron/electron",
+   "stars": 123688,
+   "number": 55111,
+   "created": "2026-10-19T14:38:20Z",
+   "title": "file:// worker requests bypass protocol.handle and webRequest.onBeforeRequest",
+   "body_len": 2280,
+   "truth": [
+    "44-x-y",
+    "45-x-y",
+    "46-x-y",
+    "bug :beetle:",
+    "has-repro-gist",
+    "platform/all"
+   ],
+   "id": "electron-55111",
+   "labeler": "deepak1556",
+   "url": "https://github.com/electron/electron/issues/55111"
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 194151,
+   "created": "2026-10-11T01:00:36Z",
+   "title": "[fml] fml::Status keeps a std::string_view, so a status built from a runtime string dangles",
+   "body_len": 2985,
+   "truth": [
+    "P2",
+    "engine"
+   ],
+   "id": "flutter-194151",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/194151"
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 194705,
+   "created": "2026-10-19T03:59:38Z",
+   "title": "[vector_graphics] A failed asynchronous load is reported as unhandled even when errorBuilder handles it",
+   "body_len": 2753,
+   "truth": [
+    "a: tests",
+    "has reproducible steps",
+    "p: vector_graphics",
+    "package"
+   ],
+   "id": "flutter-194705",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/194705"
+  },
+  {
+   "repo": "flutter/flutter",
+   "stars": 180887,
+   "number": 195150,
+   "created": "2026-10-23T10:20:13Z",
+   "title": "[web] Platform views render offscreen when host document has dir=\"rtl\"",
+   "body_len": 3694,
+   "truth": [
+    "P2",
+    "a: platform-views",
+    "has reproducible steps",
+    "platform-web"
+   ],
+   "id": "flutter-195150",
+   "labeler": "suryaKommana2662",
+   "url": "https://github.com/flutter/flutter/issues/195150"
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124050,
+   "created": "2026-10-01T02:09:57Z",
+   "title": "Manage Export Templates window opens at minimum size when display scale set to less than 100%",
+   "body_len": 1219,
+   "truth": [
+    "bug",
+    "topic:editor"
+   ],
+   "id": "godot-124050",
+   "labeler": "YeldhamDev",
+   "url": "https://github.com/godotengine/godot/issues/124050"
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124254,
+   "created": "2026-10-07T10:45:05Z",
+   "title": "Exporting a C# resource and assigning it from GDScript gives an error",
+   "body_len": 2160,
+   "truth": [
+    "bug",
+    "confirmed",
+    "regression",
+    "topic:dotnet",
+    "topic:editor",
+    "topic:gdscript"
+   ],
+   "id": "godot-124254",
+   "labeler": "AThousandShips",
+   "url": "https://github.com/godotengine/godot/issues/124254"
+  },
+  {
+   "repo": "godotengine/godot",
+   "stars": 119377,
+   "number": 124534,
+   "created": "2026-10-16T11:19:33Z",
+   "title": "crash when update setting from project manager part2",
+   "body_len": 1085,
+   "truth": [
+    "bug",
+    "confirmed",
+    "crash",
+    "regression",
+    "topic:editor"
+   ],
+   "id": "godot-124534",
+   "labeler": "AThousandShips",
+   "url": "https://github.com/godotengine/godot/issues/124534"
+  },
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "number": 81990,
+   "created": "2026-10-04T07:02:08Z",
+   "title": "cmd/compile: linker panic \"R_USEIFACE ... references type:.eqfunc... which is not a type or itab\" with reflect.TypeFor[T]().Comparable()",
+   "body_len": 2005,
+   "truth": [
+    "FixPending",
+    "compiler/runtime"
+   ],
+   "id": "go-81990",
+   "labeler": "dmitshur",
+   "url": "https://github.com/golang/go/issues/81990"
+  },
+  {
+   "repo": "golang/go",
+   "stars": 139715,
+   "number": 82053,
+   "created": "2026-10-07T07:32:43Z",
+   "title": "cmd/link/internal/ppc64: genpltstub panics instead of reporting a link error when the caller symbol has no data",
+   "body_len": 1919,
+   "truth": [
+    "FixPending",
+    "arch-ppc64x"
+   ],
+   "id": "go-82053",
+   "labeler": "dmitshur",
+   "url": "https://github.com/golang/go/issues/82053"
+  },
+  {
+   "repo": "home-assistant/core",
+   "stars": 91887,
+   "number": 184104,
+   "created": "2026-10-02T23:10:06Z",
+   "title": "Enphase Envoy: “Reserve battery level” incorrectly marked as device_class battery",
+   "body_len": 1607,
+   "truth": [
+    "integration: enphase_envoy"
+   ],
+   "id": "home-assistant-184104",
+   "labeler": "mib1185",
+   "url": "https://github.com/home-assistant/core/issues/184104"
+  },
+  {
+   "repo": "home-assistant/core",
+   "stars": 91887,
+   "number": 187849,
+   "created": "2026-10-21T13:11:13Z",
+   "title": "Hive Unknown Error",
+   "body_len": 737,
+   "truth": [
+    "integration: hive"
+   ],
+   "id": "home-assistant-187849",
+   "labeler": "mib1185",
+   "url": "https://github.com/home-assistant/core/issues/187849"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "number": 64630,
+   "created": "2026-10-05T07:52:25Z",
+   "title": "[api] Static and callback module resolutions drop resolvedUsingTsExtension, raising TS2876",
+   "body_len": 4414,
+   "truth": [
+    "Bug"
+   ],
+   "id": "typescript-64630",
+   "labeler": "RyanCavanaugh",
+   "url": "https://github.com/microsoft/TypeScript/issues/64630"
+  },
+  {
+   "repo": "microsoft/TypeScript",
+   "stars": 111710,
+   "number": 64677,
+   "created": "2026-10-07T20:29:37Z",
+   "title": "Object.assign does not understand union types",
+   "body_len": 1210,
+   "truth": [
+    "Question"
+   ],
+   "id": "typescript-64677",
+   "labeler": "RyanCavanaugh",
+   "url": "https://github.com/microsoft/TypeScript/issues/64677"
+  },
+  {
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "number": 340116,
+   "created": "2026-10-06T18:30:45Z",
+   "title": "Integrated browser does not open the target tab when connecting Google Tag Assistant",
+   "body_len": 4419,
+   "truth": [
+    "info-needed"
+   ],
+   "id": "vscode-340116",
+   "labeler": "kycutler",
+   "url": "https://github.com/microsoft/vscode/issues/340116"
+  },
+  {
+   "repo": "microsoft/vscode",
+   "stars": 194442,
+   "number": 340427,
+   "created": "2026-10-08T04:14:32Z",
+   "title": "ModernUI Tab is surpressing all the Text",
+   "body_len": 897,
+   "truth": [
+    "bug",
+    "modernization",
+    "workbench-tabs"
+   ],
+   "id": "vscode-340427",
+   "labeler": "benibenj",
+   "url": "https://github.com/microsoft/vscode/issues/340427"
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42255,
+   "created": "2026-10-06T09:55:29Z",
+   "title": "ui2: ruler/tabline [+] modified indicator does not clear on :write when laststatus=0",
+   "body_len": 2906,
+   "truth": [
+    "display",
+    "ui"
+   ],
+   "id": "neovim-42255",
+   "labeler": "justinmk",
+   "url": "https://github.com/neovim/neovim/issues/42255"
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42300,
+   "created": "2026-10-11T08:09:53Z",
+   "title": "use `$XDG_*/nvim` instead of `$XDG_*/nvim-data` on Windows",
+   "body_len": 236,
+   "truth": [
+    "environment",
+    "platform:windows"
+   ],
+   "id": "neovim-42300",
+   "labeler": "glepnir",
+   "url": "https://github.com/neovim/neovim/issues/42300"
+  },
+  {
+   "repo": "neovim/neovim",
+   "stars": 103279,
+   "number": 42339,
+   "created": "2026-10-14T00:21:19Z",
+   "title": "ftplugin(ps1, bash, zsh): term_start is used",
+   "body_len": 1063,
+   "truth": [
+    "has:vim-patch"
+   ],
+   "id": "neovim-42339",
+   "labeler": "zeertzjq",
+   "url": "https://github.com/neovim/neovim/issues/42339"
+  },
+  {
+   "repo": "oven-sh/bun",
+   "stars": 96494,
+   "number": 46530,
+   "created": "2026-10-22T18:06:43Z",
+   "title": "bun check 1.4.4: nested XState state value on generic snapshot resolves to undefined (TS2322, tsc and 1.4.3 accept)",
+   "body_len": 2378,
+   "truth": [
+    "typescript"
+   ],
+   "id": "bun-46530",
+   "labeler": "alii",
+   "url": "https://github.com/oven-sh/bun/issues/46530"
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 201802,
+   "created": "2026-10-23T02:55:01Z",
+   "title": "CUDA illegal memory access in aten::binary_cross_entropy.out with shape-mismatched target/weight",
+   "body_len": 1338,
+   "truth": [
+    "module: cuda",
+    "module: error checking",
+    "module: loss",
+    "module: sanitizers"
+   ],
+   "id": "pytorch-201802",
+   "labeler": "malfet",
+   "url": "https://github.com/pytorch/pytorch/issues/201802"
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 201803,
+   "created": "2026-10-23T02:57:37Z",
+   "title": "CUDA illegal memory access in aten::reflection_pad2d_backward with 0-size grad_output and overflowed padding (~2^55)",
+   "body_len": 1278,
+   "truth": [
+    "module: cuda",
+    "module: edge cases",
+    "module: error checking",
+    "module: padding",
+    "topic: fuzzer"
+   ],
+   "id": "pytorch-201803",
+   "labeler": "malfet",
+   "url": "https://github.com/pytorch/pytorch/issues/201803"
+  },
+  {
+   "repo": "pytorch/pytorch",
+   "stars": 105057,
+   "number": 202507,
+   "created": "2026-10-29T05:51:12Z",
+   "title": "[ROCm] FlyDSL HTI GEMM can produce incorrect results under concurrent memory traffic",
+   "body_len": 3194,
+   "truth": [
+    "actionable",
+    "module: correctness (silent)",
+    "module: inductor",
+    "module: rocm",
+    "oncall: pt2"
+   ],
+   "id": "pytorch-202507",
+   "labeler": "XiaobingSuper",
+   "url": "https://github.com/pytorch/pytorch/issues/202507"
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 163852,
+   "created": "2026-10-06T03:08:21Z",
+   "title": "tidy: gcc_submodule check panics when git is unavailable, contradicting its own comment",
+   "body_len": 1085,
+   "truth": [
+    "C-bug",
+    "T-bootstrap"
+   ],
+   "id": "rust-163852",
+   "labeler": "maxdexh",
+   "url": "https://github.com/rust-lang/rust/issues/163852"
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 164694,
+   "created": "2026-10-21T14:42:55Z",
+   "title": "std doesn't compile for riscv32gc-unknown-linux-gnu",
+   "body_len": 2707,
+   "truth": [
+    "-Zbuild-std",
+    "C-bug",
+    "O-riscv"
+   ],
+   "id": "rust-164694",
+   "labeler": "maxdexh",
+   "url": "https://github.com/rust-lang/rust/issues/164694"
+  },
+  {
+   "repo": "rust-lang/rust",
+   "stars": 120948,
+   "number": 164736,
+   "created": "2026-10-22T09:27:18Z",
+   "title": "Miscompilation with `cmp::max`",
+   "body_len": 1287,
+   "truth": [
+    "A-LLVM",
+    "C-bug",
+    "I-miscompile",
+    "T-compiler"
+   ],
+   "id": "rust-164736",
+   "labeler": "jieyouxu",
+   "url": "https://github.com/rust-lang/rust/issues/164736"
+  },
+  {
+   "repo": "tauri-apps/tauri",
+   "stars": 112396,
+   "number": 16214,
+   "created": "2026-10-06T00:46:18Z",
+   "title": "[bug] `Listener::once` panics when a queued emit is replayed before its queued unlisten",
+   "body_len": 1838,
+   "truth": [
+    "type: bug"
+   ],
+   "id": "tauri-16214",
+   "labeler": "FabianLars",
+   "url": "https://github.com/tauri-apps/tauri/issues/16214"
+  },
+  {
+   "repo": "tauri-apps/tauri",
+   "stars": 112396,
+   "number": 16319,
+   "created": "2026-10-17T09:35:32Z",
+   "title": "[bug] tauri-build watches `./capabilities` even when it doesn't exist, so apps without it rebuild on every `cargo build`",
+   "body_len": 4963,
+   "truth": [
+    "type: bug"
+   ],
+   "id": "tauri-16319",
+   "labeler": "FabianLars",
+   "url": "https://github.com/tauri-apps/tauri/issues/16319"
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 65323,
+   "created": "2026-10-08T09:38:24Z",
+   "title": "`zed <path>:<line>` from a WSL shell opens an empty buffer with a backslash in the path",
+   "body_len": 2541,
+   "truth": [
+    "area:cli",
+    "meta:awesome",
+    "meta:regression",
+    "platform:windows/wsl"
+   ],
+   "id": "zed-65323",
+   "labeler": "smitbarmase",
+   "url": "https://github.com/zed-industries/zed/issues/65323"
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 65434,
+   "created": "2026-10-10T06:23:38Z",
+   "title": "Can not log in to newly registered GitHub account",
+   "body_len": 1590,
+   "truth": [
+    "area:zed account"
+   ],
+   "id": "zed-65434",
+   "labeler": "smitbarmase",
+   "url": "https://github.com/zed-industries/zed/issues/65434"
+  },
+  {
+   "repo": "zed-industries/zed",
+   "stars": 92481,
+   "number": 66153,
+   "created": "2026-10-26T10:37:48Z",
+   "title": "Rust: required-features defined for [[example]] or [[bench]] does not work",
+   "body_len": 1834,
+   "truth": [
+    "area:languages/rust"
+   ],
+   "id": "zed-66153",
+   "labeler": "dinocosta",
+   "url": "https://github.com/zed-industries/zed/issues/66153"
+  }
+ ]
+}

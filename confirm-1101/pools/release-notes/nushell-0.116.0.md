@@ -1,0 +1,5 @@
+This is the 0.116.0 release of Nushell. You can learn more about this release here: https://www.nushell.sh/blog/2026-09-26-nushell_v0_116_0.html
+
+For convenience, we are providing full builds for Windows, Linux, and macOS. Be sure you have the requirements to enable all capabilities: https://www.nushell.sh/book/installation.html#dependencies
+
+This release was made possible by PR contributions from @app/dependabot, @aron-intframe, @ayax79, @bobisageek, @catlover-bot, @costajohnt, @cptpiepmatz, @cuishuang, @Developer1010x, @Dheebz, @dilr, @Dorumin, @fdncred, @fly1d, @hexbinoct, @hustcer, @i-api, @Jorge-Polanco-Roque, @KaiSforza, @kronberger-droid, @LouisDeconinck, @luangucun, @magnify035, @maxim-uvarov, @mikehasa, @mkatychev, @Mrfiregem, @mrhard9090, @neveroNiwe, @nos1dot618, @pheenty, @philocalyst, @pickx, @ronisbr, @rvhelden, @sebaschi, @sidsri14, @surma, @user93390, @windlandneko, @zozo123
