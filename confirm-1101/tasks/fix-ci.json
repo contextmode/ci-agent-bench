@@ -377,6 +377,478 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    }
+  },
+  {
+   "id": "commander.js-2636",
+   "repo": "tj/commander.js",
+   "stars": 28445,
+   "pr": 2636,
+   "title": "fix: increment inspector port for IPv6 hosts",
+   "merged_at": "2026-10-05T03:25:59Z",
+   "url": "https://github.com/tj/commander.js/pull/2636",
+   "sha": "6320660fcbced18d458eac165f992440d45a1ae2",
+   "lang": "node",
+   "src": [
+    "lib/command.js"
+   ],
+   "tests": [
+    "tests/incrementNodeInspectorPort.test.cjs"
+   ],
+   "src_lines": 21,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest tests/incrementNodeInspectorPort.test.cjs",
+   "seq": 15,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "scrapy-8100",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 8100,
+   "title": "Fix fragment inheritance for redirects with an empty fragment",
+   "merged_at": "2026-10-08T20:56:14Z",
+   "url": "https://github.com/scrapy/scrapy/pull/8100",
+   "sha": "0778a7411daccef99485d10791da2db9e99dccc9",
+   "lang": "python",
+   "src": [
+    "scrapy/downloadermiddlewares/redirect.py"
+   ],
+   "tests": [
+    "tests/test_downloadermiddleware_redirect.py",
+    "tests/test_extension_debug.py"
+   ],
+   "src_lines": 12,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_downloadermiddleware_redirect.py tests/test_extension_debug.py -p no:cacheprovider -q",
+   "seq": 16,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "mocha-6045",
+   "repo": "mochajs/mocha",
+   "stars": 22914,
+   "pr": 6045,
+   "title": "fix: surface ts-node compile errors",
+   "merged_at": "2026-06-13T18:33:14Z",
+   "url": "https://github.com/mochajs/mocha/pull/6045",
+   "sha": "3477563fb99b5e294e7b940716ee95b3d28dfb84",
+   "lang": "node",
+   "src": [
+    "lib/nodejs/esm-utils.js"
+   ],
+   "tests": [
+    "test/node-unit/esm-utils.spec.js",
+    "test/node-unit/fixtures/mock-ts-node-compile-err.ts"
+   ],
+   "src_lines": 3,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx mocha test/node-unit/esm-utils.spec.js test/node-unit/fixtures/mock-ts-node-compile-err.ts",
+   "seq": 17,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "immer-1345",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1345,
+   "title": "fix: skip patches of a draft discarded by writing its base value back",
+   "merged_at": "2026-10-22T11:21:02Z",
+   "url": "https://github.com/immerjs/immer/pull/1345",
+   "sha": "13f88d850b3ba6dc95dfab4a6cccbdc6550be08c",
+   "lang": "node",
+   "src": [
+    "src/plugins/patches.ts"
+   ],
+   "tests": [
+    "__tests__/patch.js"
+   ],
+   "src_lines": 9,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/patch.js",
+   "seq": 18,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "poetry-10811",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10811,
+   "title": "fix: use set with backtracking for tree circular dependency detection",
+   "merged_at": "2026-03-31T16:34:39Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10811",
+   "sha": "e54180064368c2f9d9ad5ff4771d8b33538cc372",
+   "lang": "python",
+   "src": [
+    "src/poetry/console/commands/show.py"
+   ],
+   "tests": [
+    "tests/console/commands/test_show.py"
+   ],
+   "src_lines": 31,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/console/commands/test_show.py -p no:cacheprovider -q -n 0",
+   "seq": 19,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "zap-1589",
+   "repo": "uber-go/zap",
+   "stars": 24683,
+   "pr": 1589,
+   "title": "fix: validate Level before opening sinks in Config.Build",
+   "merged_at": "2026-09-16T19:17:35Z",
+   "url": "https://github.com/uber-go/zap/pull/1589",
+   "sha": "4892335e05f14bce8a98a69a577fcf3844a42623",
+   "lang": "go",
+   "src": [
+    "config.go"
+   ],
+   "tests": [
+    "config_test.go"
+   ],
+   "src_lines": 8,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 20,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "echo-3189",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3189,
+   "title": "fix(middleware): reject empty CSRF tokens in v4",
+   "merged_at": "2026-10-22T23:15:02Z",
+   "url": "https://github.com/labstack/echo/pull/3189",
+   "sha": "3b16891242ca2dcb97c1d48253d0582c4947fb92",
+   "lang": "go",
+   "src": [
+    "middleware/csrf.go"
+   ],
+   "tests": [
+    "middleware/csrf_test.go"
+   ],
+   "src_lines": 3,
+   "install": "go mod download",
+   "test": "go test -count=1 ./middleware",
+   "seq": 21,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "pydantic-13374",
+   "repo": "pydantic/pydantic",
+   "stars": 29260,
+   "pr": 13374,
+   "title": "Fix `json_schema_extra` dict being dropped when a callable follows it in `Annotated`",
+   "merged_at": "2026-07-06T08:04:41Z",
+   "url": "https://github.com/pydantic/pydantic/pull/13374",
+   "sha": "d398a5f601ee33f148bd09b7d117e430d761ee47",
+   "lang": "python",
+   "src": [
+    "pydantic/fields.py"
+   ],
+   "tests": [
+    "tests/test_json_schema.py"
+   ],
+   "src_lines": 4,
+   "install": "pip install -q -e . pytest pytest-mock dirty-equals pytest-benchmark pytest-examples faker",
+   "test": "python -m pytest tests/test_json_schema.py -p no:cacheprovider -q",
+   "seq": 22,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "lo-993",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 993,
+   "title": "fix(Nth): reject indexes that do not fit an int instead of wrapping",
+   "merged_at": "2026-09-07T16:33:46Z",
+   "url": "https://github.com/samber/lo/pull/993",
+   "sha": "795f6b9799a73c253261a75290d181a04438fa94",
+   "lang": "go",
+   "src": [
+    "find.go"
+   ],
+   "tests": [
+    "find_test.go"
+   ],
+   "src_lines": 19,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 23,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "commander.js-2630",
+   "repo": "tj/commander.js",
+   "stars": 28445,
+   "pr": 2630,
+   "title": "fix: increment inspector port for --inspect-wait",
+   "merged_at": "2026-09-30T00:49:32Z",
+   "url": "https://github.com/tj/commander.js/pull/2630",
+   "sha": "130cf3a9d0dab501f295674166994b41982546a7",
+   "lang": "node",
+   "src": [
+    "lib/command.js"
+   ],
+   "tests": [
+    "tests/incrementNodeInspectorPort.test.cjs"
+   ],
+   "src_lines": 8,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest tests/incrementNodeInspectorPort.test.cjs",
+   "seq": 24,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "scrapy-7783",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7783,
+   "title": "Fix CaseInsensitiveDict.copy() sharing state with the original",
+   "merged_at": "2026-07-28T10:21:55Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7783",
+   "sha": "59ebb26e60ea1e776ed11d00aef1d20bdb535e98",
+   "lang": "python",
+   "src": [
+    "scrapy/utils/datatypes.py"
+   ],
+   "tests": [
+    "tests/test_utils_datatypes.py"
+   ],
+   "src_lines": 16,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_utils_datatypes.py -p no:cacheprovider -q",
+   "seq": 25,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "immer-1298",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1298,
+   "title": "fix: throw on reads of a revoked Map or Set draft",
+   "merged_at": "2026-10-02T18:22:24Z",
+   "url": "https://github.com/immerjs/immer/pull/1298",
+   "sha": "8848a5b16938e5681a890d73de7bda24b5080498",
+   "lang": "node",
+   "src": [
+    "src/plugins/mapset.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 17,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/base.js",
+   "seq": 26,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "poetry-10808",
+   "repo": "python-poetry/poetry",
+   "stars": 34325,
+   "pr": 10808,
+   "title": "fix: resolve falsy config values in string interpolation",
+   "merged_at": "2026-03-31T16:46:26Z",
+   "url": "https://github.com/python-poetry/poetry/pull/10808",
+   "sha": "e6f1ded9902d1fa17fc74e6562cb423e84fa7752",
+   "lang": "python",
+   "src": [
+    "src/poetry/config/config.py"
+   ],
+   "tests": [
+    "tests/config/test_config.py"
+   ],
+   "src_lines": 6,
+   "install": "pip install -q -e . pytest pytest-mock httpretty deepdiff pytest-xdist",
+   "test": "python -m pytest tests/config/test_config.py -p no:cacheprovider -q -n 0",
+   "seq": 27,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "zap-1567",
+   "repo": "uber-go/zap",
+   "stars": 24683,
+   "pr": 1567,
+   "title": "fix: set content type for AtomicLevel HTTP responses",
+   "merged_at": "2026-08-05T23:33:47Z",
+   "url": "https://github.com/uber-go/zap/pull/1567",
+   "sha": "018b91390e74732e9e40f8d356887b8d06461886",
+   "lang": "go",
+   "src": [
+    "http_handler.go"
+   ],
+   "tests": [
+    "http_handler_test.go"
+   ],
+   "src_lines": 3,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 28,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "echo-3054",
+   "repo": "labstack/echo",
+   "stars": 32788,
+   "pr": 3054,
+   "title": "fix: resolve RealIP for bare RemoteAddr without port",
+   "merged_at": "2026-07-23T05:27:31Z",
+   "url": "https://github.com/labstack/echo/pull/3054",
+   "sha": "a45f07d7e4e0655424f56bc9964f395c7d6dc0ec",
+   "lang": "go",
+   "src": [
+    "context.go",
+    "ip.go"
+   ],
+   "tests": [
+    "context_test.go"
+   ],
+   "src_lines": 8,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 29,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "lo-785",
+   "repo": "samber/lo",
+   "stars": 21450,
+   "pr": 785,
+   "title": "refactor: improve Slice logic and fix docstring",
+   "merged_at": "2026-02-08T01:31:33Z",
+   "url": "https://github.com/samber/lo/pull/785",
+   "sha": "ac3221dd22743034cde0c024a668841cff6bf33a",
+   "lang": "go",
+   "src": [
+    "slice.go"
+   ],
+   "tests": [
+    "slice_test.go"
+   ],
+   "src_lines": 15,
+   "install": "go mod download",
+   "test": "go test -count=1 .",
+   "seq": 30,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "scrapy-7222",
+   "repo": "scrapy/scrapy",
+   "stars": 65151,
+   "pr": 7222,
+   "title": "Fix omitting repeated dataloss warnings in HTTP11DownloadHandler.",
+   "merged_at": "2026-01-21T19:41:27Z",
+   "url": "https://github.com/scrapy/scrapy/pull/7222",
+   "sha": "3ec6ae05c1b97f7c04c726cc4fb1c3ccaccd8e1b",
+   "lang": "python",
+   "src": [
+    "scrapy/core/downloader/handlers/http11.py"
+   ],
+   "tests": [
+    "tests/test_downloader_handler_twisted_http2.py",
+    "tests/test_downloader_handlers_http_base.py"
+   ],
+   "src_lines": 26,
+   "install": "pip install -q -e . pytest testfixtures pexpect sybil",
+   "test": "python -m pytest tests/test_downloader_handler_twisted_http2.py tests/test_downloader_handlers_http_base.py -p no:cacheprovider -q",
+   "seq": 31,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
+  },
+  {
+   "id": "immer-1334",
+   "repo": "immerjs/immer",
+   "stars": 29000,
+   "pr": 1334,
+   "title": "fix: snapshot the iteration range of optimised array searches",
+   "merged_at": "2026-10-20T14:16:00Z",
+   "url": "https://github.com/immerjs/immer/pull/1334",
+   "sha": "36ee05fd86e76e1500c1bf84893a89551803fa16",
+   "lang": "node",
+   "src": [
+    "src/plugins/arrayMethods.ts"
+   ],
+   "tests": [
+    "__tests__/base.js"
+   ],
+   "src_lines": 5,
+   "install": "npm install --no-audit --no-fund --loglevel=error",
+   "test": "npx jest __tests__/base.js",
+   "seq": 32,
+   "reserve": true,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   }
   }
  ]
 }

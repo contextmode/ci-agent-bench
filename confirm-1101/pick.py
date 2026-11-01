@@ -35,7 +35,8 @@ def main():
         c = d["candidates"]
         if not area.startswith("fix"):
             c = sorted(c, key=lambda x: draw_key(x["repo"], x[key]))
-        c = c[:n + RESERVE]
+        if not area.startswith('fix'):
+            c = c[:n + RESERVE]  # fix pools keep the whole drawn order: invalid tasks are replaced by the next valid one
         tasks = []
         for i, t in enumerate(c):
             t = dict(t)
