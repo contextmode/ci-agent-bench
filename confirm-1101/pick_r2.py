@@ -21,13 +21,13 @@ from common import draw_key  # noqa: E402
 SEED2 = "confirm-1101-r2"
 ORGS = ("mert2", "bmksglu")
 S, O, G = "claude-sonnet-5-5", "claude-opus-5-5", "gpt-5-mini"
-N = {"fix-ci": 16, "fix-mention": 16, "labels": 16, "release": 16, "review": 16}
+N = {"fix-ci": 16, "fix-mention": 19, "labels": 26, "release": 16, "review": 26}  # min(n for CI half-width ~10 from r1 spread, unused valid pool)
 LANES = [  # lane id, agent, model, area, n
     ("cc-sonnet-fix-ci", "claude-code", S, "fix-ci", 16),
-    ("cc-sonnet-fix-mention", "claude-code", S, "fix-mention", 16),
-    ("cc-sonnet-labels", "claude-code", S, "labels", 16),
+    ("cc-sonnet-fix-mention", "claude-code", S, "fix-mention", 19),
+    ("cc-sonnet-labels", "claude-code", S, "labels", 26),
     ("cc-sonnet-release", "claude-code", S, "release", 16),
-    ("action-sonnet-review", "claude-code-action", S, "review", 16),
+    ("action-sonnet-review", "claude-code-action", S, "review", 26),
     ("cc-opus-fix-ci", "claude-code", O, "fix-ci", 8),
     ("cc-opus-fix-mention", "claude-code", O, "fix-mention", 8),
     ("opencode-sonnet-fix-ci", "opencode", S, "fix-ci", 8),

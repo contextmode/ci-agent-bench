@@ -54,21 +54,21 @@ jobs:
               curl -fsSL https://opencode.ai/install | bash
               export PATH="$HOME/.opencode/bin:$PATH"
               export ANTHROPIC_API_KEY="$AKEY"
-              if $GWARM; then H='"headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off", "x-cm-ci-repo": "{env:GITHUB_REPOSITORY}", "x-cm-ci-run": "{env:GITHUB_RUN_ID}" },'; else H=''; fi
+              if $GWARM; then H='"headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off", "x-cm-ci-repo": "{env:GITHUB_REPOSITORY}", "x-cm-ci-ref": "{env:GITHUB_REF_NAME}", "x-cm-ci-run": "{env:GITHUB_RUN_ID}" },'; else H=''; fi
               printf '{ "provider": { "anthropic": { "options": { %s "baseURL": "http://127.0.0.1:8099/v1" } } } }\n' "$H" > opencode.json
               timeout 1500 opencode run -m "anthropic/${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
             pi)
               npm install -g @earendil-works/pi-coding-agent
               export ANTHROPIC_API_KEY="$AKEY"
               mkdir -p ~/.pi/agent
-              if $GWARM; then H='"headers": { "x-cm-device-key": "${CONTEXT_MODE_KEY}", "x-cm-client": "pi" },'; else H=''; fi
+              if $GWARM; then H='"headers": { "x-cm-device-key": "${CONTEXT_MODE_KEY}", "x-cm-client": "pi", "x-cm-ci-repo": "${GITHUB_REPOSITORY}", "x-cm-ci-ref": "${GITHUB_REF_NAME}", "x-cm-ci-run": "${GITHUB_RUN_ID}" },'; else H=''; fi
               printf '{ "providers": { "anthropic": { %s "baseUrl": "http://127.0.0.1:8099" } } }\n' "$H" > ~/.pi/agent/models.json
               timeout 1500 pi -p --provider anthropic --model "${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
             codex)
               npm i -g @openai/codex
               export OPENAI_API_KEY="$OKEY"
               mkdir -p ~/.codex
-              if $GWARM; then H='env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-run" = "GITHUB_RUN_ID" }'; else H=''; fi
+              if $GWARM; then H='env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-ref" = "GITHUB_REF_NAME", "x-cm-ci-run" = "GITHUB_RUN_ID" }'; else H=''; fi
               printf 'model_provider = "cmlab"\n[model_providers.cmlab]\nname = "cmlab"\nbase_url = "http://127.0.0.1:8099/v1"\nwire_api = "responses"\nenv_key = "OPENAI_API_KEY"\n%s\n' "$H" > ~/.codex/config.toml
               timeout 1500 codex exec --dangerously-bypass-approvals-and-sandbox -m "${{ inputs.model }}" "$P" > "$GITHUB_WORKSPACE/out/agent.log" 2>&1 ;;
           esac

@@ -11,6 +11,7 @@ on:
       pr: { type: string, required: true }
       arm: { type: choice, options: [direct-ts, gateway], default: gateway }
       model: { type: string, default: claude-sonnet-5-5 }
+      org: { type: choice, options: [mert2, bmksglu], default: bmksglu }
 
 permissions:
   contents: read
@@ -58,7 +59,7 @@ jobs:
             Use the repository's CLAUDE.md for guidance on style and conventions. Be constructive and helpful in your feedback.
 
             Use `gh pr diff` and `gh pr view` (with -R ${{ inputs.repo }}) to read the pull request. Print your review as your final answer. Do not post it: gh pr comment is not available.
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY_C }}
+          anthropic_api_key: ${{ inputs.org == 'mert2' && secrets.ANTHROPIC_API_KEY_D || secrets.ANTHROPIC_API_KEY_C }}
           github_token: ${{ github.token }}
           claude_args: --model ${{ inputs.model }} --max-turns 30 --allowedTools "Bash(gh issue view:*),Bash(gh search:*),Bash(gh issue list:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*),Read,Glob,Grep"
       - name: Metrics
@@ -88,7 +89,7 @@ jobs:
           json.dump(m, open("lab-metrics.json", "w"), indent=1)
           print(json.dumps({k: m.get(k) for k in ("arm", "repo", "pr", "is_error", "num_turns", "total_cost_usd", "api_requests")}))
           PY
-          [ -f claude-output.json ] && python3 "$GITHUB_WORKSPACE/confirm-1101/bin/norm.py" claude claude-output.json norm.json area=review task="${{ inputs.repo }}#${{ inputs.pr }}" arm="${{ inputs.arm }}" model="${{ inputs.model }}" org=bmksglu run_id="$GITHUB_RUN_ID" || true
+          [ -f claude-output.json ] && python3 "$GITHUB_WORKSPACE/confirm-1101/bin/norm.py" claude claude-output.json norm.json area=review task="${{ inputs.repo }}#${{ inputs.pr }}" arm="${{ inputs.arm }}" model="${{ inputs.model }}" org="${{ inputs.org }}" run_id="$GITHUB_RUN_ID" || true
       - name: Secret check before upload
         if: always()
         env:

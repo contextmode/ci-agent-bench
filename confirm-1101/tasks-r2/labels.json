@@ -1,7 +1,7 @@
 {
  "area": "labels",
  "seed": "confirm-1101-r2",
- "n": 16,
+ "n": 26,
  "used_r1_excluded": [
   "flutter-194705",
   "godot-124050",
@@ -30,7 +30,17 @@
   "ruff-29670",
   "neovim-42255",
   "tauri-16319",
-  "zed-66153"
+  "zed-66153",
+  "neovim-42300",
+  "zed-65434",
+  "zed-65323",
+  "electron-54841",
+  "pytorch-202507",
+  "pytorch-201803",
+  "electron-55111",
+  "uv-22488",
+  "uv-22513",
+  "bun-46530"
  ],
  "tasks": [
   {
@@ -365,7 +375,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 17,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "zed-industries/zed",
@@ -384,7 +394,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 18,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "zed-industries/zed",
@@ -406,7 +416,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 19,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "electron/electron",
@@ -428,7 +438,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 20,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "pytorch/pytorch",
@@ -451,7 +461,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 21,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "pytorch/pytorch",
@@ -474,7 +484,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 22,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "electron/electron",
@@ -498,7 +508,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 23,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "astral-sh/uv",
@@ -517,7 +527,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 24,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "astral-sh/uv",
@@ -536,7 +546,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 25,
-   "selected": false
+   "selected": true
   },
   {
    "repo": "oven-sh/bun",
@@ -555,7 +565,7 @@
    "valid": true,
    "validated": true,
    "cand_seq": 26,
-   "selected": false
+   "selected": true
   }
  ]
 }

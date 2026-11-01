@@ -25,7 +25,12 @@
   "poetry-10811",
   "pydantic-13374",
   "commander.js-2630",
-  "poetry-10808"
+  "poetry-10808",
+  "echo-3135",
+  "poetry-10885",
+  "echo-3157",
+  "poetry-10801",
+  "poetry-10805"
  ],
  "tasks": [
   {
@@ -606,7 +611,7 @@
    "test": "python -m pytest tests/utils/test_helpers.py -p no:cacheprovider -q -n 0",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 23,
    "selected": false
   },
@@ -630,10 +635,10 @@
    "install": "go mod download",
    "test": "go test -count=1 ./middleware",
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 24,
-   "selected": false
+   "selected": true
   },
   {
    "id": "lo-802",
@@ -657,7 +662,7 @@
    "test": "go test -count=1 ./benchmark ./it",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 25,
    "selected": false
   },
@@ -682,7 +687,7 @@
    "test": "python -m pytest tests/test_core_downloader.py -p no:cacheprovider -q",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 26,
    "selected": false
   },
@@ -707,7 +712,7 @@
    "test": "npx vitest run __tests__/produce.ts",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 27,
    "selected": false
   },
@@ -731,10 +736,10 @@
    "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/console/commands/test_update.py -p no:cacheprovider -q -n 0",
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 28,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-3157",
@@ -757,10 +762,10 @@
    "install": "go mod download",
    "test": "go test -count=1 .",
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 29,
-   "selected": false
+   "selected": true
   },
   {
    "id": "scrapy-7441",
@@ -792,7 +797,7 @@
    "test": "python -m pytest tests/mockserver/dns.py tests/mockserver/http_base.py tests/mockserver/http_resources.py tests/test_downloader_handler_httpx.py tests/test_downloader_handler_twisted_http10.py tests/test_downloader_handler_twisted_http2.py tests/test_downloader_handlers_http_base.py tests/test_proxy_connect.py -p no:cacheprovider -q",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 30,
    "selected": false
   },
@@ -817,7 +822,7 @@
    "test": "npx vitest run __tests__/base.js",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 31,
    "selected": false
   },
@@ -841,10 +846,10 @@
    "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/publishing/test_uploader.py -p no:cacheprovider -q -n 0",
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 32,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-3011",
@@ -873,7 +878,7 @@
    "test": "go test -count=1 . ./internal/pathutil ./middleware",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 33,
    "selected": false
   },
@@ -898,7 +903,7 @@
    "test": "python -m pytest tests/test_http_request.py -p no:cacheprovider -q",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 34,
    "selected": false
   },
@@ -923,7 +928,7 @@
    "test": "npx vitest run __tests__/current.js",
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 35,
    "selected": false
   },
@@ -947,10 +952,10 @@
    "install": "pip install -q -e . pytest pytest-mock pytest-xdist httpretty deepdiff responses jaraco-classes",
    "test": "python -m pytest tests/puzzle/test_provider.py -p no:cacheprovider -q -n 0",
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 36,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-3094",

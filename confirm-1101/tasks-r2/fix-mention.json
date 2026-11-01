@@ -1,7 +1,7 @@
 {
  "area": "fix-mention",
  "seed": "confirm-1101-r2",
- "n": 16,
+ "n": 19,
  "used_r1_excluded": [
   "echo-2977",
   "echo-3006",
@@ -22,7 +22,17 @@
   "scrapy-8386",
   "poetry-10982",
   "scrapy-8196",
-  "poetry-10720"
+  "poetry-10720",
+  "echo-3113",
+  "pydantic-13363",
+  "scrapy-8257",
+  "poetry-10944",
+  "pydantic-13632",
+  "poetry-10769",
+  "echo-2994",
+  "scrapy-7900",
+  "mocha-6391",
+  "poetry-10784"
  ],
  "tasks": [
   {
@@ -595,7 +605,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 17,
    "selected": false
   },
@@ -627,10 +637,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 18,
-   "selected": false
+   "selected": true
   },
   {
    "id": "pydantic-13363",
@@ -660,10 +670,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 19,
-   "selected": false
+   "selected": true
   },
   {
    "id": "scrapy-8257",
@@ -693,10 +703,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 20,
-   "selected": false
+   "selected": true
   },
   {
    "id": "mocha-6055",
@@ -728,7 +738,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 21,
    "selected": false
   },
@@ -761,10 +771,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 22,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-3005",
@@ -796,7 +806,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 23,
    "selected": false
   },
@@ -828,10 +838,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 24,
-   "selected": false
+   "selected": true
   },
   {
    "id": "scrapy-7818",
@@ -864,7 +874,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 25,
    "selected": false
   },
@@ -899,7 +909,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 26,
    "selected": false
   },
@@ -931,10 +941,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 27,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-2994",
@@ -964,10 +974,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 28,
-   "selected": false
+   "selected": true
   },
   {
    "id": "pydantic-13487",
@@ -998,7 +1008,7 @@
    },
    "origin": "r2-pool",
    "valid": false,
-   "validated": false,
+   "validated": true,
    "cand_seq": 29,
    "selected": false
   },
@@ -1030,10 +1040,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 30,
-   "selected": false
+   "selected": true
   },
   {
    "id": "mocha-6391",
@@ -1063,10 +1073,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 31,
-   "selected": false
+   "selected": true
   },
   {
    "id": "poetry-10784",
@@ -1097,10 +1107,10 @@
     "state": "OPEN"
    },
    "origin": "r2-pool",
-   "valid": false,
-   "validated": false,
+   "valid": true,
+   "validated": true,
    "cand_seq": 32,
-   "selected": false
+   "selected": true
   },
   {
    "id": "echo-3004",

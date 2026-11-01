@@ -910,5 +910,487 @@
   "rc": 0,
   "valid": true,
   "run": 41308290493
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-11027",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358179435
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-11027",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358183538
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3135",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358188062
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3135",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358192589
+ },
+ {
+  "area": "fix-ci",
+  "task": "lo-802",
+  "mode": "baseline",
+  "rc": 0,
+  "valid": false,
+  "run": 41358197182
+ },
+ {
+  "area": "fix-ci",
+  "task": "lo-802",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358201494
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-8296",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358210568
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1205",
+  "mode": "baseline",
+  "rc": 0,
+  "valid": false,
+  "run": 41358215063
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1205",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358219468
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10885",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358224425
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10885",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358228604
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3157",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358232974
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3157",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358237257
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-7441",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358241538
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-7441",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358245607
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1316",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358250019
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1316",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358254245
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10801",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358258042
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10801",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358262113
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3011",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358269854
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-7367",
+  "mode": "baseline",
+  "rc": 0,
+  "valid": false,
+  "run": 41358274414
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-7367",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358279132
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1325",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358283864
+ },
+ {
+  "area": "fix-ci",
+  "task": "immer-1325",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358288999
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10805",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358293979
+ },
+ {
+  "area": "fix-ci",
+  "task": "poetry-10805",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358298959
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-11037",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358303690
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-11037",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358308556
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-3113",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358312946
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-3113",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358317562
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13363",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358322087
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13363",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358326868
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-8257",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358331545
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-8257",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358335745
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-6055",
+  "mode": "baseline",
+  "rc": 0,
+  "valid": false,
+  "run": 41358340733
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-6055",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358350699
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10944",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358355177
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10944",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358360449
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-3005",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358365170
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-3005",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358369836
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13632",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358374142
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13632",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358379588
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-7818",
+  "mode": "baseline",
+  "rc": 0,
+  "valid": false,
+  "run": 41358384251
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-7818",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358388552
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-5994",
+  "mode": "baseline",
+  "rc": 11,
+  "valid": true,
+  "run": 41358392634
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-5994",
+  "mode": "control",
+  "rc": 9,
+  "valid": false,
+  "run": 41358396966
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10769",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358403453
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10769",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358408784
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-2994",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358413261
+ },
+ {
+  "area": "fix-mention",
+  "task": "echo-2994",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358417907
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13487",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358422256
+ },
+ {
+  "area": "fix-mention",
+  "task": "pydantic-13487",
+  "mode": "control",
+  "rc": 1,
+  "valid": false,
+  "run": 41358426654
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-7900",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358431327
+ },
+ {
+  "area": "fix-mention",
+  "task": "scrapy-7900",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358436257
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-6391",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358440685
+ },
+ {
+  "area": "fix-mention",
+  "task": "mocha-6391",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358445205
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10784",
+  "mode": "baseline",
+  "rc": 1,
+  "valid": true,
+  "run": 41358449788
+ },
+ {
+  "area": "fix-mention",
+  "task": "poetry-10784",
+  "mode": "control",
+  "rc": 0,
+  "valid": true,
+  "run": 41358455597
+ },
+ {
+  "area": "fix-ci",
+  "task": "echo-3011",
+  "mode": "baseline",
+  "rc": null,
+  "valid": false,
+  "run": 41359826826,
+  "note": "prep failed twice (41358266011, 41359826826): git pathspec internal/pathutil/pathutil.go not at sha^"
+ },
+ {
+  "area": "fix-ci",
+  "task": "scrapy-8296",
+  "mode": "baseline",
+  "rc": null,
+  "valid": false,
+  "run": 41358206194,
+  "note": "baseline run cancelled at the 30 min job timeout (23:09Z); counted not valid"
  }
 ]

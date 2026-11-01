@@ -13,14 +13,14 @@
    "claude-code",
    "claude-sonnet-5-5",
    "fix-mention",
-   16
+   19
   ],
   [
    "cc-sonnet-labels",
    "claude-code",
    "claude-sonnet-5-5",
    "labels",
-   16
+   26
   ],
   [
    "cc-sonnet-release",
@@ -34,7 +34,7 @@
    "claude-code-action",
    "claude-sonnet-5-5",
    "review",
-   16
+   26
   ],
   [
    "cc-opus-fix-ci",
@@ -84,7 +84,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -110,7 +110,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -123,7 +123,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -136,7 +136,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -149,7 +149,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -162,7 +162,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -188,7 +188,7 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -201,7 +201,7 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-fix-ci",
@@ -210,6 +210,71 @@
    "area": "fix-ci",
    "task": "poetry-10808",
    "seq": 11,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-ci",
+   "task": "echo-3135",
+   "seq": 12,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-ci",
+   "task": "poetry-10885",
+   "seq": 13,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-ci",
+   "task": "echo-3157",
+   "seq": 14,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-ci",
+   "task": "poetry-10801",
+   "seq": 15,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-ci",
+   "task": "poetry-10805",
+   "seq": 16,
    "orgs": {
     "gateway": "bmksglu",
     "direct-ts": "mert2"
@@ -227,7 +292,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-fix-mention",
@@ -253,7 +318,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-mention",
@@ -305,7 +370,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-fix-mention",
@@ -318,7 +383,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-fix-mention",
@@ -327,6 +392,136 @@
    "area": "fix-mention",
    "task": "poetry-10720",
    "seq": 9,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "echo-3113",
+   "seq": 10,
+   "orgs": {
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "pydantic-13363",
+   "seq": 11,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "scrapy-8257",
+   "seq": 12,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "poetry-10944",
+   "seq": 13,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "pydantic-13632",
+   "seq": 14,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "poetry-10769",
+   "seq": 15,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "echo-2994",
+   "seq": 16,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "scrapy-7900",
+   "seq": 17,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "mocha-6391",
+   "seq": 18,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "fix-mention",
+   "task": "poetry-10784",
+   "seq": 19,
    "orgs": {
     "gateway": "bmksglu",
     "direct-ts": "mert2"
@@ -344,7 +539,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -370,7 +565,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -383,7 +578,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -396,7 +591,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -422,7 +617,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -445,10 +640,10 @@
    "task": "go-81990",
    "seq": 9,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -458,8 +653,8 @@
    "task": "neovim-42339",
    "seq": 10,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
    "first_arm": "gateway"
   },
@@ -471,10 +666,10 @@
    "task": "flutter-194151",
    "seq": 11,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -484,10 +679,10 @@
    "task": "ruff-29343",
    "seq": 12,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -497,10 +692,10 @@
    "task": "ruff-29670",
    "seq": 13,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -513,7 +708,7 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -526,7 +721,7 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-labels",
@@ -539,7 +734,137 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "neovim-42300",
+   "seq": 17,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
    "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "zed-65434",
+   "seq": 18,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "zed-65323",
+   "seq": 19,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "electron-54841",
+   "seq": 20,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "pytorch-202507",
+   "seq": 21,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "pytorch-201803",
+   "seq": 22,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "electron-55111",
+   "seq": 23,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "uv-22488",
+   "seq": 24,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "uv-22513",
+   "seq": 25,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "cc-sonnet-labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "area": "labels",
+   "task": "bun-46530",
+   "seq": 26,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
   },
   {
    "lane": "cc-sonnet-release",
@@ -773,7 +1098,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -799,7 +1124,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -812,7 +1137,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -825,7 +1150,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -838,7 +1163,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -851,7 +1176,7 @@
     "gateway": "mert2",
     "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -861,10 +1186,10 @@
    "task": "llama.cpp-30242",
    "seq": 9,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -874,10 +1199,10 @@
    "task": "ruff-29090",
    "seq": 10,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -887,10 +1212,10 @@
    "task": "neovim-42595",
    "seq": 11,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -900,10 +1225,10 @@
    "task": "prometheus-18355",
    "seq": 12,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -913,10 +1238,10 @@
    "task": "uv-22136",
    "seq": 13,
    "orgs": {
-    "gateway": "bmksglu",
-    "direct-ts": "mert2"
+    "gateway": "mert2",
+    "direct-ts": "bmksglu"
    },
-   "first_arm": "direct-ts"
+   "first_arm": "gateway"
   },
   {
    "lane": "action-sonnet-review",
@@ -942,7 +1267,7 @@
     "gateway": "bmksglu",
     "direct-ts": "mert2"
    },
-   "first_arm": "gateway"
+   "first_arm": "direct-ts"
   },
   {
    "lane": "action-sonnet-review",
@@ -951,6 +1276,136 @@
    "area": "review",
    "task": "ruff-29232",
    "seq": 16,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "spring-boot-52228",
+   "seq": 17,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "next.js-100205",
+   "seq": 18,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "next.js-100840",
+   "seq": 19,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "transformers-49742",
+   "seq": 20,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "transformers-48992",
+   "seq": 21,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "spring-boot-52284",
+   "seq": 22,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "django-22198",
+   "seq": 23,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "godot-121020",
+   "seq": 24,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "gateway"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "django-22041",
+   "seq": 25,
+   "orgs": {
+    "gateway": "bmksglu",
+    "direct-ts": "mert2"
+   },
+   "first_arm": "direct-ts"
+  },
+  {
+   "lane": "action-sonnet-review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "area": "review",
+   "task": "prometheus-20026",
+   "seq": 26,
    "orgs": {
     "gateway": "bmksglu",
     "direct-ts": "mert2"
