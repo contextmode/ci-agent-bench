@@ -19,9 +19,11 @@ Headline = warm saving (runs 2..n of each sequence). Saving is `-(exp(mean log-r
 | dedupe-sonnet | 7/8 | 71.8% | -1.9% | -104.3% to 37.1% | 13.2% | -72.0% to 48.5% | 6/8 | $0.032 | yes |
 | release-sonnet | 5/6 | 9.2% | 13.3% | -14.5% to 35.0% | 12.6% | -9.9% to 31.4% | 3/6 | $0.0068 | yes |
 
-The cold column is one pair, so it carries no CI. Warm was not reliably better than cold in this round: the cross-run lever (#27) was not live in this round, only #19-#25 and #28 were. The dedupe lane has a very wide CI because the agent loops differ a lot between runs (Bash 172 vs 85 calls in total).
+The cold column is one pair, so it carries no CI. Warm was not reliably better than cold in this round: the cross-run lever (#27) was not built or deployed before this round; the gateway ran as it was at the start of the night (#19-#25 and #28 live). This round is the baseline for #27. The dedupe lane has a very wide CI because the agent loops differ a lot between runs (Bash 172 vs 85 calls in total).
 
 Areas with a CI that excludes zero on the warm number: mention-sonnet, triage-sonnet, triage-opus, labels-sonnet, review-action-sonnet. Not excluded: review-action-opus, mention-opus, pr-review-sonnet, dedupe-sonnet, release-sonnet.
+
+Note: triage-sonnet has no tool mix or cost split here because my stats script could not read its per-message usage; its saving numbers come from the result totals.
 
 ## Round validity (quota guard)
 
@@ -125,7 +127,7 @@ Cost split method: per run, one price per base input token from total_cost = p*(
 
 - Best warm numbers: mention-sonnet 37%, triage-opus 31%, labels 27%, triage-sonnet 24%. The 60% target is not close in any area.
 - Prefix writes dominate the review lanes (review-action-sonnet 46%, pr-review 41%): that is the cross-run prefix (#27) target. Tool results dominate dedupe (55%) and labels (39%): that is the document-level dedup target.
-- Opus lanes are noisier at n=6 and three of five CIs include zero.
+- Opus lanes are noisier at n=6: the warm CI includes zero in review-action-opus and mention-opus, and excludes zero in triage-opus.
 - Quality: mention-sonnet 5/8 gateway vs 6/8 direct (n=8, not significant); dedupe top-3 6/8 gateway vs 4/8 direct; others equal or not scored. The blind judge for review/pr-review/release was not run in this round.
 
 ## Spend
