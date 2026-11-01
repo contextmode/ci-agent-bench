@@ -1,0 +1,4272 @@
+{
+ "runs_total": 110,
+ "runs_ok": 108,
+ "errors": [
+  {
+   "run_id": "41309715920",
+   "area": "fix-ci",
+   "task": "echo-3158",
+   "arm": "direct-ts",
+   "model": "claude-sonnet-5-5",
+   "error": "no claude output (failure)"
+  },
+  {
+   "run_id": "41322736512",
+   "area": "review",
+   "task": "elasticsearch-163282",
+   "arm": "gateway",
+   "model": "claude-sonnet-5-5",
+   "error": "no claude output (cancelled)"
+  }
+ ],
+ "total_cost_computed": 7.7798,
+ "total_cost_client": 7.7728,
+ "cross_check": {
+  "computed_vs_client": {
+   "n": 108,
+   "mean": 0.0,
+   "max": 0.0,
+   "over_3pct": 0
+  },
+  "computed_vs_ledger_gateway": {
+   "n": 54,
+   "mean": 0.0059,
+   "max": 0.0976,
+   "over_3pct": 3
+  },
+  "ledger_recomputed_vs_ledger_billed": {
+   "n": 54,
+   "mean": 0.0,
+   "max": 0.0,
+   "over_3pct": 0
+  },
+  "gw_only_side_usd_total": 0.01092,
+  "gw_only_side_runs": 10,
+  "ledger_gaps_over_3pct": [
+   {
+    "run_id": "41319314359",
+    "area": "release",
+    "task": "valkey-9.0.7",
+    "client_based_usd": 0.14556,
+    "ledger_usd": 0.1613,
+    "gap": -0.098,
+    "ledger_rows": 11,
+    "upstream_calls": 13,
+    "client_requests": 11,
+    "ledger_side_models": {}
+   },
+   {
+    "run_id": "41322977604",
+    "area": "review",
+    "task": "kafka-23804",
+    "client_based_usd": 0.03145,
+    "ledger_usd": 0.03037,
+    "gap": 0.036,
+    "ledger_rows": 3,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   },
+   {
+    "run_id": "41323649721",
+    "area": "review",
+    "task": "vscode-343624",
+    "client_based_usd": 0.03347,
+    "ledger_usd": 0.03238,
+    "gap": 0.034,
+    "ledger_rows": 3,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   }
+  ]
+ },
+ "rows": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 5,
+   "saving_pct": 4.5,
+   "ci_pct": [
+    -29.9,
+    26.9
+   ],
+   "cheaper": "3/5",
+   "direct_usd": 0.1172,
+   "gateway_usd": 0.1283,
+   "quality": {
+    "direct_pass": 5,
+    "gateway_pass": 5,
+    "n": 5,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 5/5 -> 5/5, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    28,
+    36
+   ],
+   "tool_mix_ratio": 1.286,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0179,
+   "gateway_first": "5/5",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41326756134",
+     "gateway_run": "41326538288",
+     "direct_usd": 0.24742,
+     "gateway_usd": 0.29462,
+     "saving_pct": -19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      15
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41326456070",
+     "gateway_run": "41326241678",
+     "direct_usd": 0.1086,
+     "gateway_usd": 0.17572,
+     "saving_pct": -61.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41326551159",
+     "gateway_run": "41326341575",
+     "direct_usd": 0.0775,
+     "gateway_usd": 0.05352,
+     "saving_pct": 30.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41326855255",
+     "gateway_run": "41326632047",
+     "direct_usd": 0.07376,
+     "gateway_usd": 0.05989,
+     "saving_pct": 18.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41326647144",
+     "gateway_run": "41326441766",
+     "direct_usd": 0.07858,
+     "gateway_usd": 0.05766,
+     "saving_pct": 26.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 18.0,
+   "ci_pct": [
+    4.7,
+    26.5
+   ],
+   "cheaper": "9/10",
+   "direct_usd": 0.0479,
+   "gateway_usd": 0.0391,
+   "quality": {
+    "direct_pass": 10,
+    "gateway_pass": 10,
+    "n": 10,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 10/10 -> 10/10, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    54,
+    52
+   ],
+   "tool_mix_ratio": 0.963,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0039,
+   "gateway_first": "9/10",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41310519734",
+     "gateway_run": "41310312607",
+     "direct_usd": 0.10507,
+     "gateway_usd": 0.07332,
+     "saving_pct": 30.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41309864279",
+     "gateway_run": "41310034811",
+     "direct_usd": 0.07029,
+     "gateway_usd": 0.06548,
+     "saving_pct": 6.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      6
+     ]
+    },
+    {
+     "task": "echo-3189",
+     "direct_run": "41310807874",
+     "gateway_run": "41310603424",
+     "direct_usd": 0.04156,
+     "gateway_usd": 0.03131,
+     "saving_pct": 24.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41310325069",
+     "gateway_run": "41310131405",
+     "direct_usd": 0.04386,
+     "gateway_usd": 0.02939,
+     "saving_pct": 33.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41310617751",
+     "gateway_run": "41310410033",
+     "direct_usd": 0.03126,
+     "gateway_usd": 0.02426,
+     "saving_pct": 22.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "lo-993",
+     "direct_run": "41310903490",
+     "gateway_run": "41310694134",
+     "direct_usd": 0.03744,
+     "gateway_usd": 0.03078,
+     "saving_pct": 17.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "scrapy-7783",
+     "direct_run": "41310996245",
+     "gateway_run": "41310794380",
+     "direct_usd": 0.04852,
+     "gateway_usd": 0.03926,
+     "saving_pct": 19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      6
+     ]
+    },
+    {
+     "task": "zap-1567",
+     "direct_run": "41311086062",
+     "gateway_run": "41310888432",
+     "direct_usd": 0.03696,
+     "gateway_usd": 0.02846,
+     "saving_pct": 23.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41310424245",
+     "gateway_run": "41310223606",
+     "direct_usd": 0.03375,
+     "gateway_usd": 0.02391,
+     "saving_pct": 29.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "zap-1589",
+     "direct_run": "41310708684",
+     "gateway_run": "41310507387",
+     "direct_usd": 0.03036,
+     "gateway_usd": 0.045,
+     "saving_pct": -48.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 9,
+   "saving_pct": 7.5,
+   "ci_pct": [
+    -17.5,
+    23.1
+   ],
+   "cheaper": "7/9",
+   "direct_usd": 0.0904,
+   "gateway_usd": 0.0862,
+   "quality": {
+    "direct_pass": 6,
+    "gateway_pass": 7,
+    "n": 9,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 6/9 -> 7/9, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    83
+   ],
+   "tool_mix_ratio": 1.078,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0042,
+   "gateway_first": "9/9",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-2977",
+     "direct_run": "41313393697",
+     "gateway_run": "41313201260",
+     "direct_usd": 0.07874,
+     "gateway_usd": 0.06199,
+     "saving_pct": 21.3,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      10
+     ]
+    },
+    {
+     "task": "echo-3006",
+     "direct_run": "41313852719",
+     "gateway_run": "41313657445",
+     "direct_usd": 0.1401,
+     "gateway_usd": 0.11039,
+     "saving_pct": 21.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      13
+     ]
+    },
+    {
+     "task": "echo-3060",
+     "direct_run": "41313579858",
+     "gateway_run": "41313381259",
+     "direct_usd": 0.13935,
+     "gateway_usd": 0.13316,
+     "saving_pct": 4.4,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      15
+     ]
+    },
+    {
+     "task": "fiber-3988",
+     "direct_run": "41313304894",
+     "gateway_run": "41313107185",
+     "direct_usd": 0.09689,
+     "gateway_usd": 0.08378,
+     "saving_pct": 13.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "lo-796",
+     "direct_run": "41313670505",
+     "gateway_run": "41313471473",
+     "direct_usd": 0.06592,
+     "gateway_usd": 0.03996,
+     "saving_pct": 39.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      4
+     ]
+    },
+    {
+     "task": "lo-799",
+     "direct_run": "41313485237",
+     "gateway_run": "41313291818",
+     "direct_usd": 0.04938,
+     "gateway_usd": 0.0375,
+     "saving_pct": 24.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "mocha-5997",
+     "direct_run": "41313942674",
+     "gateway_run": "41313748331",
+     "direct_usd": 0.05096,
+     "gateway_usd": 0.10463,
+     "saving_pct": -105.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6331",
+     "direct_run": "41313762332",
+     "gateway_run": "41313565015",
+     "direct_usd": 0.1218,
+     "gateway_usd": 0.14202,
+     "saving_pct": -16.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      13
+     ]
+    },
+    {
+     "task": "mocha-6361",
+     "direct_run": "41314054293",
+     "gateway_run": "41313839988",
+     "direct_usd": 0.07086,
+     "gateway_usd": 0.06211,
+     "saving_pct": 12.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 17.7,
+   "ci_pct": [
+    -6.3,
+    31.4
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.03,
+   "gateway_usd": 0.0276,
+   "quality": {
+    "f1_direct": 0.444,
+    "f1_gateway": 0.531
+   },
+   "quality_text": "F1 0.444 -> 0.531",
+   "quality_ok": true,
+   "tool_calls": [
+    12,
+    13
+   ],
+   "tool_mix_ratio": 1.083,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0004,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "flutter-194705",
+     "direct_run": "41317065687",
+     "gateway_run": "41316858005",
+     "direct_usd": 0.02954,
+     "gateway_usd": 0.01836,
+     "saving_pct": 37.8,
+     "passed": null,
+     "f1": [
+      0.4,
+      0.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124050",
+     "direct_run": "41316970332",
+     "gateway_run": "41316762096",
+     "direct_usd": 0.02263,
+     "gateway_usd": 0.01463,
+     "saving_pct": 35.4,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124254",
+     "direct_run": "41317160892",
+     "gateway_run": "41316956785",
+     "direct_usd": 0.02447,
+     "gateway_usd": 0.01688,
+     "saving_pct": 31.0,
+     "passed": null,
+     "f1": [
+      0.7272727272727272,
+      0.7272727272727272
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "godot-124534",
+     "direct_run": "41316578552",
+     "gateway_run": "41316368087",
+     "direct_usd": 0.0192,
+     "gateway_usd": 0.0126,
+     "saving_pct": 34.4,
+     "passed": null,
+     "f1": [
+      0.8000000000000002,
+      0.6666666666666665
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-163852",
+     "direct_run": "41316680462",
+     "gateway_run": "41316462331",
+     "direct_usd": 0.03144,
+     "gateway_usd": 0.02007,
+     "saving_pct": 36.2,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.4
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-164694",
+     "direct_run": "41316775289",
+     "gateway_run": "41316566001",
+     "direct_usd": 0.02813,
+     "gateway_usd": 0.026,
+     "saving_pct": 7.6,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "rust-164736",
+     "direct_run": "41316871864",
+     "gateway_run": "41316662791",
+     "direct_usd": 0.02849,
+     "gateway_usd": 0.06174,
+     "saving_pct": -116.7,
+     "passed": null,
+     "f1": [
+      0.25,
+      0.25
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "typescript-64677",
+     "direct_run": "41317254521",
+     "gateway_run": "41317054347",
+     "direct_usd": 0.02681,
+     "gateway_usd": 0.02065,
+     "saving_pct": 23.0,
+     "passed": null,
+     "f1": [
+      0.0,
+      1.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-340116",
+     "direct_run": "41316381680",
+     "gateway_run": "41316178504",
+     "direct_usd": 0.06432,
+     "gateway_usd": 0.0649,
+     "saving_pct": -0.9,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      3
+     ]
+    },
+    {
+     "task": "vscode-340427",
+     "direct_run": "41316472482",
+     "gateway_run": "41316275821",
+     "direct_usd": 0.02535,
+     "gateway_usd": 0.02003,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 14.7,
+   "ci_pct": [
+    3.8,
+    24.1
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.128,
+   "gateway_usd": 0.1079,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    78,
+    103
+   ],
+   "tool_mix_ratio": 1.321,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0118,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "biome-2.6.4",
+     "direct_run": "41319738534",
+     "gateway_run": "41319519930",
+     "direct_usd": 0.21878,
+     "gateway_usd": 0.17095,
+     "saving_pct": 21.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      15
+     ]
+    },
+    {
+     "task": "fastapi-0.160.0",
+     "direct_run": "41319946243",
+     "gateway_run": "41319724273",
+     "direct_usd": 0.06382,
+     "gateway_usd": 0.05102,
+     "saving_pct": 20.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "godot-3.6.3-stable",
+     "direct_run": "41320440888",
+     "gateway_run": "41320225732",
+     "direct_usd": 0.20276,
+     "gateway_usd": 0.12422,
+     "saving_pct": 38.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      15,
+      14
+     ]
+    },
+    {
+     "task": "mastodon-4.6.7",
+     "direct_run": "41320047188",
+     "gateway_run": "41319826813",
+     "direct_usd": 0.10329,
+     "gateway_usd": 0.10814,
+     "saving_pct": -4.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      8
+     ]
+    },
+    {
+     "task": "node-26.7.0",
+     "direct_run": "41320143101",
+     "gateway_run": "41319931763",
+     "direct_usd": 0.16325,
+     "gateway_usd": 0.14568,
+     "saving_pct": 10.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      9,
+      18
+     ]
+    },
+    {
+     "task": "powershell-7.6.7",
+     "direct_run": "41320339616",
+     "gateway_run": "41320129068",
+     "direct_usd": 0.13904,
+     "gateway_usd": 0.10985,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    },
+    {
+     "task": "redis-8.4.6",
+     "direct_run": "41319842067",
+     "gateway_run": "41319622529",
+     "direct_usd": 0.06619,
+     "gateway_usd": 0.06485,
+     "saving_pct": 2.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      8
+     ]
+    },
+    {
+     "task": "ruff-0.16.2",
+     "direct_run": "41319637299",
+     "gateway_run": "41319418337",
+     "direct_usd": 0.12556,
+     "gateway_usd": 0.08531,
+     "saving_pct": 32.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "svelte-5.56.10",
+     "direct_run": "41320237920",
+     "gateway_run": "41320032830",
+     "direct_usd": 0.06507,
+     "gateway_usd": 0.058,
+     "saving_pct": 10.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "valkey-9.0.7",
+     "direct_run": "41319534228",
+     "gateway_run": "41319314359",
+     "direct_usd": 0.13249,
+     "gateway_usd": 0.1613,
+     "saving_pct": -21.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 9.8,
+   "ci_pct": [
+    -7.0,
+    24.8
+   ],
+   "cheaper": "7/10",
+   "direct_usd": 0.0602,
+   "gateway_usd": 0.0555,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    13,
+    17
+   ],
+   "tool_mix_ratio": 1.308,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0015,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "elasticsearch-163196",
+     "direct_run": "41323662538",
+     "gateway_run": "41323460107",
+     "direct_usd": 0.07479,
+     "gateway_usd": 0.07436,
+     "saving_pct": 0.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "elasticsearch-163282",
+     "direct_run": "41323284107",
+     "gateway_run": "41322727621",
+     "direct_usd": 0.06526,
+     "gateway_usd": 0.09744,
+     "saving_pct": -49.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-190431",
+     "direct_run": "41324044704",
+     "gateway_run": "41323839904",
+     "direct_usd": 0.04608,
+     "gateway_usd": 0.05609,
+     "saving_pct": -21.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23804",
+     "direct_run": "41323184457",
+     "gateway_run": "41322977604",
+     "direct_usd": 0.05781,
+     "gateway_usd": 0.03037,
+     "saving_pct": 47.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23911",
+     "direct_run": "41323473369",
+     "gateway_run": "41323270907",
+     "direct_usd": 0.07803,
+     "gateway_usd": 0.06921,
+     "saving_pct": 11.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "kubernetes-140611",
+     "direct_run": "41323757194",
+     "gateway_run": "41323553706",
+     "direct_usd": 0.04136,
+     "gateway_usd": 0.04336,
+     "saving_pct": -4.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-342878",
+     "direct_run": "41323566891",
+     "gateway_run": "41323363660",
+     "direct_usd": 0.04911,
+     "gateway_usd": 0.04782,
+     "saving_pct": 2.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "vscode-343624",
+     "direct_run": "41323851422",
+     "gateway_run": "41323649721",
+     "direct_usd": 0.04071,
+     "gateway_usd": 0.03238,
+     "saving_pct": 20.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65129",
+     "direct_run": "41323377361",
+     "gateway_run": "41323170953",
+     "direct_usd": 0.04857,
+     "gateway_usd": 0.0401,
+     "saving_pct": 17.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65841",
+     "direct_run": "41323947229",
+     "gateway_run": "41323743948",
+     "direct_usd": 0.10057,
+     "gateway_usd": 0.06344,
+     "saving_pct": 36.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_client_cost": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 5,
+   "saving_pct": 4.5,
+   "ci_pct": [
+    -29.9,
+    26.9
+   ],
+   "cheaper": "3/5",
+   "direct_usd": 0.1172,
+   "gateway_usd": 0.1283,
+   "quality": {
+    "direct_pass": 5,
+    "gateway_pass": 5,
+    "n": 5,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 5/5 -> 5/5, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    28,
+    36
+   ],
+   "tool_mix_ratio": 1.286,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0179,
+   "gateway_first": "5/5",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41326756134",
+     "gateway_run": "41326538288",
+     "direct_usd": 0.24742,
+     "gateway_usd": 0.29462,
+     "saving_pct": -19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      15
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41326456070",
+     "gateway_run": "41326241678",
+     "direct_usd": 0.1086,
+     "gateway_usd": 0.17572,
+     "saving_pct": -61.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41326551159",
+     "gateway_run": "41326341575",
+     "direct_usd": 0.0775,
+     "gateway_usd": 0.05352,
+     "saving_pct": 30.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41326855255",
+     "gateway_run": "41326632047",
+     "direct_usd": 0.07376,
+     "gateway_usd": 0.05989,
+     "saving_pct": 18.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41326647144",
+     "gateway_run": "41326441766",
+     "direct_usd": 0.07858,
+     "gateway_usd": 0.05766,
+     "saving_pct": 26.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 18.0,
+   "ci_pct": [
+    4.7,
+    26.5
+   ],
+   "cheaper": "9/10",
+   "direct_usd": 0.0479,
+   "gateway_usd": 0.0391,
+   "quality": {
+    "direct_pass": 10,
+    "gateway_pass": 10,
+    "n": 10,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 10/10 -> 10/10, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    54,
+    52
+   ],
+   "tool_mix_ratio": 0.963,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0039,
+   "gateway_first": "9/10",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41310519734",
+     "gateway_run": "41310312607",
+     "direct_usd": 0.10507,
+     "gateway_usd": 0.07332,
+     "saving_pct": 30.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41309864279",
+     "gateway_run": "41310034811",
+     "direct_usd": 0.07029,
+     "gateway_usd": 0.06548,
+     "saving_pct": 6.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      6
+     ]
+    },
+    {
+     "task": "echo-3189",
+     "direct_run": "41310807874",
+     "gateway_run": "41310603424",
+     "direct_usd": 0.04156,
+     "gateway_usd": 0.03131,
+     "saving_pct": 24.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41310325069",
+     "gateway_run": "41310131405",
+     "direct_usd": 0.04386,
+     "gateway_usd": 0.02939,
+     "saving_pct": 33.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41310617751",
+     "gateway_run": "41310410033",
+     "direct_usd": 0.03126,
+     "gateway_usd": 0.02426,
+     "saving_pct": 22.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "lo-993",
+     "direct_run": "41310903490",
+     "gateway_run": "41310694134",
+     "direct_usd": 0.03744,
+     "gateway_usd": 0.03078,
+     "saving_pct": 17.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "scrapy-7783",
+     "direct_run": "41310996245",
+     "gateway_run": "41310794380",
+     "direct_usd": 0.04852,
+     "gateway_usd": 0.03926,
+     "saving_pct": 19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      6
+     ]
+    },
+    {
+     "task": "zap-1567",
+     "direct_run": "41311086062",
+     "gateway_run": "41310888432",
+     "direct_usd": 0.03696,
+     "gateway_usd": 0.02846,
+     "saving_pct": 23.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41310424245",
+     "gateway_run": "41310223606",
+     "direct_usd": 0.03375,
+     "gateway_usd": 0.02391,
+     "saving_pct": 29.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "zap-1589",
+     "direct_run": "41310708684",
+     "gateway_run": "41310507387",
+     "direct_usd": 0.03036,
+     "gateway_usd": 0.045,
+     "saving_pct": -48.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 9,
+   "saving_pct": 7.5,
+   "ci_pct": [
+    -17.5,
+    23.1
+   ],
+   "cheaper": "7/9",
+   "direct_usd": 0.0904,
+   "gateway_usd": 0.0862,
+   "quality": {
+    "direct_pass": 6,
+    "gateway_pass": 7,
+    "n": 9,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 6/9 -> 7/9, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    83
+   ],
+   "tool_mix_ratio": 1.078,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0042,
+   "gateway_first": "9/9",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-2977",
+     "direct_run": "41313393697",
+     "gateway_run": "41313201260",
+     "direct_usd": 0.07874,
+     "gateway_usd": 0.06199,
+     "saving_pct": 21.3,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      10
+     ]
+    },
+    {
+     "task": "echo-3006",
+     "direct_run": "41313852719",
+     "gateway_run": "41313657445",
+     "direct_usd": 0.1401,
+     "gateway_usd": 0.11039,
+     "saving_pct": 21.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      13
+     ]
+    },
+    {
+     "task": "echo-3060",
+     "direct_run": "41313579858",
+     "gateway_run": "41313381259",
+     "direct_usd": 0.13935,
+     "gateway_usd": 0.13316,
+     "saving_pct": 4.4,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      15
+     ]
+    },
+    {
+     "task": "fiber-3988",
+     "direct_run": "41313304894",
+     "gateway_run": "41313107185",
+     "direct_usd": 0.09689,
+     "gateway_usd": 0.08378,
+     "saving_pct": 13.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "lo-796",
+     "direct_run": "41313670505",
+     "gateway_run": "41313471473",
+     "direct_usd": 0.06592,
+     "gateway_usd": 0.03996,
+     "saving_pct": 39.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      4
+     ]
+    },
+    {
+     "task": "lo-799",
+     "direct_run": "41313485237",
+     "gateway_run": "41313291818",
+     "direct_usd": 0.04938,
+     "gateway_usd": 0.0375,
+     "saving_pct": 24.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "mocha-5997",
+     "direct_run": "41313942674",
+     "gateway_run": "41313748331",
+     "direct_usd": 0.05096,
+     "gateway_usd": 0.10463,
+     "saving_pct": -105.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6331",
+     "direct_run": "41313762332",
+     "gateway_run": "41313565015",
+     "direct_usd": 0.1218,
+     "gateway_usd": 0.14202,
+     "saving_pct": -16.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      13
+     ]
+    },
+    {
+     "task": "mocha-6361",
+     "direct_run": "41314054293",
+     "gateway_run": "41313839988",
+     "direct_usd": 0.07086,
+     "gateway_usd": 0.06211,
+     "saving_pct": 12.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 17.7,
+   "ci_pct": [
+    -6.3,
+    31.4
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.03,
+   "gateway_usd": 0.0276,
+   "quality": {
+    "f1_direct": 0.444,
+    "f1_gateway": 0.531
+   },
+   "quality_text": "F1 0.444 -> 0.531",
+   "quality_ok": true,
+   "tool_calls": [
+    12,
+    13
+   ],
+   "tool_mix_ratio": 1.083,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0004,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "flutter-194705",
+     "direct_run": "41317065687",
+     "gateway_run": "41316858005",
+     "direct_usd": 0.02954,
+     "gateway_usd": 0.01836,
+     "saving_pct": 37.8,
+     "passed": null,
+     "f1": [
+      0.4,
+      0.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124050",
+     "direct_run": "41316970332",
+     "gateway_run": "41316762096",
+     "direct_usd": 0.02263,
+     "gateway_usd": 0.01463,
+     "saving_pct": 35.4,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124254",
+     "direct_run": "41317160892",
+     "gateway_run": "41316956785",
+     "direct_usd": 0.02447,
+     "gateway_usd": 0.01688,
+     "saving_pct": 31.0,
+     "passed": null,
+     "f1": [
+      0.7272727272727272,
+      0.7272727272727272
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "godot-124534",
+     "direct_run": "41316578552",
+     "gateway_run": "41316368087",
+     "direct_usd": 0.0192,
+     "gateway_usd": 0.0126,
+     "saving_pct": 34.4,
+     "passed": null,
+     "f1": [
+      0.8000000000000002,
+      0.6666666666666665
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-163852",
+     "direct_run": "41316680462",
+     "gateway_run": "41316462331",
+     "direct_usd": 0.03144,
+     "gateway_usd": 0.02007,
+     "saving_pct": 36.2,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.4
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-164694",
+     "direct_run": "41316775289",
+     "gateway_run": "41316566001",
+     "direct_usd": 0.02813,
+     "gateway_usd": 0.026,
+     "saving_pct": 7.6,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "rust-164736",
+     "direct_run": "41316871864",
+     "gateway_run": "41316662791",
+     "direct_usd": 0.02849,
+     "gateway_usd": 0.06174,
+     "saving_pct": -116.7,
+     "passed": null,
+     "f1": [
+      0.25,
+      0.25
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "typescript-64677",
+     "direct_run": "41317254521",
+     "gateway_run": "41317054347",
+     "direct_usd": 0.02681,
+     "gateway_usd": 0.02065,
+     "saving_pct": 23.0,
+     "passed": null,
+     "f1": [
+      0.0,
+      1.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-340116",
+     "direct_run": "41316381680",
+     "gateway_run": "41316178504",
+     "direct_usd": 0.06432,
+     "gateway_usd": 0.0649,
+     "saving_pct": -0.9,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      3
+     ]
+    },
+    {
+     "task": "vscode-340427",
+     "direct_run": "41316472482",
+     "gateway_run": "41316275821",
+     "direct_usd": 0.02535,
+     "gateway_usd": 0.02003,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 15.6,
+   "ci_pct": [
+    5.9,
+    24.3
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.128,
+   "gateway_usd": 0.1064,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    78,
+    103
+   ],
+   "tool_mix_ratio": 1.321,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0134,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "biome-2.6.4",
+     "direct_run": "41319738534",
+     "gateway_run": "41319519930",
+     "direct_usd": 0.21878,
+     "gateway_usd": 0.17095,
+     "saving_pct": 21.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      15
+     ]
+    },
+    {
+     "task": "fastapi-0.160.0",
+     "direct_run": "41319946243",
+     "gateway_run": "41319724273",
+     "direct_usd": 0.06382,
+     "gateway_usd": 0.05102,
+     "saving_pct": 20.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "godot-3.6.3-stable",
+     "direct_run": "41320440888",
+     "gateway_run": "41320225732",
+     "direct_usd": 0.20276,
+     "gateway_usd": 0.12422,
+     "saving_pct": 38.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      15,
+      14
+     ]
+    },
+    {
+     "task": "mastodon-4.6.7",
+     "direct_run": "41320047188",
+     "gateway_run": "41319826813",
+     "direct_usd": 0.10329,
+     "gateway_usd": 0.10814,
+     "saving_pct": -4.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      8
+     ]
+    },
+    {
+     "task": "node-26.7.0",
+     "direct_run": "41320143101",
+     "gateway_run": "41319931763",
+     "direct_usd": 0.16325,
+     "gateway_usd": 0.14568,
+     "saving_pct": 10.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      9,
+      18
+     ]
+    },
+    {
+     "task": "powershell-7.6.7",
+     "direct_run": "41320339616",
+     "gateway_run": "41320129068",
+     "direct_usd": 0.13904,
+     "gateway_usd": 0.10985,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    },
+    {
+     "task": "redis-8.4.6",
+     "direct_run": "41319842067",
+     "gateway_run": "41319622529",
+     "direct_usd": 0.06619,
+     "gateway_usd": 0.06485,
+     "saving_pct": 2.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      8
+     ]
+    },
+    {
+     "task": "ruff-0.16.2",
+     "direct_run": "41319637299",
+     "gateway_run": "41319418337",
+     "direct_usd": 0.12556,
+     "gateway_usd": 0.08531,
+     "saving_pct": 32.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "svelte-5.56.10",
+     "direct_run": "41320237920",
+     "gateway_run": "41320032830",
+     "direct_usd": 0.06507,
+     "gateway_usd": 0.058,
+     "saving_pct": 10.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "valkey-9.0.7",
+     "direct_run": "41319534228",
+     "gateway_run": "41319314359",
+     "direct_usd": 0.13249,
+     "gateway_usd": 0.14556,
+     "saving_pct": -9.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 8.0,
+   "ci_pct": [
+    -8.5,
+    22.9
+   ],
+   "cheaper": "6/10",
+   "direct_usd": 0.0602,
+   "gateway_usd": 0.0563,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    13,
+    17
+   ],
+   "tool_mix_ratio": 1.308,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0007,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "elasticsearch-163196",
+     "direct_run": "41323662538",
+     "gateway_run": "41323460107",
+     "direct_usd": 0.07479,
+     "gateway_usd": 0.07545,
+     "saving_pct": -0.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "elasticsearch-163282",
+     "direct_run": "41323284107",
+     "gateway_run": "41322727621",
+     "direct_usd": 0.06526,
+     "gateway_usd": 0.09636,
+     "saving_pct": -47.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-190431",
+     "direct_run": "41324044704",
+     "gateway_run": "41323839904",
+     "direct_usd": 0.04608,
+     "gateway_usd": 0.05718,
+     "saving_pct": -24.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23804",
+     "direct_run": "41323184457",
+     "gateway_run": "41322977604",
+     "direct_usd": 0.05781,
+     "gateway_usd": 0.03145,
+     "saving_pct": 45.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23911",
+     "direct_run": "41323473369",
+     "gateway_run": "41323270907",
+     "direct_usd": 0.07803,
+     "gateway_usd": 0.07031,
+     "saving_pct": 9.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "kubernetes-140611",
+     "direct_run": "41323757194",
+     "gateway_run": "41323553706",
+     "direct_usd": 0.04136,
+     "gateway_usd": 0.04445,
+     "saving_pct": -7.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-342878",
+     "direct_run": "41323566891",
+     "gateway_run": "41323363660",
+     "direct_usd": 0.04911,
+     "gateway_usd": 0.04891,
+     "saving_pct": 0.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "vscode-343624",
+     "direct_run": "41323851422",
+     "gateway_run": "41323649721",
+     "direct_usd": 0.04071,
+     "gateway_usd": 0.03347,
+     "saving_pct": 17.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65129",
+     "direct_run": "41323377361",
+     "gateway_run": "41323170953",
+     "direct_usd": 0.04857,
+     "gateway_usd": 0.04121,
+     "saving_pct": 15.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65841",
+     "direct_run": "41323947229",
+     "gateway_run": "41323743948",
+     "direct_usd": 0.10057,
+     "gateway_usd": 0.06453,
+     "saving_pct": 35.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_max_client_ledger": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 5,
+   "saving_pct": 4.5,
+   "ci_pct": [
+    -29.9,
+    26.9
+   ],
+   "cheaper": "3/5",
+   "direct_usd": 0.1172,
+   "gateway_usd": 0.1283,
+   "quality": {
+    "direct_pass": 5,
+    "gateway_pass": 5,
+    "n": 5,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 5/5 -> 5/5, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    28,
+    36
+   ],
+   "tool_mix_ratio": 1.286,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0179,
+   "gateway_first": "5/5",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41326756134",
+     "gateway_run": "41326538288",
+     "direct_usd": 0.24742,
+     "gateway_usd": 0.29462,
+     "saving_pct": -19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      15
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41326456070",
+     "gateway_run": "41326241678",
+     "direct_usd": 0.1086,
+     "gateway_usd": 0.17572,
+     "saving_pct": -61.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41326551159",
+     "gateway_run": "41326341575",
+     "direct_usd": 0.0775,
+     "gateway_usd": 0.05352,
+     "saving_pct": 30.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41326855255",
+     "gateway_run": "41326632047",
+     "direct_usd": 0.07376,
+     "gateway_usd": 0.05989,
+     "saving_pct": 18.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41326647144",
+     "gateway_run": "41326441766",
+     "direct_usd": 0.07858,
+     "gateway_usd": 0.05766,
+     "saving_pct": 26.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 18.0,
+   "ci_pct": [
+    4.7,
+    26.5
+   ],
+   "cheaper": "9/10",
+   "direct_usd": 0.0479,
+   "gateway_usd": 0.0391,
+   "quality": {
+    "direct_pass": 10,
+    "gateway_pass": 10,
+    "n": 10,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 10/10 -> 10/10, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    54,
+    52
+   ],
+   "tool_mix_ratio": 0.963,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0039,
+   "gateway_first": "9/10",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41310519734",
+     "gateway_run": "41310312607",
+     "direct_usd": 0.10507,
+     "gateway_usd": 0.07332,
+     "saving_pct": 30.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41309864279",
+     "gateway_run": "41310034811",
+     "direct_usd": 0.07029,
+     "gateway_usd": 0.06548,
+     "saving_pct": 6.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      6
+     ]
+    },
+    {
+     "task": "echo-3189",
+     "direct_run": "41310807874",
+     "gateway_run": "41310603424",
+     "direct_usd": 0.04156,
+     "gateway_usd": 0.03131,
+     "saving_pct": 24.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41310325069",
+     "gateway_run": "41310131405",
+     "direct_usd": 0.04386,
+     "gateway_usd": 0.02939,
+     "saving_pct": 33.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41310617751",
+     "gateway_run": "41310410033",
+     "direct_usd": 0.03126,
+     "gateway_usd": 0.02426,
+     "saving_pct": 22.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "lo-993",
+     "direct_run": "41310903490",
+     "gateway_run": "41310694134",
+     "direct_usd": 0.03744,
+     "gateway_usd": 0.03078,
+     "saving_pct": 17.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "scrapy-7783",
+     "direct_run": "41310996245",
+     "gateway_run": "41310794380",
+     "direct_usd": 0.04852,
+     "gateway_usd": 0.03926,
+     "saving_pct": 19.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      6
+     ]
+    },
+    {
+     "task": "zap-1567",
+     "direct_run": "41311086062",
+     "gateway_run": "41310888432",
+     "direct_usd": 0.03696,
+     "gateway_usd": 0.02846,
+     "saving_pct": 23.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41310424245",
+     "gateway_run": "41310223606",
+     "direct_usd": 0.03375,
+     "gateway_usd": 0.02391,
+     "saving_pct": 29.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "zap-1589",
+     "direct_run": "41310708684",
+     "gateway_run": "41310507387",
+     "direct_usd": 0.03036,
+     "gateway_usd": 0.045,
+     "saving_pct": -48.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 9,
+   "saving_pct": 7.5,
+   "ci_pct": [
+    -17.5,
+    23.1
+   ],
+   "cheaper": "7/9",
+   "direct_usd": 0.0904,
+   "gateway_usd": 0.0862,
+   "quality": {
+    "direct_pass": 6,
+    "gateway_pass": 7,
+    "n": 9,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 6/9 -> 7/9, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    83
+   ],
+   "tool_mix_ratio": 1.078,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0042,
+   "gateway_first": "9/9",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-2977",
+     "direct_run": "41313393697",
+     "gateway_run": "41313201260",
+     "direct_usd": 0.07874,
+     "gateway_usd": 0.06199,
+     "saving_pct": 21.3,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      10
+     ]
+    },
+    {
+     "task": "echo-3006",
+     "direct_run": "41313852719",
+     "gateway_run": "41313657445",
+     "direct_usd": 0.1401,
+     "gateway_usd": 0.11039,
+     "saving_pct": 21.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      13
+     ]
+    },
+    {
+     "task": "echo-3060",
+     "direct_run": "41313579858",
+     "gateway_run": "41313381259",
+     "direct_usd": 0.13935,
+     "gateway_usd": 0.13316,
+     "saving_pct": 4.4,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      15
+     ]
+    },
+    {
+     "task": "fiber-3988",
+     "direct_run": "41313304894",
+     "gateway_run": "41313107185",
+     "direct_usd": 0.09689,
+     "gateway_usd": 0.08378,
+     "saving_pct": 13.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "lo-796",
+     "direct_run": "41313670505",
+     "gateway_run": "41313471473",
+     "direct_usd": 0.06592,
+     "gateway_usd": 0.03996,
+     "saving_pct": 39.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      4
+     ]
+    },
+    {
+     "task": "lo-799",
+     "direct_run": "41313485237",
+     "gateway_run": "41313291818",
+     "direct_usd": 0.04938,
+     "gateway_usd": 0.0375,
+     "saving_pct": 24.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "mocha-5997",
+     "direct_run": "41313942674",
+     "gateway_run": "41313748331",
+     "direct_usd": 0.05096,
+     "gateway_usd": 0.10463,
+     "saving_pct": -105.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6331",
+     "direct_run": "41313762332",
+     "gateway_run": "41313565015",
+     "direct_usd": 0.1218,
+     "gateway_usd": 0.14202,
+     "saving_pct": -16.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      13
+     ]
+    },
+    {
+     "task": "mocha-6361",
+     "direct_run": "41314054293",
+     "gateway_run": "41313839988",
+     "direct_usd": 0.07086,
+     "gateway_usd": 0.06211,
+     "saving_pct": 12.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 17.7,
+   "ci_pct": [
+    -6.3,
+    31.4
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.03,
+   "gateway_usd": 0.0276,
+   "quality": {
+    "f1_direct": 0.444,
+    "f1_gateway": 0.531
+   },
+   "quality_text": "F1 0.444 -> 0.531",
+   "quality_ok": true,
+   "tool_calls": [
+    12,
+    13
+   ],
+   "tool_mix_ratio": 1.083,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0004,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "flutter-194705",
+     "direct_run": "41317065687",
+     "gateway_run": "41316858005",
+     "direct_usd": 0.02954,
+     "gateway_usd": 0.01836,
+     "saving_pct": 37.8,
+     "passed": null,
+     "f1": [
+      0.4,
+      0.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124050",
+     "direct_run": "41316970332",
+     "gateway_run": "41316762096",
+     "direct_usd": 0.02263,
+     "gateway_usd": 0.01463,
+     "saving_pct": 35.4,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124254",
+     "direct_run": "41317160892",
+     "gateway_run": "41316956785",
+     "direct_usd": 0.02447,
+     "gateway_usd": 0.01688,
+     "saving_pct": 31.0,
+     "passed": null,
+     "f1": [
+      0.7272727272727272,
+      0.7272727272727272
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "godot-124534",
+     "direct_run": "41316578552",
+     "gateway_run": "41316368087",
+     "direct_usd": 0.0192,
+     "gateway_usd": 0.0126,
+     "saving_pct": 34.4,
+     "passed": null,
+     "f1": [
+      0.8000000000000002,
+      0.6666666666666665
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-163852",
+     "direct_run": "41316680462",
+     "gateway_run": "41316462331",
+     "direct_usd": 0.03144,
+     "gateway_usd": 0.02007,
+     "saving_pct": 36.2,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.4
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-164694",
+     "direct_run": "41316775289",
+     "gateway_run": "41316566001",
+     "direct_usd": 0.02813,
+     "gateway_usd": 0.026,
+     "saving_pct": 7.6,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "rust-164736",
+     "direct_run": "41316871864",
+     "gateway_run": "41316662791",
+     "direct_usd": 0.02849,
+     "gateway_usd": 0.06174,
+     "saving_pct": -116.7,
+     "passed": null,
+     "f1": [
+      0.25,
+      0.25
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "typescript-64677",
+     "direct_run": "41317254521",
+     "gateway_run": "41317054347",
+     "direct_usd": 0.02681,
+     "gateway_usd": 0.02065,
+     "saving_pct": 23.0,
+     "passed": null,
+     "f1": [
+      0.0,
+      1.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-340116",
+     "direct_run": "41316381680",
+     "gateway_run": "41316178504",
+     "direct_usd": 0.06432,
+     "gateway_usd": 0.0649,
+     "saving_pct": -0.9,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      3
+     ]
+    },
+    {
+     "task": "vscode-340427",
+     "direct_run": "41316472482",
+     "gateway_run": "41316275821",
+     "direct_usd": 0.02535,
+     "gateway_usd": 0.02003,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 14.7,
+   "ci_pct": [
+    3.8,
+    24.1
+   ],
+   "cheaper": "8/10",
+   "direct_usd": 0.128,
+   "gateway_usd": 0.1079,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    78,
+    103
+   ],
+   "tool_mix_ratio": 1.321,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0118,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "biome-2.6.4",
+     "direct_run": "41319738534",
+     "gateway_run": "41319519930",
+     "direct_usd": 0.21878,
+     "gateway_usd": 0.17095,
+     "saving_pct": 21.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      15
+     ]
+    },
+    {
+     "task": "fastapi-0.160.0",
+     "direct_run": "41319946243",
+     "gateway_run": "41319724273",
+     "direct_usd": 0.06382,
+     "gateway_usd": 0.05102,
+     "saving_pct": 20.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "godot-3.6.3-stable",
+     "direct_run": "41320440888",
+     "gateway_run": "41320225732",
+     "direct_usd": 0.20276,
+     "gateway_usd": 0.12422,
+     "saving_pct": 38.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      15,
+      14
+     ]
+    },
+    {
+     "task": "mastodon-4.6.7",
+     "direct_run": "41320047188",
+     "gateway_run": "41319826813",
+     "direct_usd": 0.10329,
+     "gateway_usd": 0.10814,
+     "saving_pct": -4.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      8
+     ]
+    },
+    {
+     "task": "node-26.7.0",
+     "direct_run": "41320143101",
+     "gateway_run": "41319931763",
+     "direct_usd": 0.16325,
+     "gateway_usd": 0.14568,
+     "saving_pct": 10.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      9,
+      18
+     ]
+    },
+    {
+     "task": "powershell-7.6.7",
+     "direct_run": "41320339616",
+     "gateway_run": "41320129068",
+     "direct_usd": 0.13904,
+     "gateway_usd": 0.10985,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    },
+    {
+     "task": "redis-8.4.6",
+     "direct_run": "41319842067",
+     "gateway_run": "41319622529",
+     "direct_usd": 0.06619,
+     "gateway_usd": 0.06485,
+     "saving_pct": 2.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      8
+     ]
+    },
+    {
+     "task": "ruff-0.16.2",
+     "direct_run": "41319637299",
+     "gateway_run": "41319418337",
+     "direct_usd": 0.12556,
+     "gateway_usd": 0.08531,
+     "saving_pct": 32.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "svelte-5.56.10",
+     "direct_run": "41320237920",
+     "gateway_run": "41320032830",
+     "direct_usd": 0.06507,
+     "gateway_usd": 0.058,
+     "saving_pct": 10.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "valkey-9.0.7",
+     "direct_run": "41319534228",
+     "gateway_run": "41319314359",
+     "direct_usd": 0.13249,
+     "gateway_usd": 0.1613,
+     "saving_pct": -21.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 7.9,
+   "ci_pct": [
+    -8.8,
+    22.9
+   ],
+   "cheaper": "6/10",
+   "direct_usd": 0.0602,
+   "gateway_usd": 0.0564,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    13,
+    17
+   ],
+   "tool_mix_ratio": 1.308,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0005,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "elasticsearch-163196",
+     "direct_run": "41323662538",
+     "gateway_run": "41323460107",
+     "direct_usd": 0.07479,
+     "gateway_usd": 0.07545,
+     "saving_pct": -0.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "elasticsearch-163282",
+     "direct_run": "41323284107",
+     "gateway_run": "41322727621",
+     "direct_usd": 0.06526,
+     "gateway_usd": 0.09744,
+     "saving_pct": -49.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-190431",
+     "direct_run": "41324044704",
+     "gateway_run": "41323839904",
+     "direct_usd": 0.04608,
+     "gateway_usd": 0.05718,
+     "saving_pct": -24.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23804",
+     "direct_run": "41323184457",
+     "gateway_run": "41322977604",
+     "direct_usd": 0.05781,
+     "gateway_usd": 0.03145,
+     "saving_pct": 45.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23911",
+     "direct_run": "41323473369",
+     "gateway_run": "41323270907",
+     "direct_usd": 0.07803,
+     "gateway_usd": 0.07031,
+     "saving_pct": 9.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "kubernetes-140611",
+     "direct_run": "41323757194",
+     "gateway_run": "41323553706",
+     "direct_usd": 0.04136,
+     "gateway_usd": 0.04445,
+     "saving_pct": -7.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-342878",
+     "direct_run": "41323566891",
+     "gateway_run": "41323363660",
+     "direct_usd": 0.04911,
+     "gateway_usd": 0.04891,
+     "saving_pct": 0.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "vscode-343624",
+     "direct_run": "41323851422",
+     "gateway_run": "41323649721",
+     "direct_usd": 0.04071,
+     "gateway_usd": 0.03347,
+     "saving_pct": 17.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65129",
+     "direct_run": "41323377361",
+     "gateway_run": "41323170953",
+     "direct_usd": 0.04857,
+     "gateway_usd": 0.04121,
+     "saving_pct": 15.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65841",
+     "direct_run": "41323947229",
+     "gateway_run": "41323743948",
+     "direct_usd": 0.10057,
+     "gateway_usd": 0.06453,
+     "saving_pct": 35.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_old_prices_3_15": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 5,
+   "saving_pct": 6.9,
+   "ci_pct": [
+    -24.5,
+    28.5
+   ],
+   "cheaper": "3/5",
+   "direct_usd": 0.179,
+   "gateway_usd": 0.1924,
+   "quality": {
+    "direct_pass": 5,
+    "gateway_pass": 5,
+    "n": 5,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 5/5 -> 5/5, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    28,
+    36
+   ],
+   "tool_mix_ratio": 1.286,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0203,
+   "gateway_first": "5/5",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41326756134",
+     "gateway_run": "41326538288",
+     "direct_usd": 0.37567,
+     "gateway_usd": 0.45463,
+     "saving_pct": -21.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      15
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41326456070",
+     "gateway_run": "41326241678",
+     "direct_usd": 0.16648,
+     "gateway_usd": 0.25158,
+     "saving_pct": -51.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41326551159",
+     "gateway_run": "41326341575",
+     "direct_usd": 0.12091,
+     "gateway_usd": 0.08236,
+     "saving_pct": 31.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41326855255",
+     "gateway_run": "41326632047",
+     "direct_usd": 0.11025,
+     "gateway_usd": 0.08636,
+     "saving_pct": 21.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41326647144",
+     "gateway_run": "41326441766",
+     "direct_usd": 0.12182,
+     "gateway_usd": 0.0873,
+     "saving_pct": 28.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 22.3,
+   "ci_pct": [
+    11.5,
+    29.0
+   ],
+   "cheaper": "9/10",
+   "direct_usd": 0.0901,
+   "gateway_usd": 0.069,
+   "quality": {
+    "direct_pass": 10,
+    "gateway_pass": 10,
+    "n": 10,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 10/10 -> 10/10, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    54,
+    52
+   ],
+   "tool_mix_ratio": 0.963,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0163,
+   "gateway_first": "9/10",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41310519734",
+     "gateway_run": "41310312607",
+     "direct_usd": 0.19935,
+     "gateway_usd": 0.13208,
+     "saving_pct": 33.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41309864279",
+     "gateway_run": "41310034811",
+     "direct_usd": 0.13853,
+     "gateway_usd": 0.11128,
+     "saving_pct": 19.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      6
+     ]
+    },
+    {
+     "task": "echo-3189",
+     "direct_run": "41310807874",
+     "gateway_run": "41310603424",
+     "direct_usd": 0.08062,
+     "gateway_usd": 0.05668,
+     "saving_pct": 29.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41310325069",
+     "gateway_run": "41310131405",
+     "direct_usd": 0.08043,
+     "gateway_usd": 0.05384,
+     "saving_pct": 33.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41310617751",
+     "gateway_run": "41310410033",
+     "direct_usd": 0.05766,
+     "gateway_usd": 0.04322,
+     "saving_pct": 25.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "lo-993",
+     "direct_run": "41310903490",
+     "gateway_run": "41310694134",
+     "direct_usd": 0.0671,
+     "gateway_usd": 0.05321,
+     "saving_pct": 20.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "scrapy-7783",
+     "direct_run": "41310996245",
+     "gateway_run": "41310794380",
+     "direct_usd": 0.08739,
+     "gateway_usd": 0.07053,
+     "saving_pct": 19.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      6
+     ]
+    },
+    {
+     "task": "zap-1567",
+     "direct_run": "41311086062",
+     "gateway_run": "41310888432",
+     "direct_usd": 0.0696,
+     "gateway_usd": 0.05193,
+     "saving_pct": 25.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41310424245",
+     "gateway_run": "41310223606",
+     "direct_usd": 0.06461,
+     "gateway_usd": 0.04465,
+     "saving_pct": 30.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "zap-1589",
+     "direct_run": "41310708684",
+     "gateway_run": "41310507387",
+     "direct_usd": 0.05598,
+     "gateway_usd": 0.07271,
+     "saving_pct": -29.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 9,
+   "saving_pct": 9.1,
+   "ci_pct": [
+    -18.4,
+    26.0
+   ],
+   "cheaper": "7/9",
+   "direct_usd": 0.1658,
+   "gateway_usd": 0.1562,
+   "quality": {
+    "direct_pass": 6,
+    "gateway_pass": 7,
+    "n": 9,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 6/9 -> 7/9, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    83
+   ],
+   "tool_mix_ratio": 1.078,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0011,
+   "gateway_first": "9/9",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "echo-2977",
+     "direct_run": "41313393697",
+     "gateway_run": "41313201260",
+     "direct_usd": 0.15023,
+     "gateway_usd": 0.11156,
+     "saving_pct": 25.7,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      10
+     ]
+    },
+    {
+     "task": "echo-3006",
+     "direct_run": "41313852719",
+     "gateway_run": "41313657445",
+     "direct_usd": 0.26446,
+     "gateway_usd": 0.20597,
+     "saving_pct": 22.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      13
+     ]
+    },
+    {
+     "task": "echo-3060",
+     "direct_run": "41313579858",
+     "gateway_run": "41313381259",
+     "direct_usd": 0.25172,
+     "gateway_usd": 0.24554,
+     "saving_pct": 2.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      15
+     ]
+    },
+    {
+     "task": "fiber-3988",
+     "direct_run": "41313304894",
+     "gateway_run": "41313107185",
+     "direct_usd": 0.17458,
+     "gateway_usd": 0.13615,
+     "saving_pct": 22.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "lo-796",
+     "direct_run": "41313670505",
+     "gateway_run": "41313471473",
+     "direct_usd": 0.1206,
+     "gateway_usd": 0.0695,
+     "saving_pct": 42.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      4
+     ]
+    },
+    {
+     "task": "lo-799",
+     "direct_run": "41313485237",
+     "gateway_run": "41313291818",
+     "direct_usd": 0.09222,
+     "gateway_usd": 0.06805,
+     "saving_pct": 26.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "mocha-5997",
+     "direct_run": "41313942674",
+     "gateway_run": "41313748331",
+     "direct_usd": 0.08964,
+     "gateway_usd": 0.19704,
+     "saving_pct": -119.8,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6331",
+     "direct_run": "41313762332",
+     "gateway_run": "41313565015",
+     "direct_usd": 0.22133,
+     "gateway_usd": 0.26114,
+     "saving_pct": -18.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      13
+     ]
+    },
+    {
+     "task": "mocha-6361",
+     "direct_run": "41314054293",
+     "gateway_run": "41313839988",
+     "direct_usd": 0.1272,
+     "gateway_usd": 0.11064,
+     "saving_pct": 13.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 22.3,
+   "ci_pct": [
+    6.5,
+    32.1
+   ],
+   "cheaper": "9/10",
+   "direct_usd": 0.0498,
+   "gateway_usd": 0.0405,
+   "quality": {
+    "f1_direct": 0.444,
+    "f1_gateway": 0.531
+   },
+   "quality_text": "F1 0.444 -> 0.531",
+   "quality_ok": true,
+   "tool_calls": [
+    12,
+    13
+   ],
+   "tool_mix_ratio": 1.083,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0072,
+   "gateway_first": "10/10",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "flutter-194705",
+     "direct_run": "41317065687",
+     "gateway_run": "41316858005",
+     "direct_usd": 0.04866,
+     "gateway_usd": 0.03063,
+     "saving_pct": 37.1,
+     "passed": null,
+     "f1": [
+      0.4,
+      0.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124050",
+     "direct_run": "41316970332",
+     "gateway_run": "41316762096",
+     "direct_usd": 0.0383,
+     "gateway_usd": 0.02502,
+     "saving_pct": 34.7,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-124254",
+     "direct_run": "41317160892",
+     "gateway_run": "41316956785",
+     "direct_usd": 0.04385,
+     "gateway_usd": 0.02839,
+     "saving_pct": 35.2,
+     "passed": null,
+     "f1": [
+      0.7272727272727272,
+      0.7272727272727272
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "godot-124534",
+     "direct_run": "41316578552",
+     "gateway_run": "41316368087",
+     "direct_usd": 0.03316,
+     "gateway_usd": 0.02198,
+     "saving_pct": 33.7,
+     "passed": null,
+     "f1": [
+      0.8000000000000002,
+      0.6666666666666665
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-163852",
+     "direct_run": "41316680462",
+     "gateway_run": "41316462331",
+     "direct_usd": 0.05151,
+     "gateway_usd": 0.03318,
+     "saving_pct": 35.6,
+     "passed": null,
+     "f1": [
+      0.8,
+      0.4
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "rust-164694",
+     "direct_run": "41316775289",
+     "gateway_run": "41316566001",
+     "direct_usd": 0.04655,
+     "gateway_usd": 0.04425,
+     "saving_pct": 4.9,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "rust-164736",
+     "direct_run": "41316871864",
+     "gateway_run": "41316662791",
+     "direct_usd": 0.0469,
+     "gateway_usd": 0.07258,
+     "saving_pct": -54.8,
+     "passed": null,
+     "f1": [
+      0.25,
+      0.25
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "typescript-64677",
+     "direct_run": "41317254521",
+     "gateway_run": "41317054347",
+     "direct_usd": 0.04457,
+     "gateway_usd": 0.03405,
+     "saving_pct": 23.6,
+     "passed": null,
+     "f1": [
+      0.0,
+      1.0
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-340116",
+     "direct_run": "41316381680",
+     "gateway_run": "41316178504",
+     "direct_usd": 0.10237,
+     "gateway_usd": 0.08185,
+     "saving_pct": 20.0,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      3
+     ]
+    },
+    {
+     "task": "vscode-340427",
+     "direct_run": "41316472482",
+     "gateway_run": "41316275821",
+     "direct_usd": 0.04238,
+     "gateway_usd": 0.03313,
+     "saving_pct": 21.8,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.8
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 18.8,
+   "ci_pct": [
+    12.2,
+    25.9
+   ],
+   "cheaper": "10/10",
+   "direct_usd": 0.2235,
+   "gateway_usd": 0.1793,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    78,
+    103
+   ],
+   "tool_mix_ratio": 1.321,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0359,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "biome-2.6.4",
+     "direct_run": "41319738534",
+     "gateway_run": "41319519930",
+     "direct_usd": 0.35503,
+     "gateway_usd": 0.30421,
+     "saving_pct": 14.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      15
+     ]
+    },
+    {
+     "task": "fastapi-0.160.0",
+     "direct_run": "41319946243",
+     "gateway_run": "41319724273",
+     "direct_usd": 0.11506,
+     "gateway_usd": 0.08909,
+     "saving_pct": 22.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "godot-3.6.3-stable",
+     "direct_run": "41320440888",
+     "gateway_run": "41320225732",
+     "direct_usd": 0.36525,
+     "gateway_usd": 0.21996,
+     "saving_pct": 39.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      15,
+      14
+     ]
+    },
+    {
+     "task": "mastodon-4.6.7",
+     "direct_run": "41320047188",
+     "gateway_run": "41319826813",
+     "direct_usd": 0.1855,
+     "gateway_usd": 0.15416,
+     "saving_pct": 16.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      8
+     ]
+    },
+    {
+     "task": "node-26.7.0",
+     "direct_run": "41320143101",
+     "gateway_run": "41319931763",
+     "direct_usd": 0.28166,
+     "gateway_usd": 0.24834,
+     "saving_pct": 11.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      9,
+      18
+     ]
+    },
+    {
+     "task": "powershell-7.6.7",
+     "direct_run": "41320339616",
+     "gateway_run": "41320129068",
+     "direct_usd": 0.23774,
+     "gateway_usd": 0.19072,
+     "saving_pct": 19.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    },
+    {
+     "task": "redis-8.4.6",
+     "direct_run": "41319842067",
+     "gateway_run": "41319622529",
+     "direct_usd": 0.12209,
+     "gateway_usd": 0.11052,
+     "saving_pct": 9.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      8
+     ]
+    },
+    {
+     "task": "ruff-0.16.2",
+     "direct_run": "41319637299",
+     "gateway_run": "41319418337",
+     "direct_usd": 0.23347,
+     "gateway_usd": 0.15619,
+     "saving_pct": 33.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "svelte-5.56.10",
+     "direct_run": "41320237920",
+     "gateway_run": "41320032830",
+     "direct_usd": 0.10959,
+     "gateway_usd": 0.10008,
+     "saving_pct": 8.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "valkey-9.0.7",
+     "direct_run": "41319534228",
+     "gateway_run": "41319314359",
+     "direct_usd": 0.22994,
+     "gateway_usd": 0.22015,
+     "saving_pct": 4.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 10,
+   "saving_pct": 10.2,
+   "ci_pct": [
+    -2.5,
+    22.9
+   ],
+   "cheaper": "6/10",
+   "direct_usd": 0.0969,
+   "gateway_usd": 0.0882,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    13,
+    17
+   ],
+   "tool_mix_ratio": 1.308,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0055,
+   "gateway_first": "10/10",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "elasticsearch-163196",
+     "direct_run": "41323662538",
+     "gateway_run": "41323460107",
+     "direct_usd": 0.11804,
+     "gateway_usd": 0.12991,
+     "saving_pct": -10.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "elasticsearch-163282",
+     "direct_run": "41323284107",
+     "gateway_run": "41322727621",
+     "direct_usd": 0.10357,
+     "gateway_usd": 0.12812,
+     "saving_pct": -23.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-190431",
+     "direct_run": "41324044704",
+     "gateway_run": "41323839904",
+     "direct_usd": 0.07413,
+     "gateway_usd": 0.07186,
+     "saving_pct": 3.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23804",
+     "direct_run": "41323184457",
+     "gateway_run": "41322977604",
+     "direct_usd": 0.09116,
+     "gateway_usd": 0.05023,
+     "saving_pct": 44.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kafka-23911",
+     "direct_run": "41323473369",
+     "gateway_run": "41323270907",
+     "direct_usd": 0.13271,
+     "gateway_usd": 0.12107,
+     "saving_pct": 8.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "kubernetes-140611",
+     "direct_run": "41323757194",
+     "gateway_run": "41323553706",
+     "direct_usd": 0.06697,
+     "gateway_usd": 0.07231,
+     "saving_pct": -8.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "vscode-342878",
+     "direct_run": "41323566891",
+     "gateway_run": "41323363660",
+     "direct_usd": 0.07854,
+     "gateway_usd": 0.08091,
+     "saving_pct": -3.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "vscode-343624",
+     "direct_run": "41323851422",
+     "gateway_run": "41323649721",
+     "direct_usd": 0.06577,
+     "gateway_usd": 0.05329,
+     "saving_pct": 19.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65129",
+     "direct_run": "41323377361",
+     "gateway_run": "41323170953",
+     "direct_usd": 0.07837,
+     "gateway_usd": 0.06556,
+     "saving_pct": 16.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "zed-65841",
+     "direct_run": "41323947229",
+     "gateway_run": "41323743948",
+     "direct_usd": 0.16007,
+     "gateway_usd": 0.10858,
+     "saving_pct": 32.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    }
+   ]
+  }
+ ]
+}
