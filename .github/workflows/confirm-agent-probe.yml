@@ -41,7 +41,7 @@ jobs:
           base_url = "http://127.0.0.1:8099/v1"
           wire_api = "responses"
           env_key = "OPENAI_API_KEY"
-          env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-run" = "GITHUB_RUN_ID" }
+          env_http_headers = { "x-cm-device-key" = "CONTEXT_MODE_KEY", "x-cm-ci-repo" = "GITHUB_REPOSITORY", "x-cm-ci-ref" = "GITHUB_REF_NAME", "x-cm-ci-run" = "GITHUB_RUN_ID" }
           TOML
           mkdir w && cd w && git init -q
           timeout 90 codex exec --skip-git-repo-check -m gpt-5-mini "say hi" > ../out/agent.log 2>&1 || true
@@ -53,7 +53,8 @@ jobs:
           mkdir w && cd w && git init -q
           cat > opencode.json <<JSON
           { "provider": { "anthropic": { "options": { "baseURL": "http://127.0.0.1:8099/v1",
-            "headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off" } } } } }
+            "headers": { "x-cm-device-key": "{env:CONTEXT_MODE_KEY}", "x-context-mode-banner": "off",
+              "x-cm-ci-repo": "{env:GITHUB_REPOSITORY}", "x-cm-ci-ref": "{env:GITHUB_REF_NAME}", "x-cm-ci-run": "{env:GITHUB_RUN_ID}" } } } } }
           JSON
           timeout 90 opencode run -m anthropic/claude-sonnet-5-5 "say hi" > ../out/agent.log 2>&1 || true
       - name: Pi
@@ -63,7 +64,8 @@ jobs:
           mkdir -p ~/.pi/agent
           cat > ~/.pi/agent/models.json <<JSON
           { "providers": { "anthropic": { "baseUrl": "http://127.0.0.1:8099",
-            "headers": { "x-cm-device-key": "\${CONTEXT_MODE_KEY}", "x-cm-client": "pi" } } } }
+            "headers": { "x-cm-device-key": "\${CONTEXT_MODE_KEY}", "x-cm-client": "pi",
+              "x-cm-ci-repo": "\${GITHUB_REPOSITORY}", "x-cm-ci-ref": "\${GITHUB_REF_NAME}", "x-cm-ci-run": "\${GITHUB_RUN_ID}" } } } }
           JSON
           mkdir w && cd w && git init -q
           timeout 90 pi -p --provider anthropic --model claude-sonnet-5-5 "say hi" > ../out/agent.log 2>&1 || true
