@@ -72,7 +72,7 @@ Sonnet 5.5, USD per million tokens: input 2.00, 5-minute write 2.50, 1-hour writ
 
 - 5-minute write / read = 25 to 1. 1-hour write / read = 40 to 1.
 - Break-even for removing n tokens inside a cached prefix of P tokens when the cut breaks the cache: n x later turns > 24 x P (5 minutes), > 39 x P (1 hour).
-- Claude Code in the lab wrote at the 5-minute setting in 967 of 1,006 ledger rows of round 2.
+- In the lab, 336 of 346 run artifacts show only 5-minute cache writes; the other 10 wrote some 1-hour cache.
 
 The earlier "20 to 1" came from older prices and is replaced.
 
