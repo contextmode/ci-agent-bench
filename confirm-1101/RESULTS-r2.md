@@ -56,7 +56,7 @@ OpenAI: Codex runs $0.35 of the $4 cap. No area reached its share of the cap.
 ## Round-2 rows (primary)
 
 | area | agent | model | n | saving % | 95% CI | cheaper | direct $/run | gateway $/run | quality | tool mix gw/direct | bar |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | fix-ci | claude-code | claude-opus-5-5 | 8 | 19.7 | [4.1, 31.5] | 6/8 | 0.1691 | 0.132 | pass 8/8 -> 8/8, McNemar p=1.0 | 0.857 | PASS |
 | fix-ci | claude-code | claude-sonnet-5-5 | 16 | 22.8 | [11.6, 32.2] | 14/16 | 0.0502 | 0.042 | pass 16/16 -> 15/16, McNemar p=1.0 | 0.978 | PASS |
 | fix-mention | claude-code | claude-opus-5-5 | 8 | 21.4 | [7.1, 35.4] | 7/8 | 0.335 | 0.2759 | pass 3/8 -> 3/8, McNemar p=1.0 | 0.917 | PASS |
@@ -71,7 +71,7 @@ OpenAI: Codex runs $0.35 of the $4 cap. No area reached its share of the cap.
 ## Round-1 rows, same analysis (for reference)
 
 | area | agent | model | n | saving % | 95% CI | cheaper | direct $/run | gateway $/run | quality | tool mix gw/direct | bar |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | fix-ci | claude-code | claude-opus-5-5 | 5 | 4.5 | [-29.9, 26.9] | 3/5 | 0.1172 | 0.1283 | pass 5/5 -> 5/5, McNemar p=1.0 | 1.286 | no |
 | fix-ci | claude-code | claude-sonnet-5-5 | 10 | 18.0 | [4.7, 26.5] | 9/10 | 0.0479 | 0.0391 | pass 10/10 -> 10/10, McNemar p=1.0 | 0.963 | PASS |
 | fix-mention | claude-code | claude-opus-5-5 | 5 | 23.0 | [9.8, 33.3] | 5/5 | 0.2632 | 0.2071 | pass 4/5 -> 4/5, McNemar p=1.0 | 0.721 | PASS |
