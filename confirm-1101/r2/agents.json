@@ -20,7 +20,84 @@
    ],
    "tool_mix_ratio": 0.893,
    "passed_bar": true,
-   "total_usd": 0.4178
+   "total_usd": 0.4178,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41326988922",
+     "gateway_run": "41326775801",
+     "direct_usd": 0.04572,
+     "gateway_usd": 0.03168,
+     "passed": [
+      false,
+      false
+     ],
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41326557138",
+     "gateway_run": "41326347871",
+     "direct_usd": 0.09131,
+     "gateway_usd": 0.06779,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      10,
+      9
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41326701451",
+     "gateway_run": "41326489122",
+     "direct_usd": 0.05594,
+     "gateway_usd": 0.04837,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41327137574",
+     "gateway_run": "41326919435",
+     "direct_usd": 0.02347,
+     "gateway_usd": 0.01764,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41326845922",
+     "gateway_run": "41326623902",
+     "direct_usd": 0.01947,
+     "gateway_usd": 0.01641,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      3,
+      3
+     ]
+    }
+   ]
   },
   {
    "area": "fix-ci",
@@ -42,7 +119,84 @@
    ],
    "tool_mix_ratio": 1.069,
    "passed_bar": false,
-   "total_usd": 0.448
+   "total_usd": 0.448,
+   "pairs": [
+    {
+     "task": "echo-3131",
+     "direct_run": "41327689574",
+     "gateway_run": "41327481327",
+     "direct_usd": 0.06547,
+     "gateway_usd": 0.12493,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      9,
+      11
+     ]
+    },
+    {
+     "task": "echo-3158",
+     "direct_run": "41327280071",
+     "gateway_run": "41327062839",
+     "direct_usd": 0.03801,
+     "gateway_usd": 0.05483,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      7,
+      7
+     ]
+    },
+    {
+     "task": "lo-757",
+     "direct_run": "41327413656",
+     "gateway_run": "41327209141",
+     "direct_usd": 0.02575,
+     "gateway_usd": 0.05172,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "lo-778",
+     "direct_run": "41327910620",
+     "gateway_run": "41327621407",
+     "direct_usd": 0.01663,
+     "gateway_usd": 0.01995,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "zap-1587",
+     "direct_run": "41327553317",
+     "gateway_run": "41327347154",
+     "direct_usd": 0.01704,
+     "gateway_usd": 0.03365,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      5
+     ]
+    }
+   ]
   }
  ],
  "unusable_runs": [
