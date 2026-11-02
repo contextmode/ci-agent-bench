@@ -1,0 +1,1428 @@
+{
+ "r2-transformers-5.20.1": {
+  "area": "release",
+  "task": "transformers-5.20.1",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 3,
+   "false_b": 4,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "B",
+   "why": "Both cover every published change, and each adds a few details the commit subjects and published notes don't support (A: MoE label, DeepSeek-V4, the other models sharing the fix; B: MoE label with 501B/23B parameter counts, the other models, specific error names); B narrowly wins because its fixes are more specific and easier to act on, outweighing its one extra unsupported detail."
+  },
+  "gateway_run": 41366942600,
+  "direct_run": 41367066114,
+  "judge_usd": 0.058181,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-pydantic-1.10.27": {
+  "area": "release",
+  "task": "pydantic-1.10.27",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 0.8,
+   "cov_b": 0.8,
+   "false_a": 2,
+   "false_b": 1,
+   "score_a": 5,
+   "score_b": 6,
+   "winner": "B",
+   "why": "Both candidates cover the four code changes. Neither says these are security fixes or that this is the final V1 release. Both include an unsupported pytest-timeout/benchmark entry. A also makes an unsupported claim that durations used to accept any character as the separator, and it files the Cython fix under Other, so B is slightly more accurate and clearer."
+  },
+  "gateway_run": 41366804195,
+  "direct_run": 41366681910,
+  "judge_usd": 0.0481462,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-powershell-7.6.7": {
+  "area": "release",
+  "task": "powershell-7.6.7",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 0.88,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 2,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "B covers slightly more, including the .NET SDK 10.0.402 update that A leaves out, but B makes more unsupported claims: Import-PSSession now needing -Prefix or -AllowClobber, and nested pwsh using the running executable's folder for .NET tool installs. A's only unsupported claim is a separate AutoSize fix for other formats, so A is the more accurate and cleaner guide for deciding whether to upgrade."
+  },
+  "gateway_run": 41320129068,
+  "direct_run": 41320339616,
+  "judge_usd": 0.09778099999999999,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-mastodon-4.6.7": {
+  "area": "release",
+  "task": "mastodon-4.6.7",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 1,
+   "score_a": 6,
+   "score_b": 8,
+   "winner": "B",
+   "why": "Both candidates cover every published change, but A has two false claims and B has one: A's sign-up bullet says the opposite of the #40332 commit subject, and A says any user without admin or moderation permissions could reach admin pages, while the advisory names only disabled staff accounts; B's one unsupported detail is the Rails 8.1.3.1 version, and its notes are otherwise accurate and more concise."
+  },
+  "gateway_run": 41319826813,
+  "direct_run": 41320047188,
+  "judge_usd": 0.0632162,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-vite-8.3.3": {
+  "area": "release",
+  "task": "vite-8.3.3",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 7,
+   "score_a": 7,
+   "score_b": 5,
+   "winner": "A",
+   "why": "Both candidates cover all four published fixes, but B adds many claims that neither the commit subjects nor the published notes support (GHSA advisory IDs, the `//` URL handling, skipping imports that fail to resolve, the release-age setting, the added tests), while A has only two (the `//` script-tag claim and the playground tests)."
+  },
+  "gateway_run": 41365480568,
+  "direct_run": 41365361029,
+  "judge_usd": 0.0468558,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-nushell-0.116.0": {
+  "area": "release",
+  "task": "nushell-0.116.0",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 0.97,
+   "cov_b": 0.95,
+   "false_a": 3,
+   "false_b": 4,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "The published notes only link to the blog, so I measured coverage against the commit subjects. Both candidates cover almost all user-facing commits and both add details the source doesn't support. B also cites a fff-search dependency bump (#19057) as a security fix and wrongly lists #18796 and #18922 as breaking changes, while A is more accurate and better organized."
+  },
+  "gateway_run": 41366410788,
+  "direct_run": 41366536592,
+  "judge_usd": 0.116851,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-syncthing-2.1.7": {
+  "area": "release",
+  "task": "syncthing-2.1.7",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 2,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "Both candidates describe all ten published changes (neither mentions the Go 1.27.3 build); A has one unsupported detail (that the usage-reporting server also caps request bodies), while B has two (the '180-day' default tombstone cleanup and 'limits on sizes and offsets'), so A is more accurate."
+  },
+  "gateway_run": 41363613727,
+  "direct_run": 41363503868,
+  "judge_usd": 0.0532862,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-ruff-0.16.2": {
+  "area": "release",
+  "task": "ruff-0.16.2",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 0,
+   "false_b": 1,
+   "score_a": 8,
+   "score_b": 6,
+   "winner": "A",
+   "why": "Both cover the PYI041 fix and the TOML formatting change in the server, but B gives the release date as 2026-11-01 when the published notes say 2026-08-06, while A has the right date and explains the user impact a little better."
+  },
+  "gateway_run": 41319418337,
+  "direct_run": 41319637299,
+  "judge_usd": 0.0897924,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-godot-3.6.3-stable": {
+  "area": "release",
+  "task": "godot-3.6.3-stable",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 4,
+   "false_b": 7,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "The published notes only call this a compatible maintenance release, and both candidates cover that while describing every commit clearly, but B makes more claims the commit subjects don't support (Android back-button handling, VisualServer sync_and_halt/thaw, macOS Security framework, the crypto.getRandomValues fallback, verbose gradle output, COPYRIGHT update), whereas A's unsupported details are fewer (iOS 'was 12.0', SDK 'was 35', 'non-moving items' wording, cache action v6)."
+  },
+  "gateway_run": 41320225732,
+  "direct_run": 41320440888,
+  "judge_usd": 0.0771328,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-node-26.7.0": {
+  "area": "release",
+  "task": "node-26.7.0",
+  "round": "r1",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 1,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "tie",
+   "why": "Both cover all five notable changes and nearly every user-facing fix with one unsupported claim each (A says the Zstd dictionary accepts DataView and other typed arrays, which the subjects don't support; B cites the wrong PR, #64541 instead of #64543, for the Rust 1.86 requirement). A reads a bit cleaner because B repeats its notable items in Features and words the Argon2 FIPS fix awkwardly, but the one-point gap and equal false claims make it a tie."
+  },
+  "gateway_run": 41319931763,
+  "direct_run": 41320143101,
+  "judge_usd": 0.2063826,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-redis-8.4.6": {
+  "area": "release",
+  "task": "redis-8.4.6",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 0.8,
+   "cov_b": 0.8,
+   "false_a": 1,
+   "false_b": 4,
+   "score_a": 7,
+   "score_b": 6,
+   "winner": "A",
+   "why": "Both cover the same 8 of 10 published fixes and both leave out the RedisBloom CMSketch CVE and the TopK fix (each only mentions the module bump), but B makes more unsupported claims (a CLAIM option parsing change, a random-level-generation fix, two specific API behavior changes, and links #1541/#1391 to redis/redis) and plays down the slot-info RCE risk, while A has one unsupported claim (an out-of-bounds level calculation) and states the RCE risk plainly."
+  },
+  "gateway_run": 41319622529,
+  "direct_run": 41319842067,
+  "judge_usd": 0.0588558,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-langchain-1.4.3": {
+  "area": "release",
+  "task": "langchain-1.4.3",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 0,
+   "false_b": 0,
+   "score_a": 8,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both candidates accurately describe the same four user-facing changes (Bedrock Mantle support in init_chat_model, repair of invalid tool calls in create_agent, GPT-6 structured output without profiles, and cache sanitizing for fallback models), and neither contradicts the commit subjects or published notes; A also mentions the dependency bumps and B also lists the docs and version-bump entries, which nearly cancel out."
+  },
+  "gateway_run": 41365623339,
+  "direct_run": 41365750881,
+  "judge_usd": 0.062300999999999995,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-fastapi-0.160.0": {
+  "area": "release",
+  "task": "fastapi-0.160.0",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 2,
+   "score_a": 6,
+   "score_b": 8,
+   "winner": "B",
+   "why": "Both candidates describe the `extra` change accurately, and each adds two claims the source does not support (A: the lock file and the test updates; B: the docs and test updates), but B correctly labels the change as breaking and gives clearer migration advice, while A files it under Fixes."
+  },
+  "gateway_run": 41319724273,
+  "direct_run": 41319946243,
+  "judge_usd": 0.047636200000000004,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-valkey-9.0.7": {
+  "area": "release",
+  "task": "valkey-9.0.7",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 4,
+   "false_b": 2,
+   "score_a": 7,
+   "score_b": 7,
+   "winner": "B",
+   "why": "Both cover all 19 published changes, and A is more specific on most fixes, but A makes more unsupported claims (an ~4 GB limit and exact error text, a DEBUG subcommand, a create-cluster change, a symlink restriction), points the #3598 link at #3645, and describes the security fix as length truncation instead of the heap buffer overflow that B correctly reports."
+  },
+  "gateway_run": 41319314359,
+  "direct_run": 41319534228,
+  "judge_usd": 0.084566,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-svelte-5.56.10": {
+  "area": "release",
+  "task": "svelte-5.56.10",
+  "round": "r1",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 0,
+   "false_b": 0,
+   "score_a": 8,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both candidates cover all 22 published changes accurately with no unsupported claims; A adds slightly more specific context (web components, migration crash) but also includes internal noise like the changelog-tooling switch, so they come out even."
+  },
+  "gateway_run": 41320032830,
+  "direct_run": 41320237920,
+  "judge_usd": 0.060561000000000004,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-deno-2.9.5": {
+  "area": "release",
+  "task": "deno-2.9.5",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 3,
+   "false_b": 2,
+   "score_a": 8,
+   "score_b": 8,
+   "winner": "B",
+   "why": "The two are almost identical: both cover every user-facing change, and both make up claims the sources don't support (a `--engine v8|quickjs` option for compile and desktop, and `--unscoped` also working on `deno install`), but A adds a third one by placing the cgroup memory fix in `node:os`, so B wins on fewer false claims."
+  },
+  "gateway_run": 41363279896,
+  "direct_run": 41363388429,
+  "judge_usd": 0.0992408,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-biome-2.6.4": {
+  "area": "release",
+  "task": "biome-2.6.4",
+  "round": "r1",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 0.98,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 2,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both cover nearly every published change and each makes two unsupported claims (both credit the daemon memory fix to #12694; A mislabels the #11645 link as #12645, and B credits #12637 with a speedup); B gives the performance numbers and explains the YAML, Svelte and loop rules, A explains more Vue rules, so the scores are within one point."
+  },
+  "gateway_run": 41319519930,
+  "direct_run": 41319738534,
+  "judge_usd": 0.2156936,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-bun-1.4.4": {
+  "area": "release",
+  "task": "bun-1.4.4",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "cov_a": 0.93,
+   "cov_b": 0.97,
+   "false_a": 12,
+   "false_b": 40,
+   "score_a": 7,
+   "score_b": 6,
+   "winner": "A",
+   "why": "The published notes list no changes, only a blog link, so coverage is measured against the user-facing commit subjects; both candidates cover nearly all of them, but B adds about three times as many details the commits don't support (Bun.sql type and affectedRows changes, provenance errors, new bun pm commands, libc installs, a bake feature flag, crash-fix counts), while A has fewer unsupported claims plus a couple of minor mislabels (bun build accepting outputs, hardened builds limited to Linux x64)."
+  },
+  "gateway_run": 41364799639,
+  "direct_run": 41364926076,
+  "judge_usd": 0.19838699999999998,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-terraform-1.16.7": {
+  "area": "release",
+  "task": "terraform-1.16.7",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 3,
+   "false_b": 2,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "B",
+   "why": "Both candidates cover the panic fix and the Go 1.26.10/eMudhra CA note, but A adds a claim found in neither source (the previous Go version was 1.26.8) and hedges with 'per the project changelog', while B also credits the original PR #39406 and is otherwise as specific, with fewer unsupported details (both add the unsupported 'failed assertion' trigger and internal-refactor items)."
+  },
+  "gateway_run": 41364361671,
+  "direct_run": 41364207631,
+  "judge_usd": 0.043031,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-polars-1.43.2": {
+  "area": "release",
+  "task": "polars-1.43.2",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 4,
+   "score_a": 8,
+   "score_b": 6,
+   "winner": "A",
+   "why": "Both candidates cover every published change, but B adds details that neither the commits nor the published notes support: that the `show_graph` default changes from \"ir\" to \"physical\" in 2.0, that users should switch to the DataFrame constructor, what `infer_schema_files` controls, and an internal from_arrow replacement. B also lists `infer_schema_files` twice and files a bug fix under performance, while A's only unsupported detail is the `pl.lit(-1).abs()` example."
+  },
+  "gateway_run": 41365100744,
+  "direct_run": 41365221192,
+  "judge_usd": 0.06340580000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-neovim-0.12.6": {
+  "area": "release",
+  "task": "neovim-0.12.6",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 3,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "The published notes only link to the changelog, so I measured coverage against the user-facing commit subjects, and both candidates cover all of them; B adds claims the commits don't support (matchfuzzypos is 'faster', the fuzzy fix fixed a 'crash', did_filetype() changed, and 'no breaking changes'), while A's only unsupported claims are minor ones about added docs and tests, and A also explains the scrollbind fix that was added and then reverted."
+  },
+  "gateway_run": 41364684306,
+  "direct_run": 41364486460,
+  "judge_usd": 0.069886,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-next.js-16.4.2": {
+  "area": "release",
+  "task": "next.js-16.4.2",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 1,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both candidates cover all eight published changes and correctly leave out the reverted OpenTelemetry change; each makes one claim the sources don't support (A says next/dynamic imports are now preloaded in production, B lists specific docs additions), and B is slightly clearer and less noisy, but the one-point gap with equal false claims makes it a tie."
+  },
+  "gateway_run": 41366275813,
+  "direct_run": 41366150623,
+  "judge_usd": 0.051091,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-eslint-10.13.0": {
+  "area": "release",
+  "task": "eslint-10.13.0",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 2,
+   "false_b": 1,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "B",
+   "why": "Both cover every user-facing change, but A adds details the sources don't support (the `getText` parameter called `text`, and the example of a `var` redeclaring a parameter), while B's only unsupported detail is the `getText` parameter called `node`, so B wins despite A's slightly plainer wording."
+  },
+  "gateway_run": 41366005313,
+  "direct_run": 41365882343,
+  "judge_usd": 0.051346,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-nest-12.1.0": {
+  "area": "release",
+  "task": "nest-12.1.0",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 0.92,
+   "false_a": 1,
+   "false_b": 1,
+   "score_a": 9,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both candidates describe the shipped changes accurately and in plain language, and each makes one unsupported claim about added integration tests; A also notes that the array-of-global-prefixes feature was reverted, which B leaves out, while B adds more detail and a note on adapter conflicts, so the scores are only 1 apart."
+  },
+  "gateway_run": 41364090111,
+  "direct_run": 41363979311,
+  "judge_usd": 0.0732708,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-ollama-0.40.9": {
+  "area": "release",
+  "task": "ollama-0.40.9",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "cov_a": 0.75,
+   "cov_b": 0.75,
+   "false_a": 0,
+   "false_b": 0,
+   "score_a": 7,
+   "score_b": 8,
+   "winner": "tie",
+   "why": "Both cover the streaming-error, launch-context and web-search fixes but miss the headline Flint-on-Linux/Windows change; B explains the user impact more concretely, but the scores differ by only one point and neither has a false claim, so it is a tie."
+  },
+  "gateway_run": 41363745194,
+  "direct_run": 41363858348,
+  "judge_usd": 0.055041,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-compose-5.4.0": {
+  "area": "release",
+  "task": "compose-5.4.0",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "cov_a": 1.0,
+   "cov_b": 1.0,
+   "false_a": 1,
+   "false_b": 2,
+   "score_a": 8,
+   "score_b": 7,
+   "winner": "A",
+   "why": "Both candidates describe all 12 user-facing changes. A has fewer unsupported statements: its one is the claim about how containers behaved before on network rename. B claims a Go minimum version of 1.26.3, says the config fix restores earlier behavior, and adds pull_policy: build and lock-image-digests details that neither the commits nor the published notes support."
+  },
+  "gateway_run": 41367197050,
+  "direct_run": 41367320637,
+  "judge_usd": 0.0799408,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-kafka-23804": {
+  "area": "review",
+  "task": "kafka-23804",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 6,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 8,
+   "findings_b": 3,
+   "winner": "A",
+   "why": "Review A checks the actual tests and gives specific, accurate feedback (the offline-partition case is untested, the Answer mocks are duplicated, the mock cache is keyed only by epoch), with one unsupported claim that other subclasses of the concurrency test base class would now get NOT_COORDINATOR; Review B makes no false claims but says it could not see the test bodies, so its test-coverage section is generic and its main epoch-equality concern is speculative."
+  },
+  "gateway_run": 41322977604,
+  "direct_run": 41323184457,
+  "judge_usd": 0.1135392,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-vscode-342878": {
+  "area": "review",
+  "task": "vscode-342878",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "B",
+   "why": "Both reviews raise the same valid points about reference identity versus structuralEquals, the 1s heuristic and the test gaps, but A wrongly calls the per-instance expiredCreationCatalogue observable 'module-level state', while B's claims all hold against the diff and its timeout and edge-case analysis is more actionable."
+  },
+  "gateway_run": 41323363660,
+  "direct_run": 41323566891,
+  "judge_usd": 0.0910142,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-zed-65841": {
+  "area": "review",
+  "task": "zed-65841",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 4,
+   "score_b": 8,
+   "false_a": 2,
+   "false_b": 0,
+   "findings_a": 11,
+   "findings_b": 8,
+   "winner": "B",
+   "why": "Review B points to a likely real bug: the LoadError arm now calls handle_connection_lost, which emits ConnectionLost, and that can overwrite the specific error with the generic message; its other findings are specific and supported by the diff, while Review A raises README-banner and release-notes complaints the diff does not support, adds vague suggestions to check the code, and admits it did not read the core recovery logic."
+  },
+  "gateway_run": 41323743948,
+  "direct_run": 41323947229,
+  "judge_usd": 0.147367,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-vscode-343624": {
+  "area": "review",
+  "task": "vscode-343624",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 1,
+   "false_b": 2,
+   "findings_a": 6,
+   "findings_b": 7,
+   "winner": "B",
+   "why": "Both reviews say the alias comment calls the mapping a future no-op, which the diff does not support, and B also overcounts the getManagedModelId call sites; even so, B makes two points A misses: the whitespace-trimming behavior change in the Agent Host comparison and the missing test for omitCopilotManagedModelDefaults."
+  },
+  "gateway_run": 41323649721,
+  "direct_run": 41323851422,
+  "judge_usd": 0.0751642,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-elasticsearch-163282": {
+  "area": "review",
+  "task": "elasticsearch-163282",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 8,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 2,
+   "findings_a": 5,
+   "findings_b": 5,
+   "winner": "A",
+   "why": "Both reviews correctly flag the inverted revision fallback and the weak findGitRootDir heuristic, but B adds claims the diff does not support: it says the ValueSource was replaced (it is still used inside GitInfoService) and that applying the plugin per project makes the bug more visible, and it also includes truncation noise and unverifiable merge-label details."
+  },
+  "gateway_run": 41322727621,
+  "direct_run": 41323284107,
+  "judge_usd": 0.09754480000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-kubernetes-140611": {
+  "area": "review",
+  "task": "kubernetes-140611",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 1,
+   "findings_a": 7,
+   "findings_b": 6,
+   "winner": "A",
+   "why": "Both reviews find the same real issues: the baseline workloads lack the CompositePodGroup gate, and the thresholds rest on few runs and hard-code numbers that will go stale. B also has unsupported claims, such as the smoke workload using a single rack and the removed blank line being an unrelated change, while A's findings all hold against the diff and add a useful note on duplication drift."
+  },
+  "gateway_run": 41323553706,
+  "direct_run": 41323757194,
+  "judge_usd": 0.0860446,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-elasticsearch-163196": {
+  "area": "review",
+  "task": "elasticsearch-163196",
+  "round": "r1",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "B",
+   "why": "Review A asks for a comment explaining the DriverContext mock, but the diff already has one (lines 289-290), while Review B's points are all supported by the diff, including the real UNITS-declared-after-use nit, though several of B's items are no-change-needed noise."
+  },
+  "gateway_run": 41323460107,
+  "direct_run": 41323662538,
+  "judge_usd": 0.11089480000000002,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-flutter-190431": {
+  "area": "review",
+  "task": "flutter-190431",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 5,
+   "false_a": 1,
+   "false_b": 1,
+   "findings_a": 10,
+   "findings_b": 7,
+   "winner": "A",
+   "why": "Review A checks the real production hunk and gives specific, correct notes (the side effect of `wasConflicting.remove` inside the `if`, the double type check, allocating the set when nothing conflicts), with one slip: it says the test only checks that nothing throws, but the test also checks the overlay text; Review B admits it never saw the production code, guesses at how the snapshot is stored, and has the `Overlay.wrap`/`ExcludeSemantics` nesting backwards."
+  },
+  "gateway_run": 41323839904,
+  "direct_run": 41324044704,
+  "judge_usd": 0.07607420000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-kafka-23911": {
+  "area": "review",
+  "task": "kafka-23911",
+  "round": "r1",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 5,
+   "score_b": 4,
+   "false_a": 1,
+   "false_b": 2,
+   "findings_a": 7,
+   "findings_b": 6,
+   "winner": "A",
+   "why": "Both reviews mostly restate the design and raise the same hedged HashMap thread-safety question; A has one unsupported claim (a 'which requires resets' commit message the diff doesn't show), while B asks for a cross-request cache test that the diff already adds (testFetchOffsetMetadataCachedPerDelayedShareFetch) and cites a 'MINOR:' title prefix the diff doesn't show."
+  },
+  "gateway_run": 41323270907,
+  "direct_run": 41323473369,
+  "judge_usd": 0.20455320000000002,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r1-zed-65129": {
+  "area": "review",
+  "task": "zed-65129",
+  "round": "r1",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 6,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 7,
+   "winner": "tie",
+   "why": "Both reviews raise nearly the same well-grounded points (the replace-field gap, the platform-dependent keymap test, unwrap use, duplicated keymap loading, other keymaps that may need the fix), neither makes a claim the diff contradicts, and both add similar low-value CLAUDE.md/README remarks, so they are essentially equal in usefulness."
+  },
+  "gateway_run": 41323170953,
+  "direct_run": 41323377361,
+  "judge_usd": 0.064384,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-prometheus-20026": {
+  "area": "review",
+  "task": "prometheus-20026",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "score_a": 8,
+   "score_b": 6,
+   "false_a": 1,
+   "false_b": 2,
+   "findings_a": 4,
+   "findings_b": 4,
+   "winner": "A",
+   "why": "Both reviews raise the same main concern about the limitExemplars index invariant, but A correctly reads the reordered test (the future exemplar sits before a valid one) and correctly notes that errors.Join drops nil in AppendPartialError.Error(); B wrongly says the future exemplar was moved last and that AppendPartialError.Error() panics on a nil Err, while A's only unsupported claim is a commit reference (ddf8dd253) that the diff doesn't contain."
+  },
+  "gateway_run": 41369797346,
+  "direct_run": 41373996993,
+  "judge_usd": 0.10508020000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-django-22041": {
+  "area": "review",
+  "task": "django-22041",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 3,
+   "findings_b": 3,
+   "winner": "tie",
+   "why": "Both reviews correctly show the require_outer refactor is behaviour-preserving with matching case tables, and each raises three accurate but minor comment and structure nits, so they are about equally useful."
+  },
+  "gateway_run": 41369538031,
+  "direct_run": 41373826702,
+  "judge_usd": 0.0616396,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-grafana-134038": {
+  "area": "review",
+  "task": "grafana-134038",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 13,
+   "findings_b": 10,
+   "winner": "tie",
+   "why": "Both reviews correctly flag the misplaced indexSource comment, cancellation counted as failure, counting attempted rather than successful indexes, the nil indexMetrics risk and weak label assertions, with only hedged speculation (the indexedDocs race) and no false claims, so they are about equally useful."
+  },
+  "gateway_run": 41373012710,
+  "direct_run": 41364977879,
+  "judge_usd": 0.081525,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-prometheus-18355": {
+  "area": "review",
+  "task": "prometheus-18355",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 5,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 1,
+   "findings_a": 6,
+   "findings_b": 7,
+   "winner": "B",
+   "why": "Review A's main finding is wrong: client_golang adds default classic buckets only when no native bucket factor is set, so this histogram is native-only. Review B's only unsupported claim is a minor commit-name reference, and its test-robustness points are accurate and actionable."
+  },
+  "gateway_run": 41373736580,
+  "direct_run": 41366009551,
+  "judge_usd": 0.0806552,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-next.js-100205": {
+  "area": "review",
+  "task": "next.js-100205",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 5,
+   "findings_b": 4,
+   "winner": "tie",
+   "why": "Both reviews describe the frame-local self-time fix accurately and make no false claims; B's walk through Enter/Exit ordering is a little more precise, and A's second edge case is muddled but not wrong, so the one-point gap makes it a tie."
+  },
+  "gateway_run": 41367715631,
+  "direct_run": 41372569692,
+  "judge_usd": 0.09487500000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-spring-boot-52228": {
+  "area": "review",
+  "task": "spring-boot-52228",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 1,
+   "findings_a": 9,
+   "findings_b": 7,
+   "winner": "B",
+   "why": "B finds a real, actionable defect that A misses: start() never resets this.elements when the options are empty, so the old elements survive a restart. A's findings are mostly speculative release-note notes plus an unsupported claim about a follow-up commit, while B's only error is a minor test count (it says 28 tests; the diff has 27)."
+  },
+  "gateway_run": 41367447043,
+  "direct_run": 41372392574,
+  "judge_usd": 0.09229040000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-pandas-70233": {
+  "area": "review",
+  "task": "pandas-70233",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 9,
+   "findings_b": 9,
+   "winner": "B",
+   "why": "Both reviews correctly describe the fix and flag the same safe=True mismatch and the narrow TypeError catch, but A wrongly says the loc tests never use a pyarrow string dtype (test_loc_setitem_with_expansion_all_na_str_large_int does), while B's test suggestions (the missing Float64 case, the fragile pyarrow check) are accurate and specific."
+  },
+  "gateway_run": 41371938024,
+  "direct_run": 41363638132,
+  "judge_usd": 0.08252000000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-godot-118822": {
+  "area": "review",
+  "task": "godot-118822",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "score_a": 7,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 10,
+   "findings_b": 10,
+   "winner": "B",
+   "why": "Both reviews describe the ordering and deferral correctly and give similar refactor and test suggestions, but Review A wrongly questions whether PackedScene needs `friend class SceneState`, which it does because SceneState calls the private `PackedScene::_instantiate`, while Review B has no false claims and adds the multi-level inheritance case and a sharper note on the behaviour change."
+  },
+  "gateway_run": 41366928522,
+  "direct_run": 41372034425,
+  "judge_usd": 0.08619980000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-next.js-100840": {
+  "area": "review",
+  "task": "next.js-100840",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 9,
+   "findings_b": 9,
+   "winner": "tie",
+   "why": "Both reviews correctly find the same main issues (the brittle substring denylist, the vacuous pass when AGENTS.md lacks the marker under agentRules:false, the regex-based transcript parsing, the synthetic prompt and the never-run eval), and neither makes a claim the diff contradicts, so their usefulness is about equal."
+  },
+  "gateway_run": 41367848050,
+  "direct_run": 41372736754,
+  "judge_usd": 0.079255,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-kubernetes-142436": {
+  "area": "review",
+  "task": "kubernetes-142436",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 5,
+   "findings_b": 5,
+   "winner": "tie",
+   "why": "Both reviews correctly confirm the one-line stdout-to-stderr fix and raise nearly the same accurate non-blocking nits, including the duplicated output-format setting and the unset expectedOut in the JSON and YAML cases; B adds a valid Fatalf/Errorf point and a useful mixed-label test idea, but its 'reminder for the author' line is filler, so they come out even."
+  },
+  "gateway_run": 41372483514,
+  "direct_run": 41364335208,
+  "judge_usd": 0.05913539999999999,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-llama.cpp-30242": {
+  "area": "review",
+  "task": "llama.cpp-30242",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 3,
+   "false_b": 2,
+   "findings_a": 10,
+   "findings_b": 11,
+   "winner": "B",
+   "why": "B describes the tests accurately and makes a sharp, correct point that scalar leaves hit the depth check differently in from_json than in the decision_* helpers; its errors are a miscount of the repeated throw blocks (it says six, the diff has five) and a 400-response claim the diff does not show, while A puts the decision_* helpers in a 'chat' file with 'common/chat.cpp hunks' that are not in the diff, says RECURSIVE_LIMIT came from an earlier commit when this diff adds it, and asks for decision_* depth tests the diff already includes."
+  },
+  "gateway_run": 41373190705,
+  "direct_run": 41365229223,
+  "judge_usd": 0.10710560000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-uv-22271": {
+  "area": "review",
+  "task": "uv-22271",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 4,
+   "score_b": 8,
+   "false_a": 2,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "B",
+   "why": "Review B's six findings all hold up against the diff and it describes the new tests correctly; Review A titles one finding 'unreachable' when nothing in the diff is unreachable, says it couldn't confirm a test for the CPython-mirror case even though the diff has one, says the last commit moved the arguments into uv-cli with no support in the diff, and admits it only read part of the diff."
+  },
+  "gateway_run": 41366543856,
+  "direct_run": 41371845345,
+  "judge_usd": 0.1228548,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-pandas-70960": {
+  "area": "review",
+  "task": "pandas-70960",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 2,
+   "false_b": 2,
+   "findings_a": 14,
+   "findings_b": 12,
+   "winner": "tie",
+   "why": "Both reviews make the same main point about calling pandas_dtype once and ask for similar tests, and each has two false or unsupported claims: A says _from_sequence_of_strings ignores copy and cites an AI disclosure the diff doesn't show, while B says mixed offsets are untested and that tz-aware index_col used to raise NotImplementedError. B is slightly less noisy, but a 1-point gap with equal false claims is a tie."
+  },
+  "gateway_run": 41372655024,
+  "direct_run": 41364459594,
+  "judge_usd": 0.08751,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-django-22198": {
+  "area": "review",
+  "task": "django-22198",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 6,
+   "false_a": 2,
+   "false_b": 1,
+   "findings_a": 11,
+   "findings_b": 9,
+   "winner": "B",
+   "why": "Both reviews make similar valid points (the hard-coded Django.epub path, the epub_css_files coupling, the implicit Java dependency), but A also says the new CSS comment should sit next to flex-basis when it already does, and both rely on an unsupported Sphinx 9.1 claim, so B has fewer false claims at an equal score."
+  },
+  "gateway_run": 41368898814,
+  "direct_run": 41373467965,
+  "judge_usd": 0.08987600000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-uv-22136": {
+  "area": "review",
+  "task": "uv-22136",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "B",
+   "why": "Review B's points all match the diff, and it correctly limits the old-format CRC break to data_len % 16 != 0, while Review A says every unpadded entry fails the CRC, asks for a zero-padding test that payload_and_policy_share_an_aligned_buffer already covers (data_len 0..32), and adds noise about a truncated diff and a pre-existing expect."
+  },
+  "gateway_run": 41373913243,
+  "direct_run": 41366405135,
+  "judge_usd": 0.1170648,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-ruff-29232": {
+  "area": "review",
+  "task": "ruff-29232",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 5,
+   "false_a": 0,
+   "false_b": 2,
+   "findings_a": 8,
+   "findings_b": 9,
+   "winner": "A",
+   "why": "Review A's findings all match the diff and include specific points like the guard being created after the search in goto_implementation and #[must_use], while Review B has two unsupported claims (is_file_open running for files that return early, and unverified other callers of the private direct_subtypes) plus padding such as the self-contradicting ordering remark and saying None and Some(empty) mean the same to the caller."
+  },
+  "gateway_run": 41367188366,
+  "direct_run": 41372213377,
+  "judge_usd": 0.093865,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-ruff-29090": {
+  "area": "review",
+  "task": "ruff-29090",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 2,
+   "false_b": 1,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "B",
+   "why": "Both reviews rightly flag the loop-invariant own_tuple_spec check and the unclear comment, but A misreads the first branch as a subclass with its own spec and claims no non-final subclass is tested, although Point (a NamedTuple) is one, while B reads own_tuple_spec correctly and makes only the non-final coverage error."
+  },
+  "gateway_run": 41373378694,
+  "direct_run": 41365611221,
+  "judge_usd": 0.06916,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-grafana-136242": {
+  "area": "review",
+  "task": "grafana-136242",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "gateway",
+  "judge": {
+   "score_a": 6,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 8,
+   "winner": "B",
+   "why": "Both reviews correctly flag that runInQueue can now return an error after the work has completed, and that finishWait now also runs when the work completes, but A's item 4 is wrong: in the diff, the new AsErrorResult check returns early only for mixed errors, so a details-bearing error that is purely a cancellation still reaches ErrorResultFromGRPCDetails; B has no false claims and gives more specific, actionable suggestions."
+  },
+  "gateway_run": 41372301790,
+  "direct_run": 41364106537,
+  "judge_usd": 0.13067,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-transformers-49742": {
+  "area": "review",
+  "task": "transformers-49742",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 1,
+   "findings_a": 6,
+   "findings_b": 12,
+   "winner": "A",
+   "why": "Both reviews explain the fix correctly and raise the same main points about duplicates and order dependence, but B opens with a stray fragment and says reverse_map is a defaultdict, which the diff does not support because the code uses setdefault and .get, while A makes no false claims."
+  },
+  "gateway_run": 41368115686,
+  "direct_run": 41372923564,
+  "judge_usd": 0.07192,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-llama.cpp-29069": {
+  "area": "review",
+  "task": "llama.cpp-29069",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 7,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 1,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "A",
+   "why": "Every finding in A is backed by the diff, including the coopmat2 and y_decode_vector_staging behavior changes in mul_mat_id, while B gets wrong which paths can hit its BF16-to-F16 overflow concern (prefer_f16_b only applies when src1 is F32), says the diff was truncated even though it summarizes those parts, and asks for size checks the diff already contains, though B does catch a real BF16-src0 kernel-selection change that A misses."
+  },
+  "gateway_run": 41372122428,
+  "direct_run": 41363876215,
+  "judge_usd": 0.1450806,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-neovim-42595": {
+  "area": "review",
+  "task": "neovim-42595",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 8,
+   "score_b": 8,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 6,
+   "findings_b": 6,
+   "winner": "tie",
+   "why": "Both reviews correctly identify the single-use norm_cb_fun thunk, the strong threads table cleanup question, and the GC-to-scheduled-delivery race; A adds a sharp point that a user-supplied scheduler runs inside __gc, and B adds an equally useful note on the Future:complete behavior change and newproxy portability, with no false claims on either side."
+  },
+  "gateway_run": 41373555418,
+  "direct_run": 41365752898,
+  "judge_usd": 0.12397,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-godot-121020": {
+  "area": "review",
+  "task": "godot-121020",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 6,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 3,
+   "findings_b": 5,
+   "winner": "tie",
+   "why": "Both reviews describe the duplicate-only-on-conversion change correctly and make no false claims; B adds a slightly more actionable suggestion to document in the header that the returned image may alias the input, but its score is only one point higher and false claims are equal, so it counts as a tie."
+  },
+  "gateway_run": 41369156834,
+  "direct_run": 41373641401,
+  "judge_usd": 0.1019298,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-flutter-194096": {
+  "area": "review",
+  "task": "flutter-194096",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 1,
+   "findings_a": 5,
+   "findings_b": 5,
+   "winner": "A",
+   "why": "Both reviews describe the fix and its tests accurately and make similar non-blocking points, but B names the listener-removal method `removeCompositionEventListeners`, a name the diff does not support, while every claim in A matches the diff."
+  },
+  "gateway_run": 41371752905,
+  "direct_run": 41363299340,
+  "judge_usd": 0.074945,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-neovim-42289": {
+  "area": "review",
+  "task": "neovim-42289",
+  "round": "r2",
+  "winner_letter": "tie",
+  "winner_arm": "tie",
+  "judge": {
+   "score_a": 7,
+   "score_b": 7,
+   "false_a": 0,
+   "false_b": 0,
+   "findings_a": 8,
+   "findings_b": 8,
+   "winner": "tie",
+   "why": "Both reviews cite the right mcursor.c lines (239/289) and make nearly the same valid points (PR description says integer but the code uses VAR_BOOL, the test helper's name `assert` shadows the global, no interrupt-reset or read-only tests); A adds minor noise (nesting non-issue, wording nit) and B adds a few speculative items (fast-context access, skip-news label), so neither is clearly better."
+  },
+  "gateway_run": 41372827821,
+  "direct_run": 41364843272,
+  "judge_usd": 0.07938999999999999,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-spring-boot-52284": {
+  "area": "review",
+  "task": "spring-boot-52284",
+  "round": "r2",
+  "winner_letter": "A",
+  "winner_arm": "gateway",
+  "judge": {
+   "score_a": 8,
+   "score_b": 6,
+   "false_a": 0,
+   "false_b": 1,
+   "findings_a": 10,
+   "findings_b": 13,
+   "winner": "A",
+   "why": "A makes the key point that the new code applies the JVMS 4.2.3 package-name escaping rules and the method-name-only <> ban to binary class names, so legal classes can still be rejected; B instead calls that stricter behavior spec-aligned (counted as one false claim), though both reviews correctly flag the undocumented isValidResourceName removal and share the same valid nits."
+  },
+  "gateway_run": 41368755213,
+  "direct_run": 41373286315,
+  "judge_usd": 0.0948054,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ },
+ "r2-transformers-48992": {
+  "area": "review",
+  "task": "transformers-48992",
+  "round": "r2",
+  "winner_letter": "B",
+  "winner_arm": "direct-ts",
+  "judge": {
+   "score_a": 6,
+   "score_b": 8,
+   "false_a": 1,
+   "false_b": 1,
+   "findings_a": 9,
+   "findings_b": 10,
+   "winner": "B",
+   "why": "Both reviews correctly flag the main issue, that the shim copies the replacement once instead of forwarding live, and each has one minor unsupported claim (A says deprecation warnings were 'dropped' when there was never a module-path warning; B says create_module avoids deprecation warnings on older Pythons). B is more specific and actionable (mock.patch impact, the shortened warning text, the error message when a model directory doesn't exist, the leaked _alias variable, and concrete test gaps including the torchvision-only test), while A adds noise about a truncated diff and an approval it could not verify from the diff."
+  },
+  "gateway_run": 41368376327,
+  "direct_run": 41373102399,
+  "judge_usd": 0.11570480000000001,
+  "model": [
+   "claude-opus-5-5"
+  ]
+ }
+}

@@ -1,0 +1,8932 @@
+{
+ "runs_total": 280,
+ "runs_ok": 238,
+ "errors": [
+  {
+   "run_id": "41363619264",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363639842",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363660257",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363735653",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363752714",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363776409",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363861773",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363880224",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363898809",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363969996",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41363987288",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364005895",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364091038",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364108317",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364199612",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364215366",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364333389",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364362361",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364445008",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364453699",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364521563",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364563244",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364611338",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364677903",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364686074",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364715225",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364780168",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364787677",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364838687",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364933612",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364961269",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41364966533",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365080201",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365096647",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365099835",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365220240",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365235218",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365356808",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365359230",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365476746",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365489654",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  },
+  {
+   "run_id": "41365613561",
+   "area": null,
+   "task": null,
+   "arm": null,
+   "model": null,
+   "error": "no claude output (success)"
+  }
+ ],
+ "total_cost_computed": 20.5387,
+ "total_cost_client": 20.3377,
+ "cross_check": {
+  "computed_vs_client": {
+   "n": 238,
+   "mean": 0.0,
+   "max": 0.0,
+   "over_3pct": 0
+  },
+  "computed_vs_ledger_gateway": {
+   "n": 119,
+   "mean": 0.0086,
+   "max": 0.2627,
+   "over_3pct": 7
+  },
+  "ledger_recomputed_vs_ledger_billed": {
+   "n": 119,
+   "mean": 0.0,
+   "max": 0.0,
+   "over_3pct": 0
+  },
+  "gw_only_side_usd_total": 0.02854,
+  "gw_only_side_runs": 26,
+  "ledger_gaps_over_3pct": [
+   {
+    "run_id": "41364799639",
+    "area": "release",
+    "task": "bun-1.4.4",
+    "client_based_usd": 0.63474,
+    "ledger_usd": 0.86094,
+    "gap": -0.263,
+    "ledger_rows": 22,
+    "upstream_calls": 47,
+    "client_requests": 22,
+    "ledger_side_models": {}
+   },
+   {
+    "run_id": "41364984686",
+    "area": "labels",
+    "task": "ruff-29395",
+    "client_based_usd": 0.02231,
+    "ledger_usd": 0.02357,
+    "gap": -0.053,
+    "ledger_rows": 4,
+    "upstream_calls": 4,
+    "client_requests": 3,
+    "ledger_side_models": {}
+   },
+   {
+    "run_id": "41365618185",
+    "area": "fix-ci",
+    "task": "commander.js-2630",
+    "client_based_usd": 0.01297,
+    "ledger_usd": 0.01506,
+    "gap": -0.139,
+    "ledger_rows": 2,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {}
+   },
+   {
+    "run_id": "41366928522",
+    "area": "review",
+    "task": "godot-118822",
+    "client_based_usd": 0.03775,
+    "ledger_usd": 0.03664,
+    "gap": 0.03,
+    "ledger_rows": 3,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   },
+   {
+    "run_id": "41367447043",
+    "area": "review",
+    "task": "spring-boot-52228",
+    "client_based_usd": 0.03604,
+    "ledger_usd": 0.03493,
+    "gap": 0.032,
+    "ledger_rows": 4,
+    "upstream_calls": 4,
+    "client_requests": 3,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   },
+   {
+    "run_id": "41369538031",
+    "area": "review",
+    "task": "django-22041",
+    "client_based_usd": 0.03191,
+    "ledger_usd": 0.03082,
+    "gap": 0.035,
+    "ledger_rows": 3,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   },
+   {
+    "run_id": "41372483514",
+    "area": "review",
+    "task": "kubernetes-142436",
+    "client_based_usd": 0.02799,
+    "ledger_usd": 0.02689,
+    "gap": 0.041,
+    "ledger_rows": 3,
+    "upstream_calls": 3,
+    "client_requests": 2,
+    "ledger_side_models": {
+     "claude-haiku-4-5-20251001": 1
+    }
+   }
+  ]
+ },
+ "rows": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 19.7,
+   "ci_pct": [
+    4.1,
+    31.5
+   ],
+   "cheaper": "6/8",
+   "direct_usd": 0.1691,
+   "gateway_usd": 0.132,
+   "quality": {
+    "direct_pass": 8,
+    "gateway_pass": 8,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    66
+   ],
+   "tool_mix_ratio": 0.857,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0296,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363934099",
+     "gateway_run": "41363823596",
+     "direct_usd": 0.20062,
+     "gateway_usd": 0.11451,
+     "saving_pct": 42.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      8
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364850379",
+     "gateway_run": "41364734949",
+     "direct_usd": 0.09595,
+     "gateway_usd": 0.08901,
+     "saving_pct": 7.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364390474",
+     "gateway_run": "41364282278",
+     "direct_usd": 0.07152,
+     "gateway_usd": 0.05164,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363577099",
+     "gateway_run": "41363691899",
+     "direct_usd": 0.08035,
+     "gateway_usd": 0.09991,
+     "saving_pct": -24.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365236355",
+     "gateway_run": "41365360551",
+     "direct_usd": 0.07294,
+     "gateway_usd": 0.05261,
+     "saving_pct": 27.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364514594",
+     "gateway_run": "41364621410",
+     "direct_usd": 0.21117,
+     "gateway_usd": 0.22237,
+     "saving_pct": -5.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365099809",
+     "gateway_run": "41364986663",
+     "direct_usd": 0.15481,
+     "gateway_usd": 0.10917,
+     "saving_pct": 29.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364056119",
+     "gateway_run": "41364164451",
+     "direct_usd": 0.46535,
+     "gateway_usd": 0.31673,
+     "saving_pct": 31.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 22.8,
+   "ci_pct": [
+    11.6,
+    32.2
+   ],
+   "cheaper": "14/16",
+   "direct_usd": 0.0502,
+   "gateway_usd": 0.042,
+   "quality": {
+    "direct_pass": 16,
+    "gateway_pass": 15,
+    "n": 16,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 16/16 -> 15/16, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    90,
+    88
+   ],
+   "tool_mix_ratio": 0.978,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0027,
+   "gateway_first": "8/16",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363556936",
+     "gateway_run": "41363449919",
+     "direct_usd": 0.06763,
+     "gateway_usd": 0.04797,
+     "saving_pct": 29.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      7
+     ]
+    },
+    {
+     "task": "commander.js-2630",
+     "direct_run": "41365745717",
+     "gateway_run": "41365618185",
+     "direct_usd": 0.02935,
+     "gateway_usd": 0.01506,
+     "saving_pct": 48.7,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      1
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364628462",
+     "gateway_run": "41364425614",
+     "direct_usd": 0.0349,
+     "gateway_usd": 0.02806,
+     "saving_pct": 19.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3135",
+     "direct_run": "41366276075",
+     "gateway_run": "41366150408",
+     "direct_usd": 0.03786,
+     "gateway_usd": 0.03053,
+     "saving_pct": 19.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3157",
+     "direct_run": "41366805798",
+     "gateway_run": "41366683847",
+     "direct_usd": 0.08712,
+     "gateway_usd": 0.07243,
+     "saving_pct": 16.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10801",
+     "direct_run": "41366939731",
+     "gateway_run": "41367064288",
+     "direct_usd": 0.03364,
+     "gateway_usd": 0.02638,
+     "saving_pct": 21.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41363919741",
+     "gateway_run": "41364027963",
+     "direct_usd": 0.02627,
+     "gateway_usd": 0.02319,
+     "saving_pct": 11.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10805",
+     "direct_run": "41367201682",
+     "gateway_run": "41367325777",
+     "direct_usd": 0.02675,
+     "gateway_usd": 0.0193,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10808",
+     "direct_run": "41366004957",
+     "gateway_run": "41365881472",
+     "direct_usd": 0.04473,
+     "gateway_usd": 0.02331,
+     "saving_pct": 47.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363216459",
+     "gateway_run": "41363329230",
+     "direct_usd": 0.03926,
+     "gateway_usd": 0.0271,
+     "saving_pct": 31.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365092017",
+     "gateway_run": "41365213675",
+     "direct_usd": 0.03223,
+     "gateway_usd": 0.02674,
+     "saving_pct": 17.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10885",
+     "direct_run": "41366542319",
+     "gateway_run": "41366417150",
+     "direct_usd": 0.03271,
+     "gateway_usd": 0.02568,
+     "saving_pct": 21.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    },
+    {
+     "task": "pydantic-13374",
+     "direct_run": "41365474582",
+     "gateway_run": "41365354245",
+     "direct_usd": 0.04269,
+     "gateway_usd": 0.05811,
+     "saving_pct": -36.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364149652",
+     "gateway_run": "41364257609",
+     "direct_usd": 0.09461,
+     "gateway_usd": 0.04774,
+     "saving_pct": 49.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41364789579",
+     "gateway_run": "41364966170",
+     "direct_usd": 0.05153,
+     "gateway_usd": 0.03922,
+     "saving_pct": 23.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41363682482",
+     "gateway_run": "41363800991",
+     "direct_usd": 0.12231,
+     "gateway_usd": 0.16121,
+     "saving_pct": -31.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 21.4,
+   "ci_pct": [
+    7.1,
+    35.4
+   ],
+   "cheaper": "7/8",
+   "direct_usd": 0.335,
+   "gateway_usd": 0.2759,
+   "quality": {
+    "direct_pass": 3,
+    "gateway_pass": 3,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 3/8 -> 3/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    108,
+    99
+   ],
+   "tool_mix_ratio": 0.917,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0479,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363594939",
+     "gateway_run": "41363712124",
+     "direct_usd": 0.52357,
+     "gateway_usd": 0.50718,
+     "saving_pct": 3.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      14
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41365105046",
+     "gateway_run": "41365224578",
+     "direct_usd": 0.27392,
+     "gateway_usd": 0.16815,
+     "saving_pct": 38.6,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      12
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364293865",
+     "gateway_run": "41364452002",
+     "direct_usd": 0.35259,
+     "gateway_usd": 0.28667,
+     "saving_pct": 18.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      11
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363943542",
+     "gateway_run": "41363834070",
+     "direct_usd": 0.13727,
+     "gateway_usd": 0.10623,
+     "saving_pct": 22.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364723218",
+     "gateway_run": "41364618601",
+     "direct_usd": 0.35823,
+     "gateway_usd": 0.15808,
+     "saving_pct": 55.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      7
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41364176427",
+     "gateway_run": "41364067898",
+     "direct_usd": 0.49639,
+     "gateway_usd": 0.435,
+     "saving_pct": 12.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      20,
+      21
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41365364431",
+     "gateway_run": "41365483587",
+     "direct_usd": 0.31628,
+     "gateway_usd": 0.33396,
+     "saving_pct": -5.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      17
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364975515",
+     "gateway_run": "41364854774",
+     "direct_usd": 0.22196,
+     "gateway_usd": 0.21162,
+     "saving_pct": 4.7,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 19,
+   "saving_pct": 21.8,
+   "ci_pct": [
+    10.3,
+    32.1
+   ],
+   "cheaper": "16/19",
+   "direct_usd": 0.1113,
+   "gateway_usd": 0.0872,
+   "quality": {
+    "direct_pass": 9,
+    "gateway_pass": 10,
+    "n": 19,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 9/19 -> 10/19, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    212,
+    166
+   ],
+   "tool_mix_ratio": 0.783,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0157,
+   "gateway_first": "10/19",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-2994",
+     "direct_run": "41367069446",
+     "gateway_run": "41367189632",
+     "direct_usd": 0.0811,
+     "gateway_usd": 0.04011,
+     "saving_pct": 50.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "echo-3113",
+     "direct_run": "41365606212",
+     "gateway_run": "41365481266",
+     "direct_usd": 0.23629,
+     "gateway_usd": 0.17968,
+     "saving_pct": 24.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      19,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6391",
+     "direct_run": "41367719641",
+     "gateway_run": "41367598005",
+     "direct_usd": 0.10687,
+     "gateway_usd": 0.09529,
+     "saving_pct": 10.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10720",
+     "direct_run": "41365225163",
+     "gateway_run": "41365349989",
+     "direct_usd": 0.15419,
+     "gateway_usd": 0.08376,
+     "saving_pct": 45.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10769",
+     "direct_run": "41366808694",
+     "gateway_run": "41366930177",
+     "direct_usd": 0.07113,
+     "gateway_usd": 0.06463,
+     "saving_pct": 9.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10784",
+     "direct_run": "41367850806",
+     "gateway_run": "41367976150",
+     "direct_usd": 0.08433,
+     "gateway_usd": 0.11965,
+     "saving_pct": -41.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      19
+     ]
+    },
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363350589",
+     "gateway_run": "41363239976",
+     "direct_usd": 0.19349,
+     "gateway_usd": 0.19969,
+     "saving_pct": -3.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "poetry-10944",
+     "direct_run": "41366397342",
+     "gateway_run": "41366270794",
+     "direct_usd": 0.04609,
+     "gateway_usd": 0.06005,
+     "saving_pct": -30.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41364777497",
+     "gateway_run": "41364675304",
+     "direct_usd": 0.05687,
+     "gateway_usd": 0.04749,
+     "saving_pct": 16.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364045367",
+     "gateway_run": "41363936026",
+     "direct_usd": 0.13449,
+     "gateway_usd": 0.12179,
+     "saving_pct": 9.4,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "pydantic-13363",
+     "direct_run": "41365743785",
+     "gateway_run": "41365866896",
+     "direct_usd": 0.08409,
+     "gateway_usd": 0.07134,
+     "saving_pct": 15.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363574005",
+     "gateway_run": "41363468703",
+     "direct_usd": 0.05074,
+     "gateway_usd": 0.04094,
+     "saving_pct": 19.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13632",
+     "direct_run": "41366543310",
+     "gateway_run": "41366671633",
+     "direct_usd": 0.06003,
+     "gateway_usd": 0.04669,
+     "saving_pct": 22.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364275168",
+     "gateway_run": "41364167332",
+     "direct_usd": 0.15566,
+     "gateway_usd": 0.08841,
+     "saving_pct": 43.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-7900",
+     "direct_run": "41367448676",
+     "gateway_run": "41367327721",
+     "direct_usd": 0.11078,
+     "gateway_usd": 0.09017,
+     "saving_pct": 18.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41363704078",
+     "gateway_run": "41363817504",
+     "direct_usd": 0.142,
+     "gateway_usd": 0.05686,
+     "saving_pct": 60.0,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41364966426",
+     "gateway_run": "41365079616",
+     "direct_usd": 0.10416,
+     "gateway_usd": 0.0751,
+     "saving_pct": 27.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8257",
+     "direct_run": "41366128357",
+     "gateway_run": "41366003935",
+     "direct_usd": 0.15052,
+     "gateway_usd": 0.08996,
+     "saving_pct": 40.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364396046",
+     "gateway_run": "41364555575",
+     "direct_usd": 0.09222,
+     "gateway_usd": 0.08563,
+     "saving_pct": 7.2,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 22.4,
+   "ci_pct": [
+    15.5,
+    27.7
+   ],
+   "cheaper": "24/26",
+   "direct_usd": 0.0281,
+   "gateway_usd": 0.0223,
+   "quality": {
+    "f1_direct": 0.499,
+    "f1_gateway": 0.478
+   },
+   "quality_text": "F1 0.499 -> 0.478",
+   "quality_ok": true,
+   "tool_calls": [
+    36,
+    56
+   ],
+   "tool_mix_ratio": 1.556,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0037,
+   "gateway_first": "13/26",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "bun-46530",
+     "direct_run": "41369804464",
+     "gateway_run": "41369681378",
+     "direct_usd": 0.02392,
+     "gateway_usd": 0.02113,
+     "saving_pct": 11.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-54841",
+     "direct_run": "41368245956",
+     "gateway_run": "41368120311",
+     "direct_usd": 0.02561,
+     "gateway_usd": 0.02066,
+     "saving_pct": 19.3,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-55111",
+     "direct_run": "41368909245",
+     "gateway_run": "41369033063",
+     "direct_usd": 0.02612,
+     "gateway_usd": 0.01922,
+     "saving_pct": 26.4,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.30769230769230765
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-194151",
+     "direct_run": "41365762873",
+     "gateway_run": "41365882566",
+     "direct_usd": 0.02979,
+     "gateway_usd": 0.02415,
+     "saving_pct": 19.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-195150",
+     "direct_run": "41363486285",
+     "gateway_run": "41363593103",
+     "direct_usd": 0.03071,
+     "gateway_usd": 0.02684,
+     "saving_pct": 12.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "go-81990",
+     "direct_run": "41365361994",
+     "gateway_run": "41365238432",
+     "direct_usd": 0.02906,
+     "gateway_usd": 0.01957,
+     "saving_pct": 32.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "go-82053",
+     "direct_run": "41363259622",
+     "gateway_run": "41363368207",
+     "direct_usd": 0.05863,
+     "gateway_usd": 0.04322,
+     "saving_pct": 26.3,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-184104",
+     "direct_run": "41364188702",
+     "gateway_run": "41364296010",
+     "direct_usd": 0.02611,
+     "gateway_usd": 0.01835,
+     "saving_pct": 29.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-187849",
+     "direct_run": "41364736519",
+     "gateway_run": "41364850751",
+     "direct_usd": 0.02449,
+     "gateway_usd": 0.01882,
+     "saving_pct": 23.2,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42255",
+     "direct_run": "41366550254",
+     "gateway_run": "41366677683",
+     "direct_usd": 0.03391,
+     "gateway_usd": 0.05478,
+     "saving_pct": -61.6,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42300",
+     "direct_run": "41367331938",
+     "gateway_run": "41367452121",
+     "direct_usd": 0.02324,
+     "gateway_usd": 0.02001,
+     "saving_pct": 13.9,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "neovim-42339",
+     "direct_run": "41365620510",
+     "gateway_run": "41365497774",
+     "direct_usd": 0.02218,
+     "gateway_usd": 0.01681,
+     "saving_pct": 24.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "pytorch-201802",
+     "direct_run": "41363957413",
+     "gateway_run": "41364068353",
+     "direct_usd": 0.02939,
+     "gateway_usd": 0.02001,
+     "saving_pct": 31.9,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.75
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "pytorch-201803",
+     "direct_run": "41368761898",
+     "gateway_run": "41368641217",
+     "direct_usd": 0.02363,
+     "gateway_usd": 0.0252,
+     "saving_pct": -6.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "pytorch-202507",
+     "direct_run": "41368381687",
+     "gateway_run": "41368508166",
+     "direct_usd": 0.03531,
+     "gateway_usd": 0.0256,
+     "saving_pct": 27.5,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5714285714285715
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29343",
+     "direct_run": "41366146562",
+     "gateway_run": "41366017679",
+     "direct_usd": 0.02036,
+     "gateway_usd": 0.01474,
+     "saving_pct": 27.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29395",
+     "direct_run": "41365098474",
+     "gateway_run": "41364984686",
+     "direct_usd": 0.0236,
+     "gateway_usd": 0.02357,
+     "saving_pct": 0.1,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29670",
+     "direct_run": "41366412901",
+     "gateway_run": "41366286875",
+     "direct_usd": 0.02411,
+     "gateway_usd": 0.01804,
+     "saving_pct": 25.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      4
+     ]
+    },
+    {
+     "task": "tauri-16214",
+     "direct_run": "41364512719",
+     "gateway_run": "41364619859",
+     "direct_usd": 0.02092,
+     "gateway_usd": 0.01429,
+     "saving_pct": 31.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "tauri-16319",
+     "direct_run": "41366935367",
+     "gateway_run": "41366812868",
+     "direct_usd": 0.03497,
+     "gateway_usd": 0.01913,
+     "saving_pct": 45.3,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "typescript-64630",
+     "direct_run": "41363836852",
+     "gateway_run": "41363721933",
+     "direct_usd": 0.02677,
+     "gateway_usd": 0.02115,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "uv-22488",
+     "direct_run": "41369286317",
+     "gateway_run": "41369164998",
+     "direct_usd": 0.02078,
+     "gateway_usd": 0.01598,
+     "saving_pct": 23.1,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "uv-22513",
+     "direct_run": "41369546192",
+     "gateway_run": "41369422923",
+     "direct_usd": 0.01989,
+     "gateway_usd": 0.01565,
+     "saving_pct": 21.3,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "zed-65323",
+     "direct_run": "41367852551",
+     "gateway_run": "41367977873",
+     "direct_usd": 0.03463,
+     "gateway_usd": 0.02403,
+     "saving_pct": 30.6,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "zed-65434",
+     "direct_run": "41367601051",
+     "gateway_run": "41367722064",
+     "direct_usd": 0.03328,
+     "gateway_usd": 0.01997,
+     "saving_pct": 40.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "zed-66153",
+     "direct_run": "41367193933",
+     "gateway_run": "41367073561",
+     "direct_usd": 0.02964,
+     "gateway_usd": 0.01847,
+     "saving_pct": 37.7,
+     "passed": null,
+     "f1": [
+      0.33333333333333337,
+      0.5
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 14.1,
+   "ci_pct": [
+    -6.8,
+    27.7
+   ],
+   "cheaper": "11/16",
+   "direct_usd": 0.1039,
+   "gateway_usd": 0.126,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    131,
+    134
+   ],
+   "tool_mix_ratio": 1.023,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0289,
+   "gateway_first": "8/16",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "bun-1.4.4",
+     "direct_run": "41364926076",
+     "gateway_run": "41364799639",
+     "direct_usd": 0.26607,
+     "gateway_usd": 0.86094,
+     "saving_pct": -223.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      24
+     ]
+    },
+    {
+     "task": "compose-5.4.0",
+     "direct_run": "41367320637",
+     "gateway_run": "41367197050",
+     "direct_usd": 0.15062,
+     "gateway_usd": 0.16091,
+     "saving_pct": -6.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      12,
+      18
+     ]
+    },
+    {
+     "task": "deno-2.9.5",
+     "direct_run": "41363388429",
+     "gateway_run": "41363279896",
+     "direct_usd": 0.10198,
+     "gateway_usd": 0.10237,
+     "saving_pct": -0.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "eslint-10.13.0",
+     "direct_run": "41365882343",
+     "gateway_run": "41366005313",
+     "direct_usd": 0.07446,
+     "gateway_usd": 0.0569,
+     "saving_pct": 23.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      8
+     ]
+    },
+    {
+     "task": "langchain-1.4.3",
+     "direct_run": "41365750881",
+     "gateway_run": "41365623339",
+     "direct_usd": 0.08338,
+     "gateway_usd": 0.0767,
+     "saving_pct": 8.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      5
+     ]
+    },
+    {
+     "task": "neovim-0.12.6",
+     "direct_run": "41364486460",
+     "gateway_run": "41364684306",
+     "direct_usd": 0.06056,
+     "gateway_usd": 0.06075,
+     "saving_pct": -0.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "nest-12.1.0",
+     "direct_run": "41363979311",
+     "gateway_run": "41364090111",
+     "direct_usd": 0.14998,
+     "gateway_usd": 0.0871,
+     "saving_pct": 41.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "next.js-16.4.2",
+     "direct_run": "41366150623",
+     "gateway_run": "41366275813",
+     "direct_usd": 0.1157,
+     "gateway_usd": 0.12691,
+     "saving_pct": -9.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      7
+     ]
+    },
+    {
+     "task": "nushell-0.116.0",
+     "direct_run": "41366536592",
+     "gateway_run": "41366410788",
+     "direct_usd": 0.17559,
+     "gateway_usd": 0.16559,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      14,
+      18
+     ]
+    },
+    {
+     "task": "ollama-0.40.9",
+     "direct_run": "41363858348",
+     "gateway_run": "41363745194",
+     "direct_usd": 0.06867,
+     "gateway_usd": 0.04083,
+     "saving_pct": 40.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      5
+     ]
+    },
+    {
+     "task": "polars-1.43.2",
+     "direct_run": "41365221192",
+     "gateway_run": "41365100744",
+     "direct_usd": 0.06609,
+     "gateway_usd": 0.05497,
+     "saving_pct": 16.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-1.10.27",
+     "direct_run": "41366681910",
+     "gateway_run": "41366804195",
+     "direct_usd": 0.05339,
+     "gateway_usd": 0.0352,
+     "saving_pct": 34.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "syncthing-2.1.7",
+     "direct_run": "41363503868",
+     "gateway_run": "41363613727",
+     "direct_usd": 0.06135,
+     "gateway_usd": 0.04226,
+     "saving_pct": 31.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "terraform-1.16.7",
+     "direct_run": "41364207631",
+     "gateway_run": "41364361671",
+     "direct_usd": 0.05352,
+     "gateway_usd": 0.03818,
+     "saving_pct": 28.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "transformers-5.20.1",
+     "direct_run": "41367066114",
+     "gateway_run": "41366942600",
+     "direct_usd": 0.12393,
+     "gateway_usd": 0.06617,
+     "saving_pct": 46.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      7
+     ]
+    },
+    {
+     "task": "vite-8.3.3",
+     "direct_run": "41365361029",
+     "gateway_run": "41365480568",
+     "direct_usd": 0.05785,
+     "gateway_usd": 0.04044,
+     "saving_pct": 30.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 5.5,
+   "ci_pct": [
+    -2.9,
+    12.8
+   ],
+   "cheaper": "17/26",
+   "direct_usd": 0.0587,
+   "gateway_usd": 0.0569,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    28,
+    35
+   ],
+   "tool_mix_ratio": 1.25,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0011,
+   "gateway_first": "13/26",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "django-22041",
+     "direct_run": "41373826702",
+     "gateway_run": "41369538031",
+     "direct_usd": 0.03818,
+     "gateway_usd": 0.03082,
+     "saving_pct": 19.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "django-22198",
+     "direct_run": "41373467965",
+     "gateway_run": "41368898814",
+     "direct_usd": 0.04231,
+     "gateway_usd": 0.04368,
+     "saving_pct": -3.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-194096",
+     "direct_run": "41363299340",
+     "gateway_run": "41371752905",
+     "direct_usd": 0.04526,
+     "gateway_usd": 0.06017,
+     "saving_pct": -32.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-118822",
+     "direct_run": "41372034425",
+     "gateway_run": "41366928522",
+     "direct_usd": 0.04256,
+     "gateway_usd": 0.03664,
+     "saving_pct": 13.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-121020",
+     "direct_run": "41373641401",
+     "gateway_run": "41369156834",
+     "direct_usd": 0.07319,
+     "gateway_usd": 0.04674,
+     "saving_pct": 36.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      2
+     ]
+    },
+    {
+     "task": "grafana-134038",
+     "direct_run": "41364977879",
+     "gateway_run": "41373012710",
+     "direct_usd": 0.05369,
+     "gateway_usd": 0.06956,
+     "saving_pct": -29.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "grafana-136242",
+     "direct_run": "41364106537",
+     "gateway_run": "41372301790",
+     "direct_usd": 0.08209,
+     "gateway_usd": 0.09572,
+     "saving_pct": -16.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kubernetes-142436",
+     "direct_run": "41364335208",
+     "gateway_run": "41372483514",
+     "direct_usd": 0.03404,
+     "gateway_usd": 0.02689,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "llama.cpp-29069",
+     "direct_run": "41363876215",
+     "gateway_run": "41372122428",
+     "direct_usd": 0.0976,
+     "gateway_usd": 0.06507,
+     "saving_pct": 33.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "llama.cpp-30242",
+     "direct_run": "41365229223",
+     "gateway_run": "41373190705",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.05172,
+     "saving_pct": 16.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42289",
+     "direct_run": "41364843272",
+     "gateway_run": "41372827821",
+     "direct_usd": 0.04529,
+     "gateway_usd": 0.03983,
+     "saving_pct": 12.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "neovim-42595",
+     "direct_run": "41365752898",
+     "gateway_run": "41373555418",
+     "direct_usd": 0.07063,
+     "gateway_usd": 0.06321,
+     "saving_pct": 10.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100205",
+     "direct_run": "41372569692",
+     "gateway_run": "41367715631",
+     "direct_usd": 0.0895,
+     "gateway_usd": 0.10184,
+     "saving_pct": -13.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100840",
+     "direct_run": "41372736754",
+     "gateway_run": "41367848050",
+     "direct_usd": 0.0802,
+     "gateway_usd": 0.06721,
+     "saving_pct": 16.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70233",
+     "direct_run": "41363638132",
+     "gateway_run": "41371938024",
+     "direct_usd": 0.04769,
+     "gateway_usd": 0.04684,
+     "saving_pct": 1.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70960",
+     "direct_run": "41364459594",
+     "gateway_run": "41372655024",
+     "direct_usd": 0.04727,
+     "gateway_usd": 0.03837,
+     "saving_pct": 18.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-18355",
+     "direct_run": "41366009551",
+     "gateway_run": "41373736580",
+     "direct_usd": 0.04646,
+     "gateway_usd": 0.04125,
+     "saving_pct": 11.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-20026",
+     "direct_run": "41373996993",
+     "gateway_run": "41369797346",
+     "direct_usd": 0.06225,
+     "gateway_usd": 0.05759,
+     "saving_pct": 7.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29090",
+     "direct_run": "41365611221",
+     "gateway_run": "41373378694",
+     "direct_usd": 0.05279,
+     "gateway_usd": 0.0466,
+     "saving_pct": 11.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29232",
+     "direct_run": "41372213377",
+     "gateway_run": "41367188366",
+     "direct_usd": 0.06798,
+     "gateway_usd": 0.05933,
+     "saving_pct": 12.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52228",
+     "direct_run": "41372392574",
+     "gateway_run": "41367447043",
+     "direct_usd": 0.04815,
+     "gateway_usd": 0.03493,
+     "saving_pct": 27.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52284",
+     "direct_run": "41373286315",
+     "gateway_run": "41368755213",
+     "direct_usd": 0.04797,
+     "gateway_usd": 0.04415,
+     "saving_pct": 8.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "transformers-48992",
+     "direct_run": "41373102399",
+     "gateway_run": "41368376327",
+     "direct_usd": 0.05406,
+     "gateway_usd": 0.06083,
+     "saving_pct": -12.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "transformers-49742",
+     "direct_run": "41372923564",
+     "gateway_run": "41368115686",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.06353,
+     "saving_pct": -2.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "uv-22136",
+     "direct_run": "41366405135",
+     "gateway_run": "41373913243",
+     "direct_usd": 0.06558,
+     "gateway_usd": 0.11002,
+     "saving_pct": -67.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      5
+     ]
+    },
+    {
+     "task": "uv-22271",
+     "direct_run": "41371845345",
+     "gateway_run": "41366543856",
+     "direct_usd": 0.06661,
+     "gateway_usd": 0.07718,
+     "saving_pct": -15.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_client_cost": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 19.7,
+   "ci_pct": [
+    4.1,
+    31.5
+   ],
+   "cheaper": "6/8",
+   "direct_usd": 0.1691,
+   "gateway_usd": 0.132,
+   "quality": {
+    "direct_pass": 8,
+    "gateway_pass": 8,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    66
+   ],
+   "tool_mix_ratio": 0.857,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0296,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363934099",
+     "gateway_run": "41363823596",
+     "direct_usd": 0.20062,
+     "gateway_usd": 0.11451,
+     "saving_pct": 42.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      8
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364850379",
+     "gateway_run": "41364734949",
+     "direct_usd": 0.09595,
+     "gateway_usd": 0.08901,
+     "saving_pct": 7.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364390474",
+     "gateway_run": "41364282278",
+     "direct_usd": 0.07152,
+     "gateway_usd": 0.05164,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363577099",
+     "gateway_run": "41363691899",
+     "direct_usd": 0.08035,
+     "gateway_usd": 0.09991,
+     "saving_pct": -24.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365236355",
+     "gateway_run": "41365360551",
+     "direct_usd": 0.07294,
+     "gateway_usd": 0.05261,
+     "saving_pct": 27.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364514594",
+     "gateway_run": "41364621410",
+     "direct_usd": 0.21117,
+     "gateway_usd": 0.22237,
+     "saving_pct": -5.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365099809",
+     "gateway_run": "41364986663",
+     "direct_usd": 0.15481,
+     "gateway_usd": 0.10917,
+     "saving_pct": 29.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364056119",
+     "gateway_run": "41364164451",
+     "direct_usd": 0.46535,
+     "gateway_usd": 0.31673,
+     "saving_pct": 31.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 23.5,
+   "ci_pct": [
+    11.9,
+    33.6
+   ],
+   "cheaper": "14/16",
+   "direct_usd": 0.0502,
+   "gateway_usd": 0.0419,
+   "quality": {
+    "direct_pass": 16,
+    "gateway_pass": 15,
+    "n": 16,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 16/16 -> 15/16, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    90,
+    88
+   ],
+   "tool_mix_ratio": 0.978,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0028,
+   "gateway_first": "8/16",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363556936",
+     "gateway_run": "41363449919",
+     "direct_usd": 0.06763,
+     "gateway_usd": 0.04797,
+     "saving_pct": 29.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      7
+     ]
+    },
+    {
+     "task": "commander.js-2630",
+     "direct_run": "41365745717",
+     "gateway_run": "41365618185",
+     "direct_usd": 0.02935,
+     "gateway_usd": 0.01297,
+     "saving_pct": 55.8,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      1
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364628462",
+     "gateway_run": "41364425614",
+     "direct_usd": 0.0349,
+     "gateway_usd": 0.02806,
+     "saving_pct": 19.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3135",
+     "direct_run": "41366276075",
+     "gateway_run": "41366150408",
+     "direct_usd": 0.03786,
+     "gateway_usd": 0.03053,
+     "saving_pct": 19.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3157",
+     "direct_run": "41366805798",
+     "gateway_run": "41366683847",
+     "direct_usd": 0.08712,
+     "gateway_usd": 0.07243,
+     "saving_pct": 16.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10801",
+     "direct_run": "41366939731",
+     "gateway_run": "41367064288",
+     "direct_usd": 0.03364,
+     "gateway_usd": 0.02638,
+     "saving_pct": 21.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41363919741",
+     "gateway_run": "41364027963",
+     "direct_usd": 0.02627,
+     "gateway_usd": 0.02319,
+     "saving_pct": 11.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10805",
+     "direct_run": "41367201682",
+     "gateway_run": "41367325777",
+     "direct_usd": 0.02675,
+     "gateway_usd": 0.0193,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10808",
+     "direct_run": "41366004957",
+     "gateway_run": "41365881472",
+     "direct_usd": 0.04473,
+     "gateway_usd": 0.02331,
+     "saving_pct": 47.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363216459",
+     "gateway_run": "41363329230",
+     "direct_usd": 0.03926,
+     "gateway_usd": 0.0271,
+     "saving_pct": 31.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365092017",
+     "gateway_run": "41365213675",
+     "direct_usd": 0.03223,
+     "gateway_usd": 0.02674,
+     "saving_pct": 17.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10885",
+     "direct_run": "41366542319",
+     "gateway_run": "41366417150",
+     "direct_usd": 0.03271,
+     "gateway_usd": 0.02568,
+     "saving_pct": 21.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    },
+    {
+     "task": "pydantic-13374",
+     "direct_run": "41365474582",
+     "gateway_run": "41365354245",
+     "direct_usd": 0.04269,
+     "gateway_usd": 0.05811,
+     "saving_pct": -36.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364149652",
+     "gateway_run": "41364257609",
+     "direct_usd": 0.09461,
+     "gateway_usd": 0.04774,
+     "saving_pct": 49.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41364789579",
+     "gateway_run": "41364966170",
+     "direct_usd": 0.05153,
+     "gateway_usd": 0.03922,
+     "saving_pct": 23.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41363682482",
+     "gateway_run": "41363800991",
+     "direct_usd": 0.12231,
+     "gateway_usd": 0.16121,
+     "saving_pct": -31.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 21.4,
+   "ci_pct": [
+    7.1,
+    35.4
+   ],
+   "cheaper": "7/8",
+   "direct_usd": 0.335,
+   "gateway_usd": 0.2759,
+   "quality": {
+    "direct_pass": 3,
+    "gateway_pass": 3,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 3/8 -> 3/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    108,
+    99
+   ],
+   "tool_mix_ratio": 0.917,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0479,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363594939",
+     "gateway_run": "41363712124",
+     "direct_usd": 0.52357,
+     "gateway_usd": 0.50718,
+     "saving_pct": 3.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      14
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41365105046",
+     "gateway_run": "41365224578",
+     "direct_usd": 0.27392,
+     "gateway_usd": 0.16815,
+     "saving_pct": 38.6,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      12
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364293865",
+     "gateway_run": "41364452002",
+     "direct_usd": 0.35259,
+     "gateway_usd": 0.28667,
+     "saving_pct": 18.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      11
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363943542",
+     "gateway_run": "41363834070",
+     "direct_usd": 0.13727,
+     "gateway_usd": 0.10623,
+     "saving_pct": 22.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364723218",
+     "gateway_run": "41364618601",
+     "direct_usd": 0.35823,
+     "gateway_usd": 0.15808,
+     "saving_pct": 55.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      7
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41364176427",
+     "gateway_run": "41364067898",
+     "direct_usd": 0.49639,
+     "gateway_usd": 0.435,
+     "saving_pct": 12.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      20,
+      21
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41365364431",
+     "gateway_run": "41365483587",
+     "direct_usd": 0.31628,
+     "gateway_usd": 0.33396,
+     "saving_pct": -5.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      17
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364975515",
+     "gateway_run": "41364854774",
+     "direct_usd": 0.22196,
+     "gateway_usd": 0.21162,
+     "saving_pct": 4.7,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 19,
+   "saving_pct": 21.8,
+   "ci_pct": [
+    10.3,
+    32.1
+   ],
+   "cheaper": "16/19",
+   "direct_usd": 0.1113,
+   "gateway_usd": 0.0872,
+   "quality": {
+    "direct_pass": 9,
+    "gateway_pass": 10,
+    "n": 19,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 9/19 -> 10/19, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    212,
+    166
+   ],
+   "tool_mix_ratio": 0.783,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0157,
+   "gateway_first": "10/19",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-2994",
+     "direct_run": "41367069446",
+     "gateway_run": "41367189632",
+     "direct_usd": 0.0811,
+     "gateway_usd": 0.04011,
+     "saving_pct": 50.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "echo-3113",
+     "direct_run": "41365606212",
+     "gateway_run": "41365481266",
+     "direct_usd": 0.23629,
+     "gateway_usd": 0.17968,
+     "saving_pct": 24.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      19,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6391",
+     "direct_run": "41367719641",
+     "gateway_run": "41367598005",
+     "direct_usd": 0.10687,
+     "gateway_usd": 0.09529,
+     "saving_pct": 10.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10720",
+     "direct_run": "41365225163",
+     "gateway_run": "41365349989",
+     "direct_usd": 0.15419,
+     "gateway_usd": 0.08376,
+     "saving_pct": 45.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10769",
+     "direct_run": "41366808694",
+     "gateway_run": "41366930177",
+     "direct_usd": 0.07113,
+     "gateway_usd": 0.06463,
+     "saving_pct": 9.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10784",
+     "direct_run": "41367850806",
+     "gateway_run": "41367976150",
+     "direct_usd": 0.08433,
+     "gateway_usd": 0.11965,
+     "saving_pct": -41.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      19
+     ]
+    },
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363350589",
+     "gateway_run": "41363239976",
+     "direct_usd": 0.19349,
+     "gateway_usd": 0.19969,
+     "saving_pct": -3.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "poetry-10944",
+     "direct_run": "41366397342",
+     "gateway_run": "41366270794",
+     "direct_usd": 0.04609,
+     "gateway_usd": 0.06005,
+     "saving_pct": -30.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41364777497",
+     "gateway_run": "41364675304",
+     "direct_usd": 0.05687,
+     "gateway_usd": 0.04749,
+     "saving_pct": 16.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364045367",
+     "gateway_run": "41363936026",
+     "direct_usd": 0.13449,
+     "gateway_usd": 0.12179,
+     "saving_pct": 9.4,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "pydantic-13363",
+     "direct_run": "41365743785",
+     "gateway_run": "41365866896",
+     "direct_usd": 0.08409,
+     "gateway_usd": 0.07134,
+     "saving_pct": 15.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363574005",
+     "gateway_run": "41363468703",
+     "direct_usd": 0.05074,
+     "gateway_usd": 0.04094,
+     "saving_pct": 19.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13632",
+     "direct_run": "41366543310",
+     "gateway_run": "41366671633",
+     "direct_usd": 0.06003,
+     "gateway_usd": 0.04669,
+     "saving_pct": 22.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364275168",
+     "gateway_run": "41364167332",
+     "direct_usd": 0.15566,
+     "gateway_usd": 0.08841,
+     "saving_pct": 43.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-7900",
+     "direct_run": "41367448676",
+     "gateway_run": "41367327721",
+     "direct_usd": 0.11078,
+     "gateway_usd": 0.09017,
+     "saving_pct": 18.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41363704078",
+     "gateway_run": "41363817504",
+     "direct_usd": 0.142,
+     "gateway_usd": 0.05686,
+     "saving_pct": 60.0,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41364966426",
+     "gateway_run": "41365079616",
+     "direct_usd": 0.10416,
+     "gateway_usd": 0.0751,
+     "saving_pct": 27.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8257",
+     "direct_run": "41366128357",
+     "gateway_run": "41366003935",
+     "direct_usd": 0.15052,
+     "gateway_usd": 0.08996,
+     "saving_pct": 40.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364396046",
+     "gateway_run": "41364555575",
+     "direct_usd": 0.09222,
+     "gateway_usd": 0.08563,
+     "saving_pct": 7.2,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 22.5,
+   "ci_pct": [
+    15.8,
+    27.8
+   ],
+   "cheaper": "24/26",
+   "direct_usd": 0.0281,
+   "gateway_usd": 0.0222,
+   "quality": {
+    "f1_direct": 0.499,
+    "f1_gateway": 0.478
+   },
+   "quality_text": "F1 0.499 -> 0.478",
+   "quality_ok": true,
+   "tool_calls": [
+    36,
+    56
+   ],
+   "tool_mix_ratio": 1.556,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0038,
+   "gateway_first": "13/26",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "bun-46530",
+     "direct_run": "41369804464",
+     "gateway_run": "41369681378",
+     "direct_usd": 0.02392,
+     "gateway_usd": 0.02113,
+     "saving_pct": 11.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-54841",
+     "direct_run": "41368245956",
+     "gateway_run": "41368120311",
+     "direct_usd": 0.02561,
+     "gateway_usd": 0.02067,
+     "saving_pct": 19.3,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-55111",
+     "direct_run": "41368909245",
+     "gateway_run": "41369033063",
+     "direct_usd": 0.02612,
+     "gateway_usd": 0.01922,
+     "saving_pct": 26.4,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.30769230769230765
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-194151",
+     "direct_run": "41365762873",
+     "gateway_run": "41365882566",
+     "direct_usd": 0.02979,
+     "gateway_usd": 0.02415,
+     "saving_pct": 19.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-195150",
+     "direct_run": "41363486285",
+     "gateway_run": "41363593103",
+     "direct_usd": 0.03071,
+     "gateway_usd": 0.02684,
+     "saving_pct": 12.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "go-81990",
+     "direct_run": "41365361994",
+     "gateway_run": "41365238432",
+     "direct_usd": 0.02906,
+     "gateway_usd": 0.01957,
+     "saving_pct": 32.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "go-82053",
+     "direct_run": "41363259622",
+     "gateway_run": "41363368207",
+     "direct_usd": 0.05863,
+     "gateway_usd": 0.04322,
+     "saving_pct": 26.3,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-184104",
+     "direct_run": "41364188702",
+     "gateway_run": "41364296010",
+     "direct_usd": 0.02611,
+     "gateway_usd": 0.01835,
+     "saving_pct": 29.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-187849",
+     "direct_run": "41364736519",
+     "gateway_run": "41364850751",
+     "direct_usd": 0.02449,
+     "gateway_usd": 0.01882,
+     "saving_pct": 23.2,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42255",
+     "direct_run": "41366550254",
+     "gateway_run": "41366677683",
+     "direct_usd": 0.03391,
+     "gateway_usd": 0.05478,
+     "saving_pct": -61.6,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42300",
+     "direct_run": "41367331938",
+     "gateway_run": "41367452121",
+     "direct_usd": 0.02324,
+     "gateway_usd": 0.02001,
+     "saving_pct": 13.9,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "neovim-42339",
+     "direct_run": "41365620510",
+     "gateway_run": "41365497774",
+     "direct_usd": 0.02218,
+     "gateway_usd": 0.01681,
+     "saving_pct": 24.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "pytorch-201802",
+     "direct_run": "41363957413",
+     "gateway_run": "41364068353",
+     "direct_usd": 0.02939,
+     "gateway_usd": 0.02001,
+     "saving_pct": 31.9,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.75
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "pytorch-201803",
+     "direct_run": "41368761898",
+     "gateway_run": "41368641217",
+     "direct_usd": 0.02363,
+     "gateway_usd": 0.0252,
+     "saving_pct": -6.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "pytorch-202507",
+     "direct_run": "41368381687",
+     "gateway_run": "41368508166",
+     "direct_usd": 0.03531,
+     "gateway_usd": 0.0256,
+     "saving_pct": 27.5,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5714285714285715
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29343",
+     "direct_run": "41366146562",
+     "gateway_run": "41366017679",
+     "direct_usd": 0.02036,
+     "gateway_usd": 0.01474,
+     "saving_pct": 27.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29395",
+     "direct_run": "41365098474",
+     "gateway_run": "41364984686",
+     "direct_usd": 0.0236,
+     "gateway_usd": 0.02231,
+     "saving_pct": 5.5,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29670",
+     "direct_run": "41366412901",
+     "gateway_run": "41366286875",
+     "direct_usd": 0.02411,
+     "gateway_usd": 0.01804,
+     "saving_pct": 25.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      4
+     ]
+    },
+    {
+     "task": "tauri-16214",
+     "direct_run": "41364512719",
+     "gateway_run": "41364619859",
+     "direct_usd": 0.02092,
+     "gateway_usd": 0.01429,
+     "saving_pct": 31.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "tauri-16319",
+     "direct_run": "41366935367",
+     "gateway_run": "41366812868",
+     "direct_usd": 0.03497,
+     "gateway_usd": 0.01913,
+     "saving_pct": 45.3,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "typescript-64630",
+     "direct_run": "41363836852",
+     "gateway_run": "41363721933",
+     "direct_usd": 0.02677,
+     "gateway_usd": 0.02115,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "uv-22488",
+     "direct_run": "41369286317",
+     "gateway_run": "41369164998",
+     "direct_usd": 0.02078,
+     "gateway_usd": 0.01598,
+     "saving_pct": 23.1,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "uv-22513",
+     "direct_run": "41369546192",
+     "gateway_run": "41369422923",
+     "direct_usd": 0.01989,
+     "gateway_usd": 0.01565,
+     "saving_pct": 21.3,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "zed-65323",
+     "direct_run": "41367852551",
+     "gateway_run": "41367977873",
+     "direct_usd": 0.03463,
+     "gateway_usd": 0.02403,
+     "saving_pct": 30.6,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "zed-65434",
+     "direct_run": "41367601051",
+     "gateway_run": "41367722064",
+     "direct_usd": 0.03328,
+     "gateway_usd": 0.01997,
+     "saving_pct": 40.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "zed-66153",
+     "direct_run": "41367193933",
+     "gateway_run": "41367073561",
+     "direct_usd": 0.02964,
+     "gateway_usd": 0.01847,
+     "saving_pct": 37.7,
+     "passed": null,
+     "f1": [
+      0.33333333333333337,
+      0.5
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 15.7,
+   "ci_pct": [
+    -0.9,
+    27.7
+   ],
+   "cheaper": "11/16",
+   "direct_usd": 0.1039,
+   "gateway_usd": 0.1119,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    131,
+    134
+   ],
+   "tool_mix_ratio": 1.023,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0148,
+   "gateway_first": "8/16",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "bun-1.4.4",
+     "direct_run": "41364926076",
+     "gateway_run": "41364799639",
+     "direct_usd": 0.26607,
+     "gateway_usd": 0.63474,
+     "saving_pct": -138.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      24
+     ]
+    },
+    {
+     "task": "compose-5.4.0",
+     "direct_run": "41367320637",
+     "gateway_run": "41367197050",
+     "direct_usd": 0.15062,
+     "gateway_usd": 0.16091,
+     "saving_pct": -6.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      12,
+      18
+     ]
+    },
+    {
+     "task": "deno-2.9.5",
+     "direct_run": "41363388429",
+     "gateway_run": "41363279896",
+     "direct_usd": 0.10198,
+     "gateway_usd": 0.10237,
+     "saving_pct": -0.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "eslint-10.13.0",
+     "direct_run": "41365882343",
+     "gateway_run": "41366005313",
+     "direct_usd": 0.07446,
+     "gateway_usd": 0.0569,
+     "saving_pct": 23.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      8
+     ]
+    },
+    {
+     "task": "langchain-1.4.3",
+     "direct_run": "41365750881",
+     "gateway_run": "41365623339",
+     "direct_usd": 0.08338,
+     "gateway_usd": 0.0767,
+     "saving_pct": 8.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      5
+     ]
+    },
+    {
+     "task": "neovim-0.12.6",
+     "direct_run": "41364486460",
+     "gateway_run": "41364684306",
+     "direct_usd": 0.06056,
+     "gateway_usd": 0.06075,
+     "saving_pct": -0.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "nest-12.1.0",
+     "direct_run": "41363979311",
+     "gateway_run": "41364090111",
+     "direct_usd": 0.14998,
+     "gateway_usd": 0.0871,
+     "saving_pct": 41.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "next.js-16.4.2",
+     "direct_run": "41366150623",
+     "gateway_run": "41366275813",
+     "direct_usd": 0.1157,
+     "gateway_usd": 0.12691,
+     "saving_pct": -9.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      7
+     ]
+    },
+    {
+     "task": "nushell-0.116.0",
+     "direct_run": "41366536592",
+     "gateway_run": "41366410788",
+     "direct_usd": 0.17559,
+     "gateway_usd": 0.16559,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      14,
+      18
+     ]
+    },
+    {
+     "task": "ollama-0.40.9",
+     "direct_run": "41363858348",
+     "gateway_run": "41363745194",
+     "direct_usd": 0.06867,
+     "gateway_usd": 0.04083,
+     "saving_pct": 40.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      5
+     ]
+    },
+    {
+     "task": "polars-1.43.2",
+     "direct_run": "41365221192",
+     "gateway_run": "41365100744",
+     "direct_usd": 0.06609,
+     "gateway_usd": 0.05497,
+     "saving_pct": 16.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-1.10.27",
+     "direct_run": "41366681910",
+     "gateway_run": "41366804195",
+     "direct_usd": 0.05339,
+     "gateway_usd": 0.0352,
+     "saving_pct": 34.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "syncthing-2.1.7",
+     "direct_run": "41363503868",
+     "gateway_run": "41363613727",
+     "direct_usd": 0.06135,
+     "gateway_usd": 0.04226,
+     "saving_pct": 31.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "terraform-1.16.7",
+     "direct_run": "41364207631",
+     "gateway_run": "41364361671",
+     "direct_usd": 0.05352,
+     "gateway_usd": 0.03818,
+     "saving_pct": 28.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "transformers-5.20.1",
+     "direct_run": "41367066114",
+     "gateway_run": "41366942600",
+     "direct_usd": 0.12393,
+     "gateway_usd": 0.06617,
+     "saving_pct": 46.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      7
+     ]
+    },
+    {
+     "task": "vite-8.3.3",
+     "direct_run": "41365361029",
+     "gateway_run": "41365480568",
+     "direct_usd": 0.05785,
+     "gateway_usd": 0.04044,
+     "saving_pct": 30.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 3.5,
+   "ci_pct": [
+    -4.9,
+    10.8
+   ],
+   "cheaper": "16/26",
+   "direct_usd": 0.0587,
+   "gateway_usd": 0.058,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    28,
+    35
+   ],
+   "tool_mix_ratio": 1.25,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0022,
+   "gateway_first": "13/26",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "django-22041",
+     "direct_run": "41373826702",
+     "gateway_run": "41369538031",
+     "direct_usd": 0.03818,
+     "gateway_usd": 0.03191,
+     "saving_pct": 16.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "django-22198",
+     "direct_run": "41373467965",
+     "gateway_run": "41368898814",
+     "direct_usd": 0.04231,
+     "gateway_usd": 0.04477,
+     "saving_pct": -5.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-194096",
+     "direct_run": "41363299340",
+     "gateway_run": "41371752905",
+     "direct_usd": 0.04526,
+     "gateway_usd": 0.06127,
+     "saving_pct": -35.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-118822",
+     "direct_run": "41372034425",
+     "gateway_run": "41366928522",
+     "direct_usd": 0.04256,
+     "gateway_usd": 0.03775,
+     "saving_pct": 11.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-121020",
+     "direct_run": "41373641401",
+     "gateway_run": "41369156834",
+     "direct_usd": 0.07319,
+     "gateway_usd": 0.04784,
+     "saving_pct": 34.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      2
+     ]
+    },
+    {
+     "task": "grafana-134038",
+     "direct_run": "41364977879",
+     "gateway_run": "41373012710",
+     "direct_usd": 0.05369,
+     "gateway_usd": 0.07064,
+     "saving_pct": -31.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "grafana-136242",
+     "direct_run": "41364106537",
+     "gateway_run": "41372301790",
+     "direct_usd": 0.08209,
+     "gateway_usd": 0.09681,
+     "saving_pct": -17.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kubernetes-142436",
+     "direct_run": "41364335208",
+     "gateway_run": "41372483514",
+     "direct_usd": 0.03404,
+     "gateway_usd": 0.02799,
+     "saving_pct": 17.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "llama.cpp-29069",
+     "direct_run": "41363876215",
+     "gateway_run": "41372122428",
+     "direct_usd": 0.0976,
+     "gateway_usd": 0.06617,
+     "saving_pct": 32.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "llama.cpp-30242",
+     "direct_run": "41365229223",
+     "gateway_run": "41373190705",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.05282,
+     "saving_pct": 14.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42289",
+     "direct_run": "41364843272",
+     "gateway_run": "41372827821",
+     "direct_usd": 0.04529,
+     "gateway_usd": 0.04092,
+     "saving_pct": 9.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "neovim-42595",
+     "direct_run": "41365752898",
+     "gateway_run": "41373555418",
+     "direct_usd": 0.07063,
+     "gateway_usd": 0.0643,
+     "saving_pct": 9.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100205",
+     "direct_run": "41372569692",
+     "gateway_run": "41367715631",
+     "direct_usd": 0.0895,
+     "gateway_usd": 0.10294,
+     "saving_pct": -15.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100840",
+     "direct_run": "41372736754",
+     "gateway_run": "41367848050",
+     "direct_usd": 0.0802,
+     "gateway_usd": 0.06832,
+     "saving_pct": 14.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70233",
+     "direct_run": "41363638132",
+     "gateway_run": "41371938024",
+     "direct_usd": 0.04769,
+     "gateway_usd": 0.04792,
+     "saving_pct": -0.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70960",
+     "direct_run": "41364459594",
+     "gateway_run": "41372655024",
+     "direct_usd": 0.04727,
+     "gateway_usd": 0.03946,
+     "saving_pct": 16.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-18355",
+     "direct_run": "41366009551",
+     "gateway_run": "41373736580",
+     "direct_usd": 0.04646,
+     "gateway_usd": 0.04235,
+     "saving_pct": 8.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-20026",
+     "direct_run": "41373996993",
+     "gateway_run": "41369797346",
+     "direct_usd": 0.06225,
+     "gateway_usd": 0.05869,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29090",
+     "direct_run": "41365611221",
+     "gateway_run": "41373378694",
+     "direct_usd": 0.05279,
+     "gateway_usd": 0.0477,
+     "saving_pct": 9.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29232",
+     "direct_run": "41372213377",
+     "gateway_run": "41367188366",
+     "direct_usd": 0.06798,
+     "gateway_usd": 0.06044,
+     "saving_pct": 11.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52228",
+     "direct_run": "41372392574",
+     "gateway_run": "41367447043",
+     "direct_usd": 0.04815,
+     "gateway_usd": 0.03604,
+     "saving_pct": 25.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52284",
+     "direct_run": "41373286315",
+     "gateway_run": "41368755213",
+     "direct_usd": 0.04797,
+     "gateway_usd": 0.04525,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "transformers-48992",
+     "direct_run": "41373102399",
+     "gateway_run": "41368376327",
+     "direct_usd": 0.05406,
+     "gateway_usd": 0.06193,
+     "saving_pct": -14.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "transformers-49742",
+     "direct_run": "41372923564",
+     "gateway_run": "41368115686",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.06462,
+     "saving_pct": -4.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "uv-22136",
+     "direct_run": "41366405135",
+     "gateway_run": "41373913243",
+     "direct_usd": 0.06558,
+     "gateway_usd": 0.11112,
+     "saving_pct": -69.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      5
+     ]
+    },
+    {
+     "task": "uv-22271",
+     "direct_run": "41371845345",
+     "gateway_run": "41366543856",
+     "direct_usd": 0.06661,
+     "gateway_usd": 0.07828,
+     "saving_pct": -17.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_max_client_ledger": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 19.7,
+   "ci_pct": [
+    4.1,
+    31.5
+   ],
+   "cheaper": "6/8",
+   "direct_usd": 0.1691,
+   "gateway_usd": 0.132,
+   "quality": {
+    "direct_pass": 8,
+    "gateway_pass": 8,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    66
+   ],
+   "tool_mix_ratio": 0.857,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0296,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363934099",
+     "gateway_run": "41363823596",
+     "direct_usd": 0.20062,
+     "gateway_usd": 0.11451,
+     "saving_pct": 42.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      8
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364850379",
+     "gateway_run": "41364734949",
+     "direct_usd": 0.09595,
+     "gateway_usd": 0.08901,
+     "saving_pct": 7.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364390474",
+     "gateway_run": "41364282278",
+     "direct_usd": 0.07152,
+     "gateway_usd": 0.05164,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363577099",
+     "gateway_run": "41363691899",
+     "direct_usd": 0.08035,
+     "gateway_usd": 0.09991,
+     "saving_pct": -24.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365236355",
+     "gateway_run": "41365360551",
+     "direct_usd": 0.07294,
+     "gateway_usd": 0.05261,
+     "saving_pct": 27.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364514594",
+     "gateway_run": "41364621410",
+     "direct_usd": 0.21117,
+     "gateway_usd": 0.22237,
+     "saving_pct": -5.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365099809",
+     "gateway_run": "41364986663",
+     "direct_usd": 0.15481,
+     "gateway_usd": 0.10917,
+     "saving_pct": 29.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364056119",
+     "gateway_run": "41364164451",
+     "direct_usd": 0.46535,
+     "gateway_usd": 0.31673,
+     "saving_pct": 31.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 22.8,
+   "ci_pct": [
+    11.6,
+    32.2
+   ],
+   "cheaper": "14/16",
+   "direct_usd": 0.0502,
+   "gateway_usd": 0.042,
+   "quality": {
+    "direct_pass": 16,
+    "gateway_pass": 15,
+    "n": 16,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 16/16 -> 15/16, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    90,
+    88
+   ],
+   "tool_mix_ratio": 0.978,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0027,
+   "gateway_first": "8/16",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363556936",
+     "gateway_run": "41363449919",
+     "direct_usd": 0.06763,
+     "gateway_usd": 0.04797,
+     "saving_pct": 29.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      7
+     ]
+    },
+    {
+     "task": "commander.js-2630",
+     "direct_run": "41365745717",
+     "gateway_run": "41365618185",
+     "direct_usd": 0.02935,
+     "gateway_usd": 0.01506,
+     "saving_pct": 48.7,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      1
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364628462",
+     "gateway_run": "41364425614",
+     "direct_usd": 0.0349,
+     "gateway_usd": 0.02806,
+     "saving_pct": 19.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3135",
+     "direct_run": "41366276075",
+     "gateway_run": "41366150408",
+     "direct_usd": 0.03786,
+     "gateway_usd": 0.03053,
+     "saving_pct": 19.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3157",
+     "direct_run": "41366805798",
+     "gateway_run": "41366683847",
+     "direct_usd": 0.08712,
+     "gateway_usd": 0.07243,
+     "saving_pct": 16.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10801",
+     "direct_run": "41366939731",
+     "gateway_run": "41367064288",
+     "direct_usd": 0.03364,
+     "gateway_usd": 0.02638,
+     "saving_pct": 21.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41363919741",
+     "gateway_run": "41364027963",
+     "direct_usd": 0.02627,
+     "gateway_usd": 0.02319,
+     "saving_pct": 11.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10805",
+     "direct_run": "41367201682",
+     "gateway_run": "41367325777",
+     "direct_usd": 0.02675,
+     "gateway_usd": 0.0193,
+     "saving_pct": 27.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10808",
+     "direct_run": "41366004957",
+     "gateway_run": "41365881472",
+     "direct_usd": 0.04473,
+     "gateway_usd": 0.02331,
+     "saving_pct": 47.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363216459",
+     "gateway_run": "41363329230",
+     "direct_usd": 0.03926,
+     "gateway_usd": 0.0271,
+     "saving_pct": 31.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365092017",
+     "gateway_run": "41365213675",
+     "direct_usd": 0.03223,
+     "gateway_usd": 0.02674,
+     "saving_pct": 17.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10885",
+     "direct_run": "41366542319",
+     "gateway_run": "41366417150",
+     "direct_usd": 0.03271,
+     "gateway_usd": 0.02568,
+     "saving_pct": 21.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    },
+    {
+     "task": "pydantic-13374",
+     "direct_run": "41365474582",
+     "gateway_run": "41365354245",
+     "direct_usd": 0.04269,
+     "gateway_usd": 0.05811,
+     "saving_pct": -36.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364149652",
+     "gateway_run": "41364257609",
+     "direct_usd": 0.09461,
+     "gateway_usd": 0.04774,
+     "saving_pct": 49.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41364789579",
+     "gateway_run": "41364966170",
+     "direct_usd": 0.05153,
+     "gateway_usd": 0.03922,
+     "saving_pct": 23.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41363682482",
+     "gateway_run": "41363800991",
+     "direct_usd": 0.12231,
+     "gateway_usd": 0.16121,
+     "saving_pct": -31.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 21.4,
+   "ci_pct": [
+    7.1,
+    35.4
+   ],
+   "cheaper": "7/8",
+   "direct_usd": 0.335,
+   "gateway_usd": 0.2759,
+   "quality": {
+    "direct_pass": 3,
+    "gateway_pass": 3,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 3/8 -> 3/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    108,
+    99
+   ],
+   "tool_mix_ratio": 0.917,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0479,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363594939",
+     "gateway_run": "41363712124",
+     "direct_usd": 0.52357,
+     "gateway_usd": 0.50718,
+     "saving_pct": 3.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      14
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41365105046",
+     "gateway_run": "41365224578",
+     "direct_usd": 0.27392,
+     "gateway_usd": 0.16815,
+     "saving_pct": 38.6,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      12
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364293865",
+     "gateway_run": "41364452002",
+     "direct_usd": 0.35259,
+     "gateway_usd": 0.28667,
+     "saving_pct": 18.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      11
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363943542",
+     "gateway_run": "41363834070",
+     "direct_usd": 0.13727,
+     "gateway_usd": 0.10623,
+     "saving_pct": 22.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364723218",
+     "gateway_run": "41364618601",
+     "direct_usd": 0.35823,
+     "gateway_usd": 0.15808,
+     "saving_pct": 55.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      7
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41364176427",
+     "gateway_run": "41364067898",
+     "direct_usd": 0.49639,
+     "gateway_usd": 0.435,
+     "saving_pct": 12.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      20,
+      21
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41365364431",
+     "gateway_run": "41365483587",
+     "direct_usd": 0.31628,
+     "gateway_usd": 0.33396,
+     "saving_pct": -5.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      17
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364975515",
+     "gateway_run": "41364854774",
+     "direct_usd": 0.22196,
+     "gateway_usd": 0.21162,
+     "saving_pct": 4.7,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 19,
+   "saving_pct": 21.8,
+   "ci_pct": [
+    10.3,
+    32.1
+   ],
+   "cheaper": "16/19",
+   "direct_usd": 0.1113,
+   "gateway_usd": 0.0872,
+   "quality": {
+    "direct_pass": 9,
+    "gateway_pass": 10,
+    "n": 19,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 9/19 -> 10/19, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    212,
+    166
+   ],
+   "tool_mix_ratio": 0.783,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0157,
+   "gateway_first": "10/19",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-2994",
+     "direct_run": "41367069446",
+     "gateway_run": "41367189632",
+     "direct_usd": 0.0811,
+     "gateway_usd": 0.04011,
+     "saving_pct": 50.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "echo-3113",
+     "direct_run": "41365606212",
+     "gateway_run": "41365481266",
+     "direct_usd": 0.23629,
+     "gateway_usd": 0.17968,
+     "saving_pct": 24.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      19,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6391",
+     "direct_run": "41367719641",
+     "gateway_run": "41367598005",
+     "direct_usd": 0.10687,
+     "gateway_usd": 0.09529,
+     "saving_pct": 10.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10720",
+     "direct_run": "41365225163",
+     "gateway_run": "41365349989",
+     "direct_usd": 0.15419,
+     "gateway_usd": 0.08376,
+     "saving_pct": 45.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10769",
+     "direct_run": "41366808694",
+     "gateway_run": "41366930177",
+     "direct_usd": 0.07113,
+     "gateway_usd": 0.06463,
+     "saving_pct": 9.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10784",
+     "direct_run": "41367850806",
+     "gateway_run": "41367976150",
+     "direct_usd": 0.08433,
+     "gateway_usd": 0.11965,
+     "saving_pct": -41.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      19
+     ]
+    },
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363350589",
+     "gateway_run": "41363239976",
+     "direct_usd": 0.19349,
+     "gateway_usd": 0.19969,
+     "saving_pct": -3.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "poetry-10944",
+     "direct_run": "41366397342",
+     "gateway_run": "41366270794",
+     "direct_usd": 0.04609,
+     "gateway_usd": 0.06005,
+     "saving_pct": -30.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41364777497",
+     "gateway_run": "41364675304",
+     "direct_usd": 0.05687,
+     "gateway_usd": 0.04749,
+     "saving_pct": 16.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364045367",
+     "gateway_run": "41363936026",
+     "direct_usd": 0.13449,
+     "gateway_usd": 0.12179,
+     "saving_pct": 9.4,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "pydantic-13363",
+     "direct_run": "41365743785",
+     "gateway_run": "41365866896",
+     "direct_usd": 0.08409,
+     "gateway_usd": 0.07134,
+     "saving_pct": 15.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363574005",
+     "gateway_run": "41363468703",
+     "direct_usd": 0.05074,
+     "gateway_usd": 0.04094,
+     "saving_pct": 19.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13632",
+     "direct_run": "41366543310",
+     "gateway_run": "41366671633",
+     "direct_usd": 0.06003,
+     "gateway_usd": 0.04669,
+     "saving_pct": 22.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364275168",
+     "gateway_run": "41364167332",
+     "direct_usd": 0.15566,
+     "gateway_usd": 0.08841,
+     "saving_pct": 43.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-7900",
+     "direct_run": "41367448676",
+     "gateway_run": "41367327721",
+     "direct_usd": 0.11078,
+     "gateway_usd": 0.09017,
+     "saving_pct": 18.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41363704078",
+     "gateway_run": "41363817504",
+     "direct_usd": 0.142,
+     "gateway_usd": 0.05686,
+     "saving_pct": 60.0,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41364966426",
+     "gateway_run": "41365079616",
+     "direct_usd": 0.10416,
+     "gateway_usd": 0.0751,
+     "saving_pct": 27.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8257",
+     "direct_run": "41366128357",
+     "gateway_run": "41366003935",
+     "direct_usd": 0.15052,
+     "gateway_usd": 0.08996,
+     "saving_pct": 40.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364396046",
+     "gateway_run": "41364555575",
+     "direct_usd": 0.09222,
+     "gateway_usd": 0.08563,
+     "saving_pct": 7.2,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 22.4,
+   "ci_pct": [
+    15.5,
+    27.7
+   ],
+   "cheaper": "24/26",
+   "direct_usd": 0.0281,
+   "gateway_usd": 0.0223,
+   "quality": {
+    "f1_direct": 0.499,
+    "f1_gateway": 0.478
+   },
+   "quality_text": "F1 0.499 -> 0.478",
+   "quality_ok": true,
+   "tool_calls": [
+    36,
+    56
+   ],
+   "tool_mix_ratio": 1.556,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0037,
+   "gateway_first": "13/26",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "bun-46530",
+     "direct_run": "41369804464",
+     "gateway_run": "41369681378",
+     "direct_usd": 0.02392,
+     "gateway_usd": 0.02113,
+     "saving_pct": 11.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-54841",
+     "direct_run": "41368245956",
+     "gateway_run": "41368120311",
+     "direct_usd": 0.02561,
+     "gateway_usd": 0.02066,
+     "saving_pct": 19.3,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-55111",
+     "direct_run": "41368909245",
+     "gateway_run": "41369033063",
+     "direct_usd": 0.02612,
+     "gateway_usd": 0.01922,
+     "saving_pct": 26.4,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.30769230769230765
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-194151",
+     "direct_run": "41365762873",
+     "gateway_run": "41365882566",
+     "direct_usd": 0.02979,
+     "gateway_usd": 0.02415,
+     "saving_pct": 19.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-195150",
+     "direct_run": "41363486285",
+     "gateway_run": "41363593103",
+     "direct_usd": 0.03071,
+     "gateway_usd": 0.02684,
+     "saving_pct": 12.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "go-81990",
+     "direct_run": "41365361994",
+     "gateway_run": "41365238432",
+     "direct_usd": 0.02906,
+     "gateway_usd": 0.01957,
+     "saving_pct": 32.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "go-82053",
+     "direct_run": "41363259622",
+     "gateway_run": "41363368207",
+     "direct_usd": 0.05863,
+     "gateway_usd": 0.04322,
+     "saving_pct": 26.3,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-184104",
+     "direct_run": "41364188702",
+     "gateway_run": "41364296010",
+     "direct_usd": 0.02611,
+     "gateway_usd": 0.01835,
+     "saving_pct": 29.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-187849",
+     "direct_run": "41364736519",
+     "gateway_run": "41364850751",
+     "direct_usd": 0.02449,
+     "gateway_usd": 0.01882,
+     "saving_pct": 23.2,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42255",
+     "direct_run": "41366550254",
+     "gateway_run": "41366677683",
+     "direct_usd": 0.03391,
+     "gateway_usd": 0.05478,
+     "saving_pct": -61.6,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42300",
+     "direct_run": "41367331938",
+     "gateway_run": "41367452121",
+     "direct_usd": 0.02324,
+     "gateway_usd": 0.02001,
+     "saving_pct": 13.9,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "neovim-42339",
+     "direct_run": "41365620510",
+     "gateway_run": "41365497774",
+     "direct_usd": 0.02218,
+     "gateway_usd": 0.01681,
+     "saving_pct": 24.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "pytorch-201802",
+     "direct_run": "41363957413",
+     "gateway_run": "41364068353",
+     "direct_usd": 0.02939,
+     "gateway_usd": 0.02001,
+     "saving_pct": 31.9,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.75
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "pytorch-201803",
+     "direct_run": "41368761898",
+     "gateway_run": "41368641217",
+     "direct_usd": 0.02363,
+     "gateway_usd": 0.0252,
+     "saving_pct": -6.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "pytorch-202507",
+     "direct_run": "41368381687",
+     "gateway_run": "41368508166",
+     "direct_usd": 0.03531,
+     "gateway_usd": 0.0256,
+     "saving_pct": 27.5,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5714285714285715
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29343",
+     "direct_run": "41366146562",
+     "gateway_run": "41366017679",
+     "direct_usd": 0.02036,
+     "gateway_usd": 0.01474,
+     "saving_pct": 27.6,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29395",
+     "direct_run": "41365098474",
+     "gateway_run": "41364984686",
+     "direct_usd": 0.0236,
+     "gateway_usd": 0.02357,
+     "saving_pct": 0.1,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29670",
+     "direct_run": "41366412901",
+     "gateway_run": "41366286875",
+     "direct_usd": 0.02411,
+     "gateway_usd": 0.01804,
+     "saving_pct": 25.2,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      4
+     ]
+    },
+    {
+     "task": "tauri-16214",
+     "direct_run": "41364512719",
+     "gateway_run": "41364619859",
+     "direct_usd": 0.02092,
+     "gateway_usd": 0.01429,
+     "saving_pct": 31.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "tauri-16319",
+     "direct_run": "41366935367",
+     "gateway_run": "41366812868",
+     "direct_usd": 0.03497,
+     "gateway_usd": 0.01913,
+     "saving_pct": 45.3,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "typescript-64630",
+     "direct_run": "41363836852",
+     "gateway_run": "41363721933",
+     "direct_usd": 0.02677,
+     "gateway_usd": 0.02115,
+     "saving_pct": 21.0,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "uv-22488",
+     "direct_run": "41369286317",
+     "gateway_run": "41369164998",
+     "direct_usd": 0.02078,
+     "gateway_usd": 0.01598,
+     "saving_pct": 23.1,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "uv-22513",
+     "direct_run": "41369546192",
+     "gateway_run": "41369422923",
+     "direct_usd": 0.01989,
+     "gateway_usd": 0.01565,
+     "saving_pct": 21.3,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "zed-65323",
+     "direct_run": "41367852551",
+     "gateway_run": "41367977873",
+     "direct_usd": 0.03463,
+     "gateway_usd": 0.02403,
+     "saving_pct": 30.6,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "zed-65434",
+     "direct_run": "41367601051",
+     "gateway_run": "41367722064",
+     "direct_usd": 0.03328,
+     "gateway_usd": 0.01997,
+     "saving_pct": 40.0,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "zed-66153",
+     "direct_run": "41367193933",
+     "gateway_run": "41367073561",
+     "direct_usd": 0.02964,
+     "gateway_usd": 0.01847,
+     "saving_pct": 37.7,
+     "passed": null,
+     "f1": [
+      0.33333333333333337,
+      0.5
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 14.1,
+   "ci_pct": [
+    -6.8,
+    27.7
+   ],
+   "cheaper": "11/16",
+   "direct_usd": 0.1039,
+   "gateway_usd": 0.126,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    131,
+    134
+   ],
+   "tool_mix_ratio": 1.023,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0289,
+   "gateway_first": "8/16",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "bun-1.4.4",
+     "direct_run": "41364926076",
+     "gateway_run": "41364799639",
+     "direct_usd": 0.26607,
+     "gateway_usd": 0.86094,
+     "saving_pct": -223.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      24
+     ]
+    },
+    {
+     "task": "compose-5.4.0",
+     "direct_run": "41367320637",
+     "gateway_run": "41367197050",
+     "direct_usd": 0.15062,
+     "gateway_usd": 0.16091,
+     "saving_pct": -6.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      12,
+      18
+     ]
+    },
+    {
+     "task": "deno-2.9.5",
+     "direct_run": "41363388429",
+     "gateway_run": "41363279896",
+     "direct_usd": 0.10198,
+     "gateway_usd": 0.10237,
+     "saving_pct": -0.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "eslint-10.13.0",
+     "direct_run": "41365882343",
+     "gateway_run": "41366005313",
+     "direct_usd": 0.07446,
+     "gateway_usd": 0.0569,
+     "saving_pct": 23.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      8
+     ]
+    },
+    {
+     "task": "langchain-1.4.3",
+     "direct_run": "41365750881",
+     "gateway_run": "41365623339",
+     "direct_usd": 0.08338,
+     "gateway_usd": 0.0767,
+     "saving_pct": 8.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      5
+     ]
+    },
+    {
+     "task": "neovim-0.12.6",
+     "direct_run": "41364486460",
+     "gateway_run": "41364684306",
+     "direct_usd": 0.06056,
+     "gateway_usd": 0.06075,
+     "saving_pct": -0.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "nest-12.1.0",
+     "direct_run": "41363979311",
+     "gateway_run": "41364090111",
+     "direct_usd": 0.14998,
+     "gateway_usd": 0.0871,
+     "saving_pct": 41.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "next.js-16.4.2",
+     "direct_run": "41366150623",
+     "gateway_run": "41366275813",
+     "direct_usd": 0.1157,
+     "gateway_usd": 0.12691,
+     "saving_pct": -9.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      7
+     ]
+    },
+    {
+     "task": "nushell-0.116.0",
+     "direct_run": "41366536592",
+     "gateway_run": "41366410788",
+     "direct_usd": 0.17559,
+     "gateway_usd": 0.16559,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      14,
+      18
+     ]
+    },
+    {
+     "task": "ollama-0.40.9",
+     "direct_run": "41363858348",
+     "gateway_run": "41363745194",
+     "direct_usd": 0.06867,
+     "gateway_usd": 0.04083,
+     "saving_pct": 40.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      5
+     ]
+    },
+    {
+     "task": "polars-1.43.2",
+     "direct_run": "41365221192",
+     "gateway_run": "41365100744",
+     "direct_usd": 0.06609,
+     "gateway_usd": 0.05497,
+     "saving_pct": 16.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-1.10.27",
+     "direct_run": "41366681910",
+     "gateway_run": "41366804195",
+     "direct_usd": 0.05339,
+     "gateway_usd": 0.0352,
+     "saving_pct": 34.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "syncthing-2.1.7",
+     "direct_run": "41363503868",
+     "gateway_run": "41363613727",
+     "direct_usd": 0.06135,
+     "gateway_usd": 0.04226,
+     "saving_pct": 31.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "terraform-1.16.7",
+     "direct_run": "41364207631",
+     "gateway_run": "41364361671",
+     "direct_usd": 0.05352,
+     "gateway_usd": 0.03818,
+     "saving_pct": 28.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "transformers-5.20.1",
+     "direct_run": "41367066114",
+     "gateway_run": "41366942600",
+     "direct_usd": 0.12393,
+     "gateway_usd": 0.06617,
+     "saving_pct": 46.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      7
+     ]
+    },
+    {
+     "task": "vite-8.3.3",
+     "direct_run": "41365361029",
+     "gateway_run": "41365480568",
+     "direct_usd": 0.05785,
+     "gateway_usd": 0.04044,
+     "saving_pct": 30.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 3.5,
+   "ci_pct": [
+    -4.9,
+    10.8
+   ],
+   "cheaper": "16/26",
+   "direct_usd": 0.0587,
+   "gateway_usd": 0.058,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    28,
+    35
+   ],
+   "tool_mix_ratio": 1.25,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0022,
+   "gateway_first": "13/26",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "django-22041",
+     "direct_run": "41373826702",
+     "gateway_run": "41369538031",
+     "direct_usd": 0.03818,
+     "gateway_usd": 0.03191,
+     "saving_pct": 16.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "django-22198",
+     "direct_run": "41373467965",
+     "gateway_run": "41368898814",
+     "direct_usd": 0.04231,
+     "gateway_usd": 0.04477,
+     "saving_pct": -5.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-194096",
+     "direct_run": "41363299340",
+     "gateway_run": "41371752905",
+     "direct_usd": 0.04526,
+     "gateway_usd": 0.06127,
+     "saving_pct": -35.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-118822",
+     "direct_run": "41372034425",
+     "gateway_run": "41366928522",
+     "direct_usd": 0.04256,
+     "gateway_usd": 0.03775,
+     "saving_pct": 11.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-121020",
+     "direct_run": "41373641401",
+     "gateway_run": "41369156834",
+     "direct_usd": 0.07319,
+     "gateway_usd": 0.04784,
+     "saving_pct": 34.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      2
+     ]
+    },
+    {
+     "task": "grafana-134038",
+     "direct_run": "41364977879",
+     "gateway_run": "41373012710",
+     "direct_usd": 0.05369,
+     "gateway_usd": 0.07064,
+     "saving_pct": -31.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "grafana-136242",
+     "direct_run": "41364106537",
+     "gateway_run": "41372301790",
+     "direct_usd": 0.08209,
+     "gateway_usd": 0.09681,
+     "saving_pct": -17.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kubernetes-142436",
+     "direct_run": "41364335208",
+     "gateway_run": "41372483514",
+     "direct_usd": 0.03404,
+     "gateway_usd": 0.02799,
+     "saving_pct": 17.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "llama.cpp-29069",
+     "direct_run": "41363876215",
+     "gateway_run": "41372122428",
+     "direct_usd": 0.0976,
+     "gateway_usd": 0.06617,
+     "saving_pct": 32.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "llama.cpp-30242",
+     "direct_run": "41365229223",
+     "gateway_run": "41373190705",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.05282,
+     "saving_pct": 14.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42289",
+     "direct_run": "41364843272",
+     "gateway_run": "41372827821",
+     "direct_usd": 0.04529,
+     "gateway_usd": 0.04092,
+     "saving_pct": 9.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "neovim-42595",
+     "direct_run": "41365752898",
+     "gateway_run": "41373555418",
+     "direct_usd": 0.07063,
+     "gateway_usd": 0.0643,
+     "saving_pct": 9.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100205",
+     "direct_run": "41372569692",
+     "gateway_run": "41367715631",
+     "direct_usd": 0.0895,
+     "gateway_usd": 0.10294,
+     "saving_pct": -15.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100840",
+     "direct_run": "41372736754",
+     "gateway_run": "41367848050",
+     "direct_usd": 0.0802,
+     "gateway_usd": 0.06832,
+     "saving_pct": 14.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70233",
+     "direct_run": "41363638132",
+     "gateway_run": "41371938024",
+     "direct_usd": 0.04769,
+     "gateway_usd": 0.04792,
+     "saving_pct": -0.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70960",
+     "direct_run": "41364459594",
+     "gateway_run": "41372655024",
+     "direct_usd": 0.04727,
+     "gateway_usd": 0.03946,
+     "saving_pct": 16.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-18355",
+     "direct_run": "41366009551",
+     "gateway_run": "41373736580",
+     "direct_usd": 0.04646,
+     "gateway_usd": 0.04235,
+     "saving_pct": 8.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-20026",
+     "direct_run": "41373996993",
+     "gateway_run": "41369797346",
+     "direct_usd": 0.06225,
+     "gateway_usd": 0.05869,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29090",
+     "direct_run": "41365611221",
+     "gateway_run": "41373378694",
+     "direct_usd": 0.05279,
+     "gateway_usd": 0.0477,
+     "saving_pct": 9.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29232",
+     "direct_run": "41372213377",
+     "gateway_run": "41367188366",
+     "direct_usd": 0.06798,
+     "gateway_usd": 0.06044,
+     "saving_pct": 11.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52228",
+     "direct_run": "41372392574",
+     "gateway_run": "41367447043",
+     "direct_usd": 0.04815,
+     "gateway_usd": 0.03604,
+     "saving_pct": 25.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52284",
+     "direct_run": "41373286315",
+     "gateway_run": "41368755213",
+     "direct_usd": 0.04797,
+     "gateway_usd": 0.04525,
+     "saving_pct": 5.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "transformers-48992",
+     "direct_run": "41373102399",
+     "gateway_run": "41368376327",
+     "direct_usd": 0.05406,
+     "gateway_usd": 0.06193,
+     "saving_pct": -14.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "transformers-49742",
+     "direct_run": "41372923564",
+     "gateway_run": "41368115686",
+     "direct_usd": 0.06206,
+     "gateway_usd": 0.06462,
+     "saving_pct": -4.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "uv-22136",
+     "direct_run": "41366405135",
+     "gateway_run": "41373913243",
+     "direct_usd": 0.06558,
+     "gateway_usd": 0.11112,
+     "saving_pct": -69.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      5
+     ]
+    },
+    {
+     "task": "uv-22271",
+     "direct_run": "41371845345",
+     "gateway_run": "41366543856",
+     "direct_usd": 0.06661,
+     "gateway_usd": 0.07828,
+     "saving_pct": -17.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "rows_old_prices_3_15": [
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 23.5,
+   "ci_pct": [
+    11.7,
+    33.3
+   ],
+   "cheaper": "7/8",
+   "direct_usd": 0.2622,
+   "gateway_usd": 0.198,
+   "quality": {
+    "direct_pass": 8,
+    "gateway_pass": 8,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    77,
+    66
+   ],
+   "tool_mix_ratio": 0.857,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0567,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363934099",
+     "gateway_run": "41363823596",
+     "direct_usd": 0.31753,
+     "gateway_usd": 0.17326,
+     "saving_pct": 45.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      8
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364850379",
+     "gateway_run": "41364734949",
+     "direct_usd": 0.14929,
+     "gateway_usd": 0.13346,
+     "saving_pct": 10.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364390474",
+     "gateway_run": "41364282278",
+     "direct_usd": 0.11231,
+     "gateway_usd": 0.07909,
+     "saving_pct": 29.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363577099",
+     "gateway_run": "41363691899",
+     "direct_usd": 0.12338,
+     "gateway_usd": 0.13403,
+     "saving_pct": -8.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365236355",
+     "gateway_run": "41365360551",
+     "direct_usd": 0.11434,
+     "gateway_usd": 0.08048,
+     "saving_pct": 29.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364514594",
+     "gateway_run": "41364621410",
+     "direct_usd": 0.34936,
+     "gateway_usd": 0.3134,
+     "saving_pct": 10.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365099809",
+     "gateway_run": "41364986663",
+     "direct_usd": 0.24246,
+     "gateway_usd": 0.16474,
+     "saving_pct": 32.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364056119",
+     "gateway_run": "41364164451",
+     "direct_usd": 0.68908,
+     "gateway_usd": 0.50575,
+     "saving_pct": 26.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 27.0,
+   "ci_pct": [
+    16.4,
+    36.4
+   ],
+   "cheaper": "14/16",
+   "direct_usd": 0.0958,
+   "gateway_usd": 0.0752,
+   "quality": {
+    "direct_pass": 16,
+    "gateway_pass": 15,
+    "n": 16,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 16/16 -> 15/16, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    90,
+    88
+   ],
+   "tool_mix_ratio": 0.978,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0151,
+   "gateway_first": "8/16",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363556936",
+     "gateway_run": "41363449919",
+     "direct_usd": 0.13319,
+     "gateway_usd": 0.0882,
+     "saving_pct": 33.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      7
+     ]
+    },
+    {
+     "task": "commander.js-2630",
+     "direct_run": "41365745717",
+     "gateway_run": "41365618185",
+     "direct_usd": 0.0549,
+     "gateway_usd": 0.02271,
+     "saving_pct": 58.6,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      1
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364628462",
+     "gateway_run": "41364425614",
+     "direct_usd": 0.06627,
+     "gateway_usd": 0.05104,
+     "saving_pct": 23.0,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3135",
+     "direct_run": "41366276075",
+     "gateway_run": "41366150408",
+     "direct_usd": 0.07153,
+     "gateway_usd": 0.05558,
+     "saving_pct": 22.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "echo-3157",
+     "direct_run": "41366805798",
+     "gateway_run": "41366683847",
+     "direct_usd": 0.1668,
+     "gateway_usd": 0.13629,
+     "saving_pct": 18.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      9,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10801",
+     "direct_run": "41366939731",
+     "gateway_run": "41367064288",
+     "direct_usd": 0.0614,
+     "gateway_usd": 0.04655,
+     "saving_pct": 24.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41363919741",
+     "gateway_run": "41364027963",
+     "direct_usd": 0.05011,
+     "gateway_usd": 0.04343,
+     "saving_pct": 13.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10805",
+     "direct_run": "41367201682",
+     "gateway_run": "41367325777",
+     "direct_usd": 0.0508,
+     "gateway_usd": 0.03566,
+     "saving_pct": 29.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10808",
+     "direct_run": "41366004957",
+     "gateway_run": "41365881472",
+     "direct_usd": 0.08204,
+     "gateway_usd": 0.04353,
+     "saving_pct": 46.9,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363216459",
+     "gateway_run": "41363329230",
+     "direct_usd": 0.07293,
+     "gateway_usd": 0.04971,
+     "saving_pct": 31.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365092017",
+     "gateway_run": "41365213675",
+     "direct_usd": 0.06215,
+     "gateway_usd": 0.04884,
+     "saving_pct": 21.4,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10885",
+     "direct_run": "41366542319",
+     "gateway_run": "41366417150",
+     "direct_usd": 0.05993,
+     "gateway_usd": 0.04541,
+     "saving_pct": 24.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      3,
+      4
+     ]
+    },
+    {
+     "task": "pydantic-13374",
+     "direct_run": "41365474582",
+     "gateway_run": "41365354245",
+     "direct_usd": 0.07867,
+     "gateway_usd": 0.09504,
+     "saving_pct": -20.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364149652",
+     "gateway_run": "41364257609",
+     "direct_usd": 0.18898,
+     "gateway_usd": 0.08604,
+     "saving_pct": 54.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41364789579",
+     "gateway_run": "41364966170",
+     "direct_usd": 0.09902,
+     "gateway_usd": 0.07316,
+     "saving_pct": 26.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      6
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41363682482",
+     "gateway_run": "41363800991",
+     "direct_usd": 0.2342,
+     "gateway_usd": 0.28236,
+     "saving_pct": -20.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-opus-5-5",
+   "n": 8,
+   "saving_pct": 23.4,
+   "ci_pct": [
+    8.3,
+    38.4
+   ],
+   "cheaper": "7/8",
+   "direct_usd": 0.5282,
+   "gateway_usd": 0.4268,
+   "quality": {
+    "direct_pass": 3,
+    "gateway_pass": 3,
+    "n": 8,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 3/8 -> 3/8, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    108,
+    99
+   ],
+   "tool_mix_ratio": 0.917,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0902,
+   "gateway_first": "4/8",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363594939",
+     "gateway_run": "41363712124",
+     "direct_usd": 0.84057,
+     "gateway_usd": 0.81188,
+     "saving_pct": 3.4,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      14
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41365105046",
+     "gateway_run": "41365224578",
+     "direct_usd": 0.43325,
+     "gateway_usd": 0.25537,
+     "saving_pct": 41.1,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      12
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364293865",
+     "gateway_run": "41364452002",
+     "direct_usd": 0.53992,
+     "gateway_usd": 0.4349,
+     "saving_pct": 19.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      11
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363943542",
+     "gateway_run": "41363834070",
+     "direct_usd": 0.20921,
+     "gateway_usd": 0.1584,
+     "saving_pct": 24.3,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364723218",
+     "gateway_run": "41364618601",
+     "direct_usd": 0.57184,
+     "gateway_usd": 0.22913,
+     "saving_pct": 59.9,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      7
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41364176427",
+     "gateway_run": "41364067898",
+     "direct_usd": 0.79309,
+     "gateway_usd": 0.68443,
+     "saving_pct": 13.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      20,
+      21
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41365364431",
+     "gateway_run": "41365483587",
+     "direct_usd": 0.49805,
+     "gateway_usd": 0.5214,
+     "saving_pct": -4.7,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      17
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364975515",
+     "gateway_run": "41364854774",
+     "direct_usd": 0.33987,
+     "gateway_usd": 0.31896,
+     "saving_pct": 6.2,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-mention",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 19,
+   "saving_pct": 24.2,
+   "ci_pct": [
+    12.4,
+    34.6
+   ],
+   "cheaper": "17/19",
+   "direct_usd": 0.2089,
+   "gateway_usd": 0.1581,
+   "quality": {
+    "direct_pass": 9,
+    "gateway_pass": 10,
+    "n": 19,
+    "mcnemar_p": 1.0
+   },
+   "quality_text": "pass 9/19 -> 10/19, McNemar p=1.0",
+   "quality_ok": true,
+   "tool_calls": [
+    212,
+    166
+   ],
+   "tool_mix_ratio": 0.783,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0423,
+   "gateway_first": "10/19",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "echo-2994",
+     "direct_run": "41367069446",
+     "gateway_run": "41367189632",
+     "direct_usd": 0.1495,
+     "gateway_usd": 0.07063,
+     "saving_pct": 52.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      4
+     ]
+    },
+    {
+     "task": "echo-3113",
+     "direct_run": "41365606212",
+     "gateway_run": "41365481266",
+     "direct_usd": 0.44392,
+     "gateway_usd": 0.31704,
+     "saving_pct": 28.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      19,
+      12
+     ]
+    },
+    {
+     "task": "mocha-6391",
+     "direct_run": "41367719641",
+     "gateway_run": "41367598005",
+     "direct_usd": 0.20233,
+     "gateway_usd": 0.17771,
+     "saving_pct": 12.2,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      12,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10720",
+     "direct_run": "41365225163",
+     "gateway_run": "41365349989",
+     "direct_usd": 0.27982,
+     "gateway_usd": 0.15596,
+     "saving_pct": 44.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      12
+     ]
+    },
+    {
+     "task": "poetry-10769",
+     "direct_run": "41366808694",
+     "gateway_run": "41366930177",
+     "direct_usd": 0.13274,
+     "gateway_usd": 0.11935,
+     "saving_pct": 10.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      11
+     ]
+    },
+    {
+     "task": "poetry-10784",
+     "direct_run": "41367850806",
+     "gateway_run": "41367976150",
+     "direct_usd": 0.15667,
+     "gateway_usd": 0.23444,
+     "saving_pct": -49.6,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      11,
+      19
+     ]
+    },
+    {
+     "task": "poetry-10941",
+     "direct_run": "41363350589",
+     "gateway_run": "41363239976",
+     "direct_usd": 0.36153,
+     "gateway_usd": 0.35966,
+     "saving_pct": 0.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "poetry-10944",
+     "direct_run": "41366397342",
+     "gateway_run": "41366270794",
+     "direct_usd": 0.08432,
+     "gateway_usd": 0.10307,
+     "saving_pct": -22.2,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10982",
+     "direct_run": "41364777497",
+     "gateway_run": "41364675304",
+     "direct_usd": 0.10733,
+     "gateway_usd": 0.0863,
+     "saving_pct": 19.6,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "poetry-11131",
+     "direct_run": "41364045367",
+     "gateway_run": "41363936026",
+     "direct_usd": 0.2501,
+     "gateway_usd": 0.21718,
+     "saving_pct": 13.2,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      10,
+      8
+     ]
+    },
+    {
+     "task": "pydantic-13363",
+     "direct_run": "41365743785",
+     "gateway_run": "41365866896",
+     "direct_usd": 0.15163,
+     "gateway_usd": 0.12479,
+     "saving_pct": 17.7,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-13452",
+     "direct_run": "41363574005",
+     "gateway_run": "41363468703",
+     "direct_usd": 0.09482,
+     "gateway_usd": 0.0739,
+     "saving_pct": 22.1,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13632",
+     "direct_run": "41366543310",
+     "gateway_run": "41366671633",
+     "direct_usd": 0.11225,
+     "gateway_usd": 0.08473,
+     "saving_pct": 24.5,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-14054",
+     "direct_run": "41364275168",
+     "gateway_run": "41364167332",
+     "direct_usd": 0.30348,
+     "gateway_usd": 0.16,
+     "saving_pct": 47.3,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      16,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-7900",
+     "direct_run": "41367448676",
+     "gateway_run": "41367327721",
+     "direct_usd": 0.20926,
+     "gateway_usd": 0.1601,
+     "saving_pct": 23.5,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8048",
+     "direct_run": "41363704078",
+     "gateway_run": "41363817504",
+     "direct_usd": 0.27457,
+     "gateway_usd": 0.1035,
+     "saving_pct": 62.3,
+     "passed": [
+      true,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      15,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8196",
+     "direct_run": "41364966426",
+     "gateway_run": "41365079616",
+     "direct_usd": 0.19391,
+     "gateway_usd": 0.13553,
+     "saving_pct": 30.1,
+     "passed": [
+      false,
+      false
+     ],
+     "f1": null,
+     "tools": [
+      14,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8257",
+     "direct_run": "41366128357",
+     "gateway_run": "41366003935",
+     "direct_usd": 0.29386,
+     "gateway_usd": 0.16208,
+     "saving_pct": 44.8,
+     "passed": [
+      true,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8386",
+     "direct_run": "41364396046",
+     "gateway_run": "41364555575",
+     "direct_usd": 0.16617,
+     "gateway_usd": 0.15858,
+     "saving_pct": 4.6,
+     "passed": [
+      false,
+      true
+     ],
+     "f1": null,
+     "tools": [
+      8,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "area": "labels",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 23.9,
+   "ci_pct": [
+    18.7,
+    28.6
+   ],
+   "cheaper": "23/26",
+   "direct_usd": 0.0475,
+   "gateway_usd": 0.0363,
+   "quality": {
+    "f1_direct": 0.499,
+    "f1_gateway": 0.478
+   },
+   "quality_text": "F1 0.499 -> 0.478",
+   "quality_ok": true,
+   "tool_calls": [
+    36,
+    56
+   ],
+   "tool_mix_ratio": 1.556,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0091,
+   "gateway_first": "13/26",
+   "passed_bar": true,
+   "pairs": [
+    {
+     "task": "bun-46530",
+     "direct_run": "41369804464",
+     "gateway_run": "41369681378",
+     "direct_usd": 0.04024,
+     "gateway_usd": 0.03692,
+     "saving_pct": 8.3,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-54841",
+     "direct_run": "41368245956",
+     "gateway_run": "41368120311",
+     "direct_usd": 0.04278,
+     "gateway_usd": 0.03406,
+     "saving_pct": 20.4,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "electron-55111",
+     "direct_run": "41368909245",
+     "gateway_run": "41369033063",
+     "direct_usd": 0.04353,
+     "gateway_usd": 0.03189,
+     "saving_pct": 26.7,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.30769230769230765
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-194151",
+     "direct_run": "41365762873",
+     "gateway_run": "41365882566",
+     "direct_usd": 0.04905,
+     "gateway_usd": 0.03928,
+     "saving_pct": 19.9,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "flutter-195150",
+     "direct_run": "41363486285",
+     "gateway_run": "41363593103",
+     "direct_usd": 0.05042,
+     "gateway_usd": 0.04333,
+     "saving_pct": 14.1,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "go-81990",
+     "direct_run": "41365361994",
+     "gateway_run": "41365238432",
+     "direct_usd": 0.05106,
+     "gateway_usd": 0.03242,
+     "saving_pct": 36.5,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "go-82053",
+     "direct_run": "41363259622",
+     "gateway_run": "41363368207",
+     "direct_usd": 0.09355,
+     "gateway_usd": 0.06646,
+     "saving_pct": 29.0,
+     "passed": null,
+     "f1": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-184104",
+     "direct_run": "41364188702",
+     "gateway_run": "41364296010",
+     "direct_usd": 0.04638,
+     "gateway_usd": 0.03263,
+     "saving_pct": 29.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "home-assistant-187849",
+     "direct_run": "41364736519",
+     "gateway_run": "41364850751",
+     "direct_usd": 0.04395,
+     "gateway_usd": 0.03334,
+     "saving_pct": 24.2,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42255",
+     "direct_run": "41366550254",
+     "gateway_run": "41366677683",
+     "direct_usd": 0.05817,
+     "gateway_usd": 0.06228,
+     "saving_pct": -7.1,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42300",
+     "direct_run": "41367331938",
+     "gateway_run": "41367452121",
+     "direct_usd": 0.03921,
+     "gateway_usd": 0.03508,
+     "saving_pct": 10.5,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "neovim-42339",
+     "direct_run": "41365620510",
+     "gateway_run": "41365497774",
+     "direct_usd": 0.03762,
+     "gateway_usd": 0.02827,
+     "saving_pct": 24.9,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "pytorch-201802",
+     "direct_run": "41363957413",
+     "gateway_run": "41364068353",
+     "direct_usd": 0.04845,
+     "gateway_usd": 0.03307,
+     "saving_pct": 31.7,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.75
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    },
+    {
+     "task": "pytorch-201803",
+     "direct_run": "41368761898",
+     "gateway_run": "41368641217",
+     "direct_usd": 0.03979,
+     "gateway_usd": 0.04327,
+     "saving_pct": -8.7,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.6
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "pytorch-202507",
+     "direct_run": "41368381687",
+     "gateway_run": "41368508166",
+     "direct_usd": 0.05732,
+     "gateway_usd": 0.04355,
+     "saving_pct": 24.0,
+     "passed": null,
+     "f1": [
+      0.5714285714285715,
+      0.5714285714285715
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29343",
+     "direct_run": "41366146562",
+     "gateway_run": "41366017679",
+     "direct_usd": 0.0349,
+     "gateway_usd": 0.02518,
+     "saving_pct": 27.9,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29395",
+     "direct_run": "41365098474",
+     "gateway_run": "41364984686",
+     "direct_usd": 0.03975,
+     "gateway_usd": 0.04032,
+     "saving_pct": -1.4,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.4
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "ruff-29670",
+     "direct_run": "41366412901",
+     "gateway_run": "41366286875",
+     "direct_usd": 0.0433,
+     "gateway_usd": 0.03213,
+     "saving_pct": 25.8,
+     "passed": null,
+     "f1": [
+      0.0,
+      0.0
+     ],
+     "tools": [
+      2,
+      4
+     ]
+    },
+    {
+     "task": "tauri-16214",
+     "direct_run": "41364512719",
+     "gateway_run": "41364619859",
+     "direct_usd": 0.03573,
+     "gateway_usd": 0.02449,
+     "saving_pct": 31.5,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "tauri-16319",
+     "direct_run": "41366935367",
+     "gateway_run": "41366812868",
+     "direct_usd": 0.06019,
+     "gateway_usd": 0.03175,
+     "saving_pct": 47.2,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "typescript-64630",
+     "direct_run": "41363836852",
+     "gateway_run": "41363721933",
+     "direct_usd": 0.04451,
+     "gateway_usd": 0.03478,
+     "saving_pct": 21.9,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "uv-22488",
+     "direct_run": "41369286317",
+     "gateway_run": "41369164998",
+     "direct_usd": 0.03552,
+     "gateway_usd": 0.02702,
+     "saving_pct": 23.9,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "uv-22513",
+     "direct_run": "41369546192",
+     "gateway_run": "41369422923",
+     "direct_usd": 0.03419,
+     "gateway_usd": 0.02653,
+     "saving_pct": 22.4,
+     "passed": null,
+     "f1": [
+      0.6666666666666666,
+      0.6666666666666666
+     ],
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "zed-65323",
+     "direct_run": "41367852551",
+     "gateway_run": "41367977873",
+     "direct_usd": 0.05969,
+     "gateway_usd": 0.04149,
+     "saving_pct": 30.5,
+     "passed": null,
+     "f1": [
+      0.75,
+      0.5
+     ],
+     "tools": [
+      2,
+      2
+     ]
+    },
+    {
+     "task": "zed-65434",
+     "direct_run": "41367601051",
+     "gateway_run": "41367722064",
+     "direct_usd": 0.05427,
+     "gateway_usd": 0.03301,
+     "saving_pct": 39.2,
+     "passed": null,
+     "f1": [
+      0.5,
+      0.0
+     ],
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "zed-66153",
+     "direct_run": "41367193933",
+     "gateway_run": "41367073561",
+     "direct_usd": 0.05193,
+     "gateway_usd": 0.03077,
+     "saving_pct": 40.8,
+     "passed": null,
+     "f1": [
+      0.33333333333333337,
+      0.5
+     ],
+     "tools": [
+      2,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "area": "release",
+   "agent": "claude-code",
+   "model": "claude-sonnet-5-5",
+   "n": 16,
+   "saving_pct": 18.9,
+   "ci_pct": [
+    2.5,
+    30.6
+   ],
+   "cheaper": "13/16",
+   "direct_usd": 0.1856,
+   "gateway_usd": 0.1922,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    131,
+    134
+   ],
+   "tool_mix_ratio": 1.023,
+   "tool_mix_ok": true,
+   "net_per_run": -0.0134,
+   "gateway_first": "8/16",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "bun-1.4.4",
+     "direct_run": "41364926076",
+     "gateway_run": "41364799639",
+     "direct_usd": 0.45123,
+     "gateway_usd": 1.08441,
+     "saving_pct": -140.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      24
+     ]
+    },
+    {
+     "task": "compose-5.4.0",
+     "direct_run": "41367320637",
+     "gateway_run": "41367197050",
+     "direct_usd": 0.27798,
+     "gateway_usd": 0.28501,
+     "saving_pct": -2.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      12,
+      18
+     ]
+    },
+    {
+     "task": "deno-2.9.5",
+     "direct_run": "41363388429",
+     "gateway_run": "41363279896",
+     "direct_usd": 0.17529,
+     "gateway_usd": 0.16571,
+     "saving_pct": 5.5,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      4
+     ]
+    },
+    {
+     "task": "eslint-10.13.0",
+     "direct_run": "41365882343",
+     "gateway_run": "41366005313",
+     "direct_usd": 0.13753,
+     "gateway_usd": 0.09982,
+     "saving_pct": 27.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      8
+     ]
+    },
+    {
+     "task": "langchain-1.4.3",
+     "direct_run": "41365750881",
+     "gateway_run": "41365623339",
+     "direct_usd": 0.14605,
+     "gateway_usd": 0.13119,
+     "saving_pct": 10.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      8,
+      5
+     ]
+    },
+    {
+     "task": "neovim-0.12.6",
+     "direct_run": "41364486460",
+     "gateway_run": "41364684306",
+     "direct_usd": 0.10888,
+     "gateway_usd": 0.10137,
+     "saving_pct": 6.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "nest-12.1.0",
+     "direct_run": "41363979311",
+     "gateway_run": "41364090111",
+     "direct_usd": 0.27538,
+     "gateway_usd": 0.15426,
+     "saving_pct": 44.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      18,
+      8
+     ]
+    },
+    {
+     "task": "next.js-16.4.2",
+     "direct_run": "41366150623",
+     "gateway_run": "41366275813",
+     "direct_usd": 0.20982,
+     "gateway_usd": 0.22221,
+     "saving_pct": -5.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      7
+     ]
+    },
+    {
+     "task": "nushell-0.116.0",
+     "direct_run": "41366536592",
+     "gateway_run": "41366410788",
+     "direct_usd": 0.31298,
+     "gateway_usd": 0.2774,
+     "saving_pct": 11.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      14,
+      18
+     ]
+    },
+    {
+     "task": "ollama-0.40.9",
+     "direct_run": "41363858348",
+     "gateway_run": "41363745194",
+     "direct_usd": 0.12502,
+     "gateway_usd": 0.07051,
+     "saving_pct": 43.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      5
+     ]
+    },
+    {
+     "task": "polars-1.43.2",
+     "direct_run": "41365221192",
+     "gateway_run": "41365100744",
+     "direct_usd": 0.12063,
+     "gateway_usd": 0.09575,
+     "saving_pct": 20.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      7,
+      6
+     ]
+    },
+    {
+     "task": "pydantic-1.10.27",
+     "direct_run": "41366681910",
+     "gateway_run": "41366804195",
+     "direct_usd": 0.09773,
+     "gateway_usd": 0.06186,
+     "saving_pct": 36.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      6,
+      5
+     ]
+    },
+    {
+     "task": "syncthing-2.1.7",
+     "direct_run": "41363503868",
+     "gateway_run": "41363613727",
+     "direct_usd": 0.11007,
+     "gateway_usd": 0.07276,
+     "saving_pct": 33.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      6
+     ]
+    },
+    {
+     "task": "terraform-1.16.7",
+     "direct_run": "41364207631",
+     "gateway_run": "41364361671",
+     "direct_usd": 0.09578,
+     "gateway_usd": 0.06508,
+     "saving_pct": 32.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "transformers-5.20.1",
+     "direct_run": "41367066114",
+     "gateway_run": "41366942600",
+     "direct_usd": 0.22472,
+     "gateway_usd": 0.11556,
+     "saving_pct": 48.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      11,
+      7
+     ]
+    },
+    {
+     "task": "vite-8.3.3",
+     "direct_run": "41365361029",
+     "gateway_run": "41365480568",
+     "direct_usd": 0.10116,
+     "gateway_usd": 0.07217,
+     "saving_pct": 28.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "area": "review",
+   "agent": "claude-code-action",
+   "model": "claude-sonnet-5-5",
+   "n": 26,
+   "saving_pct": 5.7,
+   "ci_pct": [
+    -2.5,
+    12.4
+   ],
+   "cheaper": "17/26",
+   "direct_usd": 0.0941,
+   "gateway_usd": 0.0911,
+   "quality": null,
+   "quality_text": "not judged (judge not run)",
+   "quality_ok": null,
+   "tool_calls": [
+    28,
+    35
+   ],
+   "tool_mix_ratio": 1.25,
+   "tool_mix_ok": true,
+   "net_per_run": 0.0002,
+   "gateway_first": "13/26",
+   "passed_bar": false,
+   "pairs": [
+    {
+     "task": "django-22041",
+     "direct_run": "41373826702",
+     "gateway_run": "41369538031",
+     "direct_usd": 0.06197,
+     "gateway_usd": 0.05089,
+     "saving_pct": 17.9,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "django-22198",
+     "direct_run": "41373467965",
+     "gateway_run": "41368898814",
+     "direct_usd": 0.06829,
+     "gateway_usd": 0.07019,
+     "saving_pct": -2.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "flutter-194096",
+     "direct_run": "41363299340",
+     "gateway_run": "41371752905",
+     "direct_usd": 0.07243,
+     "gateway_usd": 0.07798,
+     "saving_pct": -7.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-118822",
+     "direct_run": "41372034425",
+     "gateway_run": "41366928522",
+     "direct_usd": 0.06866,
+     "gateway_usd": 0.05965,
+     "saving_pct": 13.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "godot-121020",
+     "direct_run": "41373641401",
+     "gateway_run": "41369156834",
+     "direct_usd": 0.12817,
+     "gateway_usd": 0.07926,
+     "saving_pct": 38.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      3,
+      2
+     ]
+    },
+    {
+     "task": "grafana-134038",
+     "direct_run": "41364977879",
+     "gateway_run": "41373012710",
+     "direct_usd": 0.08603,
+     "gateway_usd": 0.09381,
+     "saving_pct": -9.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "grafana-136242",
+     "direct_run": "41364106537",
+     "gateway_run": "41372301790",
+     "direct_usd": 0.12867,
+     "gateway_usd": 0.14805,
+     "saving_pct": -15.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "kubernetes-142436",
+     "direct_run": "41364335208",
+     "gateway_run": "41372483514",
+     "direct_usd": 0.05584,
+     "gateway_usd": 0.04512,
+     "saving_pct": 19.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "llama.cpp-29069",
+     "direct_run": "41363876215",
+     "gateway_run": "41372122428",
+     "direct_usd": 0.15108,
+     "gateway_usd": 0.10706,
+     "saving_pct": 29.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "llama.cpp-30242",
+     "direct_run": "41365229223",
+     "gateway_run": "41373190705",
+     "direct_usd": 0.09793,
+     "gateway_usd": 0.08649,
+     "saving_pct": 11.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      2
+     ]
+    },
+    {
+     "task": "neovim-42289",
+     "direct_run": "41364843272",
+     "gateway_run": "41372827821",
+     "direct_usd": 0.07623,
+     "gateway_usd": 0.06683,
+     "saving_pct": 12.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "neovim-42595",
+     "direct_run": "41365752898",
+     "gateway_run": "41373555418",
+     "direct_usd": 0.11067,
+     "gateway_usd": 0.09951,
+     "saving_pct": 10.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100205",
+     "direct_run": "41372569692",
+     "gateway_run": "41367715631",
+     "direct_usd": 0.1412,
+     "gateway_usd": 0.15869,
+     "saving_pct": -12.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "next.js-100840",
+     "direct_run": "41372736754",
+     "gateway_run": "41367848050",
+     "direct_usd": 0.12737,
+     "gateway_usd": 0.10827,
+     "saving_pct": 15.0,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70233",
+     "direct_run": "41363638132",
+     "gateway_run": "41371938024",
+     "direct_usd": 0.07653,
+     "gateway_usd": 0.07777,
+     "saving_pct": -1.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "pandas-70960",
+     "direct_run": "41364459594",
+     "gateway_run": "41372655024",
+     "direct_usd": 0.07591,
+     "gateway_usd": 0.06239,
+     "saving_pct": 17.8,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-18355",
+     "direct_run": "41366009551",
+     "gateway_run": "41373736580",
+     "direct_usd": 0.07488,
+     "gateway_usd": 0.06693,
+     "saving_pct": 10.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "prometheus-20026",
+     "direct_run": "41373996993",
+     "gateway_run": "41369797346",
+     "direct_usd": 0.09856,
+     "gateway_usd": 0.09397,
+     "saving_pct": 4.7,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29090",
+     "direct_run": "41365611221",
+     "gateway_run": "41373378694",
+     "direct_usd": 0.08505,
+     "gateway_usd": 0.07561,
+     "saving_pct": 11.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "ruff-29232",
+     "direct_run": "41372213377",
+     "gateway_run": "41367188366",
+     "direct_usd": 0.10788,
+     "gateway_usd": 0.09479,
+     "saving_pct": 12.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52228",
+     "direct_run": "41372392574",
+     "gateway_run": "41367447043",
+     "direct_usd": 0.07704,
+     "gateway_usd": 0.05925,
+     "saving_pct": 23.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "spring-boot-52284",
+     "direct_run": "41373286315",
+     "gateway_run": "41368755213",
+     "direct_usd": 0.07677,
+     "gateway_usd": 0.0709,
+     "saving_pct": 7.6,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "transformers-48992",
+     "direct_run": "41373102399",
+     "gateway_run": "41368376327",
+     "direct_usd": 0.08609,
+     "gateway_usd": 0.10785,
+     "saving_pct": -25.3,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      3
+     ]
+    },
+    {
+     "task": "transformers-49742",
+     "direct_run": "41372923564",
+     "gateway_run": "41368115686",
+     "direct_usd": 0.10559,
+     "gateway_usd": 0.1081,
+     "saving_pct": -2.4,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    },
+    {
+     "task": "uv-22136",
+     "direct_run": "41366405135",
+     "gateway_run": "41373913243",
+     "direct_usd": 0.10334,
+     "gateway_usd": 0.19955,
+     "saving_pct": -93.1,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      5
+     ]
+    },
+    {
+     "task": "uv-22271",
+     "direct_run": "41371845345",
+     "gateway_run": "41366543856",
+     "direct_usd": 0.10466,
+     "gateway_usd": 0.09921,
+     "saving_pct": 5.2,
+     "passed": null,
+     "f1": null,
+     "tools": [
+      1,
+      1
+     ]
+    }
+   ]
+  }
+ ]
+}

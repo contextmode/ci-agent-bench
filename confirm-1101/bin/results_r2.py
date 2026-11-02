@@ -99,7 +99,7 @@ o = ["# confirm-1101 round 2 results", "",
      "Plan: PLAN-r2.md (commit a4770f7, GitHub push 2026-11-01T23:39:27Z, before any paid run).", "",
      "Saving = 1 - exp(mean log(gateway/direct)) over tasks; CI = paired bootstrap, 10000 draws, seed 1. Positive = gateway cheaper.",
      "Cost = provider usage x list price; gateway arm from the gateway ledger when it has rows for the session.", "",
-     "## Round-2 rows (primary)", "", H + " quality | tool mix gw/direct | bar |", "|" + "---|" * 13]
+     open(os.path.join(HERE, "run2/summary-deviations.md")).read(), "## Round-2 rows (primary)", "", H + " quality | tool mix gw/direct | bar |", "|" + "---|" * 13]
 o += [fmt(r) for r in rows2]
 o += ["", "## Round-1 rows, same analysis (for reference)", "", H + " quality | tool mix gw/direct | bar |", "|" + "---|" * 13]
 o += [fmt(r) for r in rows1]

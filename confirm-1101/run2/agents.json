@@ -1,0 +1,392 @@
+{
+ "rows": [
+  {
+   "area": "fix-ci",
+   "agent": "codex",
+   "model": "gpt-5-mini",
+   "n": 5,
+   "saving_pct": -3.2,
+   "ci_pct": [
+    -45.1,
+    22.9
+   ],
+   "cheaper": "3/5",
+   "direct_usd": 0.0369,
+   "gateway_usd": 0.0334,
+   "quality": "pass 5/5 -> 5/5, McNemar p=1.0",
+   "tool_calls": [
+    105,
+    125
+   ],
+   "tool_mix_ratio": 1.19,
+   "passed_bar": false,
+   "total_usd": 0.3514,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41364005895",
+     "gateway_run": "41363898809",
+     "direct_usd": 0.05194,
+     "gateway_usd": 0.03401,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      29,
+      26
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364966533",
+     "gateway_run": "41365080201",
+     "direct_usd": 0.01617,
+     "gateway_usd": 0.03116,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      9,
+      29
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364453699",
+     "gateway_run": "41364563244",
+     "direct_usd": 0.01676,
+     "gateway_usd": 0.01589,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      11,
+      10
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363776409",
+     "gateway_run": "41363660257",
+     "direct_usd": 0.0118,
+     "gateway_usd": 0.01412,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      8,
+      13
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364677903",
+     "gateway_run": "41364780168",
+     "direct_usd": 0.0877,
+     "gateway_usd": 0.0718,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      48,
+      47
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "opencode",
+   "model": "claude-sonnet-5-5",
+   "n": 8,
+   "saving_pct": 20.8,
+   "ci_pct": [
+    0.3,
+    36.1
+   ],
+   "cheaper": "6/8",
+   "direct_usd": 0.0732,
+   "gateway_usd": 0.056,
+   "quality": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "tool_calls": [
+    58,
+    54
+   ],
+   "tool_mix_ratio": 0.931,
+   "passed_bar": true,
+   "total_usd": 1.0332,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363861773",
+     "gateway_run": "41363969996",
+     "direct_usd": 0.06263,
+     "gateway_usd": 0.05042,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      9,
+      7
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41365096647",
+     "gateway_run": "41364933612",
+     "direct_usd": 0.06384,
+     "gateway_usd": 0.04255,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      7,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364362361",
+     "gateway_run": "41364521563",
+     "direct_usd": 0.04197,
+     "gateway_usd": 0.03049,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363735653",
+     "gateway_run": "41363619264",
+     "direct_usd": 0.05087,
+     "gateway_usd": 0.0384,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      5,
+      5
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365489654",
+     "gateway_run": "41365613561",
+     "direct_usd": 0.02502,
+     "gateway_usd": 0.03604,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      5
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364686074",
+     "gateway_run": "41364787677",
+     "direct_usd": 0.15901,
+     "gateway_usd": 0.07143,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      13,
+      9
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365359230",
+     "gateway_run": "41365235218",
+     "direct_usd": 0.06896,
+     "gateway_usd": 0.04956,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      8,
+      7
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364199612",
+     "gateway_run": "41364091038",
+     "direct_usd": 0.11331,
+     "gateway_usd": 0.12875,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      9,
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "area": "fix-ci",
+   "agent": "pi",
+   "model": "claude-sonnet-5-5",
+   "n": 8,
+   "saving_pct": -2.8,
+   "ci_pct": [
+    -20.9,
+    11.0
+   ],
+   "cheaper": "4/8",
+   "direct_usd": 0.0366,
+   "gateway_usd": 0.0369,
+   "quality": "pass 8/8 -> 8/8, McNemar p=1.0",
+   "tool_calls": [
+    50,
+    51
+   ],
+   "tool_mix_ratio": 1.02,
+   "passed_bar": false,
+   "total_usd": 0.5878,
+   "pairs": [
+    {
+     "task": "commander.js-2609",
+     "direct_run": "41363880224",
+     "gateway_run": "41363987288",
+     "direct_usd": 0.04579,
+     "gateway_usd": 0.04406,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      9,
+      9
+     ]
+    },
+    {
+     "task": "commander.js-2636",
+     "direct_run": "41364961269",
+     "gateway_run": "41364838687",
+     "direct_usd": 0.02279,
+     "gateway_usd": 0.03029,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      7
+     ]
+    },
+    {
+     "task": "poetry-10803",
+     "direct_run": "41364445008",
+     "gateway_run": "41364333389",
+     "direct_usd": 0.01554,
+     "gateway_usd": 0.01153,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      3,
+      3
+     ]
+    },
+    {
+     "task": "poetry-10809",
+     "direct_run": "41363752714",
+     "gateway_run": "41363639842",
+     "direct_usd": 0.02563,
+     "gateway_usd": 0.02613,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      4
+     ]
+    },
+    {
+     "task": "poetry-10811",
+     "direct_run": "41365356808",
+     "gateway_run": "41365476746",
+     "direct_usd": 0.015,
+     "gateway_usd": 0.01566,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      4,
+      3
+     ]
+    },
+    {
+     "task": "pydantic-13891",
+     "direct_run": "41364611338",
+     "gateway_run": "41364715225",
+     "direct_usd": 0.06758,
+     "gateway_usd": 0.05862,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      10,
+      10
+     ]
+    },
+    {
+     "task": "scrapy-8100",
+     "direct_run": "41365099835",
+     "gateway_run": "41365220240",
+     "direct_usd": 0.02769,
+     "gateway_usd": 0.04337,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      5,
+      8
+     ]
+    },
+    {
+     "task": "scrapy-8312",
+     "direct_run": "41364215366",
+     "gateway_run": "41364108317",
+     "direct_usd": 0.07246,
+     "gateway_usd": 0.06564,
+     "passed": [
+      true,
+      true
+     ],
+     "tools": [
+      11,
+      7
+     ]
+    }
+   ]
+  }
+ ],
+ "unusable_runs": []
+}

@@ -1,0 +1,282 @@
+41363216459	confirm-claude	success	cc fix-ci poetry-10809 direct-ts claude-sonnet-5-5
+41363239976	confirm-claude	success	cc fix-mention poetry-10941 gateway claude-sonnet-5-5
+41363259622	confirm-claude	success	cc labels go-82053 direct-ts claude-sonnet-5-5
+41363279896	confirm-claude	success	cc release deno-2.9.5 gateway claude-sonnet-5-5
+41363299340	confirm-review	success	review direct-ts flutter/flutter#194096
+41363329230	confirm-claude	success	cc fix-ci poetry-10809 gateway claude-sonnet-5-5
+41363350589	confirm-claude	success	cc fix-mention poetry-10941 direct-ts claude-sonnet-5-5
+41363368207	confirm-claude	success	cc labels go-82053 gateway claude-sonnet-5-5
+41363388429	confirm-claude	success	cc release deno-2.9.5 direct-ts claude-sonnet-5-5
+41363449919	confirm-claude	success	cc fix-ci commander.js-2609 gateway claude-sonnet-5-5
+41363468703	confirm-claude	success	cc fix-mention pydantic-13452 gateway claude-sonnet-5-5
+41363486285	confirm-claude	success	cc labels flutter-195150 direct-ts claude-sonnet-5-5
+41363503868	confirm-claude	success	cc release syncthing-2.1.7 direct-ts claude-sonnet-5-5
+41363556936	confirm-claude	success	cc fix-ci commander.js-2609 direct-ts claude-sonnet-5-5
+41363574005	confirm-claude	success	cc fix-mention pydantic-13452 direct-ts claude-sonnet-5-5
+41363577099	confirm-claude	success	cc fix-ci poetry-10809 direct-ts claude-opus-5-5
+41363593103	confirm-claude	success	cc labels flutter-195150 gateway claude-sonnet-5-5
+41363594939	confirm-claude	success	cc fix-mention poetry-10941 direct-ts claude-opus-5-5
+41363613727	confirm-claude	success	cc release syncthing-2.1.7 gateway claude-sonnet-5-5
+41363619264	confirm-agents	success	opencode poetry-10809 gateway
+41363638132	confirm-review	success	review direct-ts pandas-dev/pandas#70233
+41363639842	confirm-agents	success	pi poetry-10809 gateway
+41363660257	confirm-agents	success	codex poetry-10809 gateway
+41363682482	confirm-claude	success	cc fix-ci scrapy-8312 direct-ts claude-sonnet-5-5
+41363691899	confirm-claude	success	cc fix-ci poetry-10809 gateway claude-opus-5-5
+41363704078	confirm-claude	success	cc fix-mention scrapy-8048 direct-ts claude-sonnet-5-5
+41363712124	confirm-claude	success	cc fix-mention poetry-10941 gateway claude-opus-5-5
+41363721933	confirm-claude	success	cc labels typescript-64630 gateway claude-sonnet-5-5
+41363735653	confirm-agents	success	opencode poetry-10809 direct-ts
+41363745194	confirm-claude	success	cc release ollama-0.40.9 gateway claude-sonnet-5-5
+41363752714	confirm-agents	success	pi poetry-10809 direct-ts
+41363776409	confirm-agents	success	codex poetry-10809 direct-ts
+41363800991	confirm-claude	success	cc fix-ci scrapy-8312 gateway claude-sonnet-5-5
+41363817504	confirm-claude	success	cc fix-mention scrapy-8048 gateway claude-sonnet-5-5
+41363823596	confirm-claude	success	cc fix-ci commander.js-2609 gateway claude-opus-5-5
+41363834070	confirm-claude	success	cc fix-mention pydantic-13452 gateway claude-opus-5-5
+41363836852	confirm-claude	success	cc labels typescript-64630 direct-ts claude-sonnet-5-5
+41363858348	confirm-claude	success	cc release ollama-0.40.9 direct-ts claude-sonnet-5-5
+41363861773	confirm-agents	success	opencode commander.js-2609 direct-ts
+41363876215	confirm-review	success	review direct-ts ggml-org/llama.cpp#29069
+41363880224	confirm-agents	success	pi commander.js-2609 direct-ts
+41363898809	confirm-agents	success	codex commander.js-2609 gateway
+41363919741	confirm-claude	success	cc fix-ci poetry-10803 direct-ts claude-sonnet-5-5
+41363934099	confirm-claude	success	cc fix-ci commander.js-2609 direct-ts claude-opus-5-5
+41363936026	confirm-claude	success	cc fix-mention poetry-11131 gateway claude-sonnet-5-5
+41363943542	confirm-claude	success	cc fix-mention pydantic-13452 direct-ts claude-opus-5-5
+41363957413	confirm-claude	success	cc labels pytorch-201802 direct-ts claude-sonnet-5-5
+41363969996	confirm-agents	success	opencode commander.js-2609 gateway
+41363979311	confirm-claude	success	cc release nest-12.1.0 direct-ts claude-sonnet-5-5
+41363987288	confirm-agents	success	pi commander.js-2609 gateway
+41364005895	confirm-agents	success	codex commander.js-2609 direct-ts
+41364027963	confirm-claude	success	cc fix-ci poetry-10803 gateway claude-sonnet-5-5
+41364045367	confirm-claude	success	cc fix-mention poetry-11131 direct-ts claude-sonnet-5-5
+41364056119	confirm-claude	success	cc fix-ci scrapy-8312 direct-ts claude-opus-5-5
+41364068353	confirm-claude	success	cc labels pytorch-201802 gateway claude-sonnet-5-5
+41364067898	confirm-claude	success	cc fix-mention scrapy-8048 gateway claude-opus-5-5
+41364091038	confirm-agents	success	opencode scrapy-8312 gateway
+41364090111	confirm-claude	success	cc release nest-12.1.0 gateway claude-sonnet-5-5
+41364106537	confirm-review	success	review direct-ts grafana/grafana#136242
+41364108317	confirm-agents	success	pi scrapy-8312 gateway
+41364129574	confirm-agents	cancelled	codex scrapy-8312 gateway
+41364149652	confirm-claude	success	cc fix-ci pydantic-13891 direct-ts claude-sonnet-5-5
+41364164451	confirm-claude	success	cc fix-ci scrapy-8312 gateway claude-opus-5-5
+41364167332	confirm-claude	success	cc fix-mention pydantic-14054 gateway claude-sonnet-5-5
+41364176427	confirm-claude	success	cc fix-mention scrapy-8048 direct-ts claude-opus-5-5
+41364188702	confirm-claude	success	cc labels home-assistant-184104 direct-ts claude-sonnet-5-5
+41364199612	confirm-agents	success	opencode scrapy-8312 direct-ts
+41364207631	confirm-claude	success	cc release terraform-1.16.7 direct-ts claude-sonnet-5-5
+41364215366	confirm-agents	success	pi scrapy-8312 direct-ts
+41364238193	confirm-agents	cancelled	codex scrapy-8312 direct-ts
+41364257609	confirm-claude	success	cc fix-ci pydantic-13891 gateway claude-sonnet-5-5
+41364275168	confirm-claude	success	cc fix-mention pydantic-14054 direct-ts claude-sonnet-5-5
+41364282278	confirm-claude	success	cc fix-ci poetry-10803 gateway claude-opus-5-5
+41364293865	confirm-claude	success	cc fix-mention poetry-11131 direct-ts claude-opus-5-5
+41364296010	confirm-claude	success	cc labels home-assistant-184104 gateway claude-sonnet-5-5
+41364333389	confirm-agents	success	pi poetry-10803 gateway
+41364335208	confirm-review	success	review direct-ts kubernetes/kubernetes#142436
+41364362361	confirm-agents	success	opencode poetry-10803 direct-ts
+41364361671	confirm-claude	success	cc release terraform-1.16.7 gateway claude-sonnet-5-5
+41364390474	confirm-claude	success	cc fix-ci poetry-10803 direct-ts claude-opus-5-5
+41364396046	confirm-claude	success	cc fix-mention scrapy-8386 direct-ts claude-sonnet-5-5
+41364425614	confirm-claude	success	cc fix-ci commander.js-2636 gateway claude-sonnet-5-5
+41364445008	confirm-agents	success	pi poetry-10803 direct-ts
+41364452002	confirm-claude	success	cc fix-mention poetry-11131 gateway claude-opus-5-5
+41364453699	confirm-agents	success	codex poetry-10803 direct-ts
+41364459594	confirm-review	success	review direct-ts pandas-dev/pandas#70960
+41364486460	confirm-claude	success	cc release neovim-0.12.6 direct-ts claude-sonnet-5-5
+41364512719	confirm-claude	success	cc labels tauri-16214 direct-ts claude-sonnet-5-5
+41364514594	confirm-claude	success	cc fix-ci pydantic-13891 direct-ts claude-opus-5-5
+41364521563	confirm-agents	success	opencode poetry-10803 gateway
+41364555575	confirm-claude	success	cc fix-mention scrapy-8386 gateway claude-sonnet-5-5
+41364563244	confirm-agents	success	codex poetry-10803 gateway
+41364611338	confirm-agents	success	pi pydantic-13891 direct-ts
+41364618601	confirm-claude	success	cc fix-mention pydantic-14054 gateway claude-opus-5-5
+41364619859	confirm-claude	success	cc labels tauri-16214 gateway claude-sonnet-5-5
+41364621410	confirm-claude	success	cc fix-ci pydantic-13891 gateway claude-opus-5-5
+41364628462	confirm-claude	success	cc fix-ci commander.js-2636 direct-ts claude-sonnet-5-5
+41364675304	confirm-claude	success	cc fix-mention poetry-10982 gateway claude-sonnet-5-5
+41364677903	confirm-agents	success	codex pydantic-13891 direct-ts
+41364684306	confirm-claude	success	cc release neovim-0.12.6 gateway claude-sonnet-5-5
+41364686074	confirm-agents	success	opencode pydantic-13891 direct-ts
+41364715225	confirm-agents	success	pi pydantic-13891 gateway
+41364723218	confirm-claude	success	cc fix-mention pydantic-14054 direct-ts claude-opus-5-5
+41364734949	confirm-claude	success	cc fix-ci commander.js-2636 gateway claude-opus-5-5
+41364736519	confirm-claude	success	cc labels home-assistant-187849 direct-ts claude-sonnet-5-5
+41364777497	confirm-claude	success	cc fix-mention poetry-10982 direct-ts claude-sonnet-5-5
+41364780168	confirm-agents	success	codex pydantic-13891 gateway
+41364787677	confirm-agents	success	opencode pydantic-13891 gateway
+41364789579	confirm-claude	success	cc fix-ci scrapy-8100 direct-ts claude-sonnet-5-5
+41364799639	confirm-claude	success	cc release bun-1.4.4 gateway claude-sonnet-5-5
+41364838687	confirm-agents	success	pi commander.js-2636 gateway
+41364843272	confirm-review	success	review direct-ts neovim/neovim#42289
+41364850751	confirm-claude	success	cc labels home-assistant-187849 gateway claude-sonnet-5-5
+41364850379	confirm-claude	success	cc fix-ci commander.js-2636 direct-ts claude-opus-5-5
+41364854774	confirm-claude	success	cc fix-mention scrapy-8386 gateway claude-opus-5-5
+41364926076	confirm-claude	success	cc release bun-1.4.4 direct-ts claude-sonnet-5-5
+41364933612	confirm-agents	success	opencode commander.js-2636 gateway
+41364961269	confirm-agents	success	pi commander.js-2636 direct-ts
+41364966170	confirm-claude	success	cc fix-ci scrapy-8100 gateway claude-sonnet-5-5
+41364966533	confirm-agents	success	codex commander.js-2636 direct-ts
+41364966426	confirm-claude	success	cc fix-mention scrapy-8196 direct-ts claude-sonnet-5-5
+41364975515	confirm-claude	success	cc fix-mention scrapy-8386 direct-ts claude-opus-5-5
+41364977879	confirm-review	success	review direct-ts grafana/grafana#134038
+41364984686	confirm-claude	success	cc labels ruff-29395 gateway claude-sonnet-5-5
+41364986663	confirm-claude	success	cc fix-ci scrapy-8100 gateway claude-opus-5-5
+41365079616	confirm-claude	success	cc fix-mention scrapy-8196 gateway claude-sonnet-5-5
+41365080201	confirm-agents	success	codex commander.js-2636 gateway
+41365092017	confirm-claude	success	cc fix-ci poetry-10811 direct-ts claude-sonnet-5-5
+41365096647	confirm-agents	success	opencode commander.js-2636 direct-ts
+41365098474	confirm-claude	success	cc labels ruff-29395 direct-ts claude-sonnet-5-5
+41365099835	confirm-agents	success	pi scrapy-8100 direct-ts
+41365099809	confirm-claude	success	cc fix-ci scrapy-8100 direct-ts claude-opus-5-5
+41365100744	confirm-claude	success	cc release polars-1.43.2 gateway claude-sonnet-5-5
+41365105046	confirm-claude	success	cc fix-mention poetry-10982 direct-ts claude-opus-5-5
+41365213675	confirm-claude	success	cc fix-ci poetry-10811 gateway claude-sonnet-5-5
+41365220240	confirm-agents	success	pi scrapy-8100 gateway
+41365221192	confirm-claude	success	cc release polars-1.43.2 direct-ts claude-sonnet-5-5
+41365224578	confirm-claude	success	cc fix-mention poetry-10982 gateway claude-opus-5-5
+41365225163	confirm-claude	success	cc fix-mention poetry-10720 direct-ts claude-sonnet-5-5
+41365229223	confirm-review	success	review direct-ts ggml-org/llama.cpp#30242
+41365235218	confirm-agents	success	opencode scrapy-8100 gateway
+41365236355	confirm-claude	success	cc fix-ci poetry-10811 direct-ts claude-opus-5-5
+41365238432	confirm-claude	success	cc labels go-81990 gateway claude-sonnet-5-5
+41365349989	confirm-claude	success	cc fix-mention poetry-10720 gateway claude-sonnet-5-5
+41365354245	confirm-claude	success	cc fix-ci pydantic-13374 gateway claude-sonnet-5-5
+41365356808	confirm-agents	success	pi poetry-10811 direct-ts
+41365359230	confirm-agents	success	opencode scrapy-8100 direct-ts
+41365361029	confirm-claude	success	cc release vite-8.3.3 direct-ts claude-sonnet-5-5
+41365360551	confirm-claude	success	cc fix-ci poetry-10811 gateway claude-opus-5-5
+41365361994	confirm-claude	success	cc labels go-81990 direct-ts claude-sonnet-5-5
+41365364431	confirm-claude	success	cc fix-mention scrapy-8196 direct-ts claude-opus-5-5
+41365474582	confirm-claude	success	cc fix-ci pydantic-13374 direct-ts claude-sonnet-5-5
+41365476746	confirm-agents	success	pi poetry-10811 gateway
+41365481266	confirm-claude	success	cc fix-mention echo-3113 gateway claude-sonnet-5-5
+41365480568	confirm-claude	success	cc release vite-8.3.3 gateway claude-sonnet-5-5
+41365483587	confirm-claude	success	cc fix-mention scrapy-8196 gateway claude-opus-5-5
+41365489654	confirm-agents	success	opencode poetry-10811 direct-ts
+41365497774	confirm-claude	success	cc labels neovim-42339 gateway claude-sonnet-5-5
+41365606212	confirm-claude	success	cc fix-mention echo-3113 direct-ts claude-sonnet-5-5
+41365611221	confirm-review	success	review direct-ts astral-sh/ruff#29090
+41365613561	confirm-agents	success	opencode poetry-10811 gateway
+41365618185	confirm-claude	success	cc fix-ci commander.js-2630 gateway claude-sonnet-5-5
+41365620510	confirm-claude	success	cc labels neovim-42339 direct-ts claude-sonnet-5-5
+41365623339	confirm-claude	success	cc release langchain-1.4.3 gateway claude-sonnet-5-5
+41365743785	confirm-claude	success	cc fix-mention pydantic-13363 direct-ts claude-sonnet-5-5
+41365745717	confirm-claude	success	cc fix-ci commander.js-2630 direct-ts claude-sonnet-5-5
+41365750881	confirm-claude	success	cc release langchain-1.4.3 direct-ts claude-sonnet-5-5
+41365752898	confirm-review	success	review direct-ts neovim/neovim#42595
+41365762873	confirm-claude	success	cc labels flutter-194151 direct-ts claude-sonnet-5-5
+41365866896	confirm-claude	success	cc fix-mention pydantic-13363 gateway claude-sonnet-5-5
+41365881472	confirm-claude	success	cc fix-ci poetry-10808 gateway claude-sonnet-5-5
+41365882566	confirm-claude	success	cc labels flutter-194151 gateway claude-sonnet-5-5
+41365882343	confirm-claude	success	cc release eslint-10.13.0 direct-ts claude-sonnet-5-5
+41366003935	confirm-claude	success	cc fix-mention scrapy-8257 gateway claude-sonnet-5-5
+41366005313	confirm-claude	success	cc release eslint-10.13.0 gateway claude-sonnet-5-5
+41366004957	confirm-claude	success	cc fix-ci poetry-10808 direct-ts claude-sonnet-5-5
+41366009551	confirm-review	success	review direct-ts prometheus/prometheus#18355
+41366017679	confirm-claude	success	cc labels ruff-29343 gateway claude-sonnet-5-5
+41366128357	confirm-claude	success	cc fix-mention scrapy-8257 direct-ts claude-sonnet-5-5
+41366146562	confirm-claude	success	cc labels ruff-29343 direct-ts claude-sonnet-5-5
+41366150623	confirm-claude	success	cc release next.js-16.4.2 direct-ts claude-sonnet-5-5
+41366150408	confirm-claude	success	cc fix-ci echo-3135 gateway claude-sonnet-5-5
+41366270794	confirm-claude	success	cc fix-mention poetry-10944 gateway claude-sonnet-5-5
+41366276075	confirm-claude	success	cc fix-ci echo-3135 direct-ts claude-sonnet-5-5
+41366275813	confirm-claude	success	cc release next.js-16.4.2 gateway claude-sonnet-5-5
+41366286875	confirm-claude	success	cc labels ruff-29670 gateway claude-sonnet-5-5
+41366397342	confirm-claude	success	cc fix-mention poetry-10944 direct-ts claude-sonnet-5-5
+41366405135	confirm-review	success	review direct-ts astral-sh/uv#22136
+41366410788	confirm-claude	success	cc release nushell-0.116.0 gateway claude-sonnet-5-5
+41366412901	confirm-claude	success	cc labels ruff-29670 direct-ts claude-sonnet-5-5
+41366417150	confirm-claude	success	cc fix-ci poetry-10885 gateway claude-sonnet-5-5
+41366536592	confirm-claude	success	cc release nushell-0.116.0 direct-ts claude-sonnet-5-5
+41366543310	confirm-claude	success	cc fix-mention pydantic-13632 direct-ts claude-sonnet-5-5
+41366542319	confirm-claude	success	cc fix-ci poetry-10885 direct-ts claude-sonnet-5-5
+41366543856	confirm-review	success	review gateway astral-sh/uv#22271
+41366550254	confirm-claude	success	cc labels neovim-42255 direct-ts claude-sonnet-5-5
+41366671633	confirm-claude	success	cc fix-mention pydantic-13632 gateway claude-sonnet-5-5
+41366677683	confirm-claude	success	cc labels neovim-42255 gateway claude-sonnet-5-5
+41366681910	confirm-claude	success	cc release pydantic-1.10.27 direct-ts claude-sonnet-5-5
+41366683847	confirm-claude	success	cc fix-ci echo-3157 gateway claude-sonnet-5-5
+41366804195	confirm-claude	success	cc release pydantic-1.10.27 gateway claude-sonnet-5-5
+41366805798	confirm-claude	success	cc fix-ci echo-3157 direct-ts claude-sonnet-5-5
+41366808694	confirm-claude	success	cc fix-mention poetry-10769 direct-ts claude-sonnet-5-5
+41366812868	confirm-claude	success	cc labels tauri-16319 gateway claude-sonnet-5-5
+41366928522	confirm-review	success	review gateway godotengine/godot#118822
+41366930177	confirm-claude	success	cc fix-mention poetry-10769 gateway claude-sonnet-5-5
+41366935367	confirm-claude	success	cc labels tauri-16319 direct-ts claude-sonnet-5-5
+41366939731	confirm-claude	success	cc fix-ci poetry-10801 direct-ts claude-sonnet-5-5
+41366942600	confirm-claude	success	cc release transformers-5.20.1 gateway claude-sonnet-5-5
+41367064288	confirm-claude	success	cc fix-ci poetry-10801 gateway claude-sonnet-5-5
+41367066114	confirm-claude	success	cc release transformers-5.20.1 direct-ts claude-sonnet-5-5
+41367069446	confirm-claude	success	cc fix-mention echo-2994 direct-ts claude-sonnet-5-5
+41367073561	confirm-claude	success	cc labels zed-66153 gateway claude-sonnet-5-5
+41367188366	confirm-review	success	review gateway astral-sh/ruff#29232
+41367189632	confirm-claude	success	cc fix-mention echo-2994 gateway claude-sonnet-5-5
+41367193933	confirm-claude	success	cc labels zed-66153 direct-ts claude-sonnet-5-5
+41367197050	confirm-claude	success	cc release compose-5.4.0 gateway claude-sonnet-5-5
+41367201682	confirm-claude	success	cc fix-ci poetry-10805 direct-ts claude-sonnet-5-5
+41367320637	confirm-claude	success	cc release compose-5.4.0 direct-ts claude-sonnet-5-5
+41367325777	confirm-claude	success	cc fix-ci poetry-10805 gateway claude-sonnet-5-5
+41367327721	confirm-claude	success	cc fix-mention scrapy-7900 gateway claude-sonnet-5-5
+41367331938	confirm-claude	success	cc labels neovim-42300 direct-ts claude-sonnet-5-5
+41367447043	confirm-review	success	review gateway spring-projects/spring-boot#52228
+41367448676	confirm-claude	success	cc fix-mention scrapy-7900 direct-ts claude-sonnet-5-5
+41367452121	confirm-claude	success	cc labels neovim-42300 gateway claude-sonnet-5-5
+41367598005	confirm-claude	success	cc fix-mention mocha-6391 gateway claude-sonnet-5-5
+41367601051	confirm-claude	success	cc labels zed-65434 direct-ts claude-sonnet-5-5
+41367715631	confirm-review	success	review gateway vercel/next.js#100205
+41367719641	confirm-claude	success	cc fix-mention mocha-6391 direct-ts claude-sonnet-5-5
+41367722064	confirm-claude	success	cc labels zed-65434 gateway claude-sonnet-5-5
+41367848050	confirm-review	success	review gateway vercel/next.js#100840
+41367850806	confirm-claude	success	cc fix-mention poetry-10784 direct-ts claude-sonnet-5-5
+41367852551	confirm-claude	success	cc labels zed-65323 direct-ts claude-sonnet-5-5
+41367976150	confirm-claude	success	cc fix-mention poetry-10784 gateway claude-sonnet-5-5
+41367977873	confirm-claude	success	cc labels zed-65323 gateway claude-sonnet-5-5
+41368115686	confirm-review	success	review gateway huggingface/transformers#49742
+41368120311	confirm-claude	success	cc labels electron-54841 gateway claude-sonnet-5-5
+41368245956	confirm-claude	success	cc labels electron-54841 direct-ts claude-sonnet-5-5
+41368376327	confirm-review	success	review gateway huggingface/transformers#48992
+41368381687	confirm-claude	success	cc labels pytorch-202507 direct-ts claude-sonnet-5-5
+41368508166	confirm-claude	success	cc labels pytorch-202507 gateway claude-sonnet-5-5
+41368641217	confirm-claude	success	cc labels pytorch-201803 gateway claude-sonnet-5-5
+41368755213	confirm-review	success	review gateway spring-projects/spring-boot#52284
+41368761898	confirm-claude	success	cc labels pytorch-201803 direct-ts claude-sonnet-5-5
+41368898814	confirm-review	success	review gateway django/django#22198
+41368909245	confirm-claude	success	cc labels electron-55111 direct-ts claude-sonnet-5-5
+41369033063	confirm-claude	success	cc labels electron-55111 gateway claude-sonnet-5-5
+41369156834	confirm-review	success	review gateway godotengine/godot#121020
+41369164998	confirm-claude	success	cc labels uv-22488 gateway claude-sonnet-5-5
+41369286317	confirm-claude	success	cc labels uv-22488 direct-ts claude-sonnet-5-5
+41369422923	confirm-claude	success	cc labels uv-22513 gateway claude-sonnet-5-5
+41369538031	confirm-review	success	review gateway django/django#22041
+41369546192	confirm-claude	success	cc labels uv-22513 direct-ts claude-sonnet-5-5
+41369681378	confirm-claude	success	cc labels bun-46530 gateway claude-sonnet-5-5
+41369797346	confirm-review	success	review gateway prometheus/prometheus#20026
+41369804464	confirm-claude	success	cc labels bun-46530 direct-ts claude-sonnet-5-5
+41371752905	confirm-review	success	review gateway flutter/flutter#194096
+41371845345	confirm-review	success	review direct-ts astral-sh/uv#22271
+41371938024	confirm-review	success	review gateway pandas-dev/pandas#70233
+41372034425	confirm-review	success	review direct-ts godotengine/godot#118822
+41372122428	confirm-review	success	review gateway ggml-org/llama.cpp#29069
+41372213377	confirm-review	success	review direct-ts astral-sh/ruff#29232
+41372301790	confirm-review	success	review gateway grafana/grafana#136242
+41372392574	confirm-review	success	review direct-ts spring-projects/spring-boot#52228
+41372483514	confirm-review	success	review gateway kubernetes/kubernetes#142436
+41372569692	confirm-review	success	review direct-ts vercel/next.js#100205
+41372655024	confirm-review	success	review gateway pandas-dev/pandas#70960
+41372736754	confirm-review	success	review direct-ts vercel/next.js#100840
+41372827821	confirm-review	success	review gateway neovim/neovim#42289
+41372923564	confirm-review	success	review direct-ts huggingface/transformers#49742
+41373012710	confirm-review	success	review gateway grafana/grafana#134038
+41373102399	confirm-review	success	review direct-ts huggingface/transformers#48992
+41373190705	confirm-review	success	review gateway ggml-org/llama.cpp#30242
+41373286315	confirm-review	success	review direct-ts spring-projects/spring-boot#52284
+41373378694	confirm-review	success	review gateway astral-sh/ruff#29090
+41373467965	confirm-review	success	review direct-ts django/django#22198
+41373555418	confirm-review	success	review gateway neovim/neovim#42595
+41373641401	confirm-review	success	review direct-ts godotengine/godot#121020
+41373736580	confirm-review	success	review gateway prometheus/prometheus#18355
+41373826702	confirm-review	success	review direct-ts django/django#22041
+41373913243	confirm-review	success	review gateway astral-sh/uv#22136
+41373996993	confirm-review	success	review direct-ts prometheus/prometheus#20026

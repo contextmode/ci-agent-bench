@@ -1,0 +1,560 @@
+{
+ "r1-biome-2.6.4": {
+  "area": "release",
+  "task": "biome-2.6.4",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41319519930,
+  "direct_run": 41319738534,
+  "file": "lab/release/judge/r1-biome-2.6.4.md"
+ },
+ "r1-fastapi-0.160.0": {
+  "area": "release",
+  "task": "fastapi-0.160.0",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319724273,
+  "direct_run": 41319946243,
+  "file": "lab/release/judge/r1-fastapi-0.160.0.md"
+ },
+ "r1-godot-3.6.3-stable": {
+  "area": "release",
+  "task": "godot-3.6.3-stable",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41320225732,
+  "direct_run": 41320440888,
+  "file": "lab/release/judge/r1-godot-3.6.3-stable.md"
+ },
+ "r1-mastodon-4.6.7": {
+  "area": "release",
+  "task": "mastodon-4.6.7",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319826813,
+  "direct_run": 41320047188,
+  "file": "lab/release/judge/r1-mastodon-4.6.7.md"
+ },
+ "r1-node-26.7.0": {
+  "area": "release",
+  "task": "node-26.7.0",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319931763,
+  "direct_run": 41320143101,
+  "file": "lab/release/judge/r1-node-26.7.0.md"
+ },
+ "r1-powershell-7.6.7": {
+  "area": "release",
+  "task": "powershell-7.6.7",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41320129068,
+  "direct_run": 41320339616,
+  "file": "lab/release/judge/r1-powershell-7.6.7.md"
+ },
+ "r1-redis-8.4.6": {
+  "area": "release",
+  "task": "redis-8.4.6",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319622529,
+  "direct_run": 41319842067,
+  "file": "lab/release/judge/r1-redis-8.4.6.md"
+ },
+ "r1-ruff-0.16.2": {
+  "area": "release",
+  "task": "ruff-0.16.2",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319418337,
+  "direct_run": 41319637299,
+  "file": "lab/release/judge/r1-ruff-0.16.2.md"
+ },
+ "r1-svelte-5.56.10": {
+  "area": "release",
+  "task": "svelte-5.56.10",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41320032830,
+  "direct_run": 41320237920,
+  "file": "lab/release/judge/r1-svelte-5.56.10.md"
+ },
+ "r1-valkey-9.0.7": {
+  "area": "release",
+  "task": "valkey-9.0.7",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41319314359,
+  "direct_run": 41319534228,
+  "file": "lab/release/judge/r1-valkey-9.0.7.md"
+ },
+ "r1-elasticsearch-163196": {
+  "area": "review",
+  "task": "elasticsearch-163196",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41323460107,
+  "direct_run": 41323662538,
+  "file": "lab/review-action/judge/r1-elasticsearch-163196.md"
+ },
+ "r1-elasticsearch-163282": {
+  "area": "review",
+  "task": "elasticsearch-163282",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41322727621,
+  "direct_run": 41323284107,
+  "file": "lab/review-action/judge/r1-elasticsearch-163282.md"
+ },
+ "r1-flutter-190431": {
+  "area": "review",
+  "task": "flutter-190431",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41323839904,
+  "direct_run": 41324044704,
+  "file": "lab/review-action/judge/r1-flutter-190431.md"
+ },
+ "r1-kafka-23804": {
+  "area": "review",
+  "task": "kafka-23804",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41322977604,
+  "direct_run": 41323184457,
+  "file": "lab/review-action/judge/r1-kafka-23804.md"
+ },
+ "r1-kafka-23911": {
+  "area": "review",
+  "task": "kafka-23911",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41323270907,
+  "direct_run": 41323473369,
+  "file": "lab/review-action/judge/r1-kafka-23911.md"
+ },
+ "r1-kubernetes-140611": {
+  "area": "review",
+  "task": "kubernetes-140611",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41323553706,
+  "direct_run": 41323757194,
+  "file": "lab/review-action/judge/r1-kubernetes-140611.md"
+ },
+ "r1-vscode-342878": {
+  "area": "review",
+  "task": "vscode-342878",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41323363660,
+  "direct_run": 41323566891,
+  "file": "lab/review-action/judge/r1-vscode-342878.md"
+ },
+ "r1-vscode-343624": {
+  "area": "review",
+  "task": "vscode-343624",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41323649721,
+  "direct_run": 41323851422,
+  "file": "lab/review-action/judge/r1-vscode-343624.md"
+ },
+ "r1-zed-65129": {
+  "area": "review",
+  "task": "zed-65129",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41323170953,
+  "direct_run": 41323377361,
+  "file": "lab/review-action/judge/r1-zed-65129.md"
+ },
+ "r1-zed-65841": {
+  "area": "review",
+  "task": "zed-65841",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41323743948,
+  "direct_run": 41323947229,
+  "file": "lab/review-action/judge/r1-zed-65841.md"
+ },
+ "r2-bun-1.4.4": {
+  "area": "release",
+  "task": "bun-1.4.4",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41364799639,
+  "direct_run": 41364926076,
+  "file": "lab/release/judge/r2-bun-1.4.4.md"
+ },
+ "r2-compose-5.4.0": {
+  "area": "release",
+  "task": "compose-5.4.0",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41367197050,
+  "direct_run": 41367320637,
+  "file": "lab/release/judge/r2-compose-5.4.0.md"
+ },
+ "r2-deno-2.9.5": {
+  "area": "release",
+  "task": "deno-2.9.5",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41363279896,
+  "direct_run": 41363388429,
+  "file": "lab/release/judge/r2-deno-2.9.5.md"
+ },
+ "r2-eslint-10.13.0": {
+  "area": "release",
+  "task": "eslint-10.13.0",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41366005313,
+  "direct_run": 41365882343,
+  "file": "lab/release/judge/r2-eslint-10.13.0.md"
+ },
+ "r2-langchain-1.4.3": {
+  "area": "release",
+  "task": "langchain-1.4.3",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41365623339,
+  "direct_run": 41365750881,
+  "file": "lab/release/judge/r2-langchain-1.4.3.md"
+ },
+ "r2-neovim-0.12.6": {
+  "area": "release",
+  "task": "neovim-0.12.6",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41364684306,
+  "direct_run": 41364486460,
+  "file": "lab/release/judge/r2-neovim-0.12.6.md"
+ },
+ "r2-nest-12.1.0": {
+  "area": "release",
+  "task": "nest-12.1.0",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41364090111,
+  "direct_run": 41363979311,
+  "file": "lab/release/judge/r2-nest-12.1.0.md"
+ },
+ "r2-next.js-16.4.2": {
+  "area": "release",
+  "task": "next.js-16.4.2",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41366275813,
+  "direct_run": 41366150623,
+  "file": "lab/release/judge/r2-next.js-16.4.2.md"
+ },
+ "r2-nushell-0.116.0": {
+  "area": "release",
+  "task": "nushell-0.116.0",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41366410788,
+  "direct_run": 41366536592,
+  "file": "lab/release/judge/r2-nushell-0.116.0.md"
+ },
+ "r2-ollama-0.40.9": {
+  "area": "release",
+  "task": "ollama-0.40.9",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41363745194,
+  "direct_run": 41363858348,
+  "file": "lab/release/judge/r2-ollama-0.40.9.md"
+ },
+ "r2-polars-1.43.2": {
+  "area": "release",
+  "task": "polars-1.43.2",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41365100744,
+  "direct_run": 41365221192,
+  "file": "lab/release/judge/r2-polars-1.43.2.md"
+ },
+ "r2-pydantic-1.10.27": {
+  "area": "release",
+  "task": "pydantic-1.10.27",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41366804195,
+  "direct_run": 41366681910,
+  "file": "lab/release/judge/r2-pydantic-1.10.27.md"
+ },
+ "r2-syncthing-2.1.7": {
+  "area": "release",
+  "task": "syncthing-2.1.7",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41363613727,
+  "direct_run": 41363503868,
+  "file": "lab/release/judge/r2-syncthing-2.1.7.md"
+ },
+ "r2-terraform-1.16.7": {
+  "area": "release",
+  "task": "terraform-1.16.7",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41364361671,
+  "direct_run": 41364207631,
+  "file": "lab/release/judge/r2-terraform-1.16.7.md"
+ },
+ "r2-transformers-5.20.1": {
+  "area": "release",
+  "task": "transformers-5.20.1",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41366942600,
+  "direct_run": 41367066114,
+  "file": "lab/release/judge/r2-transformers-5.20.1.md"
+ },
+ "r2-vite-8.3.3": {
+  "area": "release",
+  "task": "vite-8.3.3",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41365480568,
+  "direct_run": 41365361029,
+  "file": "lab/release/judge/r2-vite-8.3.3.md"
+ },
+ "r2-django-22041": {
+  "area": "review",
+  "task": "django-22041",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41369538031,
+  "direct_run": 41373826702,
+  "file": "lab/review-action/judge/r2-django-22041.md"
+ },
+ "r2-django-22198": {
+  "area": "review",
+  "task": "django-22198",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41368898814,
+  "direct_run": 41373467965,
+  "file": "lab/review-action/judge/r2-django-22198.md"
+ },
+ "r2-flutter-194096": {
+  "area": "review",
+  "task": "flutter-194096",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41371752905,
+  "direct_run": 41363299340,
+  "file": "lab/review-action/judge/r2-flutter-194096.md"
+ },
+ "r2-godot-118822": {
+  "area": "review",
+  "task": "godot-118822",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41366928522,
+  "direct_run": 41372034425,
+  "file": "lab/review-action/judge/r2-godot-118822.md"
+ },
+ "r2-godot-121020": {
+  "area": "review",
+  "task": "godot-121020",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41369156834,
+  "direct_run": 41373641401,
+  "file": "lab/review-action/judge/r2-godot-121020.md"
+ },
+ "r2-grafana-134038": {
+  "area": "review",
+  "task": "grafana-134038",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41373012710,
+  "direct_run": 41364977879,
+  "file": "lab/review-action/judge/r2-grafana-134038.md"
+ },
+ "r2-grafana-136242": {
+  "area": "review",
+  "task": "grafana-136242",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41372301790,
+  "direct_run": 41364106537,
+  "file": "lab/review-action/judge/r2-grafana-136242.md"
+ },
+ "r2-kubernetes-142436": {
+  "area": "review",
+  "task": "kubernetes-142436",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41372483514,
+  "direct_run": 41364335208,
+  "file": "lab/review-action/judge/r2-kubernetes-142436.md"
+ },
+ "r2-llama.cpp-29069": {
+  "area": "review",
+  "task": "llama.cpp-29069",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41372122428,
+  "direct_run": 41363876215,
+  "file": "lab/review-action/judge/r2-llama.cpp-29069.md"
+ },
+ "r2-llama.cpp-30242": {
+  "area": "review",
+  "task": "llama.cpp-30242",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41373190705,
+  "direct_run": 41365229223,
+  "file": "lab/review-action/judge/r2-llama.cpp-30242.md"
+ },
+ "r2-neovim-42289": {
+  "area": "review",
+  "task": "neovim-42289",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41372827821,
+  "direct_run": 41364843272,
+  "file": "lab/review-action/judge/r2-neovim-42289.md"
+ },
+ "r2-neovim-42595": {
+  "area": "review",
+  "task": "neovim-42595",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41373555418,
+  "direct_run": 41365752898,
+  "file": "lab/review-action/judge/r2-neovim-42595.md"
+ },
+ "r2-next.js-100205": {
+  "area": "review",
+  "task": "next.js-100205",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41367715631,
+  "direct_run": 41372569692,
+  "file": "lab/review-action/judge/r2-next.js-100205.md"
+ },
+ "r2-next.js-100840": {
+  "area": "review",
+  "task": "next.js-100840",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41367848050,
+  "direct_run": 41372736754,
+  "file": "lab/review-action/judge/r2-next.js-100840.md"
+ },
+ "r2-pandas-70233": {
+  "area": "review",
+  "task": "pandas-70233",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41371938024,
+  "direct_run": 41363638132,
+  "file": "lab/review-action/judge/r2-pandas-70233.md"
+ },
+ "r2-pandas-70960": {
+  "area": "review",
+  "task": "pandas-70960",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41372655024,
+  "direct_run": 41364459594,
+  "file": "lab/review-action/judge/r2-pandas-70960.md"
+ },
+ "r2-prometheus-18355": {
+  "area": "review",
+  "task": "prometheus-18355",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41373736580,
+  "direct_run": 41366009551,
+  "file": "lab/review-action/judge/r2-prometheus-18355.md"
+ },
+ "r2-prometheus-20026": {
+  "area": "review",
+  "task": "prometheus-20026",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41369797346,
+  "direct_run": 41373996993,
+  "file": "lab/review-action/judge/r2-prometheus-20026.md"
+ },
+ "r2-ruff-29090": {
+  "area": "review",
+  "task": "ruff-29090",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41373378694,
+  "direct_run": 41365611221,
+  "file": "lab/review-action/judge/r2-ruff-29090.md"
+ },
+ "r2-ruff-29232": {
+  "area": "review",
+  "task": "ruff-29232",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41367188366,
+  "direct_run": 41372213377,
+  "file": "lab/review-action/judge/r2-ruff-29232.md"
+ },
+ "r2-spring-boot-52228": {
+  "area": "review",
+  "task": "spring-boot-52228",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41367447043,
+  "direct_run": 41372392574,
+  "file": "lab/review-action/judge/r2-spring-boot-52228.md"
+ },
+ "r2-spring-boot-52284": {
+  "area": "review",
+  "task": "spring-boot-52284",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41368755213,
+  "direct_run": 41373286315,
+  "file": "lab/review-action/judge/r2-spring-boot-52284.md"
+ },
+ "r2-transformers-48992": {
+  "area": "review",
+  "task": "transformers-48992",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41368376327,
+  "direct_run": 41373102399,
+  "file": "lab/review-action/judge/r2-transformers-48992.md"
+ },
+ "r2-transformers-49742": {
+  "area": "review",
+  "task": "transformers-49742",
+  "A": "direct-ts",
+  "B": "gateway",
+  "gateway_run": 41368115686,
+  "direct_run": 41372923564,
+  "file": "lab/review-action/judge/r2-transformers-49742.md"
+ },
+ "r2-uv-22136": {
+  "area": "review",
+  "task": "uv-22136",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41373913243,
+  "direct_run": 41366405135,
+  "file": "lab/review-action/judge/r2-uv-22136.md"
+ },
+ "r2-uv-22271": {
+  "area": "review",
+  "task": "uv-22271",
+  "A": "gateway",
+  "B": "direct-ts",
+  "gateway_run": 41366543856,
+  "direct_run": 41371845345,
+  "file": "lab/review-action/judge/r2-uv-22271.md"
+ }
+}

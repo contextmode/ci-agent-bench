@@ -1,0 +1,2540 @@
+[
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:56:09Z",
+"databaseId": 41369804464,
+"displayTitle": "cc labels bun-46530 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:56:04Z",
+"databaseId": 41369797346,
+"displayTitle": "review gateway prometheus/prometheus#20026",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:54:45Z",
+"databaseId": 41369681378,
+"displayTitle": "cc labels bun-46530 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:53:14Z",
+"databaseId": 41369546192,
+"displayTitle": "cc labels uv-22513 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:53:09Z",
+"databaseId": 41369538031,
+"displayTitle": "review gateway django/django#22041",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:51:51Z",
+"databaseId": 41369422923,
+"displayTitle": "cc labels uv-22513 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:50:17Z",
+"databaseId": 41369286317,
+"displayTitle": "cc labels uv-22488 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:48:55Z",
+"databaseId": 41369164998,
+"displayTitle": "cc labels uv-22488 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:48:49Z",
+"databaseId": 41369156834,
+"displayTitle": "review gateway godotengine/godot#121020",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:47:23Z",
+"databaseId": 41369033063,
+"displayTitle": "cc labels electron-55111 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:46:00Z",
+"databaseId": 41368909245,
+"displayTitle": "cc labels electron-55111 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:45:54Z",
+"databaseId": 41368898814,
+"displayTitle": "review gateway django/django#22198",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:44:27Z",
+"databaseId": 41368761898,
+"displayTitle": "cc labels pytorch-201803 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:44:23Z",
+"databaseId": 41368755213,
+"displayTitle": "review gateway spring-projects/spring-boot#52284",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:43:03Z",
+"databaseId": 41368641217,
+"displayTitle": "cc labels pytorch-201803 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:41:31Z",
+"databaseId": 41368508166,
+"displayTitle": "cc labels pytorch-202507 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:40:08Z",
+"databaseId": 41368381687,
+"displayTitle": "cc labels pytorch-202507 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:40:05Z",
+"databaseId": 41368376327,
+"displayTitle": "review gateway huggingface/transformers#48992",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:38:36Z",
+"databaseId": 41368245956,
+"displayTitle": "cc labels electron-54841 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:37:13Z",
+"databaseId": 41368120311,
+"displayTitle": "cc labels electron-54841 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:37:10Z",
+"databaseId": 41368115686,
+"displayTitle": "review gateway huggingface/transformers#49742",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:35:41Z",
+"databaseId": 41367977873,
+"displayTitle": "cc labels zed-65323 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:35:40Z",
+"databaseId": 41367976150,
+"displayTitle": "cc fix-mention poetry-10784 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:34:18Z",
+"databaseId": 41367852551,
+"displayTitle": "cc labels zed-65323 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:34:17Z",
+"databaseId": 41367850806,
+"displayTitle": "cc fix-mention poetry-10784 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:34:15Z",
+"databaseId": 41367848050,
+"displayTitle": "review gateway vercel/next.js#100840",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:32:47Z",
+"databaseId": 41367722064,
+"displayTitle": "cc labels zed-65434 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:32:45Z",
+"databaseId": 41367719641,
+"displayTitle": "cc fix-mention mocha-6391 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:32:42Z",
+"databaseId": 41367715631,
+"displayTitle": "review gateway vercel/next.js#100205",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:31:24Z",
+"databaseId": 41367601051,
+"displayTitle": "cc labels zed-65434 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:31:21Z",
+"databaseId": 41367598005,
+"displayTitle": "cc fix-mention mocha-6391 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:29:49Z",
+"databaseId": 41367452121,
+"displayTitle": "cc labels neovim-42300 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:29:47Z",
+"databaseId": 41367448676,
+"displayTitle": "cc fix-mention scrapy-7900 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:29:46Z",
+"databaseId": 41367447043,
+"displayTitle": "review gateway spring-projects/spring-boot#52228",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:28:27Z",
+"databaseId": 41367331938,
+"displayTitle": "cc labels neovim-42300 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:28:24Z",
+"databaseId": 41367327721,
+"displayTitle": "cc fix-mention scrapy-7900 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:28:23Z",
+"databaseId": 41367325777,
+"displayTitle": "cc fix-ci poetry-10805 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:28:19Z",
+"databaseId": 41367320637,
+"displayTitle": "cc release compose-5.4.0 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:27:00Z",
+"databaseId": 41367201682,
+"displayTitle": "cc fix-ci poetry-10805 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:26:57Z",
+"databaseId": 41367197050,
+"displayTitle": "cc release compose-5.4.0 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:26:55Z",
+"databaseId": 41367193933,
+"displayTitle": "cc labels zed-66153 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:26:52Z",
+"databaseId": 41367189632,
+"displayTitle": "cc fix-mention echo-2994 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:26:51Z",
+"databaseId": 41367188366,
+"displayTitle": "review gateway astral-sh/ruff#29232",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:25:32Z",
+"databaseId": 41367073561,
+"displayTitle": "cc labels zed-66153 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:25:29Z",
+"databaseId": 41367069446,
+"displayTitle": "cc fix-mention echo-2994 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:25:27Z",
+"databaseId": 41367066114,
+"displayTitle": "cc release transformers-5.20.1 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:25:26Z",
+"databaseId": 41367064288,
+"displayTitle": "cc fix-ci poetry-10801 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:24:04Z",
+"databaseId": 41366942600,
+"displayTitle": "cc release transformers-5.20.1 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:24:03Z",
+"databaseId": 41366939731,
+"displayTitle": "cc fix-ci poetry-10801 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:24:00Z",
+"databaseId": 41366935367,
+"displayTitle": "cc labels tauri-16319 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:23:56Z",
+"databaseId": 41366930177,
+"displayTitle": "cc fix-mention poetry-10769 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:23:55Z",
+"databaseId": 41366928522,
+"displayTitle": "review gateway godotengine/godot#118822",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:22:37Z",
+"databaseId": 41366812868,
+"displayTitle": "cc labels tauri-16319 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:22:34Z",
+"databaseId": 41366808694,
+"displayTitle": "cc fix-mention poetry-10769 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:22:32Z",
+"databaseId": 41366805798,
+"displayTitle": "cc fix-ci echo-3157 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:22:31Z",
+"databaseId": 41366804195,
+"displayTitle": "cc release pydantic-1.10.27 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:21:10Z",
+"databaseId": 41366683847,
+"displayTitle": "cc fix-ci echo-3157 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:21:08Z",
+"databaseId": 41366681910,
+"displayTitle": "cc release pydantic-1.10.27 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:21:05Z",
+"databaseId": 41366677683,
+"displayTitle": "cc labels neovim-42255 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:21:02Z",
+"databaseId": 41366671633,
+"displayTitle": "cc fix-mention pydantic-13632 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:19:43Z",
+"databaseId": 41366550254,
+"displayTitle": "cc labels neovim-42255 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:19:39Z",
+"databaseId": 41366543856,
+"displayTitle": "review gateway astral-sh/uv#22271",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:19:38Z",
+"databaseId": 41366543310,
+"displayTitle": "cc fix-mention pydantic-13632 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:19:38Z",
+"databaseId": 41366542319,
+"displayTitle": "cc fix-ci poetry-10885 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:19:34Z",
+"databaseId": 41366536592,
+"displayTitle": "cc release nushell-0.116.0 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:18:14Z",
+"databaseId": 41366417150,
+"displayTitle": "cc fix-ci poetry-10885 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:18:11Z",
+"databaseId": 41366412901,
+"displayTitle": "cc labels ruff-29670 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:18:10Z",
+"databaseId": 41366410788,
+"displayTitle": "cc release nushell-0.116.0 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:18:06Z",
+"databaseId": 41366405135,
+"displayTitle": "review direct-ts astral-sh/uv#22136",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:18:01Z",
+"databaseId": 41366397342,
+"displayTitle": "cc fix-mention poetry-10944 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:16:49Z",
+"databaseId": 41366286875,
+"displayTitle": "cc labels ruff-29670 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:16:42Z",
+"databaseId": 41366276075,
+"displayTitle": "cc fix-ci echo-3135 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:16:42Z",
+"databaseId": 41366275813,
+"displayTitle": "cc release next.js-16.4.2 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:16:38Z",
+"databaseId": 41366270794,
+"displayTitle": "cc fix-mention poetry-10944 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:15:19Z",
+"databaseId": 41366150623,
+"displayTitle": "cc release next.js-16.4.2 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:15:19Z",
+"databaseId": 41366150408,
+"displayTitle": "cc fix-ci echo-3135 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:15:17Z",
+"databaseId": 41366146562,
+"displayTitle": "cc labels ruff-29343 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:15:06Z",
+"databaseId": 41366128357,
+"displayTitle": "cc fix-mention scrapy-8257 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:13:54Z",
+"databaseId": 41366017679,
+"displayTitle": "cc labels ruff-29343 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:13:48Z",
+"databaseId": 41366009551,
+"displayTitle": "review direct-ts prometheus/prometheus#18355",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:13:45Z",
+"databaseId": 41366005313,
+"displayTitle": "cc release eslint-10.13.0 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:13:45Z",
+"databaseId": 41366004957,
+"displayTitle": "cc fix-ci poetry-10808 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:13:44Z",
+"databaseId": 41366003935,
+"displayTitle": "cc fix-mention scrapy-8257 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:12:22Z",
+"databaseId": 41365882566,
+"displayTitle": "cc labels flutter-194151 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:12:22Z",
+"databaseId": 41365882343,
+"displayTitle": "cc release eslint-10.13.0 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:12:21Z",
+"databaseId": 41365881472,
+"displayTitle": "cc fix-ci poetry-10808 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:12:12Z",
+"databaseId": 41365866896,
+"displayTitle": "cc fix-mention pydantic-13363 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:11:00Z",
+"databaseId": 41365762873,
+"displayTitle": "cc labels flutter-194151 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:10:53Z",
+"databaseId": 41365752898,
+"displayTitle": "review direct-ts neovim/neovim#42595",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:10:52Z",
+"databaseId": 41365750881,
+"displayTitle": "cc release langchain-1.4.3 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:10:49Z",
+"databaseId": 41365745717,
+"displayTitle": "cc fix-ci commander.js-2630 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:10:47Z",
+"databaseId": 41365743785,
+"displayTitle": "cc fix-mention pydantic-13363 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:30Z",
+"databaseId": 41365623339,
+"displayTitle": "cc release langchain-1.4.3 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:28Z",
+"databaseId": 41365620510,
+"displayTitle": "cc labels neovim-42339 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:26Z",
+"databaseId": 41365618185,
+"displayTitle": "cc fix-ci commander.js-2630 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:22Z",
+"databaseId": 41365613561,
+"displayTitle": "opencode poetry-10811 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:21Z",
+"databaseId": 41365611221,
+"displayTitle": "review direct-ts astral-sh/ruff#29090",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:09:17Z",
+"databaseId": 41365606212,
+"displayTitle": "cc fix-mention echo-3113 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:08:05Z",
+"databaseId": 41365497774,
+"displayTitle": "cc labels neovim-42339 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:59Z",
+"databaseId": 41365489654,
+"displayTitle": "opencode poetry-10811 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:55Z",
+"databaseId": 41365483587,
+"displayTitle": "cc fix-mention scrapy-8196 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:53Z",
+"databaseId": 41365481266,
+"displayTitle": "cc fix-mention echo-3113 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:53Z",
+"databaseId": 41365480568,
+"displayTitle": "cc release vite-8.3.3 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:50Z",
+"databaseId": 41365476746,
+"displayTitle": "pi poetry-10811 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:07:49Z",
+"databaseId": 41365474582,
+"displayTitle": "cc fix-ci pydantic-13374 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:32Z",
+"databaseId": 41365364431,
+"displayTitle": "cc fix-mention scrapy-8196 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:31Z",
+"databaseId": 41365361994,
+"displayTitle": "cc labels go-81990 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:30Z",
+"databaseId": 41365361029,
+"displayTitle": "cc release vite-8.3.3 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:30Z",
+"databaseId": 41365360551,
+"displayTitle": "cc fix-ci poetry-10811 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:29Z",
+"databaseId": 41365359230,
+"displayTitle": "opencode scrapy-8100 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:27Z",
+"databaseId": 41365356808,
+"displayTitle": "pi poetry-10811 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:25Z",
+"databaseId": 41365354245,
+"displayTitle": "cc fix-ci pydantic-13374 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:06:23Z",
+"databaseId": 41365349989,
+"displayTitle": "cc fix-mention poetry-10720 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:05:08Z",
+"databaseId": 41365238432,
+"displayTitle": "cc labels go-81990 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:05:07Z",
+"databaseId": 41365236355,
+"displayTitle": "cc fix-ci poetry-10811 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:05:06Z",
+"databaseId": 41365235218,
+"displayTitle": "opencode scrapy-8100 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:05:02Z",
+"databaseId": 41365229223,
+"displayTitle": "review direct-ts ggml-org/llama.cpp#30242",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:05:00Z",
+"databaseId": 41365225163,
+"displayTitle": "cc fix-mention poetry-10720 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:04:59Z",
+"databaseId": 41365224578,
+"displayTitle": "cc fix-mention poetry-10982 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:04:57Z",
+"databaseId": 41365221192,
+"displayTitle": "cc release polars-1.43.2 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:04:56Z",
+"databaseId": 41365220240,
+"displayTitle": "pi scrapy-8100 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:04:51Z",
+"databaseId": 41365213675,
+"displayTitle": "cc fix-ci poetry-10811 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:34Z",
+"databaseId": 41365105046,
+"displayTitle": "cc fix-mention poetry-10982 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:32Z",
+"databaseId": 41365100744,
+"displayTitle": "cc release polars-1.43.2 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:31Z",
+"databaseId": 41365099835,
+"displayTitle": "pi scrapy-8100 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:31Z",
+"databaseId": 41365099809,
+"displayTitle": "cc fix-ci scrapy-8100 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:30Z",
+"databaseId": 41365098474,
+"displayTitle": "cc labels ruff-29395 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:29Z",
+"databaseId": 41365096647,
+"displayTitle": "opencode commander.js-2636 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:26Z",
+"databaseId": 41365092017,
+"displayTitle": "cc fix-ci poetry-10811 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:18Z",
+"databaseId": 41365080201,
+"displayTitle": "codex commander.js-2636 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:03:17Z",
+"databaseId": 41365079616,
+"displayTitle": "cc fix-mention scrapy-8196 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:02:09Z",
+"databaseId": 41364986663,
+"displayTitle": "cc fix-ci scrapy-8100 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:02:07Z",
+"databaseId": 41364984686,
+"displayTitle": "cc labels ruff-29395 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:02:02Z",
+"databaseId": 41364977879,
+"displayTitle": "review direct-ts grafana/grafana#134038",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:02:01Z",
+"databaseId": 41364975515,
+"displayTitle": "cc fix-mention scrapy-8386 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:55Z",
+"databaseId": 41364966533,
+"displayTitle": "codex commander.js-2636 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:55Z",
+"databaseId": 41364966426,
+"displayTitle": "cc fix-mention scrapy-8196 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:54Z",
+"databaseId": 41364966170,
+"displayTitle": "cc fix-ci scrapy-8100 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:51Z",
+"databaseId": 41364961269,
+"displayTitle": "pi commander.js-2636 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:31Z",
+"databaseId": 41364933612,
+"displayTitle": "opencode commander.js-2636 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:01:26Z",
+"databaseId": 41364926076,
+"displayTitle": "cc release bun-1.4.4 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:38Z",
+"databaseId": 41364854774,
+"displayTitle": "cc fix-mention scrapy-8386 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:35Z",
+"databaseId": 41364850751,
+"displayTitle": "cc labels home-assistant-187849 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:35Z",
+"databaseId": 41364850379,
+"displayTitle": "cc fix-ci commander.js-2636 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:31Z",
+"databaseId": 41364843272,
+"displayTitle": "review direct-ts neovim/neovim#42289",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:28Z",
+"databaseId": 41364838687,
+"displayTitle": "pi commander.js-2636 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T00:00:03Z",
+"databaseId": 41364799639,
+"displayTitle": "cc release bun-1.4.4 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:56Z",
+"databaseId": 41364789579,
+"displayTitle": "cc fix-ci scrapy-8100 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:55Z",
+"databaseId": 41364787677,
+"displayTitle": "opencode pydantic-13891 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:48Z",
+"databaseId": 41364780168,
+"displayTitle": "codex pydantic-13891 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:46Z",
+"databaseId": 41364777497,
+"displayTitle": "cc fix-mention poetry-10982 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:13Z",
+"databaseId": 41364736519,
+"displayTitle": "cc labels home-assistant-187849 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:11Z",
+"databaseId": 41364734949,
+"displayTitle": "cc fix-ci commander.js-2636 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:59:03Z",
+"databaseId": 41364723218,
+"displayTitle": "cc fix-mention pydantic-14054 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:58:57Z",
+"databaseId": 41364715225,
+"displayTitle": "pi pydantic-13891 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:58:32Z",
+"databaseId": 41364686074,
+"displayTitle": "opencode pydantic-13891 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:58:31Z",
+"databaseId": 41364684306,
+"displayTitle": "cc release neovim-0.12.6 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:58:26Z",
+"databaseId": 41364677903,
+"displayTitle": "codex pydantic-13891 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:58:24Z",
+"databaseId": 41364675304,
+"displayTitle": "cc fix-mention poetry-10982 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:57:47Z",
+"databaseId": 41364628462,
+"displayTitle": "cc fix-ci commander.js-2636 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:57:42Z",
+"databaseId": 41364621410,
+"displayTitle": "cc fix-ci pydantic-13891 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:57:41Z",
+"databaseId": 41364619859,
+"displayTitle": "cc labels tauri-16214 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:57:40Z",
+"databaseId": 41364618601,
+"displayTitle": "cc fix-mention pydantic-14054 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:57:34Z",
+"databaseId": 41364611338,
+"displayTitle": "pi pydantic-13891 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:56:56Z",
+"databaseId": 41364563244,
+"displayTitle": "codex poetry-10803 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:56:50Z",
+"databaseId": 41364555575,
+"displayTitle": "cc fix-mention scrapy-8386 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:56:25Z",
+"databaseId": 41364521563,
+"displayTitle": "opencode poetry-10803 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:56:19Z",
+"databaseId": 41364514594,
+"displayTitle": "cc fix-ci pydantic-13891 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:56:18Z",
+"databaseId": 41364512719,
+"displayTitle": "cc labels tauri-16214 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:58Z",
+"databaseId": 41364486460,
+"displayTitle": "cc release neovim-0.12.6 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:38Z",
+"databaseId": 41364459594,
+"displayTitle": "review direct-ts pandas-dev/pandas#70960",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:33Z",
+"databaseId": 41364453699,
+"displayTitle": "codex poetry-10803 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:32Z",
+"databaseId": 41364452002,
+"displayTitle": "cc fix-mention poetry-11131 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:27Z",
+"databaseId": 41364445008,
+"displayTitle": "pi poetry-10803 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:55:13Z",
+"databaseId": 41364425614,
+"displayTitle": "cc fix-ci commander.js-2636 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:52Z",
+"databaseId": 41364396046,
+"displayTitle": "cc fix-mention scrapy-8386 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:48Z",
+"databaseId": 41364390474,
+"displayTitle": "cc fix-ci poetry-10803 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:26Z",
+"databaseId": 41364362361,
+"displayTitle": "opencode poetry-10803 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:26Z",
+"databaseId": 41364361671,
+"displayTitle": "cc release terraform-1.16.7 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:05Z",
+"databaseId": 41364335208,
+"displayTitle": "review direct-ts kubernetes/kubernetes#142436",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:54:04Z",
+"databaseId": 41364333389,
+"displayTitle": "pi poetry-10803 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:53:35Z",
+"databaseId": 41364296010,
+"displayTitle": "cc labels home-assistant-184104 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:53:34Z",
+"databaseId": 41364293865,
+"displayTitle": "cc fix-mention poetry-11131 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:53:25Z",
+"databaseId": 41364282278,
+"displayTitle": "cc fix-ci poetry-10803 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:53:20Z",
+"databaseId": 41364275168,
+"displayTitle": "cc fix-mention pydantic-14054 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:53:06Z",
+"databaseId": 41364257609,
+"displayTitle": "cc fix-ci pydantic-13891 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "cancelled",
+"createdAt": "2026-11-01T23:52:51Z",
+"databaseId": 41364238193,
+"displayTitle": "codex scrapy-8312 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:52:34Z",
+"databaseId": 41364215366,
+"displayTitle": "pi scrapy-8312 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:52:28Z",
+"databaseId": 41364207631,
+"displayTitle": "cc release terraform-1.16.7 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:52:21Z",
+"databaseId": 41364199612,
+"displayTitle": "opencode scrapy-8312 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:52:13Z",
+"databaseId": 41364188702,
+"displayTitle": "cc labels home-assistant-184104 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:52:04Z",
+"databaseId": 41364176427,
+"displayTitle": "cc fix-mention scrapy-8048 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:51:57Z",
+"databaseId": 41364167332,
+"displayTitle": "cc fix-mention pydantic-14054 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:51:54Z",
+"databaseId": 41364164451,
+"displayTitle": "cc fix-ci scrapy-8312 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:51:43Z",
+"databaseId": 41364149652,
+"displayTitle": "cc fix-ci pydantic-13891 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "cancelled",
+"createdAt": "2026-11-01T23:51:28Z",
+"databaseId": 41364129574,
+"displayTitle": "codex scrapy-8312 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:51:12Z",
+"databaseId": 41364108317,
+"displayTitle": "pi scrapy-8312 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:51:10Z",
+"databaseId": 41364106537,
+"displayTitle": "review direct-ts grafana/grafana#136242",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:58Z",
+"databaseId": 41364091038,
+"displayTitle": "opencode scrapy-8312 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:58Z",
+"databaseId": 41364090111,
+"displayTitle": "cc release nest-12.1.0 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:41Z",
+"databaseId": 41364068353,
+"displayTitle": "cc labels pytorch-201802 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:41Z",
+"databaseId": 41364067898,
+"displayTitle": "cc fix-mention scrapy-8048 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:32Z",
+"databaseId": 41364056119,
+"displayTitle": "cc fix-ci scrapy-8312 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:24Z",
+"databaseId": 41364045367,
+"displayTitle": "cc fix-mention poetry-11131 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:50:11Z",
+"databaseId": 41364027963,
+"displayTitle": "cc fix-ci poetry-10803 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:56Z",
+"databaseId": 41364005895,
+"displayTitle": "codex commander.js-2609 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:41Z",
+"databaseId": 41363987288,
+"displayTitle": "pi commander.js-2609 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:35Z",
+"databaseId": 41363979311,
+"displayTitle": "cc release nest-12.1.0 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:28Z",
+"databaseId": 41363969996,
+"displayTitle": "opencode commander.js-2609 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:18Z",
+"databaseId": 41363957413,
+"displayTitle": "cc labels pytorch-201802 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:07Z",
+"databaseId": 41363943542,
+"displayTitle": "cc fix-mention pydantic-13452 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:01Z",
+"databaseId": 41363936026,
+"displayTitle": "cc fix-mention poetry-11131 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:49:00Z",
+"databaseId": 41363934099,
+"displayTitle": "cc fix-ci commander.js-2609 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:49Z",
+"databaseId": 41363919741,
+"displayTitle": "cc fix-ci poetry-10803 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:33Z",
+"databaseId": 41363898809,
+"displayTitle": "codex commander.js-2609 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:19Z",
+"databaseId": 41363880224,
+"displayTitle": "pi commander.js-2609 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:16Z",
+"databaseId": 41363876215,
+"displayTitle": "review direct-ts ggml-org/llama.cpp#29069",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:05Z",
+"databaseId": 41363861773,
+"displayTitle": "opencode commander.js-2609 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:48:03Z",
+"databaseId": 41363858348,
+"displayTitle": "cc release ollama-0.40.9 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:46Z",
+"databaseId": 41363836852,
+"displayTitle": "cc labels typescript-64630 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:44Z",
+"databaseId": 41363834070,
+"displayTitle": "cc fix-mention pydantic-13452 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:37Z",
+"databaseId": 41363823596,
+"displayTitle": "cc fix-ci commander.js-2609 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:33Z",
+"databaseId": 41363817504,
+"displayTitle": "cc fix-mention scrapy-8048 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:21Z",
+"databaseId": 41363800991,
+"displayTitle": "cc fix-ci scrapy-8312 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:47:03Z",
+"databaseId": 41363776409,
+"displayTitle": "codex poetry-10809 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:46Z",
+"databaseId": 41363752714,
+"displayTitle": "pi poetry-10809 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:40Z",
+"databaseId": 41363745194,
+"displayTitle": "cc release ollama-0.40.9 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:33Z",
+"databaseId": 41363735653,
+"displayTitle": "opencode poetry-10809 direct-ts",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:23Z",
+"databaseId": 41363721933,
+"displayTitle": "cc labels typescript-64630 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:16Z",
+"databaseId": 41363712124,
+"displayTitle": "cc fix-mention poetry-10941 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:10Z",
+"databaseId": 41363704078,
+"displayTitle": "cc fix-mention scrapy-8048 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:46:01Z",
+"databaseId": 41363691899,
+"displayTitle": "cc fix-ci poetry-10809 gateway claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:55Z",
+"databaseId": 41363682482,
+"displayTitle": "cc fix-ci scrapy-8312 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:38Z",
+"databaseId": 41363660257,
+"displayTitle": "codex poetry-10809 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:23Z",
+"databaseId": 41363639842,
+"displayTitle": "pi poetry-10809 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:22Z",
+"databaseId": 41363638132,
+"displayTitle": "review direct-ts pandas-dev/pandas#70233",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:09Z",
+"databaseId": 41363619264,
+"displayTitle": "opencode poetry-10809 gateway",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-agents"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:45:06Z",
+"databaseId": 41363613727,
+"displayTitle": "cc release syncthing-2.1.7 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:44:53Z",
+"databaseId": 41363594939,
+"displayTitle": "cc fix-mention poetry-10941 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:44:51Z",
+"databaseId": 41363593103,
+"displayTitle": "cc labels flutter-195150 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:44:39Z",
+"databaseId": 41363577099,
+"displayTitle": "cc fix-ci poetry-10809 direct-ts claude-opus-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:44:36Z",
+"databaseId": 41363574005,
+"displayTitle": "cc fix-mention pydantic-13452 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:44:22Z",
+"databaseId": 41363556936,
+"displayTitle": "cc fix-ci commander.js-2609 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:43:42Z",
+"databaseId": 41363503868,
+"displayTitle": "cc release syncthing-2.1.7 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:43:28Z",
+"databaseId": 41363486285,
+"displayTitle": "cc labels flutter-195150 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:43:14Z",
+"databaseId": 41363468703,
+"displayTitle": "cc fix-mention pydantic-13452 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:43:00Z",
+"databaseId": 41363449919,
+"displayTitle": "cc fix-ci commander.js-2609 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:42:12Z",
+"databaseId": 41363388429,
+"displayTitle": "cc release deno-2.9.5 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:41:56Z",
+"databaseId": 41363368207,
+"displayTitle": "cc labels go-82053 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:41:43Z",
+"databaseId": 41363350589,
+"displayTitle": "cc fix-mention poetry-10941 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:41:27Z",
+"databaseId": 41363329230,
+"displayTitle": "cc fix-ci poetry-10809 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:41:04Z",
+"databaseId": 41363299340,
+"displayTitle": "review direct-ts flutter/flutter#194096",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:40:49Z",
+"databaseId": 41363279896,
+"displayTitle": "cc release deno-2.9.5 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:40:34Z",
+"databaseId": 41363259622,
+"displayTitle": "cc labels go-82053 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:40:20Z",
+"databaseId": 41363239976,
+"displayTitle": "cc fix-mention poetry-10941 gateway claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-01T23:40:03Z",
+"databaseId": 41363216459,
+"displayTitle": "cc fix-ci poetry-10809 direct-ts claude-sonnet-5-5",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-claude"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:43:56Z",
+"databaseId": 41373996993,
+"displayTitle": "review direct-ts prometheus/prometheus#20026",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:42:54Z",
+"databaseId": 41373913243,
+"displayTitle": "review gateway astral-sh/uv#22136",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:41:52Z",
+"databaseId": 41373826702,
+"displayTitle": "review direct-ts django/django#22041",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:40:49Z",
+"databaseId": 41373736580,
+"displayTitle": "review gateway prometheus/prometheus#18355",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:39:47Z",
+"databaseId": 41373641401,
+"displayTitle": "review direct-ts godotengine/godot#121020",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:38:45Z",
+"databaseId": 41373555418,
+"displayTitle": "review gateway neovim/neovim#42595",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:37:42Z",
+"databaseId": 41373467965,
+"displayTitle": "review direct-ts django/django#22198",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:36:40Z",
+"databaseId": 41373378694,
+"displayTitle": "review gateway astral-sh/ruff#29090",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:35:38Z",
+"databaseId": 41373286315,
+"displayTitle": "review direct-ts spring-projects/spring-boot#52284",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:34:35Z",
+"databaseId": 41373190705,
+"displayTitle": "review gateway ggml-org/llama.cpp#30242",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:33:33Z",
+"databaseId": 41373102399,
+"displayTitle": "review direct-ts huggingface/transformers#48992",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:32:30Z",
+"databaseId": 41373012710,
+"displayTitle": "review gateway grafana/grafana#134038",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:31:28Z",
+"databaseId": 41372923564,
+"displayTitle": "review direct-ts huggingface/transformers#49742",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:30:25Z",
+"databaseId": 41372827821,
+"displayTitle": "review gateway neovim/neovim#42289",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:29:23Z",
+"databaseId": 41372736754,
+"displayTitle": "review direct-ts vercel/next.js#100840",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:28:20Z",
+"databaseId": 41372655024,
+"displayTitle": "review gateway pandas-dev/pandas#70960",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:27:18Z",
+"databaseId": 41372569692,
+"displayTitle": "review direct-ts vercel/next.js#100205",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:26:15Z",
+"databaseId": 41372483514,
+"displayTitle": "review gateway kubernetes/kubernetes#142436",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:25:13Z",
+"databaseId": 41372392574,
+"displayTitle": "review direct-ts spring-projects/spring-boot#52228",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:24:11Z",
+"databaseId": 41372301790,
+"displayTitle": "review gateway grafana/grafana#136242",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:23:08Z",
+"databaseId": 41372213377,
+"displayTitle": "review direct-ts astral-sh/ruff#29232",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:22:05Z",
+"databaseId": 41372122428,
+"displayTitle": "review gateway ggml-org/llama.cpp#29069",
+"headSha": "f1143aa953d03e5d1a0720012518e0c19e5b095c",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:21:03Z",
+"databaseId": 41372034425,
+"displayTitle": "review direct-ts godotengine/godot#118822",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:20:01Z",
+"databaseId": 41371938024,
+"displayTitle": "review gateway pandas-dev/pandas#70233",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:18:58Z",
+"databaseId": 41371845345,
+"displayTitle": "review direct-ts astral-sh/uv#22271",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+},
+{
+"conclusion": "success",
+"createdAt": "2026-11-02T01:17:56Z",
+"databaseId": 41371752905,
+"displayTitle": "review gateway flutter/flutter#194096",
+"headSha": "a4770f78c0767d21380bc3bf510c32f9a886cbac",
+"status": "completed",
+"workflowName": "confirm-review"
+}
+]
