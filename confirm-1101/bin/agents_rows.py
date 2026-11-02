@@ -16,12 +16,14 @@ for f in glob.glob(sys.argv[1] + "/*/*/norm.json"):
     g[(n["agent"], n["model"])][n["task"]][n["arm"]] = n
 rows = []
 for (ag, m), ts in sorted(g.items()):
-    by = {}; dc = []; gc = []; td = tg = b = c = pd = pg = 0
+    by = {}; dc = []; gc = []; td = tg = b = c = pd = pg = 0; pairs = []
     for t, a in sorted(ts.items()):
         if len(a) < 2: continue
         d, w = a["direct-ts"], a["gateway"]; cd, cw = cost(d), cost(w)
         by[t] = [math.log(cw / cd)]; dc.append(cd); gc.append(cw); td += sum(d["tools"].values()); tg += sum(w["tools"].values())
         pd += d["passed"]; pg += w["passed"]; b += d["passed"] and not w["passed"]; c += w["passed"] and not d["passed"]
+        pairs.append({"task": t, "direct_run": d.get("run_id"), "gateway_run": w.get("run_id"), "direct_usd": round(cd, 5), "gateway_usd": round(cw, 5),
+                      "passed": [d["passed"], w["passed"]], "tools": [sum(d["tools"].values()), sum(w["tools"].values())]})
     k = len(by)
     if not k:
         bad.append({'agent': ag, 'model': m, 'note': 'no complete direct/gateway pair'}); continue
@@ -29,7 +31,7 @@ for (ag, m), ts in sorted(g.items()):
     mix = round(tg / td, 3) if td else None; p = round(A.mcnemar(b, c), 3)
     rows.append(dict(area="fix-ci", agent=ag, model=m, n=k, saving_pct=A.pct(mm), ci_pct=[A.pct(ci[1]), A.pct(ci[0])], cheaper=f"{sum(v[0] < 0 for v in by.values())}/{k}",
         direct_usd=round(sum(dc) / k, 4), gateway_usd=round(sum(gc) / k, 4), quality=f"pass {pd}/{k} -> {pg}/{k}, McNemar p={p}", tool_calls=[td, tg], tool_mix_ratio=mix,
-        passed_bar=bool(ci[1] < 0 and (p >= .05 or pg >= pd) and mix and mix >= .7), total_usd=round(sum(dc) + sum(gc), 4)))
+        passed_bar=bool(ci[1] < 0 and (p >= .05 or pg >= pd) and mix and mix >= .7), total_usd=round(sum(dc) + sum(gc), 4), pairs=pairs))
 json.dump({"rows": rows, "unusable_runs": bad}, open(sys.argv[2], "w"), indent=1)
 for r in rows: print(r)
 print("unusable", bad)
