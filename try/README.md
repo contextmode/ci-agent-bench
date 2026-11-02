@@ -17,3 +17,10 @@ Each task is one run. Task A pays the cold prefix; B and C read what A wrote. On
 | [triage--godot-124950.json](jobs/triage--godot-124950.json) | [godotengine/godot#124950](https://github.com/godotengine/godot/issues/124950) | You're an issue triage assistant. Analyze the issue and manage labels. IMPORTANT: Don't post any comments or m | 2 | 98683 | `e165acc687b56ed6ebf4adc4265d25c250e92ffb6f7d81078a634412457c423d` |
 | [triage--tauri-16340.json](jobs/triage--tauri-16340.json) | [tauri-apps/tauri#16340](https://github.com/tauri-apps/tauri/issues/16340) | You're an issue triage assistant. Analyze the issue and manage labels. IMPORTANT: Don't post any comments or m | 2 | 103146 | `395d148422bbccc709a0356892bd1bda2d0dc9218bc1a9c1c4e3b169626ceb60` |
 | [triage--zed-66189.json](jobs/triage--zed-66189.json) | [zed-industries/zed#66189](https://github.com/zed-industries/zed/issues/66189) | You're an issue triage assistant. Analyze the issue and manage labels. IMPORTANT: Don't post any comments or m | 2 | 110152 | `9d586fa76fedbd558324159c7378d8f11940b41960960e4e6cffa79696e1eda1` |
+
+## Token counts and the cost estimate
+
+`tokens.json` holds, for every task, the input tokens of each recorded request (`tokens`), the tokens of the shared prefix, system and tools (`stable`), and the recorded output tokens per request (`out`). Anthropic's `count_tokens` endpoint counted them on the exact bodies the page sends. The job files are unchanged, so the sha256 values above still hold. Recount with `ANTHROPIC_API_KEY=... node try/count-tokens.mjs`.
+
+The page estimates cost from these numbers at Sonnet 5.5 list price (input $2, 5-minute cache write $2.50, cache read $0.10, output $10 per million tokens). Task A writes its prefix once. Tasks B and C read the shared prefix. Every later request in a task reads the request before it and writes only its new tokens. The recorded output is added at list price on both routes, as the results table does.
+
