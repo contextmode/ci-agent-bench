@@ -1,0 +1,4 @@
+Read 2026-11-02 from the GitHub API, window 2026-10-25..2026-11-01 (UTC), runs that finished as success or failure.
+anthropics/claude-code claude-issue-triage.yml 2026-10-25..2026-11-01: runs 3853, median gap 1.8 min, gaps under 5 min 81%, under 60 min 100%
+lobehub/lobehub claude-pr-assign.yml 2026-10-25..2026-11-01: runs 475, median gap 11.6 min, gaps under 5 min 27%, under 60 min 92%
+pytorch/pytorch claude-code.yml 2026-10-25..2026-11-01: runs 324, median gap 11.4 min, gaps under 5 min 38%, under 60 min 89%

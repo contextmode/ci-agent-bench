@@ -1,0 +1,5 @@
+area | runs | requests/run | prefix | tool results+history | thinking | answer | cache writes (share of bill)
+fix-ci | 26 | 6.3 | 48.3 | 25.4 | 4.3 | 22.0 | 47.2
+fix-mention | 28 | 9.4 | 44.3 | 22.2 | 5.2 | 28.2 | 42.2
+labels | 36 | 2.3 | 58.0 | 32.4 | 0.8 | 8.8 | 78.3
+MEAN over areas: {'prefix': 50.2, 'tool_results': 26.7, 'thinking': 3.4, 'answer': 19.7}

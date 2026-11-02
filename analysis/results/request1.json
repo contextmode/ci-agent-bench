@@ -1,0 +1,32 @@
+{
+ "fix-ci": {
+  "direct_read_share_pct": 76.9,
+  "runs_direct": 26,
+  "runs_gateway": 26,
+  "req1_direct": 18683,
+  "req1_gateway": 11574,
+  "smaller_pct": 38.1,
+  "gateway_zero_write_runs": 2,
+  "gateway_read_share_pct": 78.0
+ },
+ "fix-mention": {
+  "direct_read_share_pct": 63.2,
+  "runs_direct": 28,
+  "runs_gateway": 28,
+  "req1_direct": 22836,
+  "req1_gateway": 15722,
+  "smaller_pct": 31.2,
+  "gateway_zero_write_runs": 0,
+  "gateway_read_share_pct": 57.8
+ },
+ "labels": {
+  "direct_read_share_pct": 68.6,
+  "runs_direct": 36,
+  "runs_gateway": 36,
+  "req1_direct": 16771,
+  "req1_gateway": 11341,
+  "smaller_pct": 32.4,
+  "gateway_zero_write_runs": 1,
+  "gateway_read_share_pct": 75.4
+ }
+}

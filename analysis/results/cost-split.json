@@ -1,0 +1,37 @@
+{
+ "areas": {
+  "fix-ci": {
+   "prefix": 48.3,
+   "tool_results": 25.4,
+   "thinking": 4.3,
+   "answer": 22.0,
+   "cache_write_share": 47.2,
+   "runs": 26,
+   "mean_requests": 6.3
+  },
+  "fix-mention": {
+   "prefix": 44.3,
+   "tool_results": 22.2,
+   "thinking": 5.2,
+   "answer": 28.2,
+   "cache_write_share": 42.2,
+   "runs": 28,
+   "mean_requests": 9.4
+  },
+  "labels": {
+   "prefix": 58.0,
+   "tool_results": 32.4,
+   "thinking": 0.8,
+   "answer": 8.8,
+   "cache_write_share": 78.3,
+   "runs": 36,
+   "mean_requests": 2.3
+  }
+ },
+ "mean": {
+  "prefix": 50.2,
+  "tool_results": 26.7,
+  "thinking": 3.4,
+  "answer": 19.7
+ }
+}

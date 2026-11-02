@@ -1,0 +1,4 @@
+area | runs d/g | request 1 tokens direct -> gateway | smaller | gateway runs with 0 written on request 1 | request 1 read from cache, gateway | direct
+fix-ci | 26/26 | 18,683 -> 11,574 | 38.1% | 2 of 26 | 78.0% | 76.9%
+fix-mention | 28/28 | 22,836 -> 15,722 | 31.2% | 0 of 28 | 57.8% | 63.2%
+labels | 36/36 | 16,771 -> 11,341 | 32.4% | 1 of 36 | 75.4% | 68.6%

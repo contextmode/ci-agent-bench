@@ -1,0 +1,5 @@
+model | input | 5m write | 1h write | read | 5m write / read | 1h write / read | read in input units
+Claude Sonnet 5.5 | $2 | $2.5 | $4 | $0.1 | 25 to 1 | 40 to 1 | 0.05
+  break-even, 5m: n x later turns > 24 x P; 1h: n x later turns > 39 x P
+Claude Opus 5.5 | $4 | $5 | $8 | $0.2 | 25 to 1 | 40 to 1 | 0.05
+  break-even, 5m: n x later turns > 24 x P; 1h: n x later turns > 39 x P
