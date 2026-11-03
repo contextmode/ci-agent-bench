@@ -6,7 +6,7 @@ so runs of one arm start >= 120 s apart. Quota guard before and after. Never rea
 Usage (repo root): python3 confirm-1101/bin/rerun_review_r2.py"""
 import json, os, subprocess, time
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-R = "mksglu/cm-ci-lab"
+R = "contextmode/ci-agent-bench"
 LOG = open(os.path.join(HERE, "run2", "dispatch-review-rerun.jsonl"), "a")
 def log(**kw):
     LOG.write(json.dumps({"t": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), **kw}) + "\n"); LOG.flush()

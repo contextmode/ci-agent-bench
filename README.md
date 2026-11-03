@@ -1,4 +1,4 @@
-# cm-ci-lab
+# ci-agent-bench
 
 Public lab for one question: how much does a headless CI agent (Claude Code `claude -p`,
 `anthropics/claude-code-action`) cost when it sends its model traffic through the Context Mode gateway,

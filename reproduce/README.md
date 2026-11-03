@@ -4,7 +4,7 @@ Run our CI cost benchmark in your own GitHub account, with your own keys, in one
 
 ## One click
 
-1. Click **Use this template** on https://github.com/mksglu/cm-ci-lab and create your copy.
+1. Click **Use this template** on https://github.com/contextmode/ci-agent-bench and create your copy.
 2. In your copy, add two secrets (Settings > Secrets and variables > Actions):
    - `ANTHROPIC_API_KEY`: your Anthropic API key.
    - `CONTEXT_MODE_KEY`: run `npx @context-mode/cli ci key create --repo OWNER/NAME --gh`. It stores the key as a secret and never shows it.
@@ -115,4 +115,4 @@ All workflows run on `workflow_dispatch` only, so code from a fork never sees a 
 ## Published data
 
 - Round: `docs/ci-night-1101-r2.md`, raw table `lab/ci-night/results-r2.json` (run ids per pair).
-- Run artifacts: https://github.com/mksglu/cm-ci-lab/actions
+- Run artifacts: https://github.com/contextmode/ci-agent-bench/actions

@@ -2,7 +2,7 @@
 """Recompute the cost split and the cache-write share of a direct CI agent run from public Actions artifacts.
 
 Usage: python3 -I analysis/cost-split.py ART_DIR [--all] [--json OUT]\nDefault: the three jobs the website shows (fix-ci, fix-mention, labels). --all adds the other jobs in the rows.
-ART_DIR/<run_id>/<artifact>/ holds one artifact per run (gh run download RUN_ID -R mksglu/cm-ci-lab -D ART_DIR/RUN_ID).
+ART_DIR/<run_id>/<artifact>/ holds one artifact per run (gh run download RUN_ID -R contextmode/ci-agent-bench -D ART_DIR/RUN_ID).
 Run ids come from confirm-1101/r1/rows.jsonl and confirm-1101/run2/rows.jsonl (arm == direct-ts, success, not error).
 Prices: confirm-1101/prices/anthropic-pricing-2026-11-01.md (Sonnet 5.5: in 2.00, 5m write 2.50, 1h write 4.00, read 0.10, out 10.00 per MTok).
 No regex.

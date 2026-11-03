@@ -16,7 +16,7 @@ def one(args):
     d = os.path.join(art, rid)
     if os.path.isdir(d) and os.listdir(d):
         return 0
-    return subprocess.run(["gh", "run", "download", rid, "-R", "mksglu/cm-ci-lab", "-D", d], capture_output=True).returncode
+    return subprocess.run(["gh", "run", "download", rid, "-R", "contextmode/ci-agent-bench", "-D", d], capture_output=True).returncode
 
 
 def main():

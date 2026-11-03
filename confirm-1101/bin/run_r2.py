@@ -10,7 +10,7 @@ round-1 mean) reaches its share. Quota guard before and after each lane; if used
 Logs to confirm-1101/run2/dispatch.jsonl. Never reads or prints a key. No regex."""
 import json, os, subprocess, sys, threading, time
 
-R = "mksglu/cm-ci-lab"
+R = "contextmode/ci-agent-bench"
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(HERE, "run2"); os.makedirs(OUT, exist_ok=True)
 ART = "/tmp/cf1101run2/art"; os.makedirs(ART, exist_ok=True)

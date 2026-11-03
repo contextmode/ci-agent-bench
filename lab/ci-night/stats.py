@@ -1,4 +1,4 @@
-# Round 1 stats. Usage: python3 -I stats.py /tmp/cm-ci-lab-r1/state.json /tmp/cm-ci-lab-r1/art
+# Round 1 stats. Usage: python3 -I stats.py /tmp/ci-agent-bench-r1/state.json /tmp/ci-agent-bench-r1/art
 import glob, json, math, random, sys, collections
 FEE = 0.0009
 state = json.load(open(sys.argv[1])); art = sys.argv[2]
